@@ -5,13 +5,17 @@
     "box-address": "JL. JEND. A. YANI NO. 52 AB",
     "box-city": "Emplasemen Aek Nabara,",
     "box-city (2)": "Kab. Labuhan Batu,",
-    "content": "062-429848",
+    "content": "062-429848"
+  },
+    {
     "title (2)": "Cv. Indah Sakti Kota Pinang",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.89374,100.0842&travelMode=motorcycle",
     "box-address (2)": "JL. BUKIT NO. 1 - 2, KOTA PINANG",
     "box-city (4)": "Kota Pinang,",
     "box-city (5)": "Kab. Labuhan Batu Selatan,",
-    "content (2)": "0823-62419797",
+    "content (2)": "0823-62419797"
+  },
+    {
     "title (3)": "PT. Cakra Adi Dharma - Aek Nabara",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.05792,99.95978&travelMode=motorcycle",
     "box-address (3)": "JL. LINTAS AEK NABARA",
@@ -19,19 +23,23 @@
     "box-city (8)": "Kab. Labuhan Batu,",
     "content (3)": "062-429449"
   },
-  {
+    {
     "title": "Wahana Ritel Honda Medan",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.56305,98.68967&travelMode=motorcycle",
     "box-address": "JL. BRIGJEN. KATAMSO NO. 410 AB",
     "box-city": "Sei Mati,",
     "box-city (2)": "Kota Medan,",
-    "content": "061-4535589",
+    "content": "061-4535589"
+  },
+    {
     "title (2)": "Cv. Teknik Ii",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.3331,99.0591&travelMode=motorcycle",
     "box-address (2)": "JL. PATUAN NAGARI NO. 177",
     "box-city (4)": "Sangkar Nihuta,",
     "box-city (5)": "Kab. Toba Samosir,",
-    "content (2)": "063-221888",
+    "content (2)": "063-221888"
+  },
+    {
     "title (3)": "Sungai Mas",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.561,98.87386&travelMode=motorcycle",
     "box-address (3)": "JL. SUTOMO NO. 7 B - E, LUBUK PAKAM",
@@ -39,19 +47,23 @@
     "box-city (8)": "Kab. Deli Serdang,",
     "content (3)": "061-7956556"
   },
-  {
+    {
     "title": "PT.supra Jaya Abadi - Ahass 06958",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.53777,98.68783&travelMode=motorcycle",
     "box-address": "JL. TRITURA",
     "box-city": "Titi Kuning,",
     "box-city (2)": "Kota Medan,",
-    "content": "061-7883011",
+    "content": "061-7883011"
+  },
+    {
     "title (2)": "PT.sumber Perintis Jaya I",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.42564,98.90383&travelMode=motorcycle",
     "box-address (2)": "JL. PERINTIS KEMERDEKAAN NO. 18",
     "box-city (4)": "Galang Kota,",
     "box-city (5)": "Kab. Deli Serdang,",
-    "content (2)": "061-7980527",
+    "content (2)": "061-7980527"
+  },
+    {
     "title (3)": "Cv Mitra Makmur Ii",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.16732,99.41762&travelMode=motorcycle",
     "box-address (3)": "JL. MEDAN - KISARAN NO. 4 - 5",
@@ -59,19 +71,21 @@
     "box-city (8)": "Kab. Batu Bara,",
     "content (3)": "0852-96494533"
   },
-  {
+    {
     "title": "Honda Daya Motor Binjai (official)",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.62379,98.50459&travelMode=motorcycle",
     "box-address": "JL. T. AMIR HAMZAH NO. 218 - 220",
     "box-city": "Nangka,",
     "box-city (2)": "Kota Binjai,",
     "content": "061-42364134",
+
     "title (2)": "PT. Prima Agung Motorindo",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.712535,98.661049&travelMode=motorcycle",
     "box-address (2)": "JL. TITI PAHLAWAN NO. 43 - 49",
     "box-city (4)": "Paya Pasir,",
     "box-city (5)": "Kota Medan,",
     "content (2)": "061-42364134",
+
     "title (3)": "PT. Kencana Abadi Mulia Ii",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=0.56647,97.81948&travelMode=motorcycle",
     "box-address (3)": "JL. AHMAD YANI NO. 58, TELUK DALAM",
