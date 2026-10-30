@@ -1,98 +1,122 @@
 [
   {
-    "title": "PT.berlian Bintang Mas",
+    "namaShowroom": "PT. Berlian Bintang Mas",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60007,98.75689&travelMode=motorcycle",
-    "box-address": "JL. BESAR TEMBUNG NO. 14 C",
-    "box-city": "Bandar Khalipa,",
-    "box-city (2)": "Kab. Deli Serdang,",
-    "content": "061-7380500"
+    "merek": "Dealer Honda",
+    "alamat": "Pasar 9 JALAN RAYA TEMBUNG NO.9, HUTAN, KEC. PERCUT SEI TUAN",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0812-6345-6236",
+    "rating": "4.8",
+    "berlokasiDi": "Kab. Deli Serdang"
   },
   {
-    "title (2)": "Indako Trading Co. Krakatau",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.61286,98.68077&travelMode=motorcycle",
-    "box-address (2)": "JL. G. KRAKATAU NO. 54 - 54 A",
-    "box-city (4)": "Glugur Darat II,",
-    "box-city (5)": "Kota Medan,",
-    "content (2)": "061-6636040"
+    "namaShowroom": "Indako Trading Co. Krakatau",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.61286,98.68077&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. G. KRAKATAU NO. 54 - 54 A, Glugur Darat II",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0821-8161-9122",
+    "rating": "4.5",
+    "berlokasiDi": "Kota Medan"
   },
   {
-    "title (3)": "PT.sumber Jaya Motor Ii",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.89197,98.42531&travelMode=motorcycle",
-    "box-address (3)": "JL. MESJID NO. 7, TANJUNG PURA",
-    "box-city (7)": "PEKAN TANJUNG PURA,",
-    "box-city (8)": "Kab. Langkat,",
-    "content (3)": "061-89631026"
+    "namaShowroom": "PT.sumber Jaya Motor Ii",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.89197,98.42531&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. MESJID NO. 7, TANJUNG PURA, Pekan Tanjung Pura",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-89631026",
+    "rating": "4.0",
+    "berlokasiDi": "Kab. Langkat"
   },
   {
-    "title": "Cv. Sudi Honda",
+    "namaShowroom": "Cv. Sudi Honda",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.9601,99.0688&travelMode=motorcycle",
-    "box-address": "JL. MERDEKA NO. 199 - 201",
-    "box-city": "Dwikora,",
-    "box-city (2)": "Kota Pematangsiantar,",
-    "content": "062-224436"
+    "merek": "Dealer Honda",
+    "alamat": "JL. MERDEKA NO. 199 - 201, Dwikora",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "062-224436",
+    "rating": "4.2",  
+    "berlokasiDi":"Kota Pematangsiantar"
   },
   {
-    "title (2)": "Cv. Putra Langkat",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60639,98.44556&travelMode=motorcycle",
-    "box-address (2)": "JL. GATOT SUBROTO NO. 532 ABC",
-    "box-city (4)": "Suka Maju,",
-    "box-city (5)": "Kota Binjai,",
-    "content (2)": "061-8823817"
+    "namaShowroom": "Cv. Putra Langkat",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60639,98.44556&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. GATOT SUBROTO NO. 532 ABC, Suka Maju",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-8823817",
+    "rating": "4.3",
+    "berlokasiDi":"Kota Binjai"
   },
   {
-    "title (3)": "PT Cakra Adi Dharma Kota Pinang.",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.89049,100.0907&travelMode=motorcycle",
-    "box-address (3)": "JL. JEND. SUDIRMAN NO. 14 - 16",
-    "box-city (7)": "Kota Pinang,",
-    "box-city (8)": "Kab. Labuhan Batu Selatan,",
-    "content (3)": "0624-496288"
+    "namaShowroom": "PT Cakra Adi Dharma Kota Pinang.",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.89049,100.0907&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. SUDIRMAN NO. 14 - 16",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0624-496288",
+    "rating": "4.1",
+    "berlokasiDi":"Kota Pinang"
   },
   {
-    "title": "PT. Indah Sakti Motorindo",
+    "namaShowroom": "PT. Indah Sakti Motorindo",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.58644,98.7052&travelMode=motorcycle",
-    "box-address": "JL. AR. HAKIM",
-    "box-city": "Sukaramai II,",
-    "box-city (2)": "Kota Medan,",
-    "content": "061-7352576"
+    "merek": "Dealer Honda",
+    "alamat": "JL. AR. HAKIM, Sukaramai II",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-7352576",
+    "rating": "4.6",
+    "berlokasiDi":"Kota Medan"
   },
   {
-    "title (2)": "Cv. Graha Honda",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.69502,98.67492&travelMode=motorcycle",
-    "box-address (2)": "JL. PANCING I LINGKUNGAN VII MARTUBUNG 168 HI",
-    "box-city (4)": "Besar,",
-    "box-city (5)": "Kota Medan,",
-    "content (2)": "061-6856707"
+    "namaShowroom": "Cv. Graha Honda",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.69502,98.67492&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. PANCING I LINGKUNGAN VII MARTUBUNG 168 HI, Besar",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-6856707",
+    "rating": "4.4",
+    "berlokasiDi":"Kota Medan"
   },
   {
-    "title (3)": "Cv. Duta Motor",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.57678,98.70377&travelMode=motorcycle",
-    "box-address (3)": "JL. AR. HAKIM NO. 163 ABC LK. I",
-    "box-city (7)": "Tegal Sari III,",
-    "box-city (8)": "Kota Medan,",
-    "content (3)": "061-7360151"
+    "namaShowroom": "Cv. Duta Motor",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.57678,98.70377&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. AR. HAKIM NO. 163 ABC LK. I, Tegal Sari III",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-7360151",
+    "rating": "4.5",
+    "berlokasiDi":"Kota Medan"
   },
   {
-    "title": "PT. Anugerah Karya Abiwara Iii",
+    "namaShowroom": "PT. Anugerah Karya Abiwara Iii",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.28369,99.36907&travelMode=motorcycle",
-    "box-address": "JL. JEND. SUDIRMAN NO. 346",
-    "box-city": "Indrapura,",
-    "box-city (2)": "Kab. Batu Bara,",
-    "content": "0822-10239257"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. SUDIRMAN NO. 346, Indrapura",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0822-10239257",
+    "rating": "4.0",
+    "berlokasiDi":"Kab. Batu Bara"
   },
   {
-    "title (2)": "Cv. Honda Kita",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.68878,98.50825&travelMode=motorcycle",
-    "box-address (2)": "JL. TANJUNG PURA KM. 30,8",
-    "box-city (4)": "Tandem Hulu I,",
-    "box-city (5)": "Kab. Deli Serdang,",
-    "content (2)": "061-8829604"
+    "namaShowroom": "Cv. Honda Kita",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.68878,98.50825&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. TANJUNG PURA KM. 30,8, Tandem Hulu I",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-8829604",
+    "rating": "4.2",
+    "berlokasiDi":"Kab. Deli Serdang"
   },
   {
-    "title (3)": "Benteng Honda Marelan",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.68839,98.65589&travelMode=motorcycle",
-    "box-address (3)": "JL. MARELAN RAYA PASAR I NO.31",
-    "box-city (7)": "Tanah Enam Ratus,",
-    "box-city (8)": "Kota Medan,",
-    "content (3)": "061-6859011"
+    "namaShowroom": "Benteng Honda Marelan",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.68839,98.65589&travelMode=motorcycle",
+    "merek": "Dealer Honda",
+    "alamat": "JL. MARELAN RAYA PASAR I NO.31, Tanah Enam Ratus",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "061-6859011",
+    "rating": "4.3",
+    "berlokasiDi":"Kota Medan"
   }
 ]
