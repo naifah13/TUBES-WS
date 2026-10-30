@@ -1,77 +1,122 @@
 [
   {
-    "title": "Indako Pemuda",
+    "namaShowroom": "Indako Pemuda",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.58234,98.68164&travelMode=motorcycle",
-    "box-address": "JL. PEMUDA NO. 18 D-H Aur, Kota Medan",
-    "content": "061-4556900"
+    "merek": "Dealer Honda",
+    "alamat": "JL. PEMUDA NO. 18 D-H Aur",
+    "jamOperasional": "08.00-16.00",
+    "noTelepon": "061-4556900",
+    "rating": "4,5",
+    "berlokasiDi": "Kota Medan"
   },
-    {
-    "title": "PT. Pilar Deli Labumas Ii",
+  {
+    "namaShowroom": "PT. Pilar Deli Labumas II",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.43161,98.85507&travelMode=motorcycle",
-    "box-address": "JL. SULTAN SERDANG DUSUN VIII Nogorejo, Kab. Deli Serdang",
-    "content": "061-80043333"
+    "merek": "Dealer Honda",
+    "alamat": "JL. SULTAN SERDANG DUSUN VIII Nogorejo",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-80043333",
+    "rating": "4,9",
+    "berlokasiDi": "Kab. Deli Serdang"
   },
   {
-    "title": "PT Indako Trading Coy - Makmur",
+    "namaShowroom": "PT Indako Trading Coy - Makmur",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.604,98.66719&travelMode=motorcycle",
-    "box-address": "JL. MAKMUR NO. 114 A / 30 Sei Agul, Kota Medan",
-    "content": "061-6616225"
+    "merek": "Dealer Honda",
+    "alamat": "JL. MAKMUR NO. 114 A / 30 Sei Agul",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-6616225",
+    "rating": "4,5",
+    "berlokasiDi": "Kota Medan"
   },
   {
-    "title": "Dealer Honda Cv. Mitra Makmur",
+    "namaShowroom": "Dealer Honda Cv. Mitra Makmur",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.15871,99.32811&travelMode=motorcycle",
-    "box-address": "JL. SM. RAJA NO. 99, PERDAGANGAN, Sei Mangkei, Kab. Simalungun",
-    "content": "062-296041"
+    "merek": "Dealer Honda",
+    "alamat": "JL. SM. RAJA NO. 99, PERDAGANGAN, Sei Mangkei",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "062-296041",
+    "rating": "4,8",
+    "berlokasiDi": "Kab. Simalungun"
   },
   {
-    "title": "PT Cakra Adi Dharma",
+    "namaShowroom": "PT Cakra Adi Dharma",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.10064,99.83009&travelMode=motorcycle",
-    "box-address": "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhan Batu",
-    "content": "062-424333"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhan Batu",
+    "jamOperasional": "08.30-17.00",
+    "noTelepon": "062-424333",
+    "rating": "4,9",
+    "berlokasiDi": "Kab. Labuhan Batu"
   },
   {
-    "title": "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel",
+    "namaShowroom": "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.33102,99.16001&travelMode=motorcycle",
-    "box-address": "JL. JEND. SUDIRMAN NO. 150 - 152, BADAK BEJUANG, Kota Tebing Tinggi",
-    "title-category": "Dealer Honda",
-    "content": "0812-67168776"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. SUDIRMAN NO. 150 - 152, BADAK BEJUANG",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0812-67168776",
+    "rating": "4,9",
+    "berlokasiDi": "Kota Tebing Tinggi"
   },
   {
-    "title": "Cv. Antara (dealer Sepeda Motor Honda)",
+    "namaShowroom": "Cv. Antara (dealer Sepeda Motor Honda)",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=4.02322,98.28661&travelMode=motorcycle",
-    "box-address": "JL. MESJID NO. 126 - 128, Brandan Timur, Kab. Langkat",
-    "content": "0812-65061818"
+    "merek": "Dealer Honda",
+    "alamat": "JL. MESJID NO. 126 - 128, Brandan Timur",
+    "jamOperasional": "08.15-18.00",
+    "noTelepon": "0812-65061818",
+    "rating": "4,9",
+    "berlokasiDi": "Kab. Langkat"
   },
   {
-    "title": "Cv. Benteng Honda Motor",
+    "namaShowroom": "Cv. Benteng Honda Motor",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.6035,98.64574&travelMode=motorcycle",
-    "box-address": "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur, Kota Medan",
-    "content": "061-8464378"
+    "merek": "Dealer Honda",
+    "alamat": "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur",
+    "jamOperasional": "08.30-17.30",
+    "noTelepon": "061-8464378",
+    "rating": "4,8",
+    "berlokasiDi": "Kota Medan"
   },
   {
-    "title": "Indah Sakti. Cv",
+    "namaShowroom": "Indah Sakti. Cv",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.09846,99.83149&travelMode=motorcycle",
-    "box-address": "JL. JEND. A. YANI NO. 74 ABC, Kartini, Kab. Labuhan Batu",
-    "title-category": "Dealer Honda",
-    "content": "062-421387"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. A. YANI NO. 74 ABC, Kartini",
+    "jamOperasional": "08.30-17.00",
+    "noTelepon": "062-421387",
+    "rating": "4,9",
+    "berlokasiDi": "Kab. Labuhan Batu"
   },
   {
-    "title": "Cv Teknik",
+    "namaShowroom": "Cv Teknik",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.96616,99.07592&travelMode=motorcycle",
-    "box-address": "JL. JEND. A. YANI NO. 142 - 144, Merdeka, Kota Pematangsiantar",
-    "content": "0622-7551787"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. A. YANI NO. 142 - 144, Merdeka",
+    "jamOperasional": "08.00-18.00",
+    "noTelepon": "0622-7551787",
+    "rating": "4,7",
+    "berlokasiDi": "Kota Pematangsiantar"
   },
   {
-    "title": "Cv. Aneka Teknik",
+    "namaShowroom": "Cv. Aneka Teknik",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60462,98.48518&travelMode=motorcycle",
-    "box-address": "JL. JEND. SUDIRMAN NO. 48, BINJAI, Kartini, Kota Binjai",
-    "content": "061-8821047"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. SUDIRMAN NO. 48, BINJAI, Kartini",
+    "jamOperasional": "08.00-17.30",
+    "noTelepon": "061-8821047",
+    "rating": "5,0",
+    "berlokasiDi": "Kota Binjai"
   },
   {
-    "title": "PT. Sumber Jaya Motor I Stabat",
+    "namaShowroom": "PT. Sumber Jaya Motor I Stabat",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.75102,98.45383&travelMode=motorcycle",
-    "box-address": "JL. JEND. SUDIRMAN NO. 7, STABAT, KWALA BINGAI, Kab. Langkat",
-    "title-category": "Dealer Honda",
-    "content": "061-8911064"
+    "merek": "Dealer Honda",
+    "alamat": "JL. JEND. SUDIRMAN NO. 7, STABAT, KWALA BINGAI",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-8911064",
+    "rating": "5,0",
+    "berlokasiDi": "Kab. Langkat"
   }
 ]
