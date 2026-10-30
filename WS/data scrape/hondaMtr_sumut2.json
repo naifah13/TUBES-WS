@@ -2,97 +2,81 @@
   {
     "title": "PT. Putra Surya Jaya Raya I",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.40517,99.28063&travelMode=motorcycle",
-    "box-address": "JL.RAYA SIPIROK KM 4,5",
-    "box-city": "Batunadua Jae,",
-    "box-city (2)": "Kota Padangsidimpuan,",
+    "box-address": "JL.RAYA SIPIROK KM 4,5, Batunadua Jae, Kota Padangsidimpuan",
     "title-category": "Dealer Honda",
-    "content": "063-427988",
-    
-    "title (2)": "Cv. Apollo Motor",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.96236,99.06914&travelMode=motorcycle",
-    "box-address (2)": "JL. HOS COKROAMINOTO NO. 90",
-    "box-city (4)": "Melayu,",
-    "box-city (5)": "Kota Pematangsiantar,",
-    "content (2)": "0813-96416888",
-
-    "title (3)": "Cv. Garuda Jaya Motor",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.57028,98.65983&travelMode=motorcycle",
-    "box-address (3)": "JL. JAMIN GINTING NO. 42 AB",
-    "box-city (7)": "Merdeka,",
-    "box-city (8)": "Kota Medan,",
-    "title-category (3)": "Dealer Honda",
-    "content (3)": "061-8212691"
+    "content": "063-427988"
+  },
+  {
+    "title": "Cv. Apollo Motor",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.96236,99.06914&travelMode=motorcycle",
+    "box-address": "JL. HOS COKROAMINOTO NO. 90, Melayu, Kota Pematangsiantar",
+    "content": "0813-96416888"
+  },
+  {
+    "title": "Cv. Garuda Jaya Motor",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.57028,98.65983&travelMode=motorcycle",
+    "box-address": "JL. JAMIN GINTING NO. 42 AB, Merdeka, Kota Medan",
+    "title-category": "Dealer Honda",
+    "content": "061-8212691"
   },
   {
     "title": "PT.rotella Persada Mandiri I",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.56743,98.95959&travelMode=motorcycle",
-    "box-address": "JL. SERDANG NO. 161 G, PERBAUNGAN",
-    "box-city": "Simpang Tiga Pekan,",
-    "box-city (2)": "Kab. Serdang Bedagai,",
+    "box-address": "JL. SERDANG NO. 161 G, PERBAUNGAN, Simpang Tiga Pekan, Kab. Serdang Bedagai",
     "title-category": "Dealer Honda",
-    "content": "061-7991665",
-
-    "title (2)": "PT Rotella Persada Mandiri Ii",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.52173,98.79555&travelMode=motorcycle",
-    "box-address (2)": "JL. IRIAN KOMP. NUSA PRIMA BLOK A1/4",
-    "box-city (4)": "Tanjung Morawa B,",
-    "box-city (5)": "Kab. Deli Serdang,",
-    "content (2)": "061-7941014",
-
-    "title (3)": "PT Rotella Persada Mandiri Iii",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.55468,98.8772&travelMode=motorcycle",
-    "box-address (3)": "JL. MEDAN - LUBUK PAKAM NO. 29",
-    "box-city (7)": "Tanjung Garbus,",
-    "box-city (8)": "Kab. Deli Serdang,",
-    "title-category (3)": "Dealer Honda",
-    "content (3)": "061-7955070"
+    "content": "061-7991665"
+  },
+  {
+    "title": "PT Rotella Persada Mandiri Ii",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.52173,98.79555&travelMode=motorcycle",
+    "box-address": "JL. IRIAN KOMP. NUSA PRIMA BLOK A1/4, Tanjung Morawa B, Kab. Deli Serdang",
+    "content": "061-7941014"
+  },
+  {
+    "title": "PT Rotella Persada Mandiri Iii",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.55468,98.8772&travelMode=motorcycle",
+    "box-address": "JL. MEDAN - LUBUK PAKAM NO. 29, Tanjung Garbus, Kab. Deli Serdang",
+    "title-category": "Dealer Honda",
+    "content": "061-7955070"
   },
   {
     "title": "PT. Sagita Mulia Laras",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.32634,99.15487&travelMode=motorcycle",
-    "box-address": "JL. JEND. A YANI KOMP. NUSA DELI INDAH 4-6",
-    "box-city": "Durian,",
-    "box-city (2)": "Kota Tebing Tinggi,",
+    "box-address": "JL. JEND. A YANI KOMP. NUSA DELI INDAH 4-6, Durian, Kota Tebing Tinggi",
     "title-category": "Dealer Honda Wing",
-    "content": "0852-62328282",
-
-    "title (2)": "PT. Tiger Dua Ribu",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.590292,98.647698&travelMode=motorcycle",
-    "box-address (2)": "JL. GATOT SUBROTO KM. 4 NO. 63",
-    "box-city (4)": "Sei Sikambing D,",
-    "box-city (5)": "Kota Medan,",
-    "content (2)": "061-4571134",
-
-    "title (3)": "PT. Indako Trading Coy",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.55502,98.69497&travelMode=motorcycle",
-    "box-address (3)": "JL. SM. RAJA NO. 362",
-    "box-city (7)": "Sitirejo I,",
-    "box-city (8)": "Kota Medan,",
-    "title-category (3)": "Dealer Honda BigWing",
-    "content (3)": "061-7875878"
+    "content": "0852-62328282"
+  },
+  {
+    "title": "PT. Tiger Dua Ribu",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.590292,98.647698&travelMode=motorcycle",
+    "box-address": "JL. GATOT SUBROTO KM. 4 NO. 63, Sei Sikambing D, Kota Medan",
+    "content": "061-4571134"
+  },
+  {
+    "title": "PT. Indako Trading Coy",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.55502,98.69497&travelMode=motorcycle",
+    "box-address": "JL. SM. RAJA NO. 362, Sitirejo I, Kota Medan",
+    "title-category": "Dealer Honda BigWing",
+    "content": "061-7875878"
   },
   {
     "title": "Aksara Motor",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.598358,98.699269&travelMode=motorcycle",
-    "box-address": "JL. PROF. HM. YAMIN NO. 173 - 173 A",
-    "box-city": "Sei Kera Hilir II,",
-    "box-city (2)": "Kota Medan,",
+    "box-address": "JL. PROF. HM. YAMIN NO. 173 - 173 A, Sei Kera Hilir II, Kota Medan",
     "title-category": "Dealer Honda",
-    "content": "0852-70470067",
-
-    "title (2)": "PT. Kencana Mulia Abadi I",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.28659,97.62312&travelMode=motorcycle",
-    "box-address (2)": "JL. DIPONEGORO NO. 120",
-    "box-city (4)": "Purwodadi,",
-    "box-city (5)": "Kota Gunung Sitoli,",
-    "content (2)": "0639-323398",
-
-    "title (3)": "PT. Anugerah Karya Abiwara",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.98122,99.62306&travelMode=motorcycle",
-    "box-address (3)": "JL. SM. RAJA NO. 320 ABCDE, KISARAN",
-    "box-city (7)": "Tebing Kisaran,",
-    "box-city (8)": "Kab. Asahan,",
-    "title-category (3)": "Dealer Honda Wing",
-    "content (3)": "062-343297"
+    "content": "0852-70470067"
+  },
+  {
+    "title": "PT. Kencana Mulia Abadi I",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.28659,97.62312&travelMode=motorcycle",
+    "box-address": "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunung Sitoli",
+    "content": "0639-323398"
+  },
+  {
+    "title": "PT. Anugerah Karya Abiwara",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.98122,99.62306&travelMode=motorcycle",
+    "box-address": "JL. SM. RAJA NO. 320 ABCDE, KISARAN, Tebing Kisaran, Kab. Asahan",
+    "title-category": "Dealer Honda Wing",
+    "content": "062-343297"
   }
 ]
