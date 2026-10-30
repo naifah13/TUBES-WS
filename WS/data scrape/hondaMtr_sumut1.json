@@ -2,22 +2,19 @@
   {
     "title": "Indako Pemuda",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.58234,98.68164&travelMode=motorcycle",
-    "box-address": "JL. PEMUDA NO. 18 D-H",
-    "box-city": "Aur,",
-    "box-city (2)": "Kota Medan,",
-    "content": "061-4556900",
-    "title (2)": "PT. Pilar Deli Labumas Ii",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.43161,98.85507&travelMode=motorcycle",
-    "box-address (2)": "JL. SULTAN SERDANG DUSUN VIII",
-    "box-city (4)": "Nogorejo,",
-    "box-city (5)": "Kab. Deli Serdang,",
-    "content (2)": "061-80043333",
-    "title (3)": "PT Indako Trading Coy - Makmur",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.604,98.66719&travelMode=motorcycle",
-    "box-address (3)": "JL. MAKMUR NO. 114 A / 30",
-    "box-city (7)": "Sei Agul,",
-    "box-city (8)": "Kota Medan,",
-    "title-category (3)": "Dealer Honda Wing",
+    "box-address": "JL. PEMUDA NO. 18 D-H Aur, Kota Medan",
+    "content": "061-4556900"
+  },
+    {
+    "title": "PT. Pilar Deli Labumas Ii",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.43161,98.85507&travelMode=motorcycle",
+    "box-address": "JL. SULTAN SERDANG DUSUN VIII Nogorejo, Kab. Deli Serdang,",
+    "content": "061-80043333"
+  },
+  {
+    "title": "PT Indako Trading Coy - Makmur",
+    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.604,98.66719&travelMode=motorcycle",
+    "box-address (3)": "JL. MAKMUR NO. 114 A / 30 Sei Agul, Kota Medan",
     "content (3)": "061-6616225"
   },
   {
