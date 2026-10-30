@@ -1,0 +1,32 @@
+[
+  {
+    "nama_dealer": "PT Sunindo Varia Motor Gemilang",
+    "alamat_lengkap": "Jl. H. Adam Malik No.101, Silalas, Kec. Medan Barat, Kota Medan, Sumatera Utara 20236 (Depan kantor Taspen)",
+    "nomor_telepon": ["0813-6214-6660", "0811-6162-6660"],
+    "layanan": ["Sales", "Service", "Spare Parts"]
+  },
+  {
+    "nama_dealer": "PT Indo SunMotor Gemilang",
+    "alamat_lengkap": "Jl. Sisingamangaraja No.3 KM 6, Harjosari I, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20229 (Sebelah loket bus Rapi)",
+    "nomor_telepon": ["0811-6540-800"],
+    "layanan": ["Sales", "Service", "Spare Parts"]
+  },
+  {
+    "nama_dealer": "Suzuki Motor Semarang",
+    "alamat_lengkap": "Jl. Semarang No.68 D, Pasar Baru, Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
+    "nomor_telepon": ["061-4149119"],
+    "layanan": ["Sales Only"]
+  },
+  {
+    "nama_dealer": "Lusi Suzuki Motor Pancur Batu",
+    "alamat_lengkap": "Jl. Tulip, Namo Bintang, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20353",
+    "nomor_telepon": ["0812-6294-8055"],
+    "layanan": ["Sales Only"]
+  },
+  {
+    "nama_dealer": "Suzuki Siantar Adeirma",
+    "alamat_lengkap": "Jl. Ade Irma Suryani No. 5 A-D, Simalungun, Martoba, Kec. Siantar Utara, Kota Pematang Siantar, Sumatera Utara 21144",
+    "nomor_telepon": ["0622-24085", "0853-6136-1661"],
+    "layanan": ["Sales", "Service", "Spare Parts"]
+  }
+]
