@@ -2,73 +2,95 @@
   {
     "title": "Cv Indah Sakti Ii Aek Nabara",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.05855,99.95142&travelMode=motorcycle",
-    "box-address": "JL. JEND. A. YANI NO. 52 AB, Emplasemen Aek Nabara, Kab. Labuhan Batu",
+    "box-address": "JL. JEND. A. YANI NO. 52 AB",
+    "box-city": "Emplasemen Aek Nabara,",
+    "box-city (2)": "Kab. Labuhan Batu,",
     "content": "062-429848"
   },
-  {
+    {
     "title (2)": "Cv. Indah Sakti Kota Pinang",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.89374,100.0842&travelMode=motorcycle",
-    "box-address (2)": "JL. BUKIT NO. 1 - 2, KOTA PINANG, Kota Pinang, Kab. Labuhan Batu Selatan",
+    "box-address (2)": "JL. BUKIT NO. 1 - 2, KOTA PINANG",
+    "box-city (4)": "Kota Pinang,",
+    "box-city (5)": "Kab. Labuhan Batu Selatan,",
     "content (2)": "0823-62419797"
   },
-  {
+    {
     "title (3)": "PT. Cakra Adi Dharma - Aek Nabara",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.05792,99.95978&travelMode=motorcycle",
-    "box-address (3)": "JL. Lintas Sumatera, Emplasmen Aek Nabara, Kec. Perbaungan, Kab. Labuhan Batu",
+    "box-address (3)": "JL. LINTAS AEK NABARA",
+    "box-city (7)": "Perbaungan,",
+    "box-city (8)": "Kab. Labuhan Batu,",
     "content (3)": "062-429449"
   },
-  {
+    {
     "title": "Wahana Ritel Honda Medan",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.56305,98.68967&travelMode=motorcycle",
-    "box-address": "JL. BRIGJEN. KATAMSO NO. 410 AB,Sei Mati, Kota Medan",
+    "box-address": "JL. BRIGJEN. KATAMSO NO. 410 AB",
+    "box-city": "Sei Mati,",
+    "box-city (2)": "Kota Medan,",
     "content": "061-4535589"
   },
-  {
+    {
     "title (2)": "Cv. Teknik Ii",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.3331,99.0591&travelMode=motorcycle",
-    "box-address (2)": "JL. PATUAN NAGARI NO. 177, Sangkar Nihuta, Kab. Toba Samosir",
+    "box-address (2)": "JL. PATUAN NAGARI NO. 177",
+    "box-city (4)": "Sangkar Nihuta,",
+    "box-city (5)": "Kab. Toba Samosir,",
     "content (2)": "063-221888"
   },
-  {
+    {
     "title (3)": "Sungai Mas",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.561,98.87386&travelMode=motorcycle",
-    "box-address (3)": "JL. Sutomo No.7, B-E, Lubuk Pakam, Kab. Deli Serdang",
+    "box-address (3)": "JL. SUTOMO NO. 7 B - E, LUBUK PAKAM",
+    "box-city (7)": "Balerejo,",
+    "box-city (8)": "Kab. Deli Serdang,",
     "content (3)": "061-7956556"
   },
-  {
-    "title": "PT. Supra Jaya Abadi - Ahass 06958",
+    {
+    "title": "PT.supra Jaya Abadi - Ahass 06958",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.53777,98.68783&travelMode=motorcycle",
-    "box-address": "JL. Tritura, Titik Kuning, Kota Medan",
+    "box-address": "JL. TRITURA",
+    "box-city": "Titi Kuning,",
+    "box-city (2)": "Kota Medan,",
     "content": "061-7883011"
   },
-  {
-    "title (2)": "PT. Sumber Perintis Jaya I",
+    {
+    "title (2)": "PT.sumber Perintis Jaya I",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.42564,98.90383&travelMode=motorcycle",
-    "box-address (2)": "JL. Perintis Kemerdekaan No. 18, Galang Kota, Kab. Deli Serdang",
+    "box-address (2)": "JL. PERINTIS KEMERDEKAAN NO. 18",
+    "box-city (4)": "Galang Kota,",
+    "box-city (5)": "Kab. Deli Serdang,",
     "content (2)": "061-7980527"
   },
-  {
+    {
     "title (3)": "Cv Mitra Makmur Ii",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.16732,99.41762&travelMode=motorcycle",
-    "box-address (3)": "JL. MEDAN - KISARAN NO. 4 - 5, Lima Puluh Kota, Kab. Batu Bara",
+    "box-address (3)": "JL. MEDAN - KISARAN NO. 4 - 5",
+    "box-city (7)": "Lima Puluh Kota,",
+    "box-city (8)": "Kab. Batu Bara,",
     "content (3)": "0852-96494533"
   },
-  {
+    {
     "title": "Honda Daya Motor Binjai (official)",
     "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.62379,98.50459&travelMode=motorcycle",
-    "box-address": "JL. T. AMIR HAMZAH NO. 218 - 220, Nangka, Kota Binjai",
-    "content": "061-42364134"
-  },
-  {
+    "box-address": "JL. T. AMIR HAMZAH NO. 218 - 220",
+    "box-city": "Nangka,",
+    "box-city (2)": "Kota Binjai,",
+    "content": "061-42364134",
+
     "title (2)": "PT. Prima Agung Motorindo",
     "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.712535,98.661049&travelMode=motorcycle",
-    "box-address (2)": "JL. TITI PAHLAWAN NO. 43 - 49, Paya Pasir, Kota Medan",
-    "content (2)": "061-42364134"
-  },
-  {
+    "box-address (2)": "JL. TITI PAHLAWAN NO. 43 - 49",
+    "box-city (4)": "Paya Pasir,",
+    "box-city (5)": "Kota Medan,",
+    "content (2)": "061-42364134",
+
     "title (3)": "PT. Kencana Abadi Mulia Ii",
     "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=0.56647,97.81948&travelMode=motorcycle",
-    "box-address (3)": "JL. AHMAD YANI NO. 58, PASAR TELUK DALAM, Kab. Nias Selatan",
+    "box-address (3)": "JL. AHMAD YANI NO. 58, TELUK DALAM",
+    "box-city (7)": "Pasar Teluk Dalam,",
+    "box-city (8)": "Kab. Nias Selatan,",
     "content (3)": "0812-64023554"
   }
 ]
