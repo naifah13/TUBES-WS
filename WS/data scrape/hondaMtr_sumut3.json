@@ -3,16 +3,16 @@
     "namaShowroom": "PT. Berlian Bintang Mas",
     "merek": "Dealer Honda",
     "alamat": "Pasar 9 JALAN RAYA TEMBUNG NO.9, HUTAN, KEC. PERCUT SEI TUAN",
-    "jamOperasional": "08.00 - 17.00",
+    "jamOperasional": "08.30 - 17.00",
     "noTelepon": "0812-6345-6236",
     "rating": "4.8",
     "berlokasiDi": "Kab. Deli Serdang"
   },
   {
-    "namaShowroom": "Indako Trading Co. Krakatau",
+    "namaShowroom": "Indako Trading Coy - Krakatau",
     "merek": "Dealer Honda",
     "alamat": "Jl. Gunung Krakatau No.54, Glugur Darat II",
-    "jamOperasional": "08.00 - 17.00",
+    "jamOperasional": "08.30 - 17.00",
     "noTelepon": "0821-8161-9122",
     "rating": "4.5",
     "berlokasiDi": "Kota Medan"
@@ -21,7 +21,7 @@
     "namaShowroom": "PT. Sumber Jaya Motor II",
     "merek": "Dealer Honda",
     "alamat": "Jln. Mesjid No.07, Pekan Tj. Pura, Kec. Tj. Pura",
-    "jamOperasional": "08.00 - 17.30",
+    "jamOperasional": "08.30 - 17.30",
     "noTelepon": "0852-7028-7854",
     "rating": "5.0",
     "berlokasiDi": "Kab. Langkat"
@@ -84,7 +84,7 @@
     "namaShowroom": "PT. Anugerah Karya Abiwara III",
     "merek": "Dealer Honda",
     "alamat": "JL. LINTAS SUMATERA, INDRAPURA, KEC. AIR PUTIH",
-    "jamOperasional": "08.00 - 16.00",
+    "jamOperasional": "08.30 - 17.30",
     "noTelepon": "0813-6791-3803",
     "rating": "4.8",
     "berlokasiDi":"Kab. Batu Bara"
@@ -93,7 +93,7 @@
     "namaShowroom": "CV. Honda Kita",
     "merek": "Dealer Honda",
     "alamat": "JL. BINJAI - STABAT, KP. TANDAM HULU SATU, KEC. HAMPARAN PERAK",
-    "jamOperasional": "08.00 - 17.00",
+    "jamOperasional": "08.30 - 17.00",
     "noTelepon": "061-8829604",
     "rating": "4.9",
     "berlokasiDi":"Kab. Deli Serdang"
