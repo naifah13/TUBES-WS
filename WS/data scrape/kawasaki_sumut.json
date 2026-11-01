@@ -1,56 +1,83 @@
 [
   {
-    "headFive": "CV. DWI EKA SAKTI",
-    "pTwo": "JL. RIAU NO. 32 - 32A PEKANBARU",
-    "pTwo (2)": "PEKAN BARU, SUMATERA UTARA",
-    "pTwo (3)": "0761-854538"
+    "namaShowroom": "CV. DWI EKA SAKTI",
+    "merek": "Kawasaki",
+    "alamat": "JL. RIAU NO. 32 - 32A PEKANBARU",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "+622147483647",
+    "rating": "4.8",
+    "berlokasiDi": "Pekanbaru"
   },
   {
-    "headFive": "KAWASAKI PLATINUM",
-    "pTwo": "JL. SM RAJA NO.215 KISARAN",
-    "pTwo (2)": "KISARAN, SUMATERA UTARA",
-    "pTwo (3)": "0623-44773"
+    "namaShowroom": "KAWASAKI PLATINUM",
+    "merek": "Kawasaki",
+    "alamat": "JL. SM RAJA NO.215 KISARAN",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0623-44773",
+    "rating": "4.5",
+    "berlokasiDi": "Kisaran"
   },
   {
-    "headFive": "OTOTREND",
-    "pTwo": "JL. BAKAR BATU NO. 55 B TANJUNG PINANG",
-    "pTwo (2)": "TANJUNG PINANG, SUMATERA UTARA",
-    "pTwo (3)": "0771-318330"
+    "namaShowroom": "OTOTREND",
+    "merek": "Kawasaki",
+    "alamat": "JL. BAKAR BATU NO. 55 B TANJUNG PINANG",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0771-318330",
+    "rating": "4.7",
+    "berlokasiDi": "Tanjung Pinang"  
   },
   {
-    "headFive": "PT. MEGANUSA SEMESTA",
-    "pTwo": "JL. JEND. GATOT SUBROTO NO. 198A MEDAN",
-    "pTwo (2)": "MEDAN, SUMATERA UTARA",
-    "pTwo (3)": "061-4155678"
+    "namaShowroom": "PT. MEGANUSA SEMESTA",
+    "merek": "Kawasaki",
+    "alamat": "JL. JEND. GATOT SUBROTO NO. 198A MEDAN",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-4155678",
+    "rating": "4.6",
+    "berlokasiDi": "Medan"
   },
   {
-    "headFive": "PT. MEGANUSA SEMESTA",
-    "pTwo": "JL. SULTAN ISKANDAR MUDA NO. 37 MEDAN",
-    "pTwo (2)": "MEDAN, SUMATERA UTARA",
-    "pTwo (3)": "061-4532759"
+    "namaShowroom": "PT. MEGANUSA SEMESTA",
+    "merek": "Kawasaki",
+    "alamat": "JL. SULTAN ISKANDAR MUDA NO. 37 MEDAN",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-4532759",
+    "rating": "4.9",
+    "berlokasiDi": "Medan"
   },
   {
-    "headFive": "PT. MEGANUSA SEMESTA",
-    "pTwo": "JL. DR. IR .T. MOH. HASAN NO.21 ABC KOTA BANDA ACEH",
-    "pTwo (2)": "ACEH, SUMATERA UTARA",
-    "pTwo (3)": "0651-8016171"
+    "namaShowroom": "PT. MEGANUSA SEMESTA",
+    "merek": "Kawasaki",
+    "alamat": "JL. DR. IR .T. MOH. HASAN NO.21 ABC KOTA BANDA ACEH",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0651-8016171",
+    "rating": "4.8",
+    "berlokasiDi": "Banda Aceh"
   },
   {
-    "headFive": "UD. AGUNG MOTOR",
-    "pTwo": "JL. ADE IRMA SURYANI NO.1 B PEMATANG SIANTAR",
-    "pTwo (2)": "PEMATANG SIANTAR, SUMATERA UTARA",
-    "pTwo (3)": "0622-24793"
+    "namaShowroom": "UD. AGUNG MOTOR",
+    "merek": "Kawasaki",
+    "alamat": "JL. ADE IRMA SURYANI NO.1 B PEMATANG SIANTAR",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0622-24793",
+    "rating": "4.7",
+    "berlokasiDi": "Pematang Siantar"
   },
   {
-    "headFive": "UD. KAWASAKI BERJAYA MOTOR",
-    "pTwo": "JL. SUTOMO NO. 29 - 31 BINJAI",
-    "pTwo (2)": "BINJAI, SUMATERA UTARA",
-    "pTwo (3)": "061-8828382"
+    "namaShowroom": "UD. KAWASAKI BERJAYA MOTOR",
+    "merek": "Kawasaki",
+    "alamat": "JL. SUTOMO NO. 29 - 31 BINJAI",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "061-8828382",
+    "rating": "4.6",
+    "berlokasiDi": "Binjai"
   },
   {
-    "headFive": "UD. MATAHARI MOTOR",
-    "pTwo": "JL. JENDRAL AHMAD YANI, NO. 55 RANTAU PRAPAT",
-    "pTwo (2)": "RANTAU PRAPAT, SUMATERA UTARA",
-    "pTwo (3)": "0624-325983"
+    "namaShowroom": "UD. MATAHARI MOTOR",
+    "merek": "Kawasaki",
+    "alamat": "JL. JENDRAL AHMAD YANI, NO. 55 RANTAU PRAPAT",
+    "jamOperasional": "08.00-17.00",
+    "noTelepon": "0624-325983",
+    "rating": "4.8",
+    "berlokasiDi": "Rantau Prapat"
   }
 ]

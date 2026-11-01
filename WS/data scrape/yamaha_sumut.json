@@ -1,178 +1,200 @@
 [
   {
-    "dealer-name": "CV. HORAS ABADI MOTOR",
-    "dealer-address": "JL. JEND. SUDIRMAN NO. 20 INDRAPURA, KAB. BATU BARA, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00 SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20BATU%20BARA&dealer=FB00482",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20BATU%20BARA&dealer=FB00482"
+    "namaShowroom": "CV. HORAS ABADI MOTOR",
+    "merek": "Yamaha",
+    "alamat": "Jl. Jenderal Sudirman No. 20, Indrapura, Kecamatan Air Putih, Kabupaten Batu Bara, Sumatera Utara",
+    "jamOperasional": "08.00-17:00",
+    "noTelepon": "0852-6155-3184",
+    "rating": "4.7",
+    "berlokasiDi": "Batu Bara"
   },
   {
-    "dealer-name": "FAJAR MOTOR",
-    "dealer-address": "JL. THAMRIN NO. 14 SIMPANG TIGA TANGSI, KAB. LANGKAT, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00\nSERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LANGKAT&dealer=FB00002",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LANGKAT&dealer=FB00002"
+    "namaShowroom": "FAJAR MOTOR",
+    "merek": "Yamaha",
+    "alamat": "JL. THAMRIN NO. 14 SIMPANG TIGA TANGSI, KAB. LANGKAT",
+    "jamOperasional": "08.00-17:00",
+    "noTelepon": "+62620322081",
+    "rating": "4.7",
+    "berlokasiDi": "Langkat"
   },
   {
-    "dealer-name": "EXPO MOTOR",
-    "dealer-address": "JL. S. M RAJA NO. 529/ 531, PERDAGANGAN, KAB. SIMALUNGUN, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00\nSERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20SIMALUNGUN&dealer=FB00019",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20SIMALUNGUN&dealer=FB00019"
+    "namaShowroom": "EXPO MOTOR",
+    "merek": "Yamaha",
+    "alamat": "Jl. Sisingamangaraja No. 529–531, Sei Mangkei, Kecamatan Bosar Maligas, Kabupaten Simalungun, Sumatera Utara 21184.",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0813-7579-0099",
+    "rating": "4.3",
+    "berlokasiDi": "Simalungun"
   },
   {
-    "dealer-name": "SUN BERLIAN MOTOR",
-    "dealer-address": "JL. JEND. A. YANI NO. 19-21-23, KAB. LABUHAN BATU, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00 SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LABUHAN%20BATU&dealer=FB00023",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LABUHAN%20BATU&dealer=FB00023"
+    "namaShowroom": "SUN BERLIAN MOTOR",
+    "merek": "Yamaha",
+    "alamat": "JL. JEND. A. YANI NO. 19-21-23, KAB. LABUHAN BATU",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "+6262429525",
+    "rating": "4.2",
+    "berlokasiDi": "Labuhan Batu"
   },
   {
-    "dealer-name": "ALFA SCORPII BINJAI",
-    "dealer-address": "JL. T. AMIR HAMZAH NO. 38, KAB. LANGKAT, SHOWROOM  : Senin - Sabtu: 08:00 ~ 17:00 SERVICE  : Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Sabtu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LANGKAT&dealer=FBFF002",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LANGKAT&dealer=FBFF002"
+    "namaShowroom": "ALFA SCORPII BINJAI",
+    "merek": "Yamaha",
+    "alamat": "Jl. Tengku Amir Hamzah No.38, Nangka, Kec. Binjai Utara, Kota Binjai, Sumatera Utara 20741",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0822-7788-7084",
+    "rating": "4.5",
+    "berlokasiDi": "Binjai"
   },
   {
-    "dealer-name": "SJKM BINJAI",
-    "dealer-address": "JL. SULTAN HASANUDDIN KEL. SATRIA, KOTA BINJAI, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20BINJAI&dealer=9FM015",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20BINJAI&dealer=9FM015"
+    "namaShowroom": "SJKM BINJAI",
+    "merek": "Yamaha",
+    "alamat": "Jl. Sultan Hasanuddin No.57, Kartini, Kec. Binjai Kota, Kota Binjai, Sumatera Utara 20741",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0811-6524-588",
+    "rating": "5.0",
+    "berlokasiDi": "Binjai"
   },
   {
-    "dealer-name": "SHALOM A.P.",
-    "dealer-address": "JL. DIPONEGORO NO. 131 KEL. ILIR (DEPAN TOKO MARDIANA), KOTA GUNUNGSITOLI, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00\nSERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20GUNUNGSITOLI&dealer=9FM003",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20GUNUNGSITOLI&dealer=9FM003"
+    "namaShowroom": "PT. SHALOM ANUGERAH PERKASA",
+    "merek": "Yamaha",
+    "alamat": "JL. DIPONEGORO NO. 131 KEL. ILIR (DEPAN TOKO MARDIANA), KOTA GUNUNGSITOLI",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0813-7710-5010",
+    "rating": "4.8",
+    "berlokasiDi": "Gunungsitoli"
   },
   {
-    "dealer-name": "GRAHA GUNUNG TUA",
-    "dealer-address": "JL. SISINGAMARAJA LINGKUNGAN I , KEL PASAR GUNUNG TUA, KAB. PADANG LAWAS UTARA, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20PADANG%20LAWAS%20UTARA&dealer=FB00029",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20PADANG%20LAWAS%20UTARA&dealer=FB00029"
+    "namaShowroom": "GRAHA YAMAHA AUTO PRATAMA",
+    "merek": "Yamaha",
+    "alamat": "JL. SISINGAMARAJA LINGKUNGAN I , KEL PASAR GUNUNG TUA, KAB. PADANG LAWAS UTARA",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0812-6555-2112",
+    "rating": "5.0",
+    "berlokasiDi": "Padang Lawas Utara"
   },
   {
-    "dealer-name": "DUNIA SAKTI",
-    "dealer-address": "JL. IMAM BONJOL NO. 200 - KISARAN, KAB. ASAHAN, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20ASAHAN&dealer=FB00011",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20ASAHAN&dealer=FB00011"
+    "namaShowroom": "DUNIA SAKTI",
+    "merek": "Yamaha",
+    "alamat": "Jl. Imam Bonjol No. 199–202, Kisaran Kota, Kecamatan Kota Kisaran Timur, Kabupaten Asahan, Sumatera Utara 21211",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0852-7096-6063",
+    "rating": "4.3",
+    "berlokasiDi": "Asahan"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII PERBAUNGAN",
-    "dealer-address": "JL. MEDAN TEBING TINGGI, KAB. SERDANG BEDAGAI, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20SERDANG%20BEDAGAI&dealer=FBFF005",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20SERDANG%20BEDAGAI&dealer=FBFF005"
+    "namaShowroom": "PT. ALFA SCORPII PERBAUNGAN",
+    "merek": "Yamaha",
+    "alamat": "Jl. Medan - Tebing Tinggi, Desa Kota Galuh, Kecamatan Perbaungan, Kabupaten Serdang Bedagai, Sumatera Utara 20586",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "061-7990499",
+    "rating": "4.7",
+    "berlokasiDi": "Serdang Bedagai"
   },
   {
-    "dealer-name": "CV. DELI MITRA LESTARI",
-    "dealer-address": "JL. JEND. SUDIRMAN NO. 389 TEBING TINGGI, KOTA TEBING TINGGI, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20TEBING%20TINGGI&dealer=FBFB001",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20TEBING%20TINGGI&dealer=FBFB001"
+    "namaShowroom": "CV. DELI MITRA LESTARI",
+    "merek": "Yamaha",
+    "alamat": "JL. JEND. SUDIRMAN NO. 389 TEBING TINGGI, KOTA TEBING TINGGI",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0851-8553-9288",
+    "rating": "4.8",
+    "berlokasiDi": "Tebing Tinggi"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII RANTAU PRAPAT",
-    "dealer-address": "JL. S.M RAJA 165 GHUJK RANTAU PRAPAT, KAB. LABUHAN BATU, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LABUHAN%20BATU&dealer=FBFF001",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LABUHAN%20BATU&dealer=FBFF001"
+    "namaShowroom": "PT. ALFA SCORPII RANTAU PRAPAT",
+    "merek": "Yamaha",
+    "alamat": "JL. S.M RAJA 165 GHUJK RANTAU PRAPAT, KAB. LABUHAN BATU",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0821-6069-0372",
+    "rating": "4.9",
+    "berlokasiDi": "Labuhan Batu"
   },
   {
-    "dealer-name": "CV. SANGGUP MOTOR",
-    "dealer-address": "JL. MERDEKA NO. 315 A/B, P. SIANTAR, KOTA PEMATANG SIANTAR, SHOWROOM  : Senin - Sabtu: 08:00 ~ 17:00, SERVICE  : Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Sabtu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20PEMATANG%20SIANTAR&dealer=FB00009",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20PEMATANG%20SIANTAR&dealer=FB00009"
+    "namaShowroom": "CV. SANGGUP REZEKI MOTOR",
+    "merek": "Yamaha",
+    "alamat": "JL. MERDEKA NO. 315 A/B, P. SIANTAR, KOTA PEMATANG SIANTAR",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0813-7502-8360",
+    "rating": "4.5",
+    "berlokasiDi": "Pematang Siantar"
   },
   {
-    "dealer-name": "ASLI MOTOR SIANTAR",
-    "dealer-address": "JL. SANGNAWALUH KMP. MEGALAND NO. 36-37, KOTA PEMATANG SIANTAR, SHOWROOM  : Senin - Sabtu: 08:00 ~ 17:00, SERVICE  : Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Sabtu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20PEMATANG%20SIANTAR&dealer=FB00385",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20PEMATANG%20SIANTAR&dealer=FB00385"
+    "namaShowroom": "ASLI MOTOR SIANTAR",
+    "merek": "Yamaha",
+    "alamat": "JL. SANGNAWALUH KMP. MEGALAND NO. 36-37, KOTA PEMATANG SIANTAR",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0852-6294-0086",
+    "rating": "4.8",
+    "berlokasiDi": "Pematang Siantar"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII PEMATANG SIANTAR",
-    "dealer-address": "JL. JEND A YANI NO 5, KOTA PEMATANG SIANTAR, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20PEMATANG%20SIANTAR&dealer=9F0006",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20PEMATANG%20SIANTAR&dealer=9F0006"
+    "namaShowroom": "PT. ALFA SCORPII PEMATANG SIANTAR",
+    "merek": "Yamaha",
+    "alamat": "JL. JEND A YANI NO 5, KOTA PEMATANG SIANTAR",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0622-434866",
+    "rating": "4.9",
+    "berlokasiDi": "Pematang Siantar"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII SIBOLGA",
-    "dealer-address": "JL. BRIG. KATAMSO NO 7C-D, KOTA SIBOLGA, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KOTA%20SIBOLGA&dealer=9FM007",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KOTA%20SIBOLGA&dealer=9FM007"
+    "namaShowroom": "PT. ALFA SCORPII SIBOLGA",
+    "merek": "Yamaha",
+    "alamat": "JL. BRIG. KATAMSO NO 7C-D, KOTA SIBOLGA",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0812-6229-8618",
+    "rating": "4.9",
+    "berlokasiDi": "Sibolga"
   },
   {
-    "dealer-name": "CHAMPION MOTOR",
-    "dealer-address": "JL. H. Z. ARIFIN NO. 29 - STABAT, KAB. LANGKAT, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LANGKAT&dealer=FB00001",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LANGKAT&dealer=FB00001"
+    "namaShowroom": "CHAMPION MOTOR",
+    "merek": "Yamaha",
+    "alamat": "JL. H. Z. ARIFIN NO. 29 - STABAT, KAB. LANGKAT",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0822-7511-5151",
+    "rating": "4.8",
+    "berlokasiDi": "Langkat"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII TANJUNG MORAWA",
-    "dealer-address": "JL. PERINTIS KEMERDEKAAN, KAB. DELI SERDANG, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20DELI%20SERDANG&dealer=FBFF004",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20DELI%20SERDANG&dealer=FBFF004"
+    "namaShowroom": "PT. ALFA SCORPII TANJUNG MORAWA",
+    "merek": "Yamaha",
+    "alamat": "JL. PERINTIS KEMERDEKAAN NO. 181 A, TANJUNG MORAWA, KAB. DELI SERDANG",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "061-7946966",
+    "rating": "4.9",
+    "berlokasiDi": "Deli Serdang"
   },
   {
-    "dealer-name": "TATA MOTOR",
-    "dealer-address": "JL. S.M RAJA NO. 177, TARUTUNG, KAB. TAPANULI UTARA, SHOWROOM  : Senin - Sabtu: 08:00 ~ 17:00, SERVICE  : : ~",
-    "dealer-address-span": "Senin - Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": ": ~",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20TAPANULI%20UTARA&dealer=FB00016",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20TAPANULI%20UTARA&dealer=FB00016"
+    "namaShowroom": "TATA MOTOR",
+    "merek": "Yamaha",
+    "alamat": "JL. S.M RAJA NO. 189, HUTATORUAN VI, KEC. TARUTUNG, KAB. TAPANULI UTARA",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0821-2318-5926",
+    "rating": "5.0",
+    "berlokasiDi": "Tapanuli Utara"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII BALIGE",
-    "dealer-address": "JL. SIBORONG-BORONGSIBOLA HOTANGSAS, KAB. TOBA SAMOSIR, SHOWROOM  : Senin - Sabtu: 08:00 ~ 17:00, SERVICE  : Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Sabtu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Sabtu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20TOBA%20SAMOSIR&dealer=9FM017",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20TOBA%20SAMOSIR&dealer=9FM017"
+    "namaShowroom": "PT. ALFA SCORPII BALIGE",
+    "merek": "Yamaha",
+    "alamat": "JL. SIBORONG-BORONG SIBOLAHOTANG SAS, KAB. TOBA SAMOSIR",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0822-7641-3964",
+    "rating": "4.9",
+    "berlokasiDi": "Balige"
   },
   {
-    "dealer-name": "PT. ALFA SCORPII BERASTAGI",
-    "dealer-address": "JLN. JAMIN GINTING NO. 32UJUNG AJI BERASTAGI KARO, KAB. KARO, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20KARO&dealer=9FM020",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20KARO&dealer=9FM020"
+    "namaShowroom": "PT. ALFA SCORPII BERASTAGI",
+    "merek": "Yamaha",
+    "alamat": "JLN. JAMIN GINTING NO. 32 UJUNG AJI BERASTAGI KARO, KAB. KARO",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0812-6393-0004",
+    "rating": "4.6",
+    "berlokasiDi": "Berastagi"
   },
   {
-    "dealer-name": "ALFA SCORPII - KAMPUNG PAJAK",
-    "dealer-address": "JL. LINTAS SUMATERA, DESAKP. PAJAK/PULO JANTAN, KAB. LABUHAN BATU UTARA, SHOWROOM  : Senin - Minggu: 08:00 ~ 17:00, SERVICE  : Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-address-span (2)": "Senin - Minggu: 08:00 ~ 17:00",
-    "dealer-card-btn href (2)": "https://www.yamaha-motor.co.id/consultation/?city=KAB.%20LABUHAN%20BATU%20UTARA&dealer=9FM016",
-    "dealer-card-btn href (3)": "https://www.yamaha-motor.co.id/service/booking/?city=KAB.%20LABUHAN%20BATU%20UTARA&dealer=9FM016"
+    "namaShowroom": "ALFA SCORPII - KAMPUNG PAJAK",
+    "merek": "Yamaha",
+    "alamat": "JL. LINTAS SUMATERA, DESA KP. PAJAK/PULO JANTAN, KAB. LABUHAN BATU UTARA",
+    "jamOperasional": "08:00-17:00",
+    "noTelepon": "0823-7942-9794",
+    "rating": "4.8",
+    "berlokasiDi": "Labuhan Batu Utara"
   }
 ]

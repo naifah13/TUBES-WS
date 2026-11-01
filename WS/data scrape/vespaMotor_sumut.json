@@ -1,12 +1,21 @@
 [
   {
-    "nama_toko": "VESPARK Indonesia",
+    "namaShowroom": "VESPARK Indonesia",
+    "merek": "Vespa",
     "alamat": "Jl. Prof. H. M. Yamin No.16A, Gg. Buntu, Kec. Medan Timur, Kota Medan, Sumatera Utara 20231",
-    "nomor_telepon": "+62 61 4565454"
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "+62 61 4565454",
+    "rating": "4.7",
+    "berlokasiDi": "Medan"
+
   },
   {
     "nama_toko": "Motoplex Piaggio Vespa Aprilia Moto Guzzi Medan",
+    "merek": "Vespa",
     "alamat": "No. 35 BCD Jln. Gagak Hitam (Ringroad), Simpang Jl. Bunga Asoka, Asam Kumbang, Kec. Medan Selayang, Kota Medan, Sumatera Utara 20133",
-    "nomor_telepon": "+62 61 42578899"
+    "noTelepon": "+62 61 42578899",
+    "jamOperasional": "08.00 - 17.00",
+    "rating": "4.8",
+    "berlokasiDi": "Medan"
   }
 ]
