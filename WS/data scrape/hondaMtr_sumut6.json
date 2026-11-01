@@ -1,74 +1,110 @@
 [
   {
-    "title": "PT Anugrah Multi Jaya Aek Loba - 07610",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.65582,99.62991&travelMode=motorcycle",
-    "box-address": "JL. LINTAS SUMATERA 8-9 , AEK LOBA PEKAN, KAB. ASAHAN",
-    "content": "062-351225"
+    "namaShowroom": "PT Anugrah Multi Jaya Aek Loba - 07610",
+    "merek": "Dealer Honda",
+    "alamat": "JL. LINTAS SUMATERA 8 , AEK LOBA PEKAN",
+    "jamOperasional": "08.30 - 17.30",
+    "noTelepon": "062-351225",
+    "rating": "5.0",
+    "berlokasiDi": "Kab. Asahan"
   },
   {
-    "title (2)": "Setia Motor Berastagi",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.19528,98.50917&travelMode=motorcycle",
-    "box-address (2)": "JL.VETERAN NO.3, BERASTAGI, TAMBAK LAU MULGAP I, KAB. KARO",
-    "content (2)": "062-891974"
+    "namaShowroom": "Setia Motor Berastagi",
+    "merek": "Dealer Honda",
+    "alamat": "JL.VETERAN NO.4, BERASTAGI, TAMBAK LAU MULGAP I",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0853-5581-6091",
+    "rating": "4.8",
+    "berlokasiDi": "Kab. Karo"
   },
   {
-    "title (3)": "Cv. Mitra Honda Motor",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.73995,98.78138&travelMode=motorcycle",
-    "box-address (3)": "JL. DIPONEGORO NO. 16, SIBOLGA, PANCURAN GEROBAK, KOTA SIBOLGA",
-    "content (3)": "063-13270455"
+    "namaShowroom": "Cv. Mitra Honda Motor",
+    "merek": "Dealer Honda",
+    "alamat": "JL. DIPONEGORO NO. 16, SIBOLGA, PANCURAN GEROBAK",
+    "jamOperasional": "08.00 - 18.00",
+    "noTelepon": "0812-6939-977",
+    "rating": "4.6",
+    "berlokasiDi": "Kota Sibolga"
   },
   {
-    "title": "PT Sukses Motor Globalindo",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.52388,98.61996&travelMode=motorcycle",
-    "box-address": "JL. SETIA BUDI UJUNG KOMP. CITRA 8-10, SEMPAKATA, KOTA MEDAN",
-    "content": "0812-63641177"
+    "namaShowroom": "PT Sukses Motor Globalindo",
+    "merek": "Dealer Honda",
+    "alamat": "JL. SETIA BUDI NO. 8-10, SIMPANG SELAYANG, KEC. MEDAN TUNTUNGAN",
+    "jamOperasional": "08.30 - 17.00",
+    "noTelepon": "0812-6364-1177",
+    "rating": "4.8",
+    "berlokasiDi": "Kota Medan"
   },
   {
-    "title (2)": "Garuda Mas Motor",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60832,98.50129&travelMode=motorcycle",
-    "box-address (2)": "JL. SOEKARNO HATTA NO. 92 KM. 21, DATARAN TINGGI, KOTA BINJAI",
-    "content (2)": "061-8823593"
+    "namaShowroom": "Garuda Mas Motor",
+    "merek": "Dealer Honda",
+    "alamat": "JL. SOEKARNO HATTA NO. 92 , DATARAN TINGGI, KEC. BINJAI TIMUR",
+    "jamOperasional": "08.00 - 17.30",
+    "noTelepon": "0823-6828-9639",
+    "rating": "4.9",
+    "berlokasiDi": "Kota Binjai"
   },
   {
-    "title (3)": "PT. Indako Trading Coy P.sidempuan",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.38039,99.27425&travelMode=motorcycle",
-    "box-address (3)": "JL. SM. RAJA NO. 77, TANJUNG AGUNG, KOTA PADANGSIDIMPUAN",
-    "content (3)": "063-428899"
+    "namaShowroom": "PT. Indako Trading Coy P.sidempuan",
+    "merek": "Dealer Honda",
+    "alamat": "JL. SM. RAJA NO. 77, KEC. PADANGSIDIMPUAN SELATAN",
+    "jamOperasional": "08.30 - 17.00",
+    "noTelepon": "0822-1146-4437",
+    "rating": "5.0",
+    "berlokasiDi": "Kota Padangsidimpuan"
   },
   {
-    "title": "PT.groliar Mentari Wisesa ( Showroom & Bengkel Resmi Sepeda Motor Honda)",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.75815,98.4517&travelMode=motorcycle",
-    "box-address": "JL. KHZ. ARIFIN NO. 9 ABCD, STABAT BARU,KAB. LANGKAT",
-    "content": "061-8912959"
+    "namaShowroom": "PT.groliar Mentari Wisesa ( Showroom & Bengkel Resmi Sepeda Motor Honda)",
+    "merek": "Dealer Honda",
+    "alamat": "JL. KHZ. ARIFIN NO. 9, STABAT BARU, KEC. STABAT",
+    "jamOperasional": "08.30 - 17.00",
+    "noTelepon": "0812-6431-9537",
+    "rating": "4.8",
+    "berlokasiDi": "Kab. Langkat"
   },
   {
-    "title (2)": "PT. Pilar Deli Labu Mas I/beringin",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.62241,98.88908&travelMode=motorcycle",
-    "box-address (2)": "JL. BESAR BERINGIN NO. 93, BERINGIN, KAB. DELI SERDANG",
-    "content (2)": "061-7957290"
+    "namaShowroom": "PT. Pilar Deli LabuMas",
+    "merek": "Dealer Honda",
+    "alamat": "JL. BESAR BERINGIN NO. 39, SIDODADI RAMUNIA, KEC. BERINGIN",
+    "jamOperasional": "08.30 - 17.00",
+    "noTelepon": "0821-6925-023",
+    "rating": "5.0",
+    "berlokasiDi": "Kab. Deli Serdang"
   },
   {
-    "title (3)": "Cv. Panca Prima Abadi Ii Sei Piring",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.72122,99.60981&travelMode=motorcycle",
-    "box-address (3)": "JL. LINTAS SUMATERA NO. 88, MEKAR SARI, KAB. ASAHAN",
-    "content (3)": "0623-355564"
+    "namaShowroom": "Cv. Panca Prima Abadi Ii Sei Piring",
+    "merek": "Dealer Honda",
+    "alamat": "JL. PERINTIS KEMERDEKAAN NO. 88, SUNGAI PIRING, KEC. PULAU RAKYAT",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0852-6139-6533",
+    "rating": "5.0",
+    "berlokasiDi": "Kab. Asahan"
   },
   {
-    "title": "PT. Indako Trading Coy",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.298,99.74363&travelMode=motorcycle",
-    "box-address": "JL. BESAR KAMPUNG PAJAK, KAMPUNG PAJAK, KAB. LABUHAN BATU UTARA",
-    "content": "0812-60003534"
+    "namaShowroom": "PT. Indako Trading Coy",
+    "merek": "Dealer Honda",
+    "alamat": "JL. SISINGAMANGARAJA NO. 362, SITI REJO I, KEC. MEDAN KOTA",
+    "jamOperasional": "07.30 - 18.00",
+    "noTelepon": "0823-6390-5629",
+    "rating": "4.6",
+    "berlokasiDi": "Kota Medan"
   },
   {
-    "title (2)": "Indako Cikampak",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.78762,100.20062&travelMode=motorcycle",
-    "box-address (2)": "JL. BESAR PEKAN CIKAMPAK, AEK BATU, KAB. LABUHAN BATU SELATAN",
-    "content (2)": "062-44970509"
+    "namaShowroom": "Indako Cikampak",
+    "merek": "Dealer Honda",
+    "alamat": "JL. BESAR PEKAN CIKAMPAK, AEK BATU",
+    "jamOperasional": "08.30 - 17.00",
+    "noTelepon": "0813-7332-465",
+    "rating": "4.9",
+    "berlokasiDi": "Kab. Labuhan Batu Selatan"
   },
   {
-    "title (3)": "Dealer Honda Buana Jaya Lestari",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.59938,98.58529&travelMode=motorcycle",
-    "box-address (3)": "JL. MEDAN - BINJAI KM. 11,2, PUJI MULYO, KAB. DELI SERDANG",
-    "content (3)": "061-8461227"
+    "namaShowroom": "Dealer Honda Buana Jaya Lestari",
+    "merek": "Dealer Honda",
+    "alamat": "JL. MEDAN - BINJAI NO. 11,2, PAYA GELI, SUNGGAL",
+    "jamOperasional": "08.00 - 17.00",
+    "noTelepon": "0813-6651-9772",
+    "rating": "4.7",
+    "berlokasiDi": "Kab. Deli Serdang"
   }
 ]
