@@ -1,82 +1,81 @@
 [
   {
     "namaShowroom": "CV. DWI EKA SAKTI",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. RIAU NO. 32 - 32A PEKANBARU",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "+622147483647",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.8",
     "berlokasiDi": "Pekanbaru"
   },
   {
     "namaShowroom": "KAWASAKI PLATINUM",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. SM RAJA NO.215 KISARAN",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0623-44773",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.5",
     "berlokasiDi": "Kisaran"
   },
   {
     "namaShowroom": "OTOTREND",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. BAKAR BATU NO. 55 B TANJUNG PINANG",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0771-318330",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.7",
     "berlokasiDi": "Tanjung Pinang"  
   },
   {
     "namaShowroom": "PT. MEGANUSA SEMESTA",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. JEND. GATOT SUBROTO NO. 198A MEDAN",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-4155678",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.6",
     "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "PT. MEGANUSA SEMESTA",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. SULTAN ISKANDAR MUDA NO. 37 MEDAN",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-4532759",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.9",
     "berlokasiDi": "Medan"
   },
   {
-    "namaShowroom": "PT. MEGANUSA SEMESTA",
-    "merek": "Kawasaki",
-    "alamat": "JL. DR. IR .T. MOH. HASAN NO.21 ABC KOTA BANDA ACEH",
-    "jamOperasional": "08.00-17.00",
-    "noTelepon": "0651-8016171",
-    "rating": "4.8",
-    "berlokasiDi": "Banda Aceh"
-  },
-  {
     "namaShowroom": "UD. AGUNG MOTOR",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. ADE IRMA SURYANI NO.1 B PEMATANG SIANTAR",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0622-24793",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.7",
     "berlokasiDi": "Pematang Siantar"
   },
   {
     "namaShowroom": "UD. KAWASAKI BERJAYA MOTOR",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. SUTOMO NO. 29 - 31 BINJAI",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-8828382",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.6",
     "berlokasiDi": "Binjai"
   },
   {
     "namaShowroom": "UD. MATAHARI MOTOR",
-    "merek": "Kawasaki",
+    "merek": "Dealer Kawasaki",
     "alamat": "JL. JENDRAL AHMAD YANI, NO. 55 RANTAU PRAPAT",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0624-325983",
+    "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.8",
     "berlokasiDi": "Rantau Prapat"
   }

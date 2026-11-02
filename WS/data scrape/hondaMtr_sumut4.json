@@ -5,8 +5,9 @@
     "alamat": "JL. DELI TUA NO. 274 BCDE, Deli Tua",
     "jamOperasional": "08.00 - 17.30",
     "noTelepon": "0812-7300-3357",
+    "website": "https://www.astra-honda.com",
     "rating": "4.8",
-    "berlokasiDi":"Kab. Deli Serdang"
+    "berlokasiDi":"Deli Serdang"
   },
   {
     "namaShowroom": "Cv. Garuda Perkasa Motor",
@@ -14,8 +15,9 @@
     "alamat": "JL. RAJA JUNJUNGAN LUBIS NO. 1 PASAR BARU, SINOLGA KOTA",
     "jamOperasional": "08.30 - 18.00",
     "noTelepon": "0812-7518-6455",
+    "website": "https://www.astra-honda.com",
     "rating": "5.0",
-    "berlokasiDi":"Kota Sibolga"
+    "berlokasiDi":"Sibolga"
   },
   {
     "namaShowroom": "PT. Indako Treding Coy",
@@ -23,8 +25,9 @@
     "alamat": "JL. JEND AHMAD YANI NO.KEL, BAKARAN BATU, KEC. RANTAU SELATAN",
     "jamOperasional": "08.30 - 16.30",
     "noTelepon": "0813-7580-4386",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi":"Kab. Labuhan Batu"
+    "berlokasiDi":"Labuhan Batu"
   },
   {
     "namaShowroom": "Eka Rajawali Andalas",
@@ -32,8 +35,9 @@
     "alamat": "JL. SM. RAJA NO. 155, Sidikalang",
     "jamOperasional": "08.15 - 17.15",
     "noTelepon": "0822-7273-9979",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi":"Kab. Dairi"
+    "berlokasiDi":"Dairi"
   },
   {
     "namaShowroom": "CV Medan Baru",
@@ -41,8 +45,9 @@
     "alamat": "JL. S. PARMAN NO. 250, Petisah Hulu ",
     "jamOperasional": "08.00 - 17.00",
     "noTelepon": "0821-2221-8813",
+    "website": "https://www.astra-honda.com",
     "rating": "4.5",
-    "berlokasiDi":"Kota Medan"
+    "berlokasiDi":"Medan"
   },
   {
     "namaShowroom": "PT. Anugerah Karya Abiwara II Tanjung Balai",
@@ -50,8 +55,9 @@
     "alamat": "JL. PAHLAWAN NO. 54 - 56, Pantai Burung, Tanjung Balai Selatan",
     "jamOperasional": "08.30 - 17.30",
     "noTelepon": "0813-6203-688",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi":"Kota Tanjung Balai"
+    "berlokasiDi":"Tanjung Balai"
   },
   {
     "namaShowroom": "CV. Pandu Mitra Motor",
@@ -59,8 +65,9 @@
     "alamat": "JL. SM. RAJA, Psr Siborong Borong ",
     "jamOperasional": "08.00 - 18.00",
     "noTelepon": " 0821-8131-4573",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi":"Kab. Tapanuli Utara"
+    "berlokasiDi":"Tapanuli Utara"
   },
   {
     "namaShowroom": "Cv. Panca Prima Abadi",
@@ -68,8 +75,9 @@
     "alamat": "JL. HOS COKROAMINOTO NO. 132, Mekar Baru, Kisaran",
     "jamOperasional": "08.30 - 17.30",
     "noTelepon": " 0852-7062-6324 ",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi":"Kab. Asahan"
+    "berlokasiDi":"Asahan"
   },
   {
     "namaShowroom": "PT. Putra Surya Jaya Raya II",
@@ -77,8 +85,9 @@
     "alamat": "JL.KIHAJAR DEWANTARA, LK VI, KELURAHAN Pasar Sibuhuan, BARUMUN",
     "jamOperasional": "08.00 - 17.30",
     "noTelepon": " 0813-6003-9085 ",
+    "website": "https://www.astra-honda.com",
     "rating": "5.0",
-    "berlokasiDi":"Kab. Padang Lawas"
+    "berlokasiDi":"Padang Lawas"
   },
   {
     "namaShowroom": "Setia Motor",
@@ -86,8 +95,9 @@
     "alamat": "JL. MARIAM GINTING NO. 55, Gung Leto, Kab. Karo",
     "jamOperasional": "09.00 - 17.00",
     "noTelepon": " 0813-6239-6669 ",
+    "website": "https://www.astra-honda.com",
     "rating": "4.7",
-    "berlokasiDi":"Kab. Karo"
+    "berlokasiDi":"Karo"
   },
   {
     "namaShowroom": "PT. Sumber Jaya Motor",
@@ -95,7 +105,8 @@
     "alamat": "JL.WILLIAM ISKANDAR NO. 32, Indra Kasih, Kota Medan",
     "jamOperasional": "08.00 - 17.00",
     "noTelepon": " 0812-6024-3452 ",
+    "website": "https://www.astra-honda.com",
     "rating": "4.7",
-    "berlokasiDi":"Kota Medan"
+    "berlokasiDi":"Medan"
   }
 ]

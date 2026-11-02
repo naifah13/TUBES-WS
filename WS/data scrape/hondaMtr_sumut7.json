@@ -1,123 +1,123 @@
 [
   {
     "namaShowroom": "PT. Kencana Mulia Abadi 3 Sibolga",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.73822,98.7856&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. SM. RAJA NO. 92, Pancuran Gerobak, Sibolga Kota",
     "jamOperasional": "08.15-17.30",
     "noTelepon": "0813-7501-9914",
+    "website": "https://www.astra-honda.com",
     "rating": "4.8",
-    "berlokasiDi": "Kota Sibologa"
+    "berlokasiDi": "Sibologa"
 
   },
   {
     "namaShowroom": "PT.cakra Adi Dharma Negeri Lama",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.31664,100.09217&travelMode=motorcycle",
     "merek":"Dealer Honda",
     "alamat": "JL. BESAR No. 16-18, NEGERI LAMA, Kec. Bilah Hilir",
     "jamOperasional": "08.15-17.00",
     "noTelepon": "062-4551388",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kab. Labuhan Batu"
+    "berlokasiDi": "Labuhan Batu"
   },
   {
     "namaShowroom": "PT. Indako Trading Coy Sibuhuan",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=1.05056,99.75574&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. KI HAJAR DEWANTARA LK. VI, Bangun Raya, Kec. Barumun",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "0822-7353-1461",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kab. Padang Lawas"
+    "berlokasiDi": "Padang Lawas"
   },
   {
     "namaShowroom": "PT. Putra Surya Jaya Raya Iii",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=0.83513,99.56368&travelMode=motorcycle",
     "merek":"Dealer Honda",
     "alamat": "JL. WILLEM ISKANDAR, PANYABUNGAN II, Pidoli Dolok",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "0821-8322-5556",
+    "website": "https://www.astra-honda.com",
     "rating": "5.0",
-    "berlokasiDi": "Kab. Mandailing Natal"
+    "berlokasiDi": "Mandailing Natal"
   },
   {
     "namaShowroom": "PT. Indako Trading Coy",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.61106,98.49515&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. T. AMIR HAMZAH NO. 3, 4, 5, Jatinegara, Kec. Binjai Utara",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "0821-6486-7893",
+    "website": "https://www.astra-honda.com",
     "rating": "4.7",
-    "berlokasiDi": "Kota Binjai"
+    "berlokasiDi": "Binjai"
   },
   {
     "namaShowroom": "PT. Mega Motorindo",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.97705,99.63025&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. IMAM BONJOL NO. 263, Teladan, Kec. Kota Kisaran Timur",
     "jamOperasional": "08.30-17.30",
     "noTelepon": "0813-7018-8954",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kab. Asahan"
+    "berlokasiDi": "Asahan"
   },
   {
     "namaShowroom": "Bintang Utama Motor. PT",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.5581,98.62655&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. GAGAK HITAM NO. 19, Asam Kumbang, Kec. Medan Selayang",
     "jamOperasional": "07.45-18.00",
     "noTelepon": "0812-1616-8268",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Dealer Honda Nusantara Sakti Perbaungan",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.56824,98.96476&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. MEDAN TEBING TINGGI, Kota Galuh, Kec. Perbaungan",
     "jamOperasional": "07.00-19.00",
     "noTelepon": "0813-6666-4875",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kab. Serdang Bedagai"
+    "berlokasiDi": "Serdang Bedagai"
   },
   {
     "namaShowroom": "Nusantara Sakti",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.64012,98.66337&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. KL. YOS SUDARSO NO. 2, KM. 7 LINGKUNGAN 6, Tanjung Mulia Hilir, Kec. Medan Deli",
     "jamOperasional": "07.00-19.00",
     "noTelepon": "0813-6666-4875",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Platina Mulia Abadi",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.71614,98.6345&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. KAPT. RAHMAD BUDIN, Terjun, Kec. Medan Marelan",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0823-7906-9096",
+    "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Honda Daya Motor Medan",
-    "btn href (2)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.62889,98.6952&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. CEMARA NO. 11 C-E, Medan Estate, Sampali, Kec. Percut Sei Tuan",
     "jamOperasional": "07.30-17.30",
     "noTelepon": "0823-4387-2585",
+    "website": "https://www.astra-honda.com",
     "rating": "5.0",
-    "berlokasiDi": "Kab. Deli Serdang"
+    "berlokasiDi": "Deli Serdang"
   },
   {
     "namaShowroom": "Cv Satu Hati Perkasa",
-    "btn href (3)": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=4.01091,98.29307&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. TANJUNG PURA, PELAWI UTARA, KEC. BABALAN",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "0812-6071-4505",
+    "website": "https://www.astra-honda.com",
     "rating": "5.0",
-    "berlokasiDi": "Kab. Langkat"
+    "berlokasiDi": "Langkat"
   }
 ]

@@ -1,13 +1,13 @@
 [
   {
     "namaShowroom": "Indako Pemuda",
-
     "merek": "Dealer Honda",
     "alamat": "JL. PEMUDA NO. 18 D-H Aur",
     "jamOperasional": "08.00-16.00",
     "noTelepon": "061-4556900",
+    "website": "https://www.astra-honda.com",
     "rating": "4,5",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "PT. Pilar Deli Labumas II",
@@ -15,8 +15,9 @@
     "alamat": "JL. SULTAN SERDANG DUSUN VIII Nogorejo",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-80043333",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kab. Deli Serdang"
+    "berlokasiDi": "Deli Serdang"
   },
   {
     "namaShowroom": "PT Indako Trading Coy - Makmur",
@@ -24,8 +25,9 @@
     "alamat": "JL. MAKMUR NO. 114 A / 30 Sei Agul",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-6616225",
+    "website": "https://www.astra-honda.com",
     "rating": "4,5",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Dealer Honda Cv. Mitra Makmur",
@@ -33,8 +35,9 @@
     "alamat": "JL. SM. RAJA NO. 99, PERDAGANGAN, Sei Mangkei",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "062-296041",
+    "website": "https://www.astra-honda.com",
     "rating": "4,8",
-    "berlokasiDi": "Kab. Simalungun"
+    "berlokasiDi": "Simalungun"
   },
   {
     "namaShowroom": "PT Cakra Adi Dharma",
@@ -42,8 +45,9 @@
     "alamat": "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhan Batu",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "062-424333",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kab. Labuhan Batu"
+    "berlokasiDi": "Labuhan Batu"
   },
   {
     "namaShowroom": "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel",
@@ -51,8 +55,9 @@
     "alamat": "JL. JEND. SUDIRMAN NO. 150 - 152, BADAK BEJUANG",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0812-67168776",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kota Tebing Tinggi"
+    "berlokasiDi": "Tebing Tinggi"
   },
   {
     "namaShowroom": "Cv. Antara (dealer Sepeda Motor Honda)",
@@ -60,8 +65,9 @@
     "alamat": "JL. MESJID NO. 126 - 128, Brandan Timur",
     "jamOperasional": "08.15-18.00",
     "noTelepon": "0812-65061818",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kab. Langkat"
+    "berlokasiDi": "Langkat"
   },
   {
     "namaShowroom": "Cv. Benteng Honda Motor",
@@ -69,8 +75,9 @@
     "alamat": "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur",
     "jamOperasional": "08.30-17.30",
     "noTelepon": "061-8464378",
+    "website": "https://www.astra-honda.com",
     "rating": "4,8",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Indah Sakti. Cv",
@@ -78,8 +85,9 @@
     "alamat": "JL. JEND. A. YANI NO. 74 ABC, Kartini",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "062-421387",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kab. Labuhan Batu"
+    "berlokasiDi": "Labuhan Batu"
   },
   {
     "namaShowroom": "Cv Teknik",
@@ -87,8 +95,9 @@
     "alamat": "JL. JEND. A. YANI NO. 142 - 144, Merdeka",
     "jamOperasional": "08.00-18.00",
     "noTelepon": "0622-7551787",
+    "website": "https://www.astra-honda.com",
     "rating": "4,7",
-    "berlokasiDi": "Kota Pematangsiantar"
+    "berlokasiDi": "Pematangsiantar"
   },
   {
     "namaShowroom": "Cv. Aneka Teknik",
@@ -96,8 +105,9 @@
     "alamat": "JL. JEND. SUDIRMAN NO. 48, BINJAI, Kartini",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "061-8821047",
+    "website": "https://www.astra-honda.com",
     "rating": "5,0",
-    "berlokasiDi": "Kota Binjai"
+    "berlokasiDi": "Binjai"
   },
   {
     "namaShowroom": "PT. Sumber Jaya Motor I Stabat",
@@ -105,7 +115,8 @@
     "alamat": "JL. JEND. SUDIRMAN NO. 7, STABAT, KWALA BINGAI",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "061-8911064",
+    "website": "https://www.astra-honda.com",
     "rating": "5,0",
-    "berlokasiDi": "Kab. Langkat"
+    "berlokasiDi": "Langkat"
   }
 ]

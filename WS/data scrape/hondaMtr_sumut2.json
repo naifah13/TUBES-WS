@@ -4,17 +4,19 @@
     "merek": "Dealer Honda",
     "alamat": "JL.RAYA SIPIROK KM 4,5, Batunadua Jae",
     "jamOperasional": "08.00-17.30",
+    "website": "https://www.astra-honda.com",
     "noTelepon": "063-427988",
     "rating": "5,0",
-    "berlokasiDi": "Kota Padangsidimpuan"
+    "berlokasiDi": "Padangsidimpuan"
   },
   {
     "namaShowroom": "Cv. Apollo Motor",
     "alamat": "JL. HOS COKROAMINOTO NO. 90, Melayu",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0813-96416888",
+    "website": "https://www.astra-honda.com",
     "rating": "4,7",
-    "berlokasiDi": "Kota Pematangsiantar"
+    "berlokasiDi": "Pematangsiantar"
   },
   {
     "namaShowroom": "Cv. Garuda Jaya Motor",
@@ -22,8 +24,9 @@
     "alamat": "JL. JAMIN GINTING NO. 42 AB, Merdeka",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "061-8212691",
+    "website": "https://www.astra-honda.com",
     "rating": "4,7",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "PT.rotella Persada Mandiri I",
@@ -31,8 +34,9 @@
     "alamat": "JL. SERDANG NO. 161 G, PERBAUNGAN, Simpang Tiga Pekan",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "0813-6480-7280",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kab. Serdang Bedagai"
+    "berlokasiDi": "Serdang Bedagai"
   },
   {
     "namaShowroom": "PT Rotella Persada Mandiri",
@@ -40,8 +44,9 @@
     "alamat": "JL. PERINTIS KOMP. NUSA PRIMA BLOK A NO.1,2 DAN 4, Tanjung Morawa B",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "0822-7439-7892",
+    "website": "https://www.astra-honda.com",
     "rating": "4,8",
-    "berlokasiDi": "Kab. Deli Serdang"
+    "berlokasiDi": "Deli Serdang"
   },
   {
     "namaShowroom": "PT Rotella Persada Mandiri III",
@@ -49,8 +54,9 @@
     "alamat": "JL. MEDAN - LUBUK PAKAM NO. 29, Tanjung Garbus",
     "jamOperasional": "08.30-16.30",
     "noTelepon": "0821-6142-3880",
+    "website": "https://www.astra-honda.com",
     "rating": "4,6",
-    "berlokasiDi": "Kab. Deli Serdang"
+    "berlokasiDi": "Deli Serdang"
   },
   {
     "namaShowroom": "PT. Sagita Mulia Laras",
@@ -58,8 +64,9 @@
     "alamat": "JL. JEND. A YANI KOMP. NUSA DELI INDAH 4-6, Durian",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "0852-6232-8282",
+    "website": "https://www.astra-honda.com",
     "rating": "4,9",
-    "berlokasiDi": "Kota Tebing Tinggi"
+    "berlokasiDi": "Tebing Tinggi"
   },
   {
     "namaShowroom": "PT. Tiger Dua Ribu",
@@ -67,8 +74,9 @@
     "alamat": "JL. GATOT SUBROTO KM. 4 NO. 63, Sei Sikambing D",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "0813-9782-8595",
+    "website": "https://www.astra-honda.com",
     "rating": "4,5",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Dealer Motor Honda Indako Simpang Limun",
@@ -76,8 +84,9 @@
     "alamat": "JL. SM. RAJA NO. 362, Sitirejo I",
     "jamOperasional": "07.30-18.00",
     "noTelepon": "0823-6390-5629",
+    "website": "https://www.astra-honda.com",
     "rating": "4,6",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "Aksara Motor",
@@ -85,16 +94,19 @@
     "alamat": "JL. PROF. HM. YAMIN NO. 173 - 173 A, Sei Kera Hilir IIn",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "0852-70470067",
+    "website": "https://www.astra-honda.com",
     "rating": "4,5",
-    "berlokasiDi": "Kota Medan"
+    "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "PT. Kencana Mulia Abadi I",
+    "merek": "Dealer Honda",
     "alamat": "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunung Sitoli",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "0639-323398",
+    "website": "https://www.astra-honda.com",
     "rating": "5,0",
-    "berlokasiDi": "Kota Gunung Sitoli"
+    "berlokasiDi": "Gunung Sitoli"
   },
   {
     "namaShowroom": "PT. Anugerah Karya Abiwara",
@@ -102,7 +114,8 @@
     "alamat": "JL. SM. RAJA NO. 320 ABCDE, KISARAN, Tebing Kisaran, Kab. Asahan",
     "jamOperasional": "08.00-17.30",
     "noTelepon": "062-343297",
+    "website": "https://www.astra-honda.com",
     "rating": "5,0",
-    "berlokasiDi": "Kab. Asahan"
+    "berlokasiDi": "Asahan"
   }
 ]

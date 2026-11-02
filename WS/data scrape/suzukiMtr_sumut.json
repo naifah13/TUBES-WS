@@ -1,19 +1,21 @@
 [
   {
     "namaShowroom": "PT Sunindo Varia Motor Gemilang",
-    "merek": "Suzuki",
+    "merek": "Dealer Suzuki",
     "alamat": "Jl. H. Adam Malik No.101, Silalas, Kec. Medan Barat, Kota Medan, Sumatera Utara 20236 (Depan kantor Taspen)",
     "jamOperasional": "08.30- 16.30",
     "noTelepon": "0813-6214-6660",
+    "website": "https://www.suzuki.co.id",
     "rating": "4.5",
     "berlokasiDi": "Medan"
   },
   {
     "namaShowroom": "PT Indo SunMotor Gemilang",
-    "merek": "Suzuki",
+    "merek": "Dealer Suzuki",
     "alamat": "Jl. Sisingamangaraja No.3 KM 6, Harjosari I, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20229 (Sebelah loket bus Rapi)",
     "jamOperasional": "08.30-16.30",
     "noTelepon": "0811-6540-800",
+    "website": "https://www.suzuki.co.id",
     "rating": "4.6",
     "berlokasiDi": "Medan"
 
@@ -21,29 +23,32 @@
   },
   {
     "namaShowroom": "Suzuki Motor Semarang",
-    "merek": "Suzuki",
+    "merek": "Dealer Suzuki",
     "alamat": "Jl. Semarang No.68 D, Pasar Baru, Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
     "jamOperasional": "08.30-17.00",
     "noTelepon": "061-4149119",
+    "website": "https://www.suzuki.co.id",
     "rating": "4.7",
     "berlokasiDi": "Medan"
     
   },
   {
     "namaShowroom": "Lusi Suzuki Motor Pancur Batu",
-    "merek": "Suzuki",
+    "merek": "Dealer Suzuki",
     "alamat": "Jl. Tulip, Namo Bintang, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20353",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0812-6294-8055",
+    "website": "https://www.suzuki.co.id",
     "rating": "4.8",
     "berlokasiDi": "Deli Serdang"
   },
   {
     "namaShowroom": "Suzuki Siantar Adeirma",
-    "merek": "Suzuki",
+    "merek": "Dealer Suzuki",
     "alamat": "Jl. Ade Irma Suryani No. 5 A-D, Simalungun, Martoba, Kec. Siantar Utara, Kota Pematang Siantar, Sumatera Utara 21144",
     "jamOperasional": "08.00-16.30",
     "noTelepon": "0622-24085",
+    "website": "https://www.suzuki.co.id",
     "rating": "4.6",
     "berlokasiDi": "Pematang Siantar"
   }
