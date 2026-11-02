@@ -1,7 +1,7 @@
 [
   {
     "namaShowroom": "Indako Pemuda",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.58234,98.68164&travelMode=motorcycle",
+
     "merek": "Dealer Honda",
     "alamat": "JL. PEMUDA NO. 18 D-H Aur",
     "jamOperasional": "08.00-16.00",
@@ -11,7 +11,6 @@
   },
   {
     "namaShowroom": "PT. Pilar Deli Labumas II",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.43161,98.85507&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. SULTAN SERDANG DUSUN VIII Nogorejo",
     "jamOperasional": "08.00-17.00",
@@ -21,7 +20,6 @@
   },
   {
     "namaShowroom": "PT Indako Trading Coy - Makmur",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.604,98.66719&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. MAKMUR NO. 114 A / 30 Sei Agul",
     "jamOperasional": "08.00-17.00",
@@ -31,7 +29,6 @@
   },
   {
     "namaShowroom": "Dealer Honda Cv. Mitra Makmur",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.15871,99.32811&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. SM. RAJA NO. 99, PERDAGANGAN, Sei Mangkei",
     "jamOperasional": "08.00-17.00",
@@ -41,7 +38,6 @@
   },
   {
     "namaShowroom": "PT Cakra Adi Dharma",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.10064,99.83009&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhan Batu",
     "jamOperasional": "08.30-17.00",
@@ -51,7 +47,6 @@
   },
   {
     "namaShowroom": "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.33102,99.16001&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. SUDIRMAN NO. 150 - 152, BADAK BEJUANG",
     "jamOperasional": "08.00-17.00",
@@ -61,7 +56,6 @@
   },
   {
     "namaShowroom": "Cv. Antara (dealer Sepeda Motor Honda)",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=4.02322,98.28661&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. MESJID NO. 126 - 128, Brandan Timur",
     "jamOperasional": "08.15-18.00",
@@ -71,7 +65,6 @@
   },
   {
     "namaShowroom": "Cv. Benteng Honda Motor",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.6035,98.64574&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur",
     "jamOperasional": "08.30-17.30",
@@ -81,7 +74,6 @@
   },
   {
     "namaShowroom": "Indah Sakti. Cv",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.09846,99.83149&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. A. YANI NO. 74 ABC, Kartini",
     "jamOperasional": "08.30-17.00",
@@ -91,7 +83,6 @@
   },
   {
     "namaShowroom": "Cv Teknik",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=2.96616,99.07592&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. A. YANI NO. 142 - 144, Merdeka",
     "jamOperasional": "08.00-18.00",
@@ -101,7 +92,6 @@
   },
   {
     "namaShowroom": "Cv. Aneka Teknik",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.60462,98.48518&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. SUDIRMAN NO. 48, BINJAI, Kartini",
     "jamOperasional": "08.00-17.30",
@@ -111,7 +101,6 @@
   },
   {
     "namaShowroom": "PT. Sumber Jaya Motor I Stabat",
-    "btn href": "https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=3.75102,98.45383&travelMode=motorcycle",
     "merek": "Dealer Honda",
     "alamat": "JL. JEND. SUDIRMAN NO. 7, STABAT, KWALA BINGAI",
     "jamOperasional": "08.00-17.00",
