@@ -11,6 +11,7 @@
   },
   {
     "namaShowroom": "Cv. Apollo Motor",
+    "merek": "Dealer Honda",
     "alamat": "JL. HOS COKROAMINOTO NO. 90, Melayu",
     "jamOperasional": "08.00-17.00",
     "noTelepon": "0813-96416888",
@@ -76,16 +77,6 @@
     "noTelepon": "0813-9782-8595",
     "website": "https://www.astra-honda.com",
     "rating": "4,5",
-    "berlokasiDi": "Medan"
-  },
-  {
-    "namaShowroom": "Dealer Motor Honda Indako Simpang Limun",
-    "merek": "Dealer Honda BigWing",
-    "alamat": "JL. SM. RAJA NO. 362, Sitirejo I",
-    "jamOperasional": "07.30-18.00",
-    "noTelepon": "0823-6390-5629",
-    "website": "https://www.astra-honda.com",
-    "rating": "4,6",
     "berlokasiDi": "Medan"
   },
   {

@@ -1,15 +1,5 @@
 [
   {
-    "namaShowroom": "CV. DWI EKA SAKTI",
-    "merek": "Dealer Kawasaki",
-    "alamat": "JL. RIAU NO. 32 - 32A PEKANBARU",
-    "jamOperasional": "08.00-17.00",
-    "noTelepon": "0761-854538",
-    "website": "https://www.kawasaki-motor.co.id",
-    "rating": "4.8",
-    "berlokasiDi": "Pekanbaru"
-  },
-  {
     "namaShowroom": "KAWASAKI PLATINUM",
     "merek": "Dealer Kawasaki",
     "alamat": "JL. SM RAJA NO.215 KISARAN",
@@ -17,17 +7,7 @@
     "noTelepon": "0623-44773",
     "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.5",
-    "berlokasiDi": "Kisaran"
-  },
-  {
-    "namaShowroom": "OTOTREND",
-    "merek": "Dealer Kawasaki",
-    "alamat": "JL. BAKAR BATU NO. 55 B TANJUNG PINANG",
-    "jamOperasional": "08.00-17.00",
-    "noTelepon": "0771-318330",
-    "website": "https://www.kawasaki-motor.co.id",
-    "rating": "4.7",
-    "berlokasiDi": "Tanjung Pinang"  
+    "berlokasiDi": "Asahan"
   },
   {
     "namaShowroom": "PT. MEGANUSA SEMESTA",
@@ -77,6 +57,6 @@
     "noTelepon": "0624-325983",
     "website": "https://www.kawasaki-motor.co.id",
     "rating": "4.8",
-    "berlokasiDi": "Rantau Prapat"
+    "berlokasiDi": "Labuhan Batu"
   }
 ]

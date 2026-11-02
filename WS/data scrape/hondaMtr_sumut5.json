@@ -1,8 +1,8 @@
 [
   {
-    "namaShowroom": "Cv Indah Sakti Ii Aek Nabara",
+    "namaShowroom": "Cv Indah Sakti II Aek Nabara",
     "merek": "Dealer Honda",
-    "alamat": "JL. LINTAS SUMATERA, Emplasemen Aek Nabara",
+    "alamat": "Jl. Lintas Sumatera (Jl. Jend. A. Yani No. 52-AB), Emplasmen Aek Nabara, Kec. Bilah Hulu, Kab. Labuhanbatu",
     "jamOperasional": "08.30 - 17.00",
     "noTelepon": "0812-6001-0261",
     "website": "https://www.astra-honda.com",
@@ -22,12 +22,12 @@
   {
     "namaShowroom": "PT. Cakra Adi Dharma - Aek Nabara",
     "merek": "Dealer Honda",
-    "alamat": "JL. LINTAS SUMATERA, Emplasemen Aek Nabara",
+    "alamat": "Jl. Lintas Sumatera (Jl. Lintas Kotapinang No. 5-7), Emplasmen Aek Nabara, Kec. Bilah Hulu, Kab. Labuhanbatu",
     "jamOperasional": "08.30 - 17.00",
     "noTelepon": "062-429449",
     "website": "https://www.astra-honda.com",
     "rating": "4.9",
-    "berlokasiDi": "Pinang"
+    "berlokasiDi": "Labuhan Batu"
   },
   {
     "namaShowroom": "Wahana Ritel Honda Medan",
@@ -48,16 +48,6 @@
     "website": "https://www.astra-honda.com",
     "rating": "4.5",
     "berlokasiDi": "Toba Samosir"
-  },
-  {
-    "namaShowroom": "Sungai Mas",
-    "merek": "Dealer Honda",
-    "alamat": "JL. Jend. Sudirman No. 150 - 152, Badak Bejuang",
-    "jamOperasional": "08.00 - 17.00",
-    "noTelepon": "0812-6716-8776",
-    "website": "https://www.astra-honda.com",
-    "rating": "4.9",
-    "berlokasiDi": "Tebing Tinggi"
   },
   {
     "namaShowroom": "PT.supra Jaya Abadi - Ahass 06958",
