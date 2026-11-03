@@ -114,12 +114,12 @@ ex:Showroom10 rdf:type ex:Showroom ;
 ex:Showroom11 rdf:type ex:Showroom ;
     ex:namaShowroom "Auto2000 Rantau Parapat" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jalan Sisingamangaraja, Kelurahan Bakaran Batu, Kecamatan Rantau Selatan, Kabupaten Labuhan Batu" ;
+    ex:alamat "Jalan Sisingamangaraja, Kelurahan Bakaran Batu, Kecamatan Rantau Selatan, Kabupaten Labuhanbatu" ;
     ex:jamOperasional "08.00-18.00" ;
     ex:noTelepon "081269548966" ;
     ex:website "https://auto2000.co.id/dealer-toyota/kabupaten-labuhan-batu/auto2000rantauprapat" ;
     ex:rating "4,6" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "mobil" .
 
 ex:Showroom12 rdf:type ex:Showroom ;
@@ -508,7 +508,7 @@ ex:Showroom46 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom47 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.Capella Medan - Daihatsu" ;
+    ex:namaShowroom "PT Capella Medan - Daihatsu" ;
     ex:merek "Dealer Daihatsu" ;
     ex:alamat "Jl. Gatot Subroto No.71 B-F" ;
     ex:jamOperasional "08.00-18.00" ;
@@ -1146,7 +1146,7 @@ ex:Showroom104 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom105 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Alam Jaya Berlian Motors" ;
+    ex:namaShowroom "PT Alam Jaya Berlian Motors" ;
     ex:merek "Dealer Mitsubishi" ;
     ex:alamat "Jl. Gatot Subroto" ;
     ex:jamOperasional "08.30-19.00" ;
@@ -1201,9 +1201,9 @@ ex:Showroom109 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom110 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sardana Indah Berlian Motors" ;
+    ex:namaShowroom "PT Sardana Indah Berlian Motors" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "PT. SARDANA INDAH BERLIAN MOTOR, Jl. Raya Medan No.Km 12" ;
+    ex:alamat "PT SARDANA INDAH BERLIAN MOTOR, Jl. Raya Medan No.Km 12" ;
     ex:jamOperasional "08.00-20.00" ;
     ex:noTelepon "(061) 7947800" ;
     ex:website "https://www.mitsubishi-medan.co.id/" ;
@@ -1322,7 +1322,7 @@ ex:Showroom120 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom121 rdf:type ex:Showroom ;
-    ex:namaShowroom "Suzuki Mobil PT. Trans Sumatra Andalan SM Raja" ;
+    ex:namaShowroom "Suzuki Mobil PT Trans Sumatra Andalan SM Raja" ;
     ex:merek "Dealer Suzuki" ;
     ex:alamat "Jalan Sisingamangaraja, Harjosari II, Medan Amplas" ;
     ex:jamOperasional "08.30-18.00" ;
@@ -1335,7 +1335,7 @@ ex:Showroom121 rdf:type ex:Showroom ;
 ex:Showroom122 rdf:type ex:Showroom ;
     ex:namaShowroom "Promo Mobil Suzuki Medan | Hub : A. Muslim Simatupang (SE)" ;
     ex:merek "Dealer Suzuki" ;
-    ex:alamat "PT. Trans Sumatera Agung, Jl. H. Adam Malik No.103A" ;
+    ex:alamat "PT Trans Sumatera Agung, Jl. H. Adam Malik No.103A" ;
     ex:jamOperasional "09.00-19.00" ;
     ex:noTelepon "0813-7717-8823" ;
     ex:website "https://www.suzuki.co.id/" ;
@@ -1377,7 +1377,7 @@ ex:Showroom125 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom126 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Resmi Suzuki Medan Binjai Langkat PT. Trans Sumatera Andalan Medan" ;
+    ex:namaShowroom "Dealer Resmi Suzuki Medan Binjai Langkat PT Trans Sumatera Andalan Medan" ;
     ex:merek "Dealer Suzuki" ;
     ex:alamat "Jl. Gatot Subroto No.140" ;
     ex:jamOperasional "08.30-18.00" ;
@@ -1421,7 +1421,7 @@ ex:Showroom129 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom130 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Toyota Perintis Flamboyan Sales Divison" ;
+    ex:namaShowroom "PT Toyota Perintis Flamboyan Sales Divison" ;
     ex:merek "Dealer Toyota" ;
     ex:alamat "Jl. Flamboyan Raya No.66" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -1725,7 +1725,7 @@ ex:Showroom157 rdf:type ex:Showroom ;
     ex:noTelepon "0812-6078-9005" ;
     ex:website "https://www.capelladaihatsu.co.id/" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom158 rdf:type ex:Showroom ;
@@ -1736,7 +1736,7 @@ ex:Showroom158 rdf:type ex:Showroom ;
     ex:noTelepon "06227358000" ;
     ex:website "https://www.capelladaihatsu.co.id/" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom159 rdf:type ex:Showroom ;
@@ -1747,7 +1747,7 @@ ex:Showroom159 rdf:type ex:Showroom ;
     ex:noTelepon "06227438800" ;
     ex:website "http://www.sardanagroup.co.id/" ;
     ex:rating "4,6" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom160 rdf:type ex:Showroom ;
@@ -1758,7 +1758,7 @@ ex:Showroom160 rdf:type ex:Showroom ;
     ex:noTelepon "082165579717" ;
     ex:website "https://mitsubishisiantar.com/" ;
     ex:rating "4,8" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom161 rdf:type ex:Showroom ;
@@ -1769,7 +1769,7 @@ ex:Showroom161 rdf:type ex:Showroom ;
     ex:noTelepon "085270687597" ;
     ex:website "https://tsasuzuki.com/" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom162 rdf:type ex:Showroom ;
@@ -1780,7 +1780,7 @@ ex:Showroom162 rdf:type ex:Showroom ;
     ex:noTelepon "085361222283" ;
     ex:website "https://tsasuzuki.com/" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom163 rdf:type ex:Showroom ;
@@ -1791,7 +1791,7 @@ ex:Showroom163 rdf:type ex:Showroom ;
     ex:noTelepon "081262904208" ;
     ex:website "https://promotoyotasiantar.com/" ;
     ex:rating "4,7" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom164 rdf:type ex:Showroom ;
@@ -1802,7 +1802,7 @@ ex:Showroom164 rdf:type ex:Showroom ;
     ex:noTelepon "0622432000" ;
     ex:website "http://www.toyotasutan.com/" ;
     ex:rating "4,6" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom165 rdf:type ex:Showroom ;
@@ -1813,7 +1813,7 @@ ex:Showroom165 rdf:type ex:Showroom ;
     ex:noTelepon "085277775668" ;
     ex:website "http://carimobil.id/toyota/pematangsiantar" ;
     ex:rating "3,7" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom166 rdf:type ex:Showroom ;
@@ -1824,7 +1824,7 @@ ex:Showroom166 rdf:type ex:Showroom ;
     ex:noTelepon "-" ;
     ex:website "https://wuling.id" ;
     ex:rating "5,0" ;
-    ex:berlokasiDi "Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" .
 
 ex:Showroom167 rdf:type ex:Showroom ;
@@ -1905,7 +1905,7 @@ ex:Showroom173 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom174 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Pilar Deli Labumas II" ;
+    ex:namaShowroom "PT Pilar Deli Labumas II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SULTAN SERDANG DUSUN VIII Nogorejo" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -1927,7 +1927,7 @@ ex:Showroom175 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom176 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Honda Cv. Mitra Makmur" ;
+    ex:namaShowroom "Dealer Honda CV Mitra Makmur" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM. RAJA NO. 99, PERDAGANGAN, Sei Mangkei" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -1940,18 +1940,18 @@ ex:Showroom176 rdf:type ex:Showroom ;
 ex:Showroom177 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Cakra Adi Dharma" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhan Batu" ;
+    ex:alamat "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhanbatu" ;
     ex:jamOperasional "08.30-17.00" ;
     ex:noTelepon "062-424333" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom178 rdf:type ex:Showroom ;
     ex:namaShowroom "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. JEND. SUDIRMAN NO. 150 - 152, BADAK BEJUANG" ;
+    ex:alamat "Jl. Jend. Sudirman No. 150 - 152, Badak Bejuang" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0812-67168776" ;
     ex:website "https://www.astra-honda.com" ;
@@ -1960,7 +1960,7 @@ ex:Showroom178 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom179 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Antara (dealer Sepeda Motor Honda)" ;
+    ex:namaShowroom "CV Antara (dealer Sepeda Motor Honda)" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. MESJID NO. 126 - 128, Brandan Timur" ;
     ex:jamOperasional "08.15-18.00" ;
@@ -1971,7 +1971,7 @@ ex:Showroom179 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom180 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Benteng Honda Motor" ;
+    ex:namaShowroom "CV Benteng Honda Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur" ;
     ex:jamOperasional "08.30-17.30" ;
@@ -1989,7 +1989,7 @@ ex:Showroom181 rdf:type ex:Showroom ;
     ex:noTelepon "062-421387" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom182 rdf:type ex:Showroom ;
@@ -2004,7 +2004,7 @@ ex:Showroom182 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom183 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Aneka Teknik" ;
+    ex:namaShowroom "CV Aneka Teknik" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JEND. SUDIRMAN NO. 48, BINJAI, Kartini" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2015,9 +2015,9 @@ ex:Showroom183 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom184 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sumber Jaya Motor I Stabat" ;
+    ex:namaShowroom "PT Sumber Jaya Motor I Stabat" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. JEND. SUDIRMAN NO. 7, STABAT, KWALA BINGAI" ;
+    ex:alamat "Jl. Jend. Sudirman No. 7, Stabat, Kwala Bingai" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "061-8911064" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2026,7 +2026,7 @@ ex:Showroom184 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom185 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Putra Surya Jaya Raya I" ;
+    ex:namaShowroom "PT Putra Surya Jaya Raya I" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL.RAYA SIPIROK KM 4,5, Batunadua Jae" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2037,7 +2037,7 @@ ex:Showroom185 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom186 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Apollo Motor" ;
+    ex:namaShowroom "CV Apollo Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. HOS COKROAMINOTO NO. 90, Melayu" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -2048,7 +2048,7 @@ ex:Showroom186 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom187 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Garuda Jaya Motor" ;
+    ex:namaShowroom "CV Garuda Jaya Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JAMIN GINTING NO. 42 AB, Merdeka" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2059,7 +2059,7 @@ ex:Showroom187 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom188 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.rotella Persada Mandiri I" ;
+    ex:namaShowroom "PT rotella Persada Mandiri I" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SERDANG NO. 161 G, PERBAUNGAN, Simpang Tiga Pekan" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2092,7 +2092,7 @@ ex:Showroom190 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom191 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sagita Mulia Laras" ;
+    ex:namaShowroom "PT Sagita Mulia Laras" ;
     ex:merek "Dealer Honda Wing" ;
     ex:alamat "JL. JEND. A YANI KOMP. NUSA DELI INDAH 4-6, Durian" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2103,7 +2103,7 @@ ex:Showroom191 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom192 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Tiger Dua Ribu" ;
+    ex:namaShowroom "PT Tiger Dua Ribu" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. GATOT SUBROTO KM. 4 NO. 63, Sei Sikambing D" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2125,7 +2125,7 @@ ex:Showroom193 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom194 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Kencana Mulia Abadi I" ;
+    ex:namaShowroom "PT Kencana Mulia Abadi I" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunungsitoli" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2136,7 +2136,7 @@ ex:Showroom194 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom195 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Anugerah Karya Abiwara" ;
+    ex:namaShowroom "PT Anugerah Karya Abiwara" ;
     ex:merek "Dealer Honda Wing" ;
     ex:alamat "JL. SM. RAJA NO. 320 ABCDE, KISARAN, Tebing Kisaran, Kab. Asahan" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2147,7 +2147,7 @@ ex:Showroom195 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom196 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Berlian Bintang Mas" ;
+    ex:namaShowroom "PT Berlian Bintang Mas" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Pasar 9 JALAN RAYA TEMBUNG NO.9, HUTAN, KEC. PERCUT SEI TUAN" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -2169,7 +2169,7 @@ ex:Showroom197 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom198 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sumber Jaya Motor II" ;
+    ex:namaShowroom "PT Sumber Jaya Motor II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jln. Mesjid No.07, Pekan Tj. Pura, Kec. Tj. Pura" ;
     ex:jamOperasional "08.30 - 17.30" ;
@@ -2180,7 +2180,7 @@ ex:Showroom198 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom199 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Sudi Honda" ;
+    ex:namaShowroom "CV Sudi Honda" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. MERDEKA NO. 199 - 201, Dwikora, Kec. Siantar Barat" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2191,7 +2191,7 @@ ex:Showroom199 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom200 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Putra Langkat" ;
+    ex:namaShowroom "CV Putra Langkat" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. GATOT SUBROTO NO.532 AB, Bandar Senembah, Kec. Binjai Barat" ;
     ex:jamOperasional "08.00 - 17.30" ;
@@ -2202,18 +2202,18 @@ ex:Showroom200 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom201 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Cakra Adi Dharma Kota Pinang." ;
+    ex:namaShowroom "PT Cakra Adi Dharma Kota Pinang." ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JEND. SUDIRMAN NO. 14 - 18, Kota Pinang, Kec. Kota Pinang" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0624-496288" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu Selatan" ;
+    ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" .
 
 ex:Showroom202 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indah Sakti Motorindo" ;
+    ex:namaShowroom "PT Indah Sakti Motorindo" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. Arief Rahman Hakim No.11, RW.14, Sukaramai II, Kec. Medan Area" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2224,7 +2224,7 @@ ex:Showroom202 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom203 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Graha Honda" ;
+    ex:namaShowroom "CV Graha Honda" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. PANCING I NO.168, Besar, MEDAN LABUHAN" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2235,9 +2235,9 @@ ex:Showroom203 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom204 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Duta Motor" ;
+    ex:namaShowroom "CV Duta Motor" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. ARIEF RAHMAN AKIM NO. 164, TEGAL SARI III, KEC. MEDAN AREA" ;
+    ex:alamat "Jl. Arief Rahman Akim No. 164, Tegal Sari III, Kec. Medan Area" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0813-4490-2305" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2246,9 +2246,9 @@ ex:Showroom204 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom205 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Anugerah Karya Abiwara III" ;
+    ex:namaShowroom "PT Anugerah Karya Abiwara III" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. LINTAS SUMATERA, INDRAPURA, KEC. AIR PUTIH" ;
+    ex:alamat "Jl. Lintas Sumatera, Indrapura, Kec. Air Putih" ;
     ex:jamOperasional "08.30 - 17.30" ;
     ex:noTelepon "0813-6791-3803" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2257,9 +2257,9 @@ ex:Showroom205 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom206 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Honda Kita" ;
+    ex:namaShowroom "CV Honda Kita" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. BINJAI - STABAT, KP. TANDAM HULU SATU, KEC. HAMPARAN PERAK" ;
+    ex:alamat "Jl. Binjai - Stabat, Kp. Tandam Hulu Satu, Kec. Hamparan Perak" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "061-8829604" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2279,7 +2279,7 @@ ex:Showroom207 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom208 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Deli Motor" ;
+    ex:namaShowroom "CV Deli Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. DELI TUA NO. 274 BCDE, Deli Tua" ;
     ex:jamOperasional "08.00 - 17.30" ;
@@ -2290,9 +2290,9 @@ ex:Showroom208 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom209 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Garuda Perkasa Motor" ;
+    ex:namaShowroom "CV Garuda Perkasa Motor" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. RAJA JUNJUNGAN LUBIS NO. 1 PASAR BARU, SIBOLGA KOTA" ;
+    ex:alamat "Jl. Raja Junjungan Lubis No. 1 Pasar Baru, Sibolga Kota" ;
     ex:jamOperasional "08.30 - 18.00" ;
     ex:noTelepon "0812-7518-6455" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2301,14 +2301,14 @@ ex:Showroom209 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom210 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Treding Coy" ;
+    ex:namaShowroom "PT Indako Treding Coy" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. JEND AHMAD YANI NO.KEL, BAKARAN BATU, KEC. RANTAU SELATAN" ;
+    ex:alamat "Jl. Jend Ahmad Yani No.Kel, Bakaran Batu, Kec. Rantau Selatan" ;
     ex:jamOperasional "08.30 - 16.30" ;
     ex:noTelepon "0813-7580-4386" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom211 rdf:type ex:Showroom ;
@@ -2334,7 +2334,7 @@ ex:Showroom212 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom213 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Anugerah Karya Abiwara II Tanjung Balai" ;
+    ex:namaShowroom "PT Anugerah Karya Abiwara II Tanjung Balai" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. PAHLAWAN NO. 54 - 56, Pantai Burung, Tanjung Balai Selatan" ;
     ex:jamOperasional "08.30 - 17.30" ;
@@ -2345,7 +2345,7 @@ ex:Showroom213 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom214 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Pandu Mitra Motor" ;
+    ex:namaShowroom "CV Pandu Mitra Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM. RAJA, Psr Siborong Borong" ;
     ex:jamOperasional "08.00 - 18.00" ;
@@ -2356,7 +2356,7 @@ ex:Showroom214 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom215 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Panca Prima Abadi" ;
+    ex:namaShowroom "CV Panca Prima Abadi" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. HOS COKROAMINOTO NO. 132, Mekar Baru, Kisaran" ;
     ex:jamOperasional "08.30 - 17.30" ;
@@ -2367,7 +2367,7 @@ ex:Showroom215 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom216 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Putra Surya Jaya Raya II" ;
+    ex:namaShowroom "PT Putra Surya Jaya Raya II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL.KIHAJAR DEWANTARA, LK VI, KELURAHAN Pasar Sibuhuan, BARUMUN" ;
     ex:jamOperasional "08.00 - 17.30" ;
@@ -2389,7 +2389,7 @@ ex:Showroom217 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom218 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sumber Jaya Motor" ;
+    ex:namaShowroom "PT Sumber Jaya Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL.WILLIAM ISKANDAR NO. 32, Indra Kasih, Kota Medan" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2407,29 +2407,29 @@ ex:Showroom219 rdf:type ex:Showroom ;
     ex:noTelepon "0812-6001-0261" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom220 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Indah Sakti Kota Pinang" ;
+    ex:namaShowroom "CV Indah Sakti Kota Pinang" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. BUKIT NO. 1 - 4, KOTA PINANG, Kota Pinang" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0812-6335-9356" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu Selatan" ;
+    ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" .
 
 ex:Showroom221 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Cakra Adi Dharma - Aek Nabara" ;
+    ex:namaShowroom "PT Cakra Adi Dharma - Aek Nabara" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jl. Lintas Sumatera (Jl. Lintas Kotapinang No. 5-7), Emplasmen Aek Nabara, Kec. Bilah Hulu, Kab. Labuhanbatu" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "062-429449" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom222 rdf:type ex:Showroom ;
@@ -2444,7 +2444,7 @@ ex:Showroom222 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom223 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Teknik Ii" ;
+    ex:namaShowroom "CV Teknik II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. PATUAN NAGARI NO. 177, Sangkar Nihuta, Kec. Balige" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2455,7 +2455,7 @@ ex:Showroom223 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom224 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.supra Jaya Abadi - Ahass 06958" ;
+    ex:namaShowroom "PT Supra Jaya Abadi - Ahass 06958" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. TRITURA KOMPLEK TITI KUNING MAS NO. 8A, Titi Kuning" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -2466,7 +2466,7 @@ ex:Showroom224 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom225 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.sumber Perintis Jaya I" ;
+    ex:namaShowroom "PT Sumber Perintis Jaya I" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. PERINTIS KEMERDEKAAN NO. 81, Sungei Putih" ;
     ex:jamOperasional "08.30 - 17.30" ;
@@ -2488,7 +2488,7 @@ ex:Showroom226 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom227 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Prima Agung Motorindo" ;
+    ex:namaShowroom "PT Prima Agung Motorindo" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. TITI PAHLAWAN NO. 43 - 49, Paya Pasir" ;
     ex:jamOperasional "08.30 - 17.30" ;
@@ -2499,7 +2499,7 @@ ex:Showroom227 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom228 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Kencana Abadi Mulia Ii" ;
+    ex:namaShowroom "PT Kencana Abadi Mulia II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JENDERAL AHMAD YANI NO. 58, TELUK DALAM, Pasar Teluk Dalam" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -2512,7 +2512,7 @@ ex:Showroom228 rdf:type ex:Showroom ;
 ex:Showroom229 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugrah Multi Jaya Aek Loba - 07610" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. LINTAS SUMATERA 8 , AEK LOBA PEKAN" ;
+    ex:alamat "Jl. Lintas Sumatera 8 , Aek Loba Pekan" ;
     ex:jamOperasional "08.30 - 17.30" ;
     ex:noTelepon "062-351225" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2523,7 +2523,7 @@ ex:Showroom229 rdf:type ex:Showroom ;
 ex:Showroom230 rdf:type ex:Showroom ;
     ex:namaShowroom "Setia Motor Berastagi" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL.VETERAN NO.4, BERASTAGI, TAMBAK LAU MULGAP I" ;
+    ex:alamat "Jl.Veteran No.4, Berastagi, Tambak Lau Mulgap I" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0853-5581-6091" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2532,9 +2532,9 @@ ex:Showroom230 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom231 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Mitra Honda Motor" ;
+    ex:namaShowroom "CV Mitra Honda Motor" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. DIPONEGORO NO. 16, SIBOLGA, PANCURAN GEROBAK" ;
+    ex:alamat "Jl. Diponegoro No. 16, Sibolga, Pancuran Gerobak" ;
     ex:jamOperasional "08.00 - 18.00" ;
     ex:noTelepon "0812-6939-977" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2545,7 +2545,7 @@ ex:Showroom231 rdf:type ex:Showroom ;
 ex:Showroom232 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sukses Motor Globalindo" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. SETIA BUDI NO. 8-10, SIMPANG SELAYANG, KEC. MEDAN TUNTUNGAN" ;
+    ex:alamat "Jl. Setia Budi No. 8-10, Simpang Selayang, Kec. Medan Tuntungan" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0812-6364-1177" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2556,7 +2556,7 @@ ex:Showroom232 rdf:type ex:Showroom ;
 ex:Showroom233 rdf:type ex:Showroom ;
     ex:namaShowroom "Garuda Mas Motor" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. SOEKARNO HATTA NO. 92 , DATARAN TINGGI, KEC. BINJAI TIMUR" ;
+    ex:alamat "Jl. Soekarno Hatta No. 92 , Dataran Tinggi, Kec. Binjai Timur" ;
     ex:jamOperasional "08.00 - 17.30" ;
     ex:noTelepon "0823-6828-9639" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2565,9 +2565,9 @@ ex:Showroom233 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom234 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Trading Coy P.sidimpuan" ;
+    ex:namaShowroom "PT Indako Trading Coy P.sidimpuan" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. SM. RAJA NO. 77, KEC. PADANGSIDIMPUAN SELATAN" ;
+    ex:alamat "Jl. Sm. Raja No. 77, Kec. Padangsidimpuan Selatan" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0822-1146-4437" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2576,9 +2576,9 @@ ex:Showroom234 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom235 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Groliar Mentari Wisesa (Showroom & Bengkel Resmi Sepeda Motor Honda)" ;
+    ex:namaShowroom "PT Groliar Mentari Wisesa (Showroom & Bengkel Resmi Sepeda Motor Honda)" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. KHZ. ARIFIN NO. 9, STABAT BARU, KEC. STABAT" ;
+    ex:alamat "Jl. Khz. Arifin No. 9, Stabat Baru, Kec. Stabat" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0812-6431-9537" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2587,9 +2587,9 @@ ex:Showroom235 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom236 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Pilar Deli LabuMas" ;
+    ex:namaShowroom "PT Pilar Deli LabuMas" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. BESAR BERINGIN NO. 39, SIDODADI RAMUNIA, KEC. BERINGIN" ;
+    ex:alamat "Jl. Besar Beringin No. 39, Sidodadi Ramunia, Kec. Beringin" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0821-6925-023" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2598,9 +2598,9 @@ ex:Showroom236 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom237 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Panca Prima Abadi Ii Sei Piring" ;
+    ex:namaShowroom "CV Panca Prima Abadi II Sei Piring" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. PERINTIS KEMERDEKAAN NO. 88, SUNGAI PIRING, KEC. PULAU RAKYAT" ;
+    ex:alamat "Jl. Perintis Kemerdekaan No. 88, Sungai Piring, Kec. Pulau Rakyat" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0852-6139-6533" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2609,9 +2609,9 @@ ex:Showroom237 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom238 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Trading Coy" ;
+    ex:namaShowroom "PT Indako Trading Coy" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. SISINGAMANGARAJA NO. 362, SITI REJO I, KEC. MEDAN KOTA" ;
+    ex:alamat "Jl. Sisingamangaraja No. 362, Siti Rejo I, Kec. Medan Kota" ;
     ex:jamOperasional "07.30 - 18.00" ;
     ex:noTelepon "0823-6390-5629" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2622,18 +2622,18 @@ ex:Showroom238 rdf:type ex:Showroom ;
 ex:Showroom239 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Cikampak" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. BESAR PEKAN CIKAMPAK, AEK BATU" ;
+    ex:alamat "Jl. Besar Pekan Cikampak, Aek Batu" ;
     ex:jamOperasional "08.30 - 17.00" ;
     ex:noTelepon "0813-7332-465" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu Selatan" ;
+    ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" .
 
 ex:Showroom240 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Honda Buana Jaya Lestari" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. MEDAN - BINJAI NO. 11,2, PAYA GELI, SUNGGAL" ;
+    ex:alamat "Jl. Medan - Binjai No. 11,2, Paya Geli, Sunggal" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0813-6651-9772" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2642,7 +2642,7 @@ ex:Showroom240 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom241 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Kencana Mulia Abadi 3 Sibolga" ;
+    ex:namaShowroom "PT Kencana Mulia Abadi 3 Sibolga" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM. RAJA NO. 92, Pancuran Gerobak, Sibolga Kota" ;
     ex:jamOperasional "08.15-17.30" ;
@@ -2653,18 +2653,18 @@ ex:Showroom241 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom242 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.cakra Adi Dharma Negeri Lama" ;
+    ex:namaShowroom "PT Cakra Adi Dharma Negeri Lama" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. BESAR No. 16-18, NEGERI LAMA, Kec. Bilah Hilir" ;
     ex:jamOperasional "08.15-17.00" ;
     ex:noTelepon "062-4551388" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom243 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Trading Coy Sibuhuan" ;
+    ex:namaShowroom "PT Indako Trading Coy Sibuhuan" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KI HAJAR DEWANTARA LK. VI, Bangun Raya, Kec. Barumun" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2675,7 +2675,7 @@ ex:Showroom243 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom244 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Putra Surya Jaya Raya Iii" ;
+    ex:namaShowroom "PT Putra Surya Jaya Raya III" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. WILLEM ISKANDAR, PANYABUNGAN II, Pidoli Dolok" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2686,7 +2686,7 @@ ex:Showroom244 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom245 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Trading Coy" ;
+    ex:namaShowroom "PT Indako Trading Coy" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. T. AMIR HAMZAH NO. 3, 4, 5, Jatinegara, Kec. Binjai Utara" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2697,7 +2697,7 @@ ex:Showroom245 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom246 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Mega Motorindo" ;
+    ex:namaShowroom "PT Mega Motorindo" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. IMAM BONJOL NO. 263, Teladan, Kec. Kota Kisaran Timur" ;
     ex:jamOperasional "08.30-17.30" ;
@@ -2765,7 +2765,7 @@ ex:Showroom251 rdf:type ex:Showroom ;
 ex:Showroom252 rdf:type ex:Showroom ;
     ex:namaShowroom "Cv Satu Hati Perkasa" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. TANJUNG PURA, PELAWI UTARA, KEC. BABALAN" ;
+    ex:alamat "Jl. Tanjung Pura, Pelawi Utara, Kec. Babalan" ;
     ex:jamOperasional "08.30-17.00" ;
     ex:noTelepon "0812-6071-4505" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2774,7 +2774,7 @@ ex:Showroom252 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom253 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Satu Hati Perkasa. Bengkel Ahass 13141" ;
+    ex:namaShowroom "CV Satu Hati Perkasa. Bengkel Ahass 13141" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. MEDAN TEBING TINGGI KM. 56, Sei Rampah, Kec. Sei Rampah" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2785,7 +2785,7 @@ ex:Showroom253 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom254 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Prima Agung Motorindo Ii" ;
+    ex:namaShowroom "PT Prima Agung Motorindo II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. WILLEM ISKANDAR WEK 8, Sipolu-Polu, Kec. Panyabungan" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2796,7 +2796,7 @@ ex:Showroom254 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom255 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.sukses Motor Globalindo Ii Gunung Tua" ;
+    ex:namaShowroom "PT Sukses Motor Globalindo II Gunung Tua" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM RAJA No. LK I, Pasar Gunung Tua" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2807,9 +2807,9 @@ ex:Showroom255 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom256 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Honda Karya Utama" ;
+    ex:namaShowroom "CV Honda Karya Utama" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. PROF. HM. YAMIN NO. 3, KEDAI LEDANG, KISARAN KOTA" ;
+    ex:alamat "Jl. Prof. Hm. Yamin No. 3, Kedai Ledang, Kisaran Kota" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0812-6138-4205" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2829,7 +2829,7 @@ ex:Showroom257 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom258 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv Honda Karya Utama Ii Aek Ledong" ;
+    ex:namaShowroom "Cv Honda Karya Utama II Aek Ledong" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL LINTAS SUMATERA, Ledong Timur, Kec. Aek Ledong" ;
     ex:jamOperasional "08.15-17.30" ;
@@ -2840,7 +2840,7 @@ ex:Showroom258 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom259 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv. Sam Honda Motor" ;
+    ex:namaShowroom "CV Sam Honda Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. RAJA JOHANNES HUTABARAT NO.186 TARUTUNG, Hapoltahan" ;
     ex:jamOperasional "08.15-18.00" ;
@@ -2862,7 +2862,7 @@ ex:Showroom260 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom261 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Sukses Motor Globalindo" ;
+    ex:namaShowroom "PT Sukses Motor Globalindo" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SANGNAWALUH NO. 44 E-G, Siopat Suhu, Kec. Siantar Timur" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2873,7 +2873,7 @@ ex:Showroom261 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom262 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.indostar Sukses Mandiri" ;
+    ex:namaShowroom "PT Indostar Sukses Mandiri" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KARYA 184 - 184 B, SEI AGUL, Medan Barat, Karang Berombak, Kec. Medan Barat" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2884,7 +2884,7 @@ ex:Showroom262 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom263 rdf:type ex:Showroom ;
-    ex:namaShowroom "Showroom Honda PT. Anugrah Multi Jaya" ;
+    ex:namaShowroom "Showroom Honda PT Anugrah Multi Jaya" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JEND. SUDIRMAN NO 8 GHI, LOSUNG BATU, Kec. Padangsidimpuan Utara" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2908,7 +2908,7 @@ ex:Showroom264 rdf:type ex:Showroom ;
 ex:Showroom265 rdf:type ex:Showroom ;
     ex:namaShowroom "KAWASAKI PLATINUM" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. SM RAJA NO.215 KISARAN" ;
+    ex:alamat "Jl. Sm Raja No.215 Kisaran" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0623-44773" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
@@ -2917,9 +2917,9 @@ ex:Showroom265 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom266 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. MEGANUSA SEMESTA" ;
+    ex:namaShowroom "PT MEGANUSA SEMESTA" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. JEND. GATOT SUBROTO NO. 198A MEDAN" ;
+    ex:alamat "Jl. Jend. Gatot Subroto No. 198A Medan" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "061-4155678" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
@@ -2928,9 +2928,9 @@ ex:Showroom266 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom267 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. MEGANUSA SEMESTA" ;
+    ex:namaShowroom "PT MEGANUSA SEMESTA" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. SULTAN ISKANDAR MUDA NO. 37 MEDAN" ;
+    ex:alamat "Jl. Sultan Iskandar Muda No. 37 Medan" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "061-4532759" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
@@ -2941,18 +2941,18 @@ ex:Showroom267 rdf:type ex:Showroom ;
 ex:Showroom268 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. AGUNG MOTOR" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. ADE IRMA SURYANI NO.1 B PEMATANG SIANTAR" ;
+    ex:alamat "Jl. Ade Irma Suryani No.1 B Pematang Siantar" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0622-24793" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.7" ;
-    ex:berlokasiDi "Pematang Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" .
 
 ex:Showroom269 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. KAWASAKI BERJAYA MOTOR" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. SUTOMO NO. 29 - 31 BINJAI" ;
+    ex:alamat "Jl. Sutomo No. 29 - 31 Binjai" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "061-8828382" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
@@ -2963,12 +2963,12 @@ ex:Showroom269 rdf:type ex:Showroom ;
 ex:Showroom270 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. MATAHARI MOTOR" ;
     ex:merek "Dealer Kawasaki" ;
-    ex:alamat "JL. JENDRAL AHMAD YANI, NO. 55 RANTAU PRAPAT" ;
+    ex:alamat "Jl. Jendral Ahmad Yani, No. 55 Rantau Prapat" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0624-325983" ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.8" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom271 rdf:type ex:Showroom ;
@@ -3023,7 +3023,7 @@ ex:Showroom275 rdf:type ex:Showroom ;
     ex:noTelepon "0622-24085" ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.6" ;
-    ex:berlokasiDi "Pematang Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" .
 
 ex:Showroom276 rdf:type ex:Showroom ;
@@ -3049,7 +3049,7 @@ ex:Showroom277 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom278 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. HORAS ABADI MOTOR" ;
+    ex:namaShowroom "CV HORAS ABADI MOTOR" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Jenderal Sudirman No. 20, Indrapura, Kecamatan Air Putih, Kabupaten Batu Bara, Sumatera Utara" ;
     ex:jamOperasional "08.00-17:00" ;
@@ -3062,7 +3062,7 @@ ex:Showroom278 rdf:type ex:Showroom ;
 ex:Showroom279 rdf:type ex:Showroom ;
     ex:namaShowroom "FAJAR MOTOR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. THAMRIN NO. 14 SIMPANG TIGA TANGSI, KAB. LANGKAT" ;
+    ex:alamat "Jl. Thamrin No. 14 Simpang Tiga Tangsi, Kab. Langkat" ;
     ex:jamOperasional "08.00-17:00" ;
     ex:noTelepon "0620322081" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3084,12 +3084,12 @@ ex:Showroom280 rdf:type ex:Showroom ;
 ex:Showroom281 rdf:type ex:Showroom ;
     ex:namaShowroom "SUN BERLIAN MOTOR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. JEND. A. YANI NO. 19-21-23, KAB. LABUHAN BATU" ;
+    ex:alamat "Jl. Jend. A. Yani No. 19-21-23, Kab. Labuhanbatu" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0853-5804-8999" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.2" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom282 rdf:type ex:Showroom ;
@@ -3115,9 +3115,9 @@ ex:Showroom283 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom284 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. SHALOM ANUGERAH PERKASA" ;
+    ex:namaShowroom "PT SHALOM ANUGERAH PERKASA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. DIPONEGORO NO. 131 KEL. ILIR (DEPAN TOKO MARDIANA), KOTA GUNUNGSITOLI" ;
+    ex:alamat "Jl. Diponegoro No. 131 Kel. Ilir (Depan Toko Mardiana), Kota Gunungsitoli" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0813-7710-5010" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3128,7 +3128,7 @@ ex:Showroom284 rdf:type ex:Showroom ;
 ex:Showroom285 rdf:type ex:Showroom ;
     ex:namaShowroom "GRAHA YAMAHA AUTO PRATAMA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. SISINGAMARAJA LINGKUNGAN I , KEL PASAR GUNUNG TUA, KAB. PADANG LAWAS UTARA" ;
+    ex:alamat "Jl. Sisingamaraja Lingkungan I , Kel Pasar Gunung Tua, Kab. Padang Lawas Utara" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0812-6555-2112" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3148,7 +3148,7 @@ ex:Showroom286 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom287 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII PERBAUNGAN" ;
+    ex:namaShowroom "PT ALFA SCORPII PERBAUNGAN" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Medan - Tebing Tinggi, Desa Kota Galuh, Kecamatan Perbaungan, Kabupaten Serdang Bedagai, Sumatera Utara 20586" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3159,9 +3159,9 @@ ex:Showroom287 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom288 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. DELI MITRA LESTARI" ;
+    ex:namaShowroom "CV DELI MITRA LESTARI" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. JEND. SUDIRMAN NO. 389 TEBING TINGGI, KOTA TEBING TINGGI" ;
+    ex:alamat "Jl. Jend. Sudirman No. 389 Tebing Tinggi, Kota Tebing Tinggi" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0851-8553-9288" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3170,53 +3170,53 @@ ex:Showroom288 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom289 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII RANTAU PRAPAT" ;
+    ex:namaShowroom "PT ALFA SCORPII RANTAU PRAPAT" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. S.M RAJA 165 GHUJK RANTAU PRAPAT, KAB. LABUHAN BATU" ;
+    ex:alamat "Jl. S.M Raja 165 Ghujk Rantau Prapat, Kab. Labuhanbatu" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0821-6069-0372" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Labuhan Batu" ;
+    ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" .
 
 ex:Showroom290 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. SANGGUP REZEKI MOTOR" ;
+    ex:namaShowroom "CV SANGGUP REZEKI MOTOR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. MERDEKA NO. 315 A/B, P. SIANTAR, KOTA PEMATANG SIANTAR" ;
+    ex:alamat "Jl. Merdeka No. 315 A/B, P. Siantar, Kota Pematang Siantar" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0813-7502-8360" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.5" ;
-    ex:berlokasiDi "Pematang Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" .
 
 ex:Showroom291 rdf:type ex:Showroom ;
     ex:namaShowroom "ASLI MOTOR SIANTAR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. SANGNAWALUH KMP. MEGALAND NO. 36-37, KOTA PEMATANG SIANTAR" ;
+    ex:alamat "Jl. Sangnawaluh Kmp. Megaland No. 36-37, Kota Pematang Siantar" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0852-6294-0086" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
-    ex:berlokasiDi "Pematang Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" .
 
 ex:Showroom292 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII PEMATANG SIANTAR" ;
+    ex:namaShowroom "PT ALFA SCORPII PEMATANG SIANTAR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. JEND A YANI NO 5, KOTA PEMATANG SIANTAR" ;
+    ex:alamat "Jl. Jend A Yani No 5, Kota Pematang Siantar" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0622-434866" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Pematang Siantar" ;
+    ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" .
 
 ex:Showroom293 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII SIBOLGA" ;
+    ex:namaShowroom "PT ALFA SCORPII SIBOLGA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. BRIG. KATAMSO NO 7C-D, KOTA SIBOLGA" ;
+    ex:alamat "Jl. Brig. Katamso No 7C-D, Kota Sibolga" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0812-6229-8618" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3227,7 +3227,7 @@ ex:Showroom293 rdf:type ex:Showroom ;
 ex:Showroom294 rdf:type ex:Showroom ;
     ex:namaShowroom "CHAMPION MOTOR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. H. Z. ARIFIN NO. 29 - STABAT, KAB. LANGKAT" ;
+    ex:alamat "Jl. H. Z. Arifin No. 29 - Stabat, Kab. Langkat" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0822-7511-5151" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3236,9 +3236,9 @@ ex:Showroom294 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom295 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII TANJUNG MORAWA" ;
+    ex:namaShowroom "PT ALFA SCORPII TANJUNG MORAWA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. PERINTIS KEMERDEKAAN NO. 181 A, TANJUNG MORAWA, KAB. DELI SERDANG" ;
+    ex:alamat "Jl. Perintis Kemerdekaan No. 181 A, Tanjung Morawa, Kab. Deli Serdang" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "061-7946966" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3249,7 +3249,7 @@ ex:Showroom295 rdf:type ex:Showroom ;
 ex:Showroom296 rdf:type ex:Showroom ;
     ex:namaShowroom "TATA MOTOR" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. S.M RAJA NO. 189, HUTATORUAN VI, KEC. TARUTUNG, KAB. TAPANULI UTARA" ;
+    ex:alamat "Jl. S.M Raja No. 189, Hutatoruan VI, Kec. Tarutung, Kab. Tapanuli Utara" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0821-2318-5926" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3258,9 +3258,9 @@ ex:Showroom296 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom297 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII BALIGE" ;
+    ex:namaShowroom "PT ALFA SCORPII BALIGE" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. SIBORONG-BORONG SIBOLAHOTANG SAS, BALIGE" ;
+    ex:alamat "Jl. Siborong-Borong Sibolahotang Sas, Balige" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0822-7641-3964" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3269,9 +3269,9 @@ ex:Showroom297 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom298 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. ALFA SCORPII BERASTAGI" ;
+    ex:namaShowroom "PT ALFA SCORPII BERASTAGI" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JLN. JAMIN GINTING NO. 32 UJUNG AJI BERASTAGI KARO" ;
+    ex:alamat "Jln. Jamin Ginting No. 32 Ujung Aji Berastagi Karo" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0812-6393-0004" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3282,10 +3282,10 @@ ex:Showroom298 rdf:type ex:Showroom ;
 ex:Showroom299 rdf:type ex:Showroom ;
     ex:namaShowroom "ALFA SCORPII - KAMPUNG PAJAK" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. LINTAS SUMATERA, DESA KP. PAJAK/PULO JANTAN, KAB. LABUHAN BATU UTARA" ;
+    ex:alamat "Jl. Lintas Sumatera, Desa Kp. Pajak/Pulo Jantan, Kab. Labuhanbatu Utara" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0823-7942-9794" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
-    ex:berlokasiDi "Labuhan Batu Utara" ;
+    ex:berlokasiDi "Labuhanbatu Utara" ;
     ex:kategori "motor" .
