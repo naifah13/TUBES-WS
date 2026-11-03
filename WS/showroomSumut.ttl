@@ -158,7 +158,7 @@ ex:Showroom14 rdf:type ex:Showroom ;
 ex:Showroom15 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Sibolga (Sales Point Resmi)" ;
     ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Sibolga - Padang Sidempuan No.16, Kalangan, Kec. Pandan, Kabupaten Tapanuli Tengah" ;
+    ex:alamat "Jl. Sibolga - Padangsidimpuan No.16, Kalangan, Kec. Pandan, Kabupaten Tapanuli Tengah" ;
     ex:jamOperasional "10.30-18.00" ;
     ex:noTelepon "0852-9774-5355" ;
     ex:website "https://www.astra-daihatsu.id/" ;
@@ -1692,29 +1692,29 @@ ex:Showroom154 rdf:type ex:Showroom ;
     ex:noTelepon "(0634)21777" ;
     ex:website "https://www.astra-daihatsu.id/" ;
     ex:rating "4,4" ;
-    ex:berlokasiDi "Padang Sidempuan" ;
+    ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" .
 
 ex:Showroom155 rdf:type ex:Showroom ;
     ex:namaShowroom "DEALER MITSUBISHI DIPO PADANGSIDIMPUAN" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Raja Inal Siregar No.6, Batunadua Julu, Kec. Padangsidimpuan Batunadua, Kota Padang Sidempuan, Sumatera Utara 22733" ;
+    ex:alamat "Jl. Raja Inal Siregar No.6, Batunadua Julu, Kec. Padangsidimpuan Batunadua, Kota Padangsidimpuan, Sumatera Utara 22733" ;
     ex:jamOperasional "10.00-17.00" ;
     ex:noTelepon "06347366200" ;
     ex:website "https://www.dipo.co.id/network/mitsubishi/sumatera-utara/padangsidimpuan/dealer/46/padangsidimpuan" ;
     ex:rating "4,2" ;
-    ex:berlokasiDi "Padang Sidempuan" ;
+    ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" .
 
 ex:Showroom156 rdf:type ex:Showroom ;
     ex:namaShowroom "AUTO 2000 CAPEM PADANG SIDIMPUAN" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Sudirman No.228, Wek I, Kec. Padangsidimpuan Utara, Kota Padang Sidempuan, Sumatera Utara 22711" ;
+    ex:alamat "Jl. Sudirman No.228, Wek I, Kec. Padangsidimpuan Utara, Kota Padangsidimpuan, Sumatera Utara 22711" ;
     ex:jamOperasional "10.00-20.00" ;
     ex:noTelepon "06347366200" ;
     ex:website "https://auto2000.co.id/" ;
     ex:rating "4,6" ;
-    ex:berlokasiDi "Padang Sidempuan" ;
+    ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" .
 
 ex:Showroom157 rdf:type ex:Showroom ;
@@ -1740,7 +1740,7 @@ ex:Showroom158 rdf:type ex:Showroom ;
     ex:kategori "mobil" .
 
 ex:Showroom159 rdf:type ex:Showroom ;
-    ex:namaShowroom "Sardana Pematangsiantar" ;
+    ex:namaShowroom "Sardana Pematang siantar" ;
     ex:merek "Dealer Mitsubishi" ;
     ex:alamat "Jl. Gereja, Simpang Empat" ;
     ex:jamOperasional "08.00-20.00" ;
@@ -2127,12 +2127,12 @@ ex:Showroom193 rdf:type ex:Showroom ;
 ex:Showroom194 rdf:type ex:Showroom ;
     ex:namaShowroom "PT. Kencana Mulia Abadi I" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunung Sitoli" ;
+    ex:alamat "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunungsitoli" ;
     ex:jamOperasional "08.00-17.30" ;
     ex:noTelepon "0639-323398" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
-    ex:berlokasiDi "Gunung Sitoli" ;
+    ex:berlokasiDi "Gunungsitoli" ;
     ex:kategori "motor" .
 
 ex:Showroom195 rdf:type ex:Showroom ;
@@ -2446,12 +2446,12 @@ ex:Showroom222 rdf:type ex:Showroom ;
 ex:Showroom223 rdf:type ex:Showroom ;
     ex:namaShowroom "Cv. Teknik Ii" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. PATUAN NAGARI NO. 177, Sangkar Nihuta" ;
+    ex:alamat "JL. PATUAN NAGARI NO. 177, Sangkar Nihuta, Kec. Balige" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "0823-1000-7622" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.5" ;
-    ex:berlokasiDi "Toba Samosir" ;
+    ex:berlokasiDi "Toba" ;
     ex:kategori "motor" .
 
 ex:Showroom224 rdf:type ex:Showroom ;
@@ -2565,7 +2565,7 @@ ex:Showroom233 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom234 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT. Indako Trading Coy P.sidempuan" ;
+    ex:namaShowroom "PT. Indako Trading Coy P.sidimpuan" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM. RAJA NO. 77, KEC. PADANGSIDIMPUAN SELATAN" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -2576,7 +2576,7 @@ ex:Showroom234 rdf:type ex:Showroom ;
     ex:kategori "motor" .
 
 ex:Showroom235 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT.groliar Mentari Wisesa ( Showroom & Bengkel Resmi Sepeda Motor Honda)" ;
+    ex:namaShowroom "PT. Groliar Mentari Wisesa (Showroom & Bengkel Resmi Sepeda Motor Honda)" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KHZ. ARIFIN NO. 9, STABAT BARU, KEC. STABAT" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -3260,12 +3260,12 @@ ex:Showroom296 rdf:type ex:Showroom ;
 ex:Showroom297 rdf:type ex:Showroom ;
     ex:namaShowroom "PT. ALFA SCORPII BALIGE" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JL. SIBORONG-BORONG SIBOLAHOTANG SAS, KAB. TOBA SAMOSIR" ;
+    ex:alamat "JL. SIBORONG-BORONG SIBOLAHOTANG SAS, BALIGE" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0822-7641-3964" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
-    ex:berlokasiDi "Balige" ;
+    ex:berlokasiDi "Toba" ;
     ex:kategori "motor" .
 
 ex:Showroom298 rdf:type ex:Showroom ;
