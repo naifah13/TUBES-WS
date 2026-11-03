@@ -103,7 +103,7 @@ ex:Showroom9 rdf:type ex:Showroom ;
 ex:Showroom10 rdf:type ex:Showroom ;
     ex:namaShowroom "Auto 2000 Karo" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Veteran, Sumber Mufakat, Kec. Berastagi, Kabupaten Karo," ;
+    ex:alamat "Jl. Veteran, Sumber Mufakat, Kec. Berastagi" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0812-6928-9032" ;
     ex:website "https://www.facebook.com/SENTATOYOTA2000/" ;
@@ -3271,12 +3271,12 @@ ex:Showroom297 rdf:type ex:Showroom ;
 ex:Showroom298 rdf:type ex:Showroom ;
     ex:namaShowroom "PT. ALFA SCORPII BERASTAGI" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "JLN. JAMIN GINTING NO. 32 UJUNG AJI BERASTAGI KARO, KAB. KARO" ;
+    ex:alamat "JLN. JAMIN GINTING NO. 32 UJUNG AJI BERASTAGI KARO" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0812-6393-0004" ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.6" ;
-    ex:berlokasiDi "Berastagi" ;
+    ex:berlokasiDi "Karo" ;
     ex:kategori "motor" .
 
 ex:Showroom299 rdf:type ex:Showroom ;
