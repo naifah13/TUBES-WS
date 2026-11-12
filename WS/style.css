@@ -1,6 +1,6 @@
 /* =========================================
    STYLE UNTUK TUGAS BESAR WEB SEMANTIK
-   TEMA: KNOWLEDGE BASE SHOWROOM (BIRU & PUTIH)
+   TEMA: KNOWLEDGE BASE SHOWROOM (BIRU & PUTIH) - SHOPEE STYLE
 ========================================= */
 
 /* 1. Variabel Warna & Font Dasar */
@@ -12,6 +12,7 @@
     --text-muted: #666666;
     --bg-light: #f4f7f6;
     --white: #ffffff;
+    --border-color: #d1d5db;
 }
 
 * {
@@ -28,25 +29,141 @@ body {
 }
 
 /* =========================================
-   2. NAVBAR / HEADER
+   2. NAVBAR / HEADER (Shopee Style)
 ========================================= */
 header {
     background-color: var(--white);
-    padding: 15px 5%;
+    padding: 12px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    gap: 20px;
 }
 
 header h1 { 
     color: var(--primary-blue); 
-    font-size: 24px; 
+    font-size: 22px; 
     margin: 0; 
-    font-weight: 800; 
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+header h1 span {
+    color: var(--text-dark);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Shopee-style Navbar Search Bar */
+.nav-search-container {
+    flex: 1;
+    max-width: 650px;
+    position: relative;
+}
+
+.search-bar-nav {
+    display: flex;
+    background: var(--white);
+    border: 2px solid var(--primary-blue);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.search-bar-nav input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+/* Tombol Filter di samping Search Bar */
+.filter-toggle-btn {
+    background: #f8fafc;
+    border: none;
+    border-left: 1px solid #e2e8f0;
+    padding: 0 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    transition: background 0.2s;
+}
+
+.filter-toggle-btn:hover {
+    background: var(--light-blue);
+}
+
+.search-bar-nav button.submit-search {
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.search-bar-nav button.submit-search:hover {
+    background: #004494;
+}
+
+/* Dropdown Filter Panel */
+.filter-dropdown-panel {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 100%;
+    max-width: 500px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    z-index: 1001;
+    border: 1px solid #e2e8f0;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.filter-dropdown-panel.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.filter-dropdown-panel select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text-dark);
+    background: var(--white);
+    outline: none;
+}
+
+.filter-dropdown-panel select:focus {
+    border-color: var(--primary-blue);
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a { 
@@ -56,6 +173,7 @@ nav a {
     font-weight: 600; 
     font-size: 15px;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 nav a:hover { 
@@ -67,70 +185,26 @@ nav a:hover {
 ========================================= */
 .hero {
     background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-    padding: 100px 5% 120px 5%; 
+    padding: 60px 5%; 
     text-align: left;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .hero h2 { 
-    font-size: 48px; 
+    font-size: 40px; 
     color: var(--primary-blue); 
     margin-bottom: 15px; 
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .hero p { 
-    font-size: 18px; 
+    font-size: 16px; 
     color: var(--text-muted); 
     max-width: 600px;
 }
 
 /* =========================================
-   4. SEARCH BAR (Melayang di atas Hero)
-========================================= */
-.search-bar {
-    background: var(--white);
-    margin: -70px 5% 50px 5%; 
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    display: grid;
-    /* Diubah jadi grid agar kolom banyak tetap rapi dan otomatis menyesuaikan layar */
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    position: relative;
-    z-index: 10;
-    align-items: center;
-}
-
-.search-bar input, 
-.search-bar select { 
-    width: 100%;
-    padding: 12px 15px; 
-    border: 1px solid #d1d5db; 
-    border-radius: 6px; 
-    font-size: 14px;
-    color: var(--text-dark);
-}
-
-.search-bar button { 
-    background: var(--primary-blue); 
-    color: var(--white); 
-    border: none; 
-    padding: 14px 30px; 
-    border-radius: 6px; 
-    cursor: pointer; 
-    font-weight: bold; 
-    font-size: 15px;
-    transition: background 0.3s;
-}
-
-.search-bar button:hover {
-    background: #004494;
-}
-
-/* =========================================
-   5. KONTEN & GRID CARD
+   4. KONTEN & GRID CARD
 ========================================= */
 .section-title {
     text-align: center;
@@ -204,7 +278,7 @@ nav a:hover {
 }
 
 /* =========================================
-   6. FOOTER
+   5. FOOTER
 ========================================= */
 footer {
     background-color: var(--dark-blue);
@@ -217,4 +291,18 @@ footer {
 
 footer p {
     opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-search-container {
+        max-width: 100%;
+    }
+    nav {
+        justify-content: center;
+    }
 }
