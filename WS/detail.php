@@ -1,18 +1,13 @@
 <?php 
 include 'lib.php'; 
 
-// Menangkap URI entitas dari parameter URL (dikirim dari daftar.php)
+// Menangkap URI entitas dari parameter URL
 $uri_entitas = isset($_GET['uri']) ? trim($_GET['uri']) : '';
 
 if (empty($uri_entitas)) {
-    die("Error: URI Entitas tidak ditemukan. Silakan kembali ke <a href='daftar.php'>halaman Eksplorasi Data</a>.");
+    die("Error: URI Entitas tidak ditemukan. Silakan kembali ke <a href='index.php'>halaman Beranda</a>.");
 }
 
-/* 
-   ======================================================================
-   QUERY SPARQL UNTUK 1 ENTITAS SPESIFIK BERDASARKAN URI
-   ======================================================================
-*/
 $query_detail = '
     PREFIX ex: <http://www.example.org/showroom#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -63,24 +58,28 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Showroom - Semantic Web KB</title>
+    <title><?= htmlspecialchars($detail_entitas['nama']) ?> - Semantic Web KB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>ShowroomSumut<span style="color: var(--text-dark); font-size: 16px; margin-left: 5px;">Knowledge Base</span></h1>
+    <!-- NAVBAR DIPERBARUI (Judul bisa diklik, menu kanan dibersihkan) -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
+        
+        <!-- Judul Web sekarang jadi link ke beranda -->
+        <a href="index.php" style="text-decoration: none;">
+            <h1>ShowroomSumut<span style="font-size: 14px; color: var(--text-dark); margin-left: 5px;">Knowledge Base</span></h1>
+        </a>
+        
         <nav>
-            <a href="index.php">Beranda</a>
-            <a href="daftar.php">Eksplorasi Data</a>
-            <a href="export.php">Export RDF</a>
+            <a href="export.php" style="color: var(--text-dark); font-weight: 600;">Export RDF</a>
         </nav>
     </header>
 
     <section class="hero" vocab="http://schema.org/" typeof="AutoDealer" style="padding-bottom: 80px;">
         <p style="color: var(--text-muted); font-weight: bold; margin-bottom: 5px;">DETAIL ENTITAS SEMANTIK</p>
-        <h2 property="name"><?= htmlspecialchars($detail_entitas['nama']) ?></h2>
-        <p property="description" style="max-width: 700px;">Representasi linked data untuk entitas showroom yang ditarik dari dataset lokal showroomSumut.ttl.</p>
+        <h2 property="name" style="font-size: 36px;"><?= htmlspecialchars($detail_entitas['nama']) ?></h2>
+        <p property="description" style="max-width: 700px; font-size: 16px;">Representasi linked data untuk entitas showroom yang ditarik dari dataset lokal showroomSumut.ttl.</p>
         
         <!-- Metadata Semantik -->
         <span property="url" content="<?= htmlspecialchars($detail_entitas['website']) ?>"></span>
@@ -125,26 +124,26 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 
     <!-- SPARQL Endpoint Eksternal (DBpedia) -->
     <div class="section-title" style="padding-top: 20px;">
-        <h3>Linked Open Data</h3>
-        <h2>Pengayaan Data via DBpedia</h2>
+        <h3 style="color: var(--primary-blue); font-size: 12px; text-transform: uppercase;">Linked Open Data</h3>
+        <h2 style="font-size: 24px; color: var(--text-dark);">Pengayaan Data via DBpedia</h2>
     </div>
 
     <div class="grid-container" style="padding-top: 0;">
         <div class="card" style="grid-column: 1 / -1; text-align: left;">
-            <p style="margin-bottom: 15px;">Menerapkan query terpisah ke <strong>http://dbpedia.org/sparql</strong> untuk menghubungkan dataset lokal dengan Knowledge Graph global terkait merek kendaraan yang dijual.</p>
+            <p style="margin-bottom: 15px; color: var(--text-muted);">Menerapkan query terpisah ke <strong>http://dbpedia.org/sparql</strong> untuk menghubungkan dataset lokal dengan Knowledge Graph global terkait merek kendaraan yang dijual.</p>
             
             <div style="background: var(--light-blue); padding: 25px; border-radius: 8px; border-left: 5px solid var(--primary-blue);">
-                <h4 style="margin-bottom: 10px; font-size: 20px;">Entitas Merek: <?= htmlspecialchars($detail_entitas['merek']) ?></h4>
+                <h4 style="margin-bottom: 10px; font-size: 20px; color: var(--text-dark);">Entitas Merek: <?= htmlspecialchars($detail_entitas['merek']) ?></h4>
                 <p><strong>Sumber:</strong> DBpedia SPARQL Endpoint</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-muted);">
+                <p style="margin-top: 10px; font-style: italic; color: var(--text-muted); font-size: 14px;">
                     (Catatan untuk Mahasiswa: Di sini kelompok kalian perlu menanamkan query EasyRDF/cURL PHP yang mengarah ke endpoint DBpedia untuk mengambil properti 'dbo:abstract' atau 'rdfs:comment' dari merek terkait. Jika merek tidak ditemukan di DBpedia, tampilkan pesan penanganan error yang sesuai).
                 </p>
             </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Tugas Besar Web Semantik - Kelas KOM B (Kelompok Bhita dkk).</p>
+    <footer style="background: var(--dark-blue); color: white; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px;">
+        <p>&copy; 2026 Tugas Besar Web Semantik - Kelas KOM B (Kelompok Bhita, Nadin, Nepah, Jepin, Dwik).</p>
     </footer>
 
 </body>
