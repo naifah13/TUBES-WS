@@ -118,47 +118,158 @@ header h1 span {
     background: #004494;
 }
 
-/* Dropdown Filter Panel */
+/* =========================================
+   DROPDOWN FILTER PANEL (BERWARNA & MODERN)
+========================================= */
 .filter-dropdown-panel {
     display: none;
     position: absolute;
-    top: calc(100% + 8px);
+    top: calc(100% + 12px);
     right: 0;
     width: 100%;
-    max-width: 500px;
-    background: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 20px;
+    min-width: 580px;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f8fd 100%);
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(0, 86, 179, 0.16), 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 24px;
     z-index: 1001;
-    border: 1px solid #e2e8f0;
-    animation: fadeIn 0.2s ease-in-out;
+    border: 1.5px solid #bfdbfe;
+    border-top: 4px solid var(--primary-blue);
+    animation: slideDownFade 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.filter-dropdown-panel::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 95px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-blue);
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 .filter-dropdown-panel.active {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-5px); }
+@keyframes slideDownFade {
+    from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 2px 6px rgba(0, 86, 179, 0.04);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-group:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.08);
+}
+
+.filter-group label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--primary-blue);
+    background-color: #e0edff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: fit-content;
 }
 
 .filter-dropdown-panel select {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
+    padding: 10px 32px 10px 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
     font-size: 13px;
-    color: var(--text-dark);
-    background: var(--white);
+    font-weight: 600;
+    color: var(--dark-blue);
+    background-color: #f8fafc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%230056b3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
     outline: none;
+    transition: all 0.2s ease;
+}
+
+.filter-dropdown-panel select:hover {
+    border-color: var(--primary-blue);
+    background-color: #eff6ff;
 }
 
 .filter-dropdown-panel select:focus {
     border-color: var(--primary-blue);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.15);
+}
+
+.filter-actions {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+    padding-top: 16px;
+    border-top: 1.5px dashed #cbd5e1;
+}
+
+.btn-reset-filter {
+    padding: 10px 20px;
+    border: 1.5px solid #fca5a5;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-reset-filter:hover {
+    background: #fee2e2;
+    border-color: #f87171;
+    color: #b91c1c;
+    transform: translateY(-1px);
+}
+
+.btn-apply-filter {
+    padding: 10px 26px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0066cc 0%, #004494 100%);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-apply-filter:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003370 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 86, 179, 0.38);
 }
 
 nav {
@@ -226,7 +337,7 @@ nav a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     padding: 0 5% 50px 5%;
 }
@@ -302,7 +413,18 @@ footer p {
     .nav-search-container {
         max-width: 100%;
     }
+    .filter-dropdown-panel {
+        min-width: unset;
+        width: 100%;
+    }
+    .filter-dropdown-panel.active {
+        grid-template-columns: 1fr;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
     nav {
         justify-content: center;
     }
 }
+
