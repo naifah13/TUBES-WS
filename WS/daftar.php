@@ -130,7 +130,7 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                 <span style="font-size: 12px; color: var(--text-muted); margin-left: 5px; text-transform: uppercase;">(<?= htmlspecialchars($kategori) ?>)</span>
             </div>
             
-            <a href="detail.php?uri=<?= urlencode($uri) ?>" class="btn-outline" style="width: 100%; box-sizing: border-box;">Lihat Detail Semantik</a>
+            <a href="detail.php?uri=<?= urlencode($uri) ?>" class="btn-outline">Lihat Detail</a>
         </div>
         
         <?php 

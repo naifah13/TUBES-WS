@@ -298,7 +298,7 @@ usort($results, function($a, $b) use ($sort_rating, $sort_abjad) {
                 <span style="font-size: 12px; color: var(--text-muted); margin-left: 5px; text-transform: uppercase;">(<?= htmlspecialchars($kategori) ?>)</span>
             </div>
             
-            <a href="detail.php?uri=<?= urlencode($uri) ?>" style="display: block; padding: 10px; border: 1px solid var(--primary-blue); color: var(--primary-blue); text-decoration: none; border-radius: 4px; font-weight: bold; transition: 0.3s;">Lihat Detail Semantik</a>
+            <a href="detail.php?uri=<?= urlencode($uri) ?>" class="btn-outline">Lihat Detail</a>
         </div>
         
         <?php 

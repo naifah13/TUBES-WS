@@ -111,7 +111,7 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 
         <!-- Integrasi Layanan (Maps) -->
         <div class="card" style="text-align: left;">
-            <h3 style="color: var(--primary-blue); font-size: 18px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px;">Pemetaan Geospasial (Peta Wilayah)</h3>
+            <h3 style="color: var(--primary-blue); font-size: 18px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px;">Peta Wilayah</h3>
             <div style="margin-top: 15px; border-radius: 8px; overflow: hidden; border: 1px solid #e0e0e0;">
                 <!-- Menggunakan Iframe OpenStreetMap statis sebagai pemenuhan syarat integrasi layanan pihak ketiga -->
                 <iframe width="100%" height="180" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=98.67%2C3.57%2C98.69%2C3.59&amp;layer=mapnik"></iframe>
