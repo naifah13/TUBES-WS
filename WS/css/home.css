@@ -1,0 +1,141 @@
+.vroom-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--tinggi-navbar));
+  min-height: calc(100dvh - var(--tinggi-navbar));
+  padding: clamp(32px, 5vh, 70px) 5%;
+
+  background-color: #2b2d42;
+  background-image:
+    linear-gradient(
+      110deg,
+      rgba(25, 28, 44, 0.90),
+      rgba(43, 45, 66, 0.76),
+      rgba(25, 28, 44, 0.72)
+    ),
+    url("../images/banner.jpg");
+
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+.vroom-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(
+    circle at 85% 20%,
+    rgba(239, 35, 60, 0.18),
+    transparent 35%
+  );
+  pointer-events: none;
+}
+
+.vroom-hero-content {
+  width: 100%;
+  max-width: 850px;
+}
+
+.vroom-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 19px;
+  color: #f7b0b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.vroom-eyebrow::before,
+.vroom-eyebrow::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #ef233c;
+}
+
+.vroom-hero h2 {
+  margin-bottom: clamp(10px, 2vh, 18px);
+  color: #ffffff;
+  font-size: clamp(40px, 5vw, 66px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -2px;
+  text-shadow: 0 5px 24px rgba(0, 0, 0, 0.2);
+}
+
+.vroom-hero h2 span {
+  color: #ff5265;
+}
+
+.vroom-hero-description {
+  max-width: 620px;
+  margin: 0 auto;
+  color: #e2e6ed;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.vroom-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: clamp(18px, 3vh, 32px);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vroom-scroll span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 29px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.vroom-scroll:hover span {
+  border-color: #ef233c;
+  background: #ef233c;
+}
+
+@media (max-width: 700px) {
+  .vroom-hero {
+    min-height: calc(100vh - var(--tinggi-navbar));
+    min-height: calc(100dvh - var(--tinggi-navbar));
+    padding: 35px 5%;
+  }
+
+  .vroom-hero h2 {
+    letter-spacing: -1px;
+  }
+
+  .vroom-hero-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vroom-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .vroom-eyebrow::before,
+  .vroom-eyebrow::after {
+    width: 14px;
+  }
+}

@@ -154,57 +154,166 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShowroomSumut - Semantic Web KB</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <title>Vroom - Direktori Showroom</title>
+    <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 5%;">
-        
-        <a href="index.php" style="text-decoration: none;">
-            <h1>ShowroomSumut<span style="font-size: 14px; color: var(--text-dark); margin-left: 5px;">Knowledge Base</span></h1>
-        </a>
-        
-       <div class="nav-search-container">
-            <form action="index.php" method="GET" id="searchFilterForm">
+    <!-- NAVBAR -->
+<header class="vroom-header">
+
+    <a href="index.php" class="vroom-brand" aria-label="Vroom - Beranda">
+        <img src="images/vroom.svg" alt="Logo Vroom">
+        <span class="vroom-brand-text">
+            <strong>vroom<span>.</span></strong>
+        </span>
+    </a>
+
+    <nav class="vroom-nav" aria-label="Navigasi utama">
+        <a href="index.php" class="vroom-nav-active">Beranda</a>
+        <a href="#hasil">Showroom</a>
+        <a href="#tim">Tim</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+
+</header>
+
+
+<!-- HOME / HERO -->
+<section class="vroom-hero">
+
+    <div class="vroom-hero-content">
+
+        <h2>
+            VROOM<span>.</span>
+        </h2>
+
+        <p class="vroom-hero-description">
+            Jelajahi showroom mobil dan motor di Sumatera Utara,
+            temukan lokasi, jam operasional, dan informasi yang dibutuhkan.
+        </p>
+
+        <!-- FORM PENCARIAN DAN FILTER -->
+        <div class="nav-search-container">
+
+            <form
+                action="index.php#hasil"
+                method="GET"
+                id="searchFilterForm"
+            >
+
                 <div class="search-bar-nav">
-                    <input type="text" name="keyword" placeholder="Cari nama, merek, atau jalan (misal: Auto2000, Honda)..." value="<?= htmlspecialchars($search_keyword) ?>">
-                    
-                    <button type="button" class="filter-toggle-btn" id="filterToggleBtn" title="Filter Pencarian">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+
+                    <svg
+                        class="search-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="m20 20-4-4"></path>
+                    </svg>
+
+                    <input
+                        type="text"
+                        name="keyword"
+                        aria-label="Cari showroom"
+                        placeholder="Cari nama showroom, merek, atau lokasi..."
+                        value="<?= htmlspecialchars($search_keyword) ?>"
+                    >
+
+                    <button
+                        type="button"
+                        class="filter-toggle-btn"
+                        id="filterToggleBtn"
+                        title="Filter pencarian"
+                        aria-controls="filterPanel"
+                    >
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M4 5h16l-6.5 7.5V19l-3-1.5v-5Z"></path>
                         </svg>
                         <span>Filter</span>
                     </button>
 
-                    <button type="submit" class="submit-search">Cari</button>
+                    <button type="submit" class="submit-search">
+                        Cari
+                    </button>
+
+                    <a href="index.php#hasil" class="search-reset" id="searchReset" hidden>
+                    Reset
+                    </a>
+
                 </div>
 
                 <div class="filter-dropdown-panel" id="filterPanel">
+
                     <div class="filter-group">
                         <label for="abjad">Urutan Abjad</label>
+
                         <select name="abjad" id="abjad">
                             <option value="">Default</option>
-                            <option value="az" <?= $sort_abjad === 'az' ? 'selected' : '' ?>>Dari A - Z</option>
-                            <option value="za" <?= $sort_abjad === 'za' ? 'selected' : '' ?>>Dari Z - A</option>
+
+                            <option
+                                value="az"
+                                <?= $sort_abjad === 'az' ? 'selected' : '' ?>
+                            >
+                                Dari A - Z
+                            </option>
+
+                            <option
+                                value="za"
+                                <?= $sort_abjad === 'za' ? 'selected' : '' ?>
+                            >
+                                Dari Z - A
+                            </option>
                         </select>
                     </div>
 
                     <div class="filter-group">
                         <label for="rating">Rating</label>
+
                         <select name="rating" id="rating">
                             <option value="">Default</option>
-                            <option value="tertinggi" <?= $sort_rating === 'tertinggi' ? 'selected' : '' ?>>Tertinggi ke Terendah</option>
-                            <option value="terendah" <?= $sort_rating === 'terendah' ? 'selected' : '' ?>>Terendah ke Tertinggi</option>
+
+                            <option
+                                value="tertinggi"
+                                <?= $sort_rating === 'tertinggi' ? 'selected' : '' ?>
+                            >
+                                Tertinggi ke Terendah
+                            </option>
+
+                            <option
+                                value="terendah"
+                                <?= $sort_rating === 'terendah' ? 'selected' : '' ?>
+                            >
+                                Terendah ke Tertinggi
+                            </option>
                         </select>
                     </div>
 
                     <div class="filter-group">
                         <label for="lokasi">Lokasi</label>
+
                         <select name="lokasi" id="lokasi">
                             <option value="">Semua Lokasi</option>
+
                             <?php foreach ($daftar_lokasi as $lok): ?>
-                                <option value="<?= htmlspecialchars($lok) ?>" <?= $filter_lokasi === $lok ? 'selected' : '' ?>>
+                                <option
+                                    value="<?= htmlspecialchars($lok) ?>"
+                                    <?= $filter_lokasi === $lok ? 'selected' : '' ?>
+                                >
                                     <?= htmlspecialchars($lok) ?>
                                 </option>
                             <?php endforeach; ?>
@@ -212,22 +321,74 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                     </div>
 
                     <div class="filter-actions">
-                        <a href="index.php<?= !empty($search_keyword) ? '?keyword=' . urlencode($search_keyword) : '' ?>" class="btn-reset-filter">Atur Ulang</a>
-                        <button type="submit" class="btn-apply-filter">Terapkan</button>
+                        <a
+                            href="index.php<?= !empty($search_keyword) ? '?keyword=' . urlencode($search_keyword) : '' ?>#hasil"
+                            class="btn-reset-filter"
+                        >
+                            Atur Ulang
+                        </a>
+
+                        <button type="submit" class="btn-apply-filter">
+                            Terapkan
+                        </button>
                     </div>
+
                 </div>
+
             </form>
+
         </div>
 
-        <nav>
-            <a href="export.php" style="color: var(--text-dark); font-weight: 600;">Export RDF</a>
-        </nav>
-    </header>
+        <a href="#hasil" class="vroom-scroll">
+            Jelajahi showroom
+            <span aria-hidden="true">↓</span>
+        </a>
 
-    <section class="hero" style="padding: 60px 5%; background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);">
-        <h2 style="font-size: 36px; color: var(--primary-blue); margin-bottom: 10px;">Eksplorasi Data<br>Kendaraan Sumut.</h2>
-        <p style="color: var(--text-muted); font-size: 16px; max-width: 500px;">Sistem basis pengetahuan (Knowledge Base) terintegrasi menggunakan teknologi Web Semantik untuk direktori showroom di Sumatera Utara.</p>
-    </section>
+    </div>
+
+</section>
+
+<!-- PETA SHOWROOM: TAMPILAN SEMENTARA -->
+<section
+    class="showroom-map-section"
+    id="hasil"
+    aria-labelledby="map-title"
+>
+
+    <div class="showroom-map-heading">
+        <div>
+
+            <h2 id="map-title">Peta Showroom Sumatera Utara</h2>
+
+        </div>
+
+        <span class="showroom-map-badge">TAMPILAN CONTOH</span>
+    </div>
+
+    <div class="showroom-map">
+
+        <!-- Peta dasar OpenStreetMap -->
+        <iframe
+            class="showroom-map-frame"
+            title="Peta wilayah Sumatera Utara"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=96.8%2C1.0%2C100.4%2C4.8&amp;layer=mapnik"
+            loading="lazy"
+        ></iframe>
+
+        <!-- Penanda berikut hanya ilustrasi, bukan lokasi showroom -->
+        <div class="showroom-map-markers" aria-hidden="true">
+            <span class="showroom-map-pin pin-one"></span>
+            <span class="showroom-map-pin pin-two"></span>
+            <span class="showroom-map-pin pin-three"></span>
+            <span class="showroom-map-pin pin-four"></span>
+            <span class="showroom-map-pin pin-five"></span>
+        </div>
+
+    </div>
+
+    <h2 id="map-title">Jelajahi Showroom</h2>
+
+</section>
 
     <div class="grid-container" vocab="http://schema.org/" style="padding: 40px 5%;">
         
@@ -284,22 +445,161 @@ usort($results, function($a, $b) use ($sort_rating, $sort_abjad) {
                 $uri = isset($row['showroom']['value']) ? $row['showroom']['value'] : '';
         ?>
         
-        <div class="card" typeof="AutoDealer" style="border: 1px solid #eee; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <h3 property="name" style="font-size: 18px; margin-bottom: 5px; color: var(--text-dark);"><?= htmlspecialchars($nama) ?></h3>
-            <p property="brand" style="color: var(--text-muted); font-size: 14px; font-weight: bold; margin-bottom: 15px;"><?= htmlspecialchars($merek) ?></p>
-            
-            <p property="areaServed" style="color: var(--text-muted); font-size: 13px; margin-bottom: 5px;">📍 Lokasi: <?= htmlspecialchars($lokasi) ?></p>
-            <p property="openingHours" style="color: <?= stripos($jam, '24 jam') !== false ? '#2ecc71' : 'var(--text-muted)' ?>; font-size: 13px; margin-bottom: 15px; font-weight: <?= stripos($jam, '24 jam') !== false ? 'bold' : 'normal' ?>;">
-                🕒 Jam: <?= htmlspecialchars($jam) ?>
-            </p>
-            
-            <div style="background: var(--bg-light); padding: 8px; border-radius: 4px; display: inline-block; margin-bottom: 15px;">
-                <span property="aggregateRating" style="font-weight: bold; color: #f39c12;">★ <?= htmlspecialchars($rating) ?></span>
-                <span style="font-size: 12px; color: var(--text-muted); margin-left: 5px; text-transform: uppercase;">(<?= htmlspecialchars($kategori) ?>)</span>
-            </div>
-            
-            <a href="detail.php?uri=<?= urlencode($uri) ?>" class="btn-outline">Lihat Detail</a>
+        <?php
+// Menentukan file logo berdasarkan merek dan kategori kendaraan.
+$namaMerek = strtolower(trim($merek));
+$kategoriKendaraan = strtolower(trim($kategori));
+$logoFile = null;
+
+$daftarLogo = [
+    'mercedes-benz' => 'mercedes-benz.jpg',
+    'mitsubishi'    => 'mitsubishi.jpg',
+    'chevrolet'     => 'chevrolet.jpg',
+    'daihatsu'      => 'daihatsu.jpg',
+    'kawasaki'      => 'kawasaki.jpg',
+    'hyundai'       => 'hyundai.jpg',
+    'suzuki'        => 'suzuki.jpg',
+    'toyota'        => 'toyota.jpg',
+    'datsun'        => 'datsun.jpg',
+    'yamaha'        => 'yamaha.jpg',
+    'wuling'        => 'wuling.jpg',
+    'mazda'         => 'mazda.jpg',
+    'isuzu'         => 'isuzu.jpg',
+    'chery'         => 'chery.jpg',
+    'vespa'         => 'vespa.jpg',
+    'dfsk'          => 'dfsk.jpg',
+    'ford'          => 'ford.jpg',
+    'aion'          => 'aion.jpg',
+    'bmw'           => 'bmw.jpg',
+    'byd'           => 'byd.jpg',
+    'mg'            => 'mg.jpg',
+];
+
+// Honda memiliki logo berbeda untuk mobil dan motor.
+if (strpos($namaMerek, 'honda') !== false) {
+    if (
+        strpos($kategoriKendaraan, 'motor') !== false ||
+        strpos($namaMerek, 'wing') !== false
+    ) {
+        $logoFile = 'honda motor.jpg';
+    } else {
+        $logoFile = 'honda mobil.jpg';
+    }
+} else {
+    foreach ($daftarLogo as $kataMerek => $namaFile) {
+        if (
+            preg_match(
+                '/\b' . preg_quote($kataMerek, '/') . '\b/i',
+                $namaMerek
+            )
+        ) {
+            $logoFile = $namaFile;
+            break;
+        }
+    }
+}
+
+// Jika file logo tidak tersedia, tampilkan simbol pengganti.
+$logoTersedia = $logoFile !== null
+    && is_file(__DIR__ . '/images/logo/' . $logoFile);
+?>
+
+<article class="showroom-card" typeof="AutoDealer">
+
+    <div class="showroom-card-top">
+
+        <div class="showroom-logo">
+            <?php if ($logoTersedia): ?>
+                <img
+                    src="images/logo/<?= rawurlencode($logoFile) ?>"
+                    alt="Logo <?= htmlspecialchars($merek) ?>"
+                    loading="lazy"
+                >
+            <?php else: ?>
+                <span aria-hidden="true">SS</span>
+            <?php endif; ?>
         </div>
+
+        <span class="showroom-category">
+            <?= htmlspecialchars($kategori) ?>
+        </span>
+
+    </div>
+
+    <div class="showroom-content">
+
+        <p class="showroom-brand" property="brand">
+            <?= htmlspecialchars($merek) ?>
+        </p>
+
+        <h3 property="name">
+            <?= htmlspecialchars($nama) ?>
+        </h3>
+
+        <div class="showroom-information">
+
+            <p class="showroom-info">
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="2.5"></circle>
+                </svg>
+
+                <span property="areaServed">
+                    <?= htmlspecialchars($lokasi) ?>
+                </span>
+            </p>
+
+            <p class="showroom-info">
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5l3.5 2"></path>
+                </svg>
+
+                <span property="openingHours">
+                    <?= htmlspecialchars($jam) ?>
+                </span>
+            </p>
+
+        </div>
+
+        <div class="showroom-bottom">
+
+            <div class="showroom-rating">
+                <span class="showroom-rating-star" aria-hidden="true">★</span>
+                <span property="aggregateRating">
+                    <?= htmlspecialchars($rating) ?>
+                </span>
+            </div>
+
+            <a
+                href="detail.php?uri=<?= urlencode($uri) ?>"
+                class="showroom-detail"
+            >
+                Lihat Detail
+                <span aria-hidden="true">→</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
         
         <?php 
             endforeach; 
@@ -313,33 +613,199 @@ usort($results, function($a, $b) use ($sort_rating, $sort_abjad) {
         ?>
         
     </div>
+    
+    <!-- BAGIAN TIM VROOM -->
+<section class="team-section" id="tim">
 
-    <div class="section-title" style="text-align: center; padding: 20px 5% 60px;">
-        <h3 style="color: var(--primary-blue); font-size: 12px; text-transform: uppercase;">Tentang Proyek</h3>
-        <h2 style="font-size: 24px; color: var(--text-dark);">Tugas Besar Web Semantik</h2>
-        <p style="color: var(--text-muted); font-size: 14px;">Sistem terintegrasi (Knowledge Base) berbasis file RDF/Turtle, dikelola menggunakan Apache Jena Fuseki.</p>
+    <div class="team-container">
+
+        <div class="team-heading">
+            <h2>Tim <span>Kami</span></h2>
+
+            <div class="team-heading-line"></div>
+
+            <p class="team-description">
+                Empat orang di balik pengembangan Vroom.
+            </p>
+        </div>
+
+        <div class="team-grid">
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img
+                        src="images/tim/tabhita.jpg"
+                        alt="Foto Tabhita"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Tabhita</h3>
+                <h4>251402023</h4>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img
+                        src="images/tim/nadine.jpg"
+                        alt="Foto Nadine"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Nadine</h3>
+                <h4>251402050</h4>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img
+                        src="images/tim/jevine.jpg"
+                        alt="Foto Jevine"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Jevine</h3>
+                <h4>251402085</h4>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                    <img
+                        src="images/tim/dwi.jpg"
+                        alt="Foto Dwi"
+                        loading="lazy"
+                    >
+                </div>
+
+                <h3>Dwi</h3>
+                <h4>251402088</h4>
+            </article>
+
+        </div>
+
     </div>
 
-    <footer style="background: var(--dark-blue); color: white; text-align: center; padding: 20px; font-size: 14px;">
-        <p>&copy; 2026 Tugas Besar Web Semantik - Kelas KOM B (Kelompok Bhita, Nadin, Nepah, Jepin, Dwik).</p>
-    </footer>
+</section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterBtn = document.getElementById('filterToggleBtn');
-            const filterPanel = document.getElementById('filterPanel');
+<!-- BAGIAN TENTANG VROOM -->
+<section class="about-section" id="tentang">
 
-            filterBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                filterPanel.classList.toggle('active');
-            });
+    <div class="about-container">
 
-            document.addEventListener('click', function(e) {
-                if (!filterPanel.contains(e.target) && !filterBtn.contains(e.target)) {
-                    filterPanel.classList.remove('active');
-                }
-            });
-        });
-    </script>
+        <div class="about-logo">
+            <img src="images/vroom.svg" alt="Logo Vroom">
+        </div>
+
+        <h2>Tentang <span>Vroom.</span></h2>
+
+        <div class="about-heading-line"></div>
+
+        <p class="about-intro">
+            Temukan showroom kendaraan di Sumatera Utara
+            dengan lebih mudah bersama Vroom.
+        </p>
+
+        <div class="about-description">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- FOOTER VROOM -->
+<footer class="vroom-footer">
+
+    <div class="footer-container">
+
+        <!-- LOGO DAN DESKRIPSI -->
+        <div class="footer-column footer-about">
+
+            <a href="index.php" class="footer-brand" aria-label="Vroom - Beranda">
+                <img src="images/vroom.svg" alt="Logo Vroom">
+
+                <strong>vroom<span>.</span></strong>
+            </a>
+
+            <div class="footer-heading-line"></div>
+
+            <p>
+                Direktori showroom mobil dan motor di Sumatera Utara
+                berbasis teknologi web semantik.
+            </p>
+
+        </div>
+
+
+        <!-- LINK CEPAT -->
+        <div class="footer-column footer-links">
+
+            <h3>Link Cepat</h3>
+
+            <div class="footer-heading-line"></div>
+
+            <nav aria-label="Link cepat footer">
+                <a href="index.php">Beranda</a>
+                <a href="#hasil">Showroom</a>
+                <a href="#tim">Tim Kami</a>
+                <a href="#tentang">Tentang Kami</a>
+            </nav>
+
+        </div>
+
+
+        <!-- JELAJAHI SHOWROOM -->
+        <div class="footer-column footer-explore">
+
+            <h3>Jelajahi Showroom</h3>
+
+            <div class="footer-heading-line"></div>
+
+            <div class="footer-explore-card">
+
+                <img
+                    src="images/banner.jpg"
+                    alt="Deretan kendaraan di dalam showroom"
+                    loading="lazy"
+                >
+
+                <div class="footer-explore-content">
+                    <p>Temukan showroom pilihanmu di Sumatera Utara.</p>
+
+                    <a href="#hasil">
+                        Lihat Showroom <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            &copy; <?= date('Y') ?> Vroom.
+            Web Semantik Showroom Kendaraan Sumatera Utara.
+        </p>
+    </div>
+
+</footer>
+
+<script src="js/filter.js" defer></script>
+<script src="js/pencarian.js" defer></script>
+<script src="js/navbar.js" defer></script>
+<script src="js/layout.js" defer></script>
+
 </body>
 </html>
