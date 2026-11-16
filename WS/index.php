@@ -6,6 +6,8 @@ $search_keyword = isset($_GET['keyword']) ? trim($_GET['keyword']) : '';
 $filter_lokasi  = isset($_GET['lokasi']) ? trim($_GET['lokasi']) : '';
 $sort_abjad     = isset($_GET['abjad']) ? trim($_GET['abjad']) : '';
 $sort_rating    = isset($_GET['rating']) ? trim($_GET['rating']) : '';
+$filter_kategori = isset($_GET['kategori']) ? trim($_GET['kategori']) : '';
+$filter_rating = $sort_rating;
 
 // 2. Ambil daftar lokasi unik yang ADA di file TTL saja
 $query_lokasi = '
@@ -29,26 +31,358 @@ if (isset($data_lokasi_sparql['results']['bindings'])) {
 // 3. Bangun Query Filter SPARQL Utama (Kata Kunci & Lokasi)
 $filter_clauses = [];
 
+
+
+$model_ke_merek = [
+
+    // HONDA - MOBIL DAN MOTOR
+    'Honda Motor' => [
+        'vario', 'beat', 'scoopy', 'pcx',
+        'adv', 'supra', 'revo', 'genio',
+        'stylo', 'sonic', 'cbr150r',
+        'cb150r', 'crf150l', 'forza',
+        'monkey', 'cbr1000rr', 'cbr650r',
+        'cb650r', 'cb500x', 'rebel 500',
+        'rebel 1100', 'africa twin',
+        'gold wing', 'nt1100'
+    ],
+
+    // HONDA MOBIL
+    'Honda Mobil' => [
+        'brio', 'jazz', 'civic', 'city',
+        'accord', 'crv', 'hrv', 'brv',
+        'wrv', 'mobilio', 'freed',
+        'odyssey', 'stepwgn'
+    ],
+
+    // YAMAHA - MOTOR
+    'Yamaha' => [
+        'nmax', 'aerox', 'mio', 'fazzio',
+        'xmax', 'lexi', 'r15', 'r25',
+        'mt15', 'mt25', 'vixion',
+        'jupiter', 'vega', 'fino',
+        'gear', 'freego', 'filano',
+        'xsr155', 'wr155', 'rx king',
+        'byson', 'soul gt', 'tmax'
+    ],
+
+    // TOYOTA - MOBIL
+    'Toyota' => [
+        'avanza', 'innova', 'fortuner',
+        'rush', 'agya', 'calya',
+        'alphard', 'veloz', 'yaris',
+        'raize', 'hilux', 'camry',
+        'corolla', 'altis', 'vios',
+        'hiace', 'land cruiser',
+        'prado', 'gr86', 'sienta',
+        'kijang', 'starlet', 'voxy',
+        'bz4x', 'crown', 'rav4'
+    ],
+
+    // DAIHATSU - MOBIL
+    'Daihatsu' => [
+        'xenia', 'sigra', 'ayla',
+        'terios', 'rocky', 'sirion',
+        'gran max', 'granmax',
+        'luxio', 'taft', 'feroza',
+        'charade', 'zebra',
+        'hijet', 'copen'
+    ],
+
+    // SUZUKI - MOBIL DAN MOTOR
+    'Suzuki' => [
+        'ertiga', 'xl7', 'baleno',
+        'ignis', 'jimny', 'karimun',
+        'swift', 'apv', 'carry',
+        'splash', 'sx4', 'vitara',
+        'escudo', 'katana', 'ciaz',
+        'nex', 'address', 'satria',
+        'smash', 'shogun', 'burgman',
+        'gsx', 'hayabusa', 'v-strom',
+        'avenis'
+    ],
+
+    // MITSUBISHI - MOBIL
+    'Mitsubishi' => [
+        'xpander', 'xpander cross',
+        'pajero', 'pajero sport',
+        'triton', 'l300', 'colt',
+        'outlander', 'eclipse cross',
+        'xforce', 'destinator',
+        'mirage', 'delica',
+        'lancer', 'galant',
+        'grandis', 'strada', 'kuda'
+    ],
+
+    // KAWASAKI - MOTOR
+    'Kawasaki' => [
+        'ninja', 'zx25r', 'zx4r',
+        'zx6r', 'zx10r', 'klx',
+        'w175', 'w250', 'w800',
+        'versys', 'z125', 'z250',
+        'z400', 'z650', 'z900',
+        'z1000', 'vulcan',
+        'eliminator', 'd-tracker',
+        'kaze', 'athlete'
+    ],
+
+    // HYUNDAI - MOBIL
+    'Hyundai' => [
+        'stargazer', 'creta',
+        'palisade', 'santa fe',
+        'tucson', 'kona', 'ioniq',
+        'ioniq 5', 'ioniq 6',
+        'ioniq 9', 'venue',
+        'accent', 'elantra',
+        'sonata', 'h1', 'h100',
+        'i10', 'i20', 'i30',
+        'grand avega'
+    ],
+
+    // WULING - MOBIL
+    'Wuling' => [
+        'air ev', 'binguo', 'binguo ev',
+        'cloud ev', 'alvez',
+        'almaz', 'cortez',
+        'confero', 'formo',
+        'darion'
+    ],
+
+    // CHERY - MOBIL
+    'Chery' => [
+        'omoda', 'omoda 5', 'omoda e5',
+        'tiggo', 'tiggo 5x',
+        'tiggo 7', 'tiggo 8',
+        'tiggo 9', 'j6', 'j6t',
+        'c5'
+    ],
+
+    // BMW - MOBIL
+    'BMW' => [
+        '118i', '218i', '320i',
+        '330i', '520i', '530i',
+        '740i', '750i', 'x1',
+        'x2', 'x3', 'x4',
+        'x5', 'x6', 'x7',
+        'm2', 'm3', 'm4',
+        'm5', 'i4', 'i5',
+        'i7', 'ix'
+    ],
+
+    // MERCEDES-BENZ - MOBIL
+    'Mercedes-Benz' => [
+        'a200', 'a250', 'c180',
+        'c200', 'c250', 'c300',
+        'e200', 'e250', 'e300',
+        's400', 's450', 's500',
+        'gla', 'glb', 'glc',
+        'gle', 'gls', 'g63',
+        'cla', 'cls', 'eqe',
+        'eqs', 'amg gt'
+    ],
+
+    // NISSAN - MOBIL
+    'Nissan' => [
+        'livina', 'grand livina',
+        'serena', 'xtrail', 'x-trail',
+        'terra', 'navara',
+        'magnite', 'juke',
+        'march', 'evalia',
+        'teana', 'elgrand',
+        'skyline', 'gtr', 'gt-r',
+        'fairlady', 'leaf', 'kicks'
+    ],
+
+    // DATSUN - MOBIL
+    'Datsun' => [
+        'datsun go', 'go plus',
+        'go+', 'redi go'
+    ],
+
+    // CHEVROLET - MOBIL
+    'Chevrolet' => [
+        'captiva', 'spin',
+        'trax', 'trailblazer',
+        'colorado', 'spark',
+        'aveo', 'cruze',
+        'orlando', 'optra',
+        'camaro', 'tahoe',
+        'suburban'
+    ],
+
+    // MAZDA - MOBIL
+    'Mazda' => [
+        'mazda2', 'mazda3',
+        'mazda6', 'cx3', 'cx30',
+        'cx5', 'cx8', 'cx9',
+        'cx60', 'cx80', 'cx90',
+        'mx5', 'rx7', 'rx8',
+        'biante', 'bt50'
+    ],
+
+    // FORD - MOBIL
+    'Ford' => [
+        'ranger', 'everest',
+        'ecosport', 'fiesta',
+        'focus', 'escape',
+        'mustang', 'explorer',
+        'bronco', 'raptor',
+        'territory'
+    ],
+
+    // ISUZU - MOBIL DAN TRUK
+    'Isuzu' => [
+        'panther', 'mu-x', 'mux',
+        'dmax', 'd-max',
+        'traga', 'elf',
+        'giga', 'nmr',
+        'nkr', 'npr'
+    ],
+
+    // BYD - MOBIL LISTRIK
+    'BYD' => [
+        'atto 3', 'dolphin',
+        'seal', 'sealion 7',
+        'm6', 'denza d9',
+        'seagull'
+    ],
+
+    // VESPA - MOTOR
+    'Vespa' => [
+        'primavera', 'sprint',
+        'gts', 'gts super',
+        'gts 300', 'lx',
+        's 125', 's 150',
+        '946', 'elettrica',
+        'px', 'excel', 'et4'
+    ],
+
+    // MG - MOBIL
+    'MG' => [
+        'zs', 'hs', 'mg5',
+        'mg4', 'mg4 ev',
+        'zs ev', 'cyberster',
+        'mg one', 'mg3'
+    ],
+
+    // DFSK - MOBIL
+    'DFSK' => [
+        'glory 560', 'glory 580',
+        'glory i-auto',
+        'gelora', 'gelora e',
+        'super cab'
+    ],
+
+    // AION - MOBIL LISTRIK
+    'Aion' => [
+        'aion y', 'aion y plus',
+        'aion v', 'aion es',
+        'aion ut', 'hyptec ht'
+    ]
+
+];
+
 if (!empty($search_keyword)) {
-    $keyword_clean = addslashes($search_keyword);
-    $filter_clauses[] = '
-        contains(lcase(str(?namaShowroom)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?merek)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?alamat)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?lokasi)), lcase("' . $keyword_clean . '"))
-    ';
+
+    $keyword_lower = strtolower($search_keyword);
+    $merek_cocok = [];
+
+    // Mencari merek berdasarkan nama kendaraan
+    foreach ($model_ke_merek as $merek => $daftar_model) {
+        foreach ($daftar_model as $model) {
+
+            if (preg_match(
+                '/(?<![a-z0-9])' . preg_quote($model, '/') . '(?![a-z0-9])/i',
+                $keyword_lower
+            )) {
+                $merek_cocok[] = $merek;
+                break;
+            }
+        }
+    }
+
+    $literal_keyword = json_encode(
+        $search_keyword,
+        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
+    );
+
+    $syarat_pencarian = [
+        'CONTAINS(LCASE(STR(?namaShowroom)), LCASE(' . $literal_keyword . '))',
+        'CONTAINS(LCASE(STR(?merek)), LCASE(' . $literal_keyword . '))',
+        'CONTAINS(LCASE(STR(?alamat)), LCASE(' . $literal_keyword . '))',
+        'CONTAINS(LCASE(STR(?lokasi)), LCASE(' . $literal_keyword . '))'
+    ];
+
+    
+    foreach ($merek_cocok as $merek) {
+
+        if ($merek === 'Honda Motor') {
+
+            $syarat_pencarian[] = '(
+                CONTAINS(LCASE(STR(?merek)), "honda")
+                &&
+                CONTAINS(LCASE(STR(?kategori)), "motor")
+            )';
+
+        } elseif ($merek === 'Honda Mobil') {
+
+            $syarat_pencarian[] = '(
+                CONTAINS(LCASE(STR(?merek)), "honda")
+                &&
+                CONTAINS(LCASE(STR(?kategori)), "mobil")
+            )';
+
+        } else {
+
+        $literal_merek = json_encode($merek);
+
+        $syarat_pencarian[] =
+            'CONTAINS(LCASE(STR(?merek)), LCASE(' .
+            $literal_merek . '))';
+    }
 }
+
+
+    $filter_clauses[] =
+        '(' . implode(' || ', $syarat_pencarian) . ')';
+}
+
 
 if (!empty($filter_lokasi)) {
     $lok_clean = addslashes($filter_lokasi);
     $filter_clauses[] = 'str(?lokasi) = "' . $lok_clean . '"';
 }
 
+
+if (!empty($filter_kategori)) {
+    $kat_clean = addslashes($filter_kategori);
+
+    $filter_clauses[] =
+        'LCASE(STR(?kategori)) = LCASE("' . $kat_clean . '")';
+}
+
+if (!empty($filter_rating)) {
+    $rating_expr =
+        'xsd:float(replace(str(?rating), ",", "."))';
+
+    if ($filter_rating === 'terendah') {
+        $filter_clauses[] = '(' . $rating_expr . ' < 4.3)';
+    } elseif ($filter_rating === 'menengah') {
+        $filter_clauses[] =
+            '(' . $rating_expr . ' >= 4.3 && ' .
+            $rating_expr . ' <= 4.7)';
+    } elseif ($filter_rating === 'tertinggi') {
+        $filter_clauses[] = '(' . $rating_expr . ' >= 4.8)';
+    }
+}
+
+
 $filter_query = count($filter_clauses) > 0 ? 'FILTER( (' . implode(') && (', $filter_clauses) . ') ) .' : '';
 
 $query = '
     PREFIX ex: <http://www.example.org/showroom#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
     SELECT ?showroom ?namaShowroom ?kategori ?merek ?lokasi ?rating ?jam
     WHERE {
@@ -65,58 +399,6 @@ $query = '
     }
     ORDER BY ?showroom
 ';
-
-// 2. Ambil daftar lokasi unik yang ADA di file TTL saja
-$query_lokasi = '
-    PREFIX ex: <http://www.example.org/showroom#>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    SELECT DISTINCT ?lokasi WHERE {
-        ?showroom rdf:type ex:Showroom .
-        ?showroom ex:berlokasiDi ?lokasi .
-    } ORDER BY ASC(?lokasi)
-';
-$data_lokasi_sparql = executeSparqlQuery($query_lokasi);
-$daftar_lokasi = [];
-if (isset($data_lokasi_sparql['results']['bindings'])) {
-    foreach ($data_lokasi_sparql['results']['bindings'] as $row_lok) {
-        if (!empty($row_lok['lokasi']['value'])) {
-            $daftar_lokasi[] = trim($row_lok['lokasi']['value']);
-        }
-    }
-}
-
-// 3. Bangun Query Filter SPARQL Utama secara dinamis
-$filter_clauses = [];
-
-if (!empty($search_keyword)) {
-    $keyword_clean = addslashes($search_keyword);
-    $filter_clauses[] = '
-        contains(lcase(str(?namaShowroom)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?merek)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?alamat)), lcase("' . $keyword_clean . '")) || 
-        contains(lcase(str(?lokasi)), lcase("' . $keyword_clean . '"))
-    ';
-}
-if (!empty($filter_kategori)) {
-    $kat_clean = addslashes($filter_kategori);
-    $filter_clauses[] = 'lcase(str(?kategori)) = lcase("' . $kat_clean . '")';
-}
-if (!empty($filter_lokasi)) {
-    $lok_clean = addslashes($filter_lokasi);
-    $filter_clauses[] = 'str(?lokasi) = "' . $lok_clean . '"';
-}
-if (!empty($filter_rating)) {
-    $rating_expr = 'xsd:float(replace(str(?rating), ",", "."))';
-    if ($filter_rating === 'terendah') {
-        $filter_clauses[] = '(' . $rating_expr . ' < 4.3)';
-    } elseif ($filter_rating === 'menengah') {
-        $filter_clauses[] = '(' . $rating_expr . ' >= 4.3 && ' . $rating_expr . ' <= 4.7)';
-    } elseif ($filter_rating === 'tertinggi') {
-        $filter_clauses[] = '(' . $rating_expr . ' >= 4.8)';
-    }
-}
-
-$filter_query = count($filter_clauses) > 0 ? 'FILTER( (' . implode(') && (', $filter_clauses) . ') ) .' : '';
 
 $active_filter_count = 0;
 if (!empty($filter_kategori)) $active_filter_count++;
@@ -222,7 +504,7 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                         type="text"
                         name="keyword"
                         aria-label="Cari showroom"
-                        placeholder="Cari nama showroom, merek, atau lokasi..."
+                        placeholder="Cari kendaraan (Vario, NMAX), showroom, atau lokasi..."
                         value="<?= htmlspecialchars($search_keyword) ?>"
                     >
 

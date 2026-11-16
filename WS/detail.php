@@ -86,7 +86,7 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
         <span property="telephone" content="<?= htmlspecialchars($detail_entitas['telepon']) ?>"></span>
     </section>
 
-    <div class="grid-container" style="margin-top: -40px; position: relative; z-index: 10;">
+    <div class="grid-container detail-info-layout" style="margin-top: -40px; position: relative; z-index: 10;">
         
         <div class="card" style="text-align: left;">
             <h3 style="color: var(--primary-blue); font-size: 18px; border-bottom: 2px solid var(--light-blue); padding-bottom: 10px;">Informasi RDF Lokal</h3>
@@ -121,6 +121,112 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
             </p>
         </div>
     </div>
+    
+    
+<!-- KATALOG KENDARAAN SHOWROOM -->
+<section class="detail-katalog" id="katalog-kendaraan">
+
+    <div class="detail-katalog-heading">
+        <span class="detail-katalog-label">
+            KATALOG SHOWROOM
+        </span>
+
+        <h2>Kendaraan yang Tersedia</h2>
+
+        <p>
+            Jelajahi pilihan kendaraan dari showroom ini.
+            Informasi kendaraan akan segera ditambahkan.
+        </p>
+    </div>
+
+    <div class="detail-katalog-grid">
+
+        <!-- CARD KENDARAAN 1 -->
+        <article class="detail-kendaraan-card">
+
+            <div class="detail-kendaraan-foto">
+                <span>Foto Kendaraan</span>
+            </div>
+
+            <div class="detail-kendaraan-info">
+                <span class="detail-kendaraan-tag">
+                    Katalog Kendaraan
+                </span>
+
+                <h3>Nama Kendaraan</h3>
+
+                <p>
+                    Deskripsi kendaraan akan ditambahkan
+                    oleh tim Vroom.
+                </p>
+
+                <div class="detail-kendaraan-harga">
+                    Harga belum tersedia
+                </div>
+            </div>
+
+        </article>
+
+        <!-- CARD KENDARAAN 2 -->
+        <article class="detail-kendaraan-card">
+
+            <div class="detail-kendaraan-foto">
+                <span>Foto Kendaraan</span>
+            </div>
+
+            <div class="detail-kendaraan-info">
+                <span class="detail-kendaraan-tag">
+                    Katalog Kendaraan
+                </span>
+
+                <h3>Nama Kendaraan</h3>
+
+                <p>
+                    Deskripsi kendaraan akan ditambahkan
+                    oleh tim Vroom.
+                </p>
+
+                <div class="detail-kendaraan-harga">
+                    Harga belum tersedia
+                </div>
+            </div>
+
+        </article>
+
+        <!-- CARD KENDARAAN 3 -->
+        <article class="detail-kendaraan-card">
+
+            <div class="detail-kendaraan-foto">
+                <span>Foto Kendaraan</span>
+            </div>
+
+            <div class="detail-kendaraan-info">
+                <span class="detail-kendaraan-tag">
+                    Katalog Kendaraan
+                </span>
+
+                <h3>Nama Kendaraan</h3>
+
+                <p>
+                    Deskripsi kendaraan akan ditambahkan
+                    oleh tim Vroom.
+                </p>
+
+                <div class="detail-kendaraan-harga">
+                    Harga belum tersedia
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+    <p class="detail-katalog-catatan">
+        *Katalog kendaraan masih dalam tahap pengembangan.
+    </p>
+
+</section>
+
 
     <!-- SPARQL Endpoint Eksternal (DBpedia) -->
     <div class="section-title" style="padding-top: 20px;">
