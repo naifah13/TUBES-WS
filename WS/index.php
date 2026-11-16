@@ -634,7 +634,7 @@ $logoTersedia = $logoFile !== null
             <article class="team-card">
                 <div class="team-photo">
                     <img
-                        src="images/tim/tabhita.jpg"
+                        src="images/tim/tabhita.png"
                         alt="Foto Tabhita"
                         loading="lazy"
                     >
@@ -647,7 +647,7 @@ $logoTersedia = $logoFile !== null
             <article class="team-card">
                 <div class="team-photo">
                     <img
-                        src="images/tim/nadine.jpg"
+                        src="images/tim/nadine.png"
                         alt="Foto Nadine"
                         loading="lazy"
                     >
@@ -660,7 +660,7 @@ $logoTersedia = $logoFile !== null
             <article class="team-card">
                 <div class="team-photo">
                     <img
-                        src="images/tim/jevine.jpg"
+                        src="images/tim/jevine.png"
                         alt="Foto Jevine"
                         loading="lazy"
                     >
@@ -673,7 +673,7 @@ $logoTersedia = $logoFile !== null
             <article class="team-card">
                 <div class="team-photo">
                     <img
-                        src="images/tim/dwi.jpg"
+                        src="images/tim/dwi.png"
                         alt="Foto Dwi"
                         loading="lazy"
                     >
