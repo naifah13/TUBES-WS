@@ -440,6 +440,9 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
     <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
     <link rel="stylesheet" href="style.css?v=4">
 </head>
+
+
+
 <body>
 
     <!-- NAVBAR -->
@@ -487,6 +490,8 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 
                 <div class="search-bar-nav">
 
+                    <div class="search-wrapper">
+
                     <svg
                         class="search-icon"
                         viewBox="0 0 24 24"
@@ -499,14 +504,21 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                         <circle cx="11" cy="11" r="7"></circle>
                         <path d="m20 20-4-4"></path>
                     </svg>
-
+                    
                     <input
                         type="text"
+                        id="keywordSearch"
                         name="keyword"
+                        autocomplete="off"
                         aria-label="Cari showroom"
-                        placeholder="Cari kendaraan (Vario, NMAX), showroom, atau lokasi..."
+                        placeholder="Cari kendaraan, showroom, atau lokasi..."
                         value="<?= htmlspecialchars($search_keyword) ?>"
                     >
+
+                    <div id="searchSuggestions"
+                        class="search-suggestions"></div>
+
+                    </div>
 
                     <button
                         type="button"
@@ -1088,6 +1100,7 @@ $logoTersedia = $logoFile !== null
 <script src="js/pencarian.js" defer></script>
 <script src="js/navbar.js" defer></script>
 <script src="js/layout.js" defer></script>
+<script src="js/autocomplete.js" defer></script>
 
 </body>
 </html>

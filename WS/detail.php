@@ -64,18 +64,27 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 <body>
 
     <!-- NAVBAR DIPERBARUI (Judul bisa diklik, menu kanan dibersihkan) -->
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100;">
-        
-        <!-- Judul Web sekarang jadi link ke beranda -->
-        <a href="index.php" style="text-decoration: none;">
-            <h1>ShowroomSumut<span style="font-size: 14px; color: var(--text-dark); margin-left: 5px;">Knowledge Base</span></h1>
-        </a>
-        
-        <nav>
-            <a href="export.php" style="color: var(--text-dark); font-weight: 600;">Export RDF</a>
-        </nav>
-    </header>
+    <header class="vroom-header">
 
+        <a href="index.php" class="vroom-brand"
+        aria-label="Vroom - Beranda">
+
+            <img src="images/vroom.svg" alt="Logo Vroom">
+
+            <span class="vroom-brand-text">
+                <strong>vroom<span>.</span></strong>
+            </span>
+        </a>
+
+        <nav class="vroom-nav" aria-label="Navigasi utama">
+            <a href="index.php">Beranda</a>
+            <a href="index.php#hasil" class="vroom-nav-active">Showroom</a>
+            <a href="index.php#tim">Tim</a>
+            <a href="index.php#tentang">Tentang</a>
+        </nav>
+
+    </header>
+    
     <section class="hero" vocab="http://schema.org/" typeof="AutoDealer" style="padding-bottom: 80px;">
         <p style="color: var(--text-muted); font-weight: bold; margin-bottom: 5px;">DETAIL ENTITAS SEMANTIK</p>
         <h2 property="name" style="font-size: 36px;"><?= htmlspecialchars($detail_entitas['nama']) ?></h2>
