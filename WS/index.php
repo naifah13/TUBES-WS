@@ -456,11 +456,52 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
     </a>
 
     <nav class="vroom-nav" aria-label="Navigasi utama">
-        <a href="index.php" class="vroom-nav-active">Beranda</a>
-        <a href="#hasil">Showroom</a>
-        <a href="#tim">Tim</a>
-        <a href="#tentang">Tentang</a>
-    </nav>
+    <a href="index.php" class="vroom-nav-active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"></path>
+            <path d="M5.5 9.5V21h13V9.5"></path>
+            <path d="M9.5 21v-7h5v7"></path>
+        </svg>
+        <span>Beranda</span>
+    </a>
+
+    <a href="#hasil">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 10h18l-1.5-5h-15L3 10Z"></path>
+            <path d="M5 10v9h14v-9"></path>
+            <path d="M3 10c0 1.1.9 2 2 2s2-.9 2-2c0 1.1.9 2 2 2s2-.9 2-2c0 1.1.9 2 2 2s2-.9 2-2c0 1.1.9 2 2 2s2-.9 2-2"></path>
+            <path d="M9 19v-4h6v4"></path>
+        </svg>
+        <span>Showroom</span>
+    </a>
+
+    <a href="#tim">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="8" r="3"></circle>
+            <path d="M3.5 19v-1a5.5 5.5 0 0 1 11 0v1"></path>
+            <path d="M16 5.2a3 3 0 0 1 0 5.6"></path>
+            <path d="M17 13a5 5 0 0 1 3.5 4.8V19"></path>
+        </svg>
+        <span>Tim</span>
+    </a>
+
+    <a href="#tentang">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="1.8" stroke-linecap="round"
+             stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 11v5"></path>
+            <path d="M12 8h.01"></path>
+        </svg>
+        <span>Tentang</span>
+    </a>
+</nav>
 
 </header>
 
@@ -475,8 +516,13 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
         </h2>
 
         <p class="vroom-hero-description">
-            Jelajahi showroom mobil dan motor di Sumatera Utara,
-            temukan lokasi, jam operasional, dan informasi yang dibutuhkan.
+            Temukan showroom kendaraan
+            <span>di seluruh Sumatera Utara.</span>
+        </p>
+
+        <p class="vroom-hero-caption">
+            Satu tempat untuk mencari lokasi, menjelajahi pilihan,
+            dan menemukan informasi yang kamu butuhkan.
         </p>
 
         <!-- FORM PENCARIAN DAN FILTER -->
@@ -491,19 +537,6 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                 <div class="search-bar-nav">
 
                     <div class="search-wrapper">
-
-                    <svg
-                        class="search-icon"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        aria-hidden="true"
-                    >
-                        <circle cx="11" cy="11" r="7"></circle>
-                        <path d="m20 20-4-4"></path>
-                    </svg>
                     
                     <input
                         type="text"
@@ -542,11 +575,24 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
                     </button>
 
                     <button type="submit" class="submit-search">
-                        Cari
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round"
+                            aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m20 20-4-4"></path>
+                        </svg>
+                        <span>Cari</span>
                     </button>
 
                     <a href="index.php#hasil" class="search-reset" id="searchReset" hidden>
-                    Reset
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <path d="m9 9 6 6"></path>
+                            <path d="m15 9-6 6"></path>
+                        </svg>
+                        <span>Reset</span>
                     </a>
 
                 </div>
@@ -633,9 +679,13 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 
         </div>
 
-        <a href="#hasil" class="vroom-scroll">
-            Jelajahi showroom
-            <span aria-hidden="true">↓</span>
+        <a href="#hasil" class="vroom-scroll" aria-label="Lihat daftar showroom">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor"
+                stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="m7 10 9 9 9-9"></path>
+                <path d="m7 17 9 9 9-9"></path>
+            </svg>
         </a>
 
     </div>
@@ -1101,6 +1151,7 @@ $logoTersedia = $logoFile !== null
 <script src="js/navbar.js" defer></script>
 <script src="js/layout.js" defer></script>
 <script src="js/autocomplete.js" defer></script>
+<script src="js/animasi-card.js" defer></script>
 
 </body>
 </html>

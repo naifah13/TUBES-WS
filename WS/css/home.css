@@ -139,3 +139,72 @@
     width: 14px;
   }
 }
+
+/* Deskripsi pada bagian utama */
+.vroom-hero-description {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: clamp(18px, 2.2vw, 27px);
+  font-weight: 600;
+  line-height: 1.45;
+  text-wrap: balance;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.25);
+}
+
+.vroom-hero-description span {
+  display: block;
+  color: #ffd9dd;
+}
+
+.vroom-hero-caption {
+  max-width: 590px;
+  margin: 12px auto 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1.75;
+  text-wrap: balance;
+}
+
+/* Tombol panah ganda */
+.vroom-scroll {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  margin-top: clamp(22px, 3vh, 32px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.vroom-scroll svg {
+  width: 32px;
+  height: 32px;
+}
+
+.vroom-scroll:hover {
+  background: rgba(239, 35, 60, 0.85);
+  transform: translateY(4px);
+}
+
+@media (max-width: 700px) {
+  .vroom-hero-description {
+    font-size: clamp(17px, 5vw, 22px);
+  }
+
+  .vroom-hero-caption {
+    font-size: 13px;
+  }
+
+  .vroom-scroll {
+    width: 52px;
+    height: 52px;
+  }
+}

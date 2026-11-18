@@ -340,3 +340,67 @@
   align-items: center;
   text-align: center;
 }
+
+/* =========================================
+   ANIMASI CARD SHOWROOM SAAT SCROLL
+   ========================================= */
+
+/* Keadaan awal card yang belum masuk layar */
+.showroom-card.card-reveal-pending {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Animasi saat card masuk ke layar */
+.showroom-card.card-reveal-in {
+  animation: showroom-card-muncul 0.65s
+    cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes showroom-card-muncul {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY();
+  }
+}
+
+/* =========================================
+   EFEK HOVER CARD
+   ========================================= */
+
+@media (hover: hover) {
+  .showroom-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 22px 40px rgba(43, 45, 66, 0.3);
+  }
+}
+
+/* Tombol detail berubah terang saat disentuh kursor */
+.showroom-detail:hover,
+.showroom-detail:focus-visible {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #d90429;
+}
+
+/* Kurangi gerakan jika pengguna memilih reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .showroom-card.card-reveal-pending {
+    opacity: 1;
+    transform: none;
+  }
+
+  .showroom-card.card-reveal-in {
+    animation: none;
+  }
+
+  .showroom-card:hover {
+    transform: none;
+  }
+}

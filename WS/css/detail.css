@@ -191,3 +191,48 @@
         height: 280px;
     }
 }
+
+/* Navigasi kembali pada halaman detail */
+.detail-back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.detail-back-link svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.detail-back-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.detail-back-link:hover svg {
+  transform: translateX(-4px);
+}
+
+@media (max-width: 700px) {
+  .detail-back-link {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+}

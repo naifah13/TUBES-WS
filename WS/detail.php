@@ -58,7 +58,10 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($detail_entitas['nama']) ?> - Semantic Web KB</title>
+
+    <title><?= htmlspecialchars($detail_entitas['nama']) ?> | Vroom</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -76,12 +79,16 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
             </span>
         </a>
 
-        <nav class="vroom-nav" aria-label="Navigasi utama">
-            <a href="index.php">Beranda</a>
-            <a href="index.php#hasil" class="vroom-nav-active">Showroom</a>
-            <a href="index.php#tim">Tim</a>
-            <a href="index.php#tentang">Tentang</a>
-        </nav>
+        <a href="index.php" class="detail-back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round"
+         stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 12H5"></path>
+        <path d="m12 19-7-7 7-7"></path>
+    </svg>
+
+    <span>Kembali ke Beranda</span>
+        </a>
 
     </header>
     
@@ -237,29 +244,83 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 </section>
 
 
-    <!-- SPARQL Endpoint Eksternal (DBpedia) -->
-    <div class="section-title" style="padding-top: 20px;">
-        <h3 style="color: var(--primary-blue); font-size: 12px; text-transform: uppercase;">Linked Open Data</h3>
-        <h2 style="font-size: 24px; color: var(--text-dark);">Pengayaan Data via DBpedia</h2>
-    </div>
+    <!-- FOOTER VROOM -->
+<footer class="vroom-footer">
 
-    <div class="grid-container" style="padding-top: 0;">
-        <div class="card" style="grid-column: 1 / -1; text-align: left;">
-            <p style="margin-bottom: 15px; color: var(--text-muted);">Menerapkan query terpisah ke <strong>http://dbpedia.org/sparql</strong> untuk menghubungkan dataset lokal dengan Knowledge Graph global terkait merek kendaraan yang dijual.</p>
-            
-            <div style="background: var(--light-blue); padding: 25px; border-radius: 8px; border-left: 5px solid var(--primary-blue);">
-                <h4 style="margin-bottom: 10px; font-size: 20px; color: var(--text-dark);">Entitas Merek: <?= htmlspecialchars($detail_entitas['merek']) ?></h4>
-                <p><strong>Sumber:</strong> DBpedia SPARQL Endpoint</p>
-                <p style="margin-top: 10px; font-style: italic; color: var(--text-muted); font-size: 14px;">
-                    (Catatan untuk Mahasiswa: Di sini kelompok kalian perlu menanamkan query EasyRDF/cURL PHP yang mengarah ke endpoint DBpedia untuk mengambil properti 'dbo:abstract' atau 'rdfs:comment' dari merek terkait. Jika merek tidak ditemukan di DBpedia, tampilkan pesan penanganan error yang sesuai).
-                </p>
-            </div>
+    <div class="footer-container">
+
+        <!-- LOGO DAN DESKRIPSI -->
+        <div class="footer-column footer-about">
+
+            <a href="index.php" class="footer-brand" aria-label="Vroom - Beranda">
+                <img src="images/vroom.svg" alt="Logo Vroom">
+                <strong>vroom<span>.</span></strong>
+            </a>
+
+            <div class="footer-heading-line"></div>
+
+            <p>
+                Direktori showroom mobil dan motor di Sumatera Utara
+                berbasis teknologi web semantik.
+            </p>
+
         </div>
+
+        <!-- LINK CEPAT -->
+        <div class="footer-column footer-links">
+
+            <h3>Link Cepat</h3>
+
+            <div class="footer-heading-line"></div>
+
+            <nav aria-label="Link cepat footer">
+                <a href="index.php">Beranda</a>
+                <a href="index.php#hasil">Showroom</a>
+                <a href="index.php#tim">Tim Kami</a>
+                <a href="index.php#tentang">Tentang Kami</a>
+            </nav>
+
+        </div>
+
+        <!-- JELAJAHI SHOWROOM -->
+        <div class="footer-column footer-explore">
+
+            <h3>Jelajahi Showroom</h3>
+
+            <div class="footer-heading-line"></div>
+
+            <div class="footer-explore-card">
+
+                <img
+                    src="images/banner.jpg"
+                    alt="Deretan kendaraan di dalam showroom"
+                    loading="lazy"
+                >
+
+                <div class="footer-explore-content">
+
+                    <p>Temukan showroom pilihanmu di Sumatera Utara.</p>
+
+                    <a href="index.php#hasil">
+                        Lihat Showroom <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <footer style="background: var(--dark-blue); color: white; text-align: center; padding: 20px; font-size: 14px; margin-top: 40px;">
-        <p>&copy; 2026 Tugas Besar Web Semantik - Kelas KOM B (Kelompok Bhita, Nadin, Nepah, Jepin, Dwik).</p>
-    </footer>
+    <div class="footer-bottom">
+        <p>
+            &copy; <?= date('Y') ?> Vroom.
+            Web Semantik Showroom Kendaraan Sumatera Utara.
+        </p>
+    </div>
+
+</footer>
 
 </body>
 </html>
