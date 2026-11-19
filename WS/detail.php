@@ -315,7 +315,7 @@ if (isset($data_detail['results']['bindings']) && count($data_detail['results'][
 
     <div class="footer-bottom">
         <p>
-            &copy; <?= date('Y') ?> Vroom.
+            &copy; <?= date('Y') ?> vroom.
             Web Semantik Showroom Kendaraan Sumatera Utara.
         </p>
     </div>

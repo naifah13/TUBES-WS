@@ -1,5 +1,6 @@
 @prefix ex: <http://www.example.org/showroom#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 ex:Showroom1 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Medan Kisaran" ;
@@ -10,7 +11,9 @@ ex:Showroom1 rdf:type ex:Showroom ;
     ex:website "https://capelladaihatsu.co.id/" ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 2.975544 ;
+    geo:long 99.630271 .
 
 ex:Showroom2 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Asahan Daya Daihatsu" ;
@@ -21,7 +24,9 @@ ex:Showroom2 rdf:type ex:Showroom ;
     ex:website "https://dayadaihatsu.com/" ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 3.001598 ;
+    geo:long 99.698874 .
 
 ex:Showroom3 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Sardana Kisaran - H. M. Yamin" ;
@@ -32,7 +37,9 @@ ex:Showroom3 rdf:type ex:Showroom ;
     ex:website "https://www.sardanamitsubishi.com/" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 2.966259 ;
+    geo:long 99.631031 .
 
 ex:Showroom4 rdf:type ex:Showroom ;
     ex:namaShowroom "Sardana Berlian Mitsubishi Motors" ;
@@ -43,7 +50,9 @@ ex:Showroom4 rdf:type ex:Showroom ;
     ex:website "https://sardanagroup.co.id/" ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 2.984163 ;
+    geo:long 99.628102 .
 
 ex:Showroom5 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Kisaran Trans Sumatra Andalan" ;
@@ -54,7 +63,9 @@ ex:Showroom5 rdf:type ex:Showroom ;
     ex:website "https://tsasuzuki.com/kisarantimur" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 2.963889 ;
+    geo:long 99.627179 .
 
 ex:Showroom6 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Suzuki Mobil Cabang Asahan" ;
@@ -1902,7 +1913,9 @@ ex:Showroom173 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "motor" .
+    ex:kategori "motor" ;
+    geo:lat 3.582537 ;
+    geo:long 98.681683 .
 
 ex:Showroom174 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Pilar Deli Labumas II" ;
@@ -1913,7 +1926,9 @@ ex:Showroom174 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "motor" .
+    ex:kategori "motor" ;
+    geo:lat 3.532290 ;
+    geo:long 98.780864 .
 
 ex:Showroom175 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Trading Coy - Makmur" ;
@@ -1924,7 +1939,9 @@ ex:Showroom175 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "motor" .
+    ex:kategori "motor" ;
+    geo:lat 3.604004 ;
+    geo:long 98.667369 .
 
 ex:Showroom176 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Honda CV Mitra Makmur" ;
@@ -1935,7 +1952,9 @@ ex:Showroom176 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Simalungun" ;
-    ex:kategori "motor" .
+    ex:kategori "motor" ;
+    geo:lat 3.158679 ;
+    geo:long 99.328182 .
 
 ex:Showroom177 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Cakra Adi Dharma" ;
@@ -1946,7 +1965,9 @@ ex:Showroom177 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "motor" .
+    ex:kategori "motor" ;
+    geo:lat 2.100659 ;
+    geo:long 99.830102 .
 
 ex:Showroom178 rdf:type ex:Showroom ;
     ex:namaShowroom "Sungai Mas - Dealer Motor Honda - Showroom & Bengkel" ;

@@ -418,9 +418,12 @@ if ($pencarian_aktif) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vroom - Direktori Showroom</title>
+    <title>vroom. - Direktori Showroom</title>
     <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 
@@ -494,7 +497,7 @@ if ($pencarian_aktif) {
     <div class="vroom-hero-content">
 
         <h2>
-            VROOM<span>.</span>
+            vroom<span>.</span>
         </h2>
 
         <p class="vroom-hero-description">
@@ -724,18 +727,41 @@ if ($pencarian_aktif) {
 </section>
 <?php endif; ?>
 
-<section class="showroom-map-section" id="<?= $id_peta ?>" aria-labelledby="map-title">
-    <div class="showroom-map-heading">
-        <h2 id="map-title">Peta Interaktif Showroom Kendaraan di Sumatera Utara</h2>
-    </div>
+<section class="showroom-map-section" id="<?= $id_peta ?>" aria-labelledby="map-title"
+    data-showroom-map="peta-showroom-data.php">
+    <div class="showroom-map-panel">
+        <div class="showroom-map-heading">
+            <div>
+                <h2 id="map-title">Peta Showroom Sumatera Utara</h2>
+                <p>Klik pin untuk melihat alamat dan detail showroom.</p>
+            </div>
 
-    <div class="showroom-map">
-        <iframe
-            class="showroom-map-frame"
-            title="Peta interaktif wilayah Sumatera Utara"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=96.8%2C1.0%2C100.4%2C4.8&amp;layer=mapnik"
-            loading="lazy"
-        ></iframe>
+            <div class="showroom-map-filters" role="group" aria-label="Filter kategori pada peta">
+                <button type="button" data-map-category="semua" aria-pressed="true" aria-controls="peta-showroom" disabled>
+                    Semua <span class="showroom-map-count" data-map-count></span>
+                </button>
+                <button type="button" data-map-category="mobil" aria-pressed="false" aria-controls="peta-showroom" disabled>
+                    Mobil <span class="showroom-map-count" data-map-count></span>
+                </button>
+                <button type="button" data-map-category="motor" aria-pressed="false" aria-controls="peta-showroom" disabled>
+                    Motor <span class="showroom-map-count" data-map-count></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="showroom-map-stage">
+            <div id="peta-showroom" class="showroom-map" role="region" aria-label="Peta lokasi showroom"></div>
+            <div class="showroom-map-placeholder" data-map-placeholder>Menyiapkan peta…</div>
+        </div>
+
+        <div class="showroom-map-footer">
+            <p role="status" data-map-status></p>
+            <a href="#daftar-showroom">Ke daftar showroom <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="showroom-map-tile-status" role="status" data-map-tile-status hidden>
+            Peta dasar belum tersedia. Periksa koneksi ke OpenStreetMap.
+        </p>
+        <noscript><p class="showroom-map-tile-status">Aktifkan JavaScript untuk membuka peta.</p></noscript>
     </div>
 </section>
 
@@ -768,7 +794,7 @@ if ($pencarian_aktif) {
             <div class="team-heading-line"></div>
 
             <p class="team-description">
-                Empat orang di balik pengembangan Vroom.
+                Empat orang di balik pengembangan vroom.
             </p>
         </div>
 
@@ -841,13 +867,13 @@ if ($pencarian_aktif) {
             <img src="images/vroom.svg" alt="Logo Vroom">
         </div>
 
-        <h2>Tentang <span>Vroom.</span></h2>
+        <h2>Tentang <span>vroom.</span></h2>
 
         <div class="about-heading-line"></div>
 
         <p class="about-intro">
             Temukan showroom kendaraan di Sumatera Utara
-            dengan lebih mudah bersama Vroom.
+            dengan lebih mudah bersama vroom.
         </p>
 
         <div class="about-description">
@@ -938,7 +964,7 @@ if ($pencarian_aktif) {
 
     <div class="footer-bottom">
         <p>
-            &copy; <?= date('Y') ?> Vroom.
+            &copy; <?= date('Y') ?> vroom.
             Web Semantik Showroom Kendaraan Sumatera Utara.
         </p>
     </div>
@@ -952,5 +978,9 @@ if ($pencarian_aktif) {
 <script src="js/autocomplete.js" defer></script>
 <script src="js/animasi-card.js" defer></script>
 
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
+<script src="js/peta-showroom.js?v=1" defer></script>
 </body>
 </html>
