@@ -1,13 +1,22 @@
-<?php 
-include 'lib.php'; 
+<?php
+include 'lib.php';
+require_once __DIR__ . '/pencarian-showroom.php';
 
 // 1. Tangkap parameter dari URL (GET)
-$search_keyword = isset($_GET['keyword']) ? trim($_GET['keyword']) : '';
-$filter_lokasi  = isset($_GET['lokasi']) ? trim($_GET['lokasi']) : '';
-$sort_abjad     = isset($_GET['abjad']) ? trim($_GET['abjad']) : '';
-$sort_rating    = isset($_GET['rating']) ? trim($_GET['rating']) : '';
-$filter_kategori = isset($_GET['kategori']) ? trim($_GET['kategori']) : '';
+$parameter = array_filter($_GET, 'is_string');
+$search_keyword = trim($parameter['keyword'] ?? '');
+$filter_lokasi = trim($parameter['lokasi'] ?? '');
+$sort_abjad = trim($parameter['abjad'] ?? '');
+$sort_rating = trim($parameter['rating'] ?? '');
+$filter_kategori = trim($parameter['kategori'] ?? '');
 $filter_rating = $sort_rating;
+$ada_filter = $filter_lokasi !== '' || $sort_abjad !== ''
+    || $filter_rating !== '' || $filter_kategori !== '';
+$pencarian_aktif = $search_keyword !== '' || $ada_filter;
+$id_peta = $pencarian_aktif ? 'jelajahi' : 'hasil';
+$url_tanpa_filter = 'index.php'
+    . ($search_keyword !== '' ? '?keyword=' . urlencode($search_keyword) : '')
+    . '#hasil';
 
 // 2. Ambil daftar lokasi unik yang ADA di file TTL saja
 $query_lokasi = '
@@ -28,11 +37,7 @@ if (isset($data_lokasi_sparql['results']['bindings'])) {
     }
 }
 
-// 3. Bangun Query Filter SPARQL Utama (Kata Kunci & Lokasi)
-$filter_clauses = [];
-
-
-
+// 3. Daftar model kendaraan untuk mengenali mereknya.
 $model_ke_merek = [
 
     // HONDA - MOBIL DAN MOTOR
@@ -282,29 +287,12 @@ $model_ke_merek = [
 
 ];
 
-if (!empty($search_keyword)) {
+$encoding_literal = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE;
+$filter_keyword = '';
 
+if ($search_keyword !== '') {
     $keyword_lower = strtolower($search_keyword);
-    $merek_cocok = [];
-
-    // Mencari merek berdasarkan nama kendaraan
-    foreach ($model_ke_merek as $merek => $daftar_model) {
-        foreach ($daftar_model as $model) {
-
-            if (preg_match(
-                '/(?<![a-z0-9])' . preg_quote($model, '/') . '(?![a-z0-9])/i',
-                $keyword_lower
-            )) {
-                $merek_cocok[] = $merek;
-                break;
-            }
-        }
-    }
-
-    $literal_keyword = json_encode(
-        $search_keyword,
-        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-    );
+    $literal_keyword = json_encode($search_keyword, $encoding_literal);
 
     $syarat_pencarian = [
         'CONTAINS(LCASE(STR(?namaShowroom)), LCASE(' . $literal_keyword . '))',
@@ -313,78 +301,47 @@ if (!empty($search_keyword)) {
         'CONTAINS(LCASE(STR(?lokasi)), LCASE(' . $literal_keyword . '))'
     ];
 
-    
-    foreach ($merek_cocok as $merek) {
+    foreach ($model_ke_merek as $merek => $daftar_model) {
+        if (!in_array($keyword_lower, $daftar_model, true)) {
+            continue;
+        }
 
-        if ($merek === 'Honda Motor') {
-
-            $syarat_pencarian[] = '(
-                CONTAINS(LCASE(STR(?merek)), "honda")
-                &&
-                CONTAINS(LCASE(STR(?kategori)), "motor")
-            )';
-
-        } elseif ($merek === 'Honda Mobil') {
-
-            $syarat_pencarian[] = '(
-                CONTAINS(LCASE(STR(?merek)), "honda")
-                &&
-                CONTAINS(LCASE(STR(?kategori)), "mobil")
-            )';
-
+        if ($merek === 'Honda Motor' || $merek === 'Honda Mobil') {
+            $kategori_honda = $merek === 'Honda Motor' ? '"motor"' : '"mobil"';
+            $syarat_pencarian[] = '(CONTAINS(LCASE(STR(?merek)), "honda")'
+                . ' && CONTAINS(LCASE(STR(?kategori)), ' . $kategori_honda . '))';
         } else {
-
-        $literal_merek = json_encode($merek);
-
-        $syarat_pencarian[] =
-            'CONTAINS(LCASE(STR(?merek)), LCASE(' .
-            $literal_merek . '))';
+            $syarat_pencarian[] = 'CONTAINS(LCASE(STR(?merek)), LCASE(' . json_encode($merek) . '))';
+        }
     }
+
+    $filter_keyword = 'FILTER (' . implode(' || ', $syarat_pencarian) . ')';
 }
 
-
-    $filter_clauses[] =
-        '(' . implode(' || ', $syarat_pencarian) . ')';
+$filter_clauses = [];
+if ($filter_lokasi !== '') {
+    $filter_clauses[] = 'str(?lokasi) = ' . json_encode($filter_lokasi, $encoding_literal);
+}
+if ($filter_kategori !== '') {
+    $filter_clauses[] = 'LCASE(STR(?kategori)) = LCASE(' . json_encode($filter_kategori, $encoding_literal) . ')';
+}
+$rating_expr = 'xsd:float(replace(str(?rating), ",", "."))';
+if ($filter_rating === 'terendah') {
+    $filter_clauses[] = $rating_expr . ' < 4.3';
+} elseif ($filter_rating === 'menengah') {
+    $filter_clauses[] = $rating_expr . ' >= 4.3';
+    $filter_clauses[] = $rating_expr . ' <= 4.7';
+} elseif ($filter_rating === 'tertinggi') {
+    $filter_clauses[] = $rating_expr . ' >= 4.8';
 }
 
-
-if (!empty($filter_lokasi)) {
-    $lok_clean = addslashes($filter_lokasi);
-    $filter_clauses[] = 'str(?lokasi) = "' . $lok_clean . '"';
-}
-
-
-if (!empty($filter_kategori)) {
-    $kat_clean = addslashes($filter_kategori);
-
-    $filter_clauses[] =
-        'LCASE(STR(?kategori)) = LCASE("' . $kat_clean . '")';
-}
-
-if (!empty($filter_rating)) {
-    $rating_expr =
-        'xsd:float(replace(str(?rating), ",", "."))';
-
-    if ($filter_rating === 'terendah') {
-        $filter_clauses[] = '(' . $rating_expr . ' < 4.3)';
-    } elseif ($filter_rating === 'menengah') {
-        $filter_clauses[] =
-            '(' . $rating_expr . ' >= 4.3 && ' .
-            $rating_expr . ' <= 4.7)';
-    } elseif ($filter_rating === 'tertinggi') {
-        $filter_clauses[] = '(' . $rating_expr . ' >= 4.8)';
-    }
-}
-
-
-$filter_query = count($filter_clauses) > 0 ? 'FILTER( (' . implode(') && (', $filter_clauses) . ') ) .' : '';
-
-$query = '
+$filter_query = $filter_clauses ? 'FILTER ((' . implode(') && (', $filter_clauses) . '))' : '';
+$query = <<<'SPARQL'
     PREFIX ex: <http://www.example.org/showroom#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    
-    SELECT ?showroom ?namaShowroom ?kategori ?merek ?lokasi ?rating ?jam
+
+    SELECT ?showroom ?namaShowroom ?kategori ?merek ?lokasi ?rating ?jam ?alamat
     WHERE {
         ?showroom rdf:type ex:Showroom .
         ?showroom ex:namaShowroom ?namaShowroom .
@@ -394,42 +351,67 @@ $query = '
         OPTIONAL { ?showroom ex:rating ?rating . }
         OPTIONAL { ?showroom ex:jamOperasional ?jam . }
         OPTIONAL { ?showroom ex:alamat ?alamat . }
-        
-        ' . $filter_query . '
-    }
-    ORDER BY ?showroom
-';
-
-$active_filter_count = 0;
-if (!empty($filter_kategori)) $active_filter_count++;
-if (!empty($filter_lokasi)) $active_filter_count++;
-if (!empty($filter_rating)) $active_filter_count++;
-
-$query = '
-    PREFIX ex: <http://www.example.org/showroom#>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    
-    SELECT ?showroom ?namaShowroom ?kategori ?merek ?lokasi ?rating ?jam
-    WHERE {
-        ?showroom rdf:type ex:Showroom .
-        ?showroom ex:namaShowroom ?namaShowroom .
-        OPTIONAL { ?showroom ex:kategori ?kategori . }
-        OPTIONAL { ?showroom ex:merek ?merek . }
-        OPTIONAL { ?showroom ex:berlokasiDi ?lokasi . }
-        OPTIONAL { ?showroom ex:rating ?rating . }
-        OPTIONAL { ?showroom ex:jamOperasional ?jam . }
-        
-        # Properti alamat dipanggil agar bisa dibaca oleh mesin pencari
-        OPTIONAL { ?showroom ex:alamat ?alamat . }
-        
-        ' . $filter_query . '
+        %s
+        %s
     }
     ORDER BY DESC(xsd:float(replace(str(?rating), ",", ".")))
-';
+SPARQL;
 
-$data_sparql = executeSparqlQuery($query);
-$is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false);
+$data_katalog = executeSparqlQuery(sprintf($query, '', ''));
+$katalog_error = !is_array($data_katalog['results']['bindings'] ?? null);
+$daftar_showroom = $katalog_error ? [] : $data_katalog['results']['bindings'];
+
+$bandingkan_rating = static function (array $a, array $b): int {
+    $rating_a = (float) str_replace(',', '.', $a['rating']['value'] ?? '0');
+    $rating_b = (float) str_replace(',', '.', $b['rating']['value'] ?? '0');
+    return $rating_b <=> $rating_a;
+};
+usort($daftar_showroom, $bandingkan_rating);
+
+$results = [];
+$is_error = false;
+$ada_saran = false;
+
+if ($pencarian_aktif) {
+    $data_sparql = $filter_query === '' && $filter_keyword === ''
+        ? $data_katalog
+        : executeSparqlQuery(sprintf($query, $filter_query, $filter_keyword));
+    $is_error = !is_array($data_sparql['results']['bindings'] ?? null);
+    $results = $is_error ? [] : $data_sparql['results']['bindings'];
+
+    if (!$is_error && !$results && $search_keyword !== '') {
+        // Pakai kembali katalog ketika pencarian tidak memakai filter SPARQL.
+        $data_calon = $filter_query === ''
+            ? $data_katalog
+            : executeSparqlQuery(sprintf($query, $filter_query, ''));
+        $is_error = !is_array($data_calon['results']['bindings'] ?? null);
+
+        if (!$is_error) {
+            [$results, $ada_saran] = cariShowroomMirip(
+                $search_keyword,
+                $data_calon['results']['bindings'],
+                $model_ke_merek
+            );
+        }
+    }
+
+    usort($results, static function (array $a, array $b) use ($sort_rating, $sort_abjad, $bandingkan_rating): int {
+        $urutan_rating = $bandingkan_rating($a, $b);
+
+        if ($urutan_rating !== 0 && in_array($sort_rating, ['tertinggi', 'terendah'], true)) {
+            return $sort_rating === 'tertinggi' ? $urutan_rating : -$urutan_rating;
+        }
+
+        if (in_array($sort_abjad, ['az', 'za'], true)) {
+            $nama_a = trim($a['namaShowroom']['value'] ?? '');
+            $nama_b = trim($b['namaShowroom']['value'] ?? '');
+            return $sort_abjad === 'az' ? strcasecmp($nama_a, $nama_b) : strcasecmp($nama_b, $nama_a);
+        }
+
+        return $urutan_rating;
+    });
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -438,7 +420,7 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vroom - Direktori Showroom</title>
     <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 
@@ -662,7 +644,7 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 
                     <div class="filter-actions">
                         <a
-                            href="index.php<?= !empty($search_keyword) ? '?keyword=' . urlencode($search_keyword) : '' ?>#hasil"
+                            href="<?= htmlspecialchars($url_tanpa_filter) ?>"
                             class="btn-reset-filter"
                         >
                             Atur Ulang
@@ -679,7 +661,7 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 
         </div>
 
-        <a href="#hasil" class="vroom-scroll" aria-label="Lihat daftar showroom">
+        <a href="#<?= $id_peta ?>" class="vroom-scroll" aria-label="Lihat daftar showroom">
             <svg viewBox="0 0 32 32" fill="none" stroke="currentColor"
                 stroke-width="2.2" stroke-linecap="round"
                 stroke-linejoin="round" aria-hidden="true">
@@ -692,272 +674,89 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
 
 </section>
 
-<!-- PETA SHOWROOM: TAMPILAN SEMENTARA -->
-<section
-    class="showroom-map-section"
-    id="hasil"
-    aria-labelledby="map-title"
->
+<?php if ($pencarian_aktif): ?>
+<section class="showroom-results showroom-results-search" id="hasil" aria-labelledby="showroom-results-title">
+    <h2 id="showroom-results-title" class="showroom-results-title">
+        <span class="showroom-results-search-icon" aria-hidden="true"></span>
+        <span>Hasil Pencarian<?php if ($search_keyword !== ''): ?>
+            <span class="showroom-results-keyword">“<?= htmlspecialchars($search_keyword) ?>”</span>
+        <?php endif; ?></span>
+    </h2>
 
-    <div class="showroom-map-heading">
-        <div>
-
-            <h2 id="map-title">Peta Showroom Sumatera Utara</h2>
-
+    <?php if ($is_error || !$results || $ada_saran): ?>
+        <div class="showroom-results-note<?= $is_error ? ' showroom-results-error' : '' ?>">
+            <span class="showroom-results-info-icon" aria-hidden="true">i</span>
+            <div>
+                <?php if ($is_error): ?>
+                    <p><strong>Data showroom sedang tidak bisa dimuat.</strong></p>
+                    <p>Muat ulang halaman untuk mencoba lagi.</p>
+                <?php else: ?>
+                    <p><strong>
+                        <?php if ($search_keyword !== ''): ?>
+                            Tidak ada hasil yang cocok untuk “<?= htmlspecialchars($search_keyword) ?>”<?= $ada_filter ? ' dengan filter saat ini' : '' ?>.
+                        <?php else: ?>
+                            Tidak ada showroom yang cocok dengan filter ini.
+                        <?php endif; ?>
+                    </strong></p>
+                    <?php if ($ada_saran): ?>
+                        <p>Mungkin yang kamu maksud:</p>
+                    <?php else: ?>
+                        <p>Coba kata kunci lain<?= $ada_filter ? ' atau longgarkan filter' : '' ?>.</p>
+                        <div class="showroom-results-actions">
+                            <a href="#keywordSearch">Ubah pencarian</a>
+                            <?php if ($ada_filter): ?>
+                                <a href="<?= htmlspecialchars($url_tanpa_filter) ?>">Hapus filter</a>
+                            <?php endif; ?>
+                            <a href="#daftar-showroom">Lihat semua showroom</a>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            </div>
         </div>
+    <?php endif; ?>
 
-        <span class="showroom-map-badge">TAMPILAN CONTOH</span>
+    <?php if ($results): ?>
+        <?php
+        $daftar_kartu = $results;
+        require __DIR__ . '/daftar-kartu-showroom.php';
+        ?>
+    <?php endif; ?>
+</section>
+<?php endif; ?>
+
+<section class="showroom-map-section" id="<?= $id_peta ?>" aria-labelledby="map-title">
+    <div class="showroom-map-heading">
+        <h2 id="map-title">Peta Interaktif Showroom Kendaraan di Sumatera Utara</h2>
     </div>
 
     <div class="showroom-map">
-
-        <!-- Peta dasar OpenStreetMap -->
         <iframe
             class="showroom-map-frame"
-            title="Peta wilayah Sumatera Utara"
+            title="Peta interaktif wilayah Sumatera Utara"
             src="https://www.openstreetmap.org/export/embed.html?bbox=96.8%2C1.0%2C100.4%2C4.8&amp;layer=mapnik"
             loading="lazy"
         ></iframe>
-
-        <!-- Penanda berikut hanya ilustrasi, bukan lokasi showroom -->
-        <div class="showroom-map-markers" aria-hidden="true">
-            <span class="showroom-map-pin pin-one"></span>
-            <span class="showroom-map-pin pin-two"></span>
-            <span class="showroom-map-pin pin-three"></span>
-            <span class="showroom-map-pin pin-four"></span>
-            <span class="showroom-map-pin pin-five"></span>
-        </div>
-
     </div>
-
-    <h2 id="map-title">Jelajahi Showroom</h2>
-
 </section>
 
-    <div class="grid-container" vocab="http://schema.org/" style="padding: 40px 5%;">
-        
-        <?php 
-        if ($is_error) {
-            echo "<div style='grid-column: 1 / -1; text-align: center; color: red; padding: 20px; border: 1px solid red; border-radius: 8px;'>
-                    <h3>Gagal terhubung ke SPARQL Endpoint!</h3>
-                    <p>{$data_sparql}</p>
-                  </div>";
-        } 
-        elseif (isset($data_sparql['results']['bindings']) && count($data_sparql['results']['bindings']) > 0) {
-            
-            $results = $data_sparql['results']['bindings'];
+<section class="showroom-results" id="daftar-showroom" aria-labelledby="showroom-catalog-title">
+    <h2 id="showroom-catalog-title" class="showroom-results-title">Jelajahi Showroom</h2>
 
-// PENGURUTAN DATA (RATING & ABJAD) MENGGUNAKAN PHP AGAR 100% AKURAT
-usort($results, function($a, $b) use ($sort_rating, $sort_abjad) {
-    // Ambil nilai rating & ubah koma menjadi titik agar jadi angka float
-    $ratingA = isset($a['rating']['value']) ? (float) str_replace(',', '.', $a['rating']['value']) : 0;
-    $ratingB = isset($b['rating']['value']) ? (float) str_replace(',', '.', $b['rating']['value']) : 0;
-
-    // Ambil nama showroom & bersihkan spasi berlebih
-    $namaA = isset($a['namaShowroom']['value']) ? trim($a['namaShowroom']['value']) : '';
-    $namaB = isset($b['namaShowroom']['value']) ? trim($b['namaShowroom']['value']) : '';
-
-    // 1. Jika user memilih filter Rating
-    if ($sort_rating === 'tertinggi') {
-        if ($ratingA != $ratingB) {
-            return ($ratingB <=> $ratingA); // Besar ke kecil (5.0 -> 3.0)
-        }
-    } elseif ($sort_rating === 'terendah') {
-        if ($ratingA != $ratingB) {
-            return ($ratingA <=> $ratingB); // Kecil ke besar (3.0 -> 5.0)
-        }
-    }
-
-    // 2. Jika user memilih filter Urutan Abjad (atau jika ratingnya sama)
-    if ($sort_abjad === 'az') {
-        return strcasecmp($namaA, $namaB); // A ke Z (tidak peduli huruf besar/kecil)
-    } elseif ($sort_abjad === 'za') {
-        return strcasecmp($namaB, $namaA); // Z ke A
-    }
-
-    // 3. Default jika tidak memilih apa-apa: urutkan rating tertinggi
-    return ($ratingB <=> $ratingA);
-});
-
-            foreach ($results as $row): 
-                $nama = isset($row['namaShowroom']['value']) ? $row['namaShowroom']['value'] : 'Tanpa Nama';
-                $kategori = isset($row['kategori']['value']) ? $row['kategori']['value'] : '-';
-                $merek = isset($row['merek']['value']) ? $row['merek']['value'] : '-';
-                $lokasi = isset($row['lokasi']['value']) ? $row['lokasi']['value'] : 'Sumatera Utara';
-                $rating = isset($row['rating']['value']) ? $row['rating']['value'] : '0';
-                $jam = isset($row['jam']['value']) ? $row['jam']['value'] : '-';
-                $uri = isset($row['showroom']['value']) ? $row['showroom']['value'] : '';
-        ?>
-        
+    <?php if ($daftar_showroom): ?>
         <?php
-// Menentukan file logo berdasarkan merek dan kategori kendaraan.
-$namaMerek = strtolower(trim($merek));
-$kategoriKendaraan = strtolower(trim($kategori));
-$logoFile = null;
-
-$daftarLogo = [
-    'mercedes-benz' => 'mercedes-benz.jpg',
-    'mitsubishi'    => 'mitsubishi.jpg',
-    'chevrolet'     => 'chevrolet.jpg',
-    'daihatsu'      => 'daihatsu.jpg',
-    'kawasaki'      => 'kawasaki.jpg',
-    'hyundai'       => 'hyundai.jpg',
-    'suzuki'        => 'suzuki.jpg',
-    'toyota'        => 'toyota.jpg',
-    'datsun'        => 'datsun.jpg',
-    'yamaha'        => 'yamaha.jpg',
-    'wuling'        => 'wuling.jpg',
-    'mazda'         => 'mazda.jpg',
-    'isuzu'         => 'isuzu.jpg',
-    'chery'         => 'chery.jpg',
-    'vespa'         => 'vespa.jpg',
-    'dfsk'          => 'dfsk.jpg',
-    'ford'          => 'ford.jpg',
-    'aion'          => 'aion.jpg',
-    'bmw'           => 'bmw.jpg',
-    'byd'           => 'byd.jpg',
-    'mg'            => 'mg.jpg',
-];
-
-// Honda memiliki logo berbeda untuk mobil dan motor.
-if (strpos($namaMerek, 'honda') !== false) {
-    if (
-        strpos($kategoriKendaraan, 'motor') !== false ||
-        strpos($namaMerek, 'wing') !== false
-    ) {
-        $logoFile = 'honda motor.jpg';
-    } else {
-        $logoFile = 'honda mobil.jpg';
-    }
-} else {
-    foreach ($daftarLogo as $kataMerek => $namaFile) {
-        if (
-            preg_match(
-                '/\b' . preg_quote($kataMerek, '/') . '\b/i',
-                $namaMerek
-            )
-        ) {
-            $logoFile = $namaFile;
-            break;
-        }
-    }
-}
-
-// Jika file logo tidak tersedia, tampilkan simbol pengganti.
-$logoTersedia = $logoFile !== null
-    && is_file(__DIR__ . '/images/logo/' . $logoFile);
-?>
-
-<article class="showroom-card" typeof="AutoDealer">
-
-    <div class="showroom-card-top">
-
-        <div class="showroom-logo">
-            <?php if ($logoTersedia): ?>
-                <img
-                    src="images/logo/<?= rawurlencode($logoFile) ?>"
-                    alt="Logo <?= htmlspecialchars($merek) ?>"
-                    loading="lazy"
-                >
-            <?php else: ?>
-                <span aria-hidden="true">SS</span>
-            <?php endif; ?>
-        </div>
-
-        <span class="showroom-category">
-            <?= htmlspecialchars($kategori) ?>
-        </span>
-
-    </div>
-
-    <div class="showroom-content">
-
-        <p class="showroom-brand" property="brand">
-            <?= htmlspecialchars($merek) ?>
-        </p>
-
-        <h3 property="name">
-            <?= htmlspecialchars($nama) ?>
-        </h3>
-
-        <div class="showroom-information">
-
-            <p class="showroom-info">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                >
-                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
-                    <circle cx="12" cy="10" r="2.5"></circle>
-                </svg>
-
-                <span property="areaServed">
-                    <?= htmlspecialchars($lokasi) ?>
-                </span>
-            </p>
-
-            <p class="showroom-info">
-                <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                >
-                    <circle cx="12" cy="12" r="9"></circle>
-                    <path d="M12 7v5l3.5 2"></path>
-                </svg>
-
-                <span property="openingHours">
-                    <?= htmlspecialchars($jam) ?>
-                </span>
-            </p>
-
-        </div>
-
-        <div class="showroom-bottom">
-
-            <div class="showroom-rating">
-                <span class="showroom-rating-star" aria-hidden="true">★</span>
-                <span property="aggregateRating">
-                    <?= htmlspecialchars($rating) ?>
-                </span>
-            </div>
-
-            <a
-                href="detail.php?uri=<?= urlencode($uri) ?>"
-                class="showroom-detail"
-            >
-                Lihat Detail
-                <span aria-hidden="true">→</span>
-            </a>
-
-        </div>
-
-    </div>
-
-</article>
-        
-        <?php 
-            endforeach; 
-        } 
-        else {
-            echo "<div style='grid-column: 1 / -1; text-align: center; padding: 40px; background: var(--white); border-radius: 8px;'>
-                    <h3 style='color: var(--text-dark); margin-bottom: 10px;'>Entitas Tidak Ditemukan</h3>
-                    <p style='color: var(--text-muted);'>Coba gunakan kata kunci pencarian yang lain.</p>
-                  </div>";
-        }
+        $daftar_kartu = $daftar_showroom;
+        require __DIR__ . '/daftar-kartu-showroom.php';
         ?>
-        
-    </div>
-    
+    <?php else: ?>
+        <div class="showroom-results-note<?= $katalog_error ? ' showroom-results-error' : '' ?>">
+            <span class="showroom-results-info-icon" aria-hidden="true">i</span>
+            <p><strong><?= $katalog_error
+                ? 'Daftar showroom sedang tidak bisa dimuat.'
+                : 'Belum ada data showroom yang tersedia.' ?></strong></p>
+        </div>
+    <?php endif; ?>
+</section>
+
     <!-- BAGIAN TIM VROOM -->
 <section class="team-section" id="tim">
 

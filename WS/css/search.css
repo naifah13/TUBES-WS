@@ -316,3 +316,122 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Hasil pencarian showroom */
+#keywordSearch {
+  scroll-margin-top: calc(var(--tinggi-navbar) + 24px);
+}
+
+.showroom-results {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 52px) 5% clamp(44px, 5vw, 76px);
+  scroll-margin-top: var(--tinggi-navbar);
+}
+
+.showroom-results-title {
+  margin: 0 0 clamp(20px, 2.4vw, 30px);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.showroom-results-search .showroom-results-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+}
+
+.showroom-results-keyword {
+  color: #596276;
+  font-weight: 600;
+}
+
+.showroom-results-search-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 0.72em;
+  height: 0.72em;
+  margin: 0.18em 0.12em 0 0;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.showroom-results-search-icon::after {
+  position: absolute;
+  right: -0.22em;
+  bottom: -0.1em;
+  width: 0.3em;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.showroom-results-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: clamp(15px, 2.2vw, 22px);
+  border: 1px solid #f2c0ca;
+  border-radius: 14px;
+  background: #fff2f4;
+  color: #70283b;
+  overflow-wrap: anywhere;
+}
+
+.showroom-results-error {
+  border-color: #d6dde8;
+  background: #f7f9fc;
+  color: var(--text-dark);
+}
+
+.showroom-results-info-icon {
+  flex: 0 0 20px;
+  height: 20px;
+  margin-top: 2px;
+  border-radius: 50%;
+  background: #9d2e49;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.showroom-results-error .showroom-results-info-icon {
+  background: var(--dark-base);
+}
+
+.showroom-results-note p + p {
+  margin-top: 5px;
+}
+
+.showroom-results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.showroom-results-actions a {
+  text-underline-offset: 3px;
+}
+
+.showroom-results-actions a:hover {
+  color: #a52643;
+}
+
+.grid-container.showroom-results-grid {
+  padding: 0;
+}
+
+.showroom-results-note + .showroom-results-grid {
+  margin-top: clamp(20px, 3vw, 36px);
+}
