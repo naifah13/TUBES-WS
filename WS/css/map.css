@@ -227,3 +227,9 @@
     flex-direction: column;
   }
 }
+
+#peta-showroom img.leaflet-tile {
+  width: 257px !important;
+  height: 257px !important;
+  mix-blend-mode: normal;
+}

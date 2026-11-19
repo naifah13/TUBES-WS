@@ -1,0 +1,341 @@
+.vd-shell {
+  width: min(100% - clamp(28px, 9vw, 128px), 1320px);
+  margin-inline: auto;
+}
+
+.vd-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 93% 16%, #813348 0%, transparent 47%),
+    linear-gradient(118deg, #232538 0%, #2b2d42 53%, #452b3d 100%);
+  color: #fff;
+}
+
+.vd-hero::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: max(0px, calc((100% - 1320px) / 2 - 20px));
+  width: clamp(260px, 39vw, 620px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: repeating-radial-gradient(
+    circle at center, transparent 0 46px, rgba(237, 242, 244, 0.12) 47px 48px
+  );
+  transform: translate(15%, -50%);
+  content: "";
+}
+
+.vd-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(18px, 5vw, 84px);
+  padding-block: clamp(30px, 4.5vw, 64px);
+}
+
+.vd-heading h1 {
+  max-width: 36ch;
+  margin: 14px 0 12px;
+  color: #fff;
+  font-size: clamp(22px, 2.55vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.028em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.vd-hero-tags,
+.vd-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.vd-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border: 1px solid rgba(237, 242, 244, 0.28);
+  border-radius: 50px;
+  background: rgba(237, 242, 244, 0.075);
+  color: #edf2f4;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.vd-hero-meta {
+  color: #edf2f4;
+  font-size: clamp(13px, 1.35vw, 17px);
+}
+
+.vd-rating {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.vd-rating > span:first-child {
+  color: #ffca72;
+}
+
+.vd-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.18s ease;
+}
+
+.vd-button-primary {
+  background: #d90429;
+}
+
+.vd-button-primary:hover {
+  background: #b80023;
+}
+
+.vd-brand-card {
+  display: grid;
+  width: clamp(92px, 13vw, 172px);
+  aspect-ratio: 1;
+  place-items: center;
+  overflow: hidden;
+  border-radius: clamp(14px, 2vw, 23px);
+  background: #e6e7eb;
+  box-shadow: 0 19px 46px rgba(23, 20, 36, 0.26);
+}
+
+.vd-brand-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+
+.vd-brand-fallback img {
+  width: 70%;
+  height: auto;
+}
+
+.vd-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
+  align-items: start;
+  gap: clamp(15px, 2vw, 28px);
+  padding-block: clamp(26px, 4vw, 52px) clamp(40px, 6vw, 80px);
+}
+
+.vd-panel {
+  --vd-panel-padding: clamp(16px, 2.4vw, 29px);
+  min-width: 0;
+  padding: var(--vd-panel-padding);
+  border: 1px solid #dce3e8;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(43, 45, 66, 0.075);
+}
+
+.vd-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 16px;
+}
+
+.vd-panel-heading::before {
+  flex: 0 0 4px;
+  height: 22px;
+  border-radius: 4px;
+  background: #ef233c;
+  content: "";
+}
+
+.vd-panel h2 {
+  color: #2b2d42;
+  font-size: clamp(21px, 2.25vw, 28px);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.vd-facts > div {
+  display: grid;
+  grid-template-columns: minmax(112px, 0.67fr) minmax(0, 1fr);
+  gap: 4px 12px;
+  align-items: baseline;
+  padding-block: 13px;
+  border-top: 1px solid #e4e9ef;
+  font-size: 14px;
+}
+
+.vd-facts > div:last-child {
+  padding-bottom: 0;
+}
+
+.vd-facts dt {
+  color: #5a6478;
+  font-weight: 600;
+}
+
+.vd-facts dd {
+  color: #2b2d42;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.vd-facts a,
+.vd-map-empty a {
+  color: #b50729;
+  font-weight: 650;
+  text-underline-offset: 3px;
+}
+
+.vd-map-frame {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #dce3e8;
+  border-radius: 13px;
+  background: #dce8eb;
+}
+
+.vd-map {
+  height: clamp(300px, 30vw, 408px);
+  background: #dce8eb;
+}
+
+.vd-map.leaflet-container {
+  font-family: inherit;
+}
+
+/* Ubin OSM bawaan berukuran 256 px. Tutup sambungan tipis saat skalanya pecahan. */
+#peta-detail-showroom img.leaflet-tile {
+  width: 257px !important;
+  height: 257px !important;
+  mix-blend-mode: normal;
+}
+
+.vd-map-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #2b2d42;
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.vd-map-placeholder[hidden] {
+  display: none;
+}
+
+.vd-map-message {
+  margin-top: 10px;
+  color: #5a6478;
+  font-size: 13px;
+}
+
+.vd-map-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 18px;
+  margin-top: 14px;
+}
+
+.vd-coordinate {
+  display: grid;
+  gap: 1px;
+  color: #5a6478;
+  font-size: 12px;
+}
+
+.vd-coordinate > :last-child {
+  color: #2b2d42;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.vd-map-empty {
+  padding: clamp(16px, 3vw, 26px);
+  border: 1px dashed #8d99ae;
+  border-radius: 13px;
+  background: #edf2f4;
+  color: #2b2d42;
+}
+
+.vd-map-empty p {
+  margin: 4px 0 8px;
+  color: #5a6478;
+  font-size: 14px;
+}
+
+.vd-error {
+  padding-block: 64px;
+}
+
+.vd-error h1 {
+  margin-bottom: 16px;
+  font-size: clamp(25px, 4vw, 42px);
+}
+
+.vd-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 780px) {
+  .vd-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .vd-hero-grid {
+    align-items: start;
+    gap: 12px;
+  }
+
+  .vd-brand-card {
+    width: 76px;
+    margin-top: 3px;
+  }
+
+  .vd-heading h1 {
+    font-size: clamp(22px, 5.2vw, 26px);
+    text-wrap: initial;
+  }
+
+  .vd-button {
+    min-height: 40px;
+    padding-inline: 11px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .vd-facts > div {
+    grid-template-columns: 1fr;
+  }
+}
