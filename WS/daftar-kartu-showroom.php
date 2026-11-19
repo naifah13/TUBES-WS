@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/jam-showroom.php';
+
 $daftarLogo = [
     'mercedes-benz' => 'mercedes-benz.jpg',
     'mitsubishi'    => 'mitsubishi.jpg',
@@ -22,8 +24,12 @@ $daftarLogo = [
     'byd'           => 'byd.jpg',
     'mg'            => 'mg.jpg',
 ];
+$status_diminta = $status_diminta ?? '';
+$menit_wib ??= menitWibShowroom();
+$ada_kartu_tampil = false;
 ?>
-<div class="grid-container showroom-results-grid" vocab="http://schema.org/">
+<div class="grid-container showroom-results-grid" vocab="http://schema.org/"
+    data-filter-status-showroom="<?= htmlspecialchars($status_diminta) ?>">
     <?php foreach (($daftar_kartu ?? []) as $row):
         $nama = $row['namaShowroom']['value'] ?? 'Tanpa Nama';
         $kategori = $row['kategori']['value'] ?? '-';
@@ -51,8 +57,14 @@ $daftarLogo = [
         }
 
         $logoTersedia = $logoFile !== null && is_file(__DIR__ . '/images/logo/' . $logoFile);
+        $jadwal = jadwalHarianShowroom($jam);
+        $status_kartu = statusShowroomPadaMenit($jadwal, $menit_wib);
+        $sembunyikan = $status_diminta !== '' && $status_kartu !== $status_diminta;
+        $ada_kartu_tampil = $ada_kartu_tampil || !$sembunyikan;
     ?>
-    <article class="showroom-card" typeof="AutoDealer">
+    <article class="showroom-card" typeof="AutoDealer"
+        data-jadwal-showroom="<?= htmlspecialchars(json_encode((object) $jadwal)) ?>"
+        <?= $sembunyikan ? 'hidden' : '' ?>>
 
         <div class="showroom-card-top">
 
@@ -68,17 +80,23 @@ $daftarLogo = [
                 <?php endif; ?>
             </div>
 
-            <span class="showroom-category">
-                <?= htmlspecialchars($kategori) ?>
+            <span class="showroom-status" data-status-showroom="<?= $status_kartu ?>"
+                title="Berdasarkan jadwal operasional harian (WIB)">
+                <?= LABEL_STATUS_SHOWROOM[$status_kartu] ?>
             </span>
 
         </div>
 
         <div class="showroom-content">
 
-            <p class="showroom-brand" property="brand">
-                <?= htmlspecialchars($merek) ?>
-            </p>
+            <div class="showroom-identity">
+                <p class="showroom-brand" property="brand">
+                    <?= htmlspecialchars($merek) ?>
+                </p>
+                <?php if (in_array($kategoriKendaraan, ['mobil', 'motor'], true)): ?>
+                    <span class="showroom-category"><?= htmlspecialchars(ucfirst($kategoriKendaraan)) ?></span>
+                <?php endif; ?>
+            </div>
 
             <h3 property="name">
                 <?= htmlspecialchars($nama) ?>
@@ -119,8 +137,8 @@ $daftarLogo = [
                         <path d="M12 7v5l3.5 2"></path>
                     </svg>
 
-                    <span property="openingHours">
-                        <?= htmlspecialchars($jam) ?>
+                    <span>
+                        <span property="openingHours"><?= htmlspecialchars($jam) ?></span><?= $status_kartu !== 'tidak-diketahui' ? '&nbsp;WIB' : '' ?>
                     </span>
                 </p>
 
@@ -150,3 +168,15 @@ $daftarLogo = [
     </article>
     <?php endforeach; ?>
 </div>
+<?php if ($status_diminta !== ''): ?>
+    <div class="showroom-results-note showroom-live-empty" role="status" data-status-showroom-kosong
+        <?= $ada_kartu_tampil ? 'hidden' : '' ?>>
+        <span class="showroom-results-info-icon" aria-hidden="true">i</span>
+        <div>
+            <p><strong>Saat ini belum ada showroom dengan status “<?= LABEL_STATUS_SHOWROOM[$status_diminta] ?>”.</strong></p>
+            <div class="showroom-results-actions">
+                <a href="<?= htmlspecialchars($url_tanpa_status ?? 'index.php#hasil') ?>">Tampilkan semua status</a>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

@@ -1,21 +1,37 @@
 <?php
 include 'lib.php';
 require_once __DIR__ . '/pencarian-showroom.php';
+require_once __DIR__ . '/jam-showroom.php';
 
 // 1. Tangkap parameter dari URL (GET)
 $parameter = array_filter($_GET, 'is_string');
 $search_keyword = trim($parameter['keyword'] ?? '');
 $filter_lokasi = trim($parameter['lokasi'] ?? '');
 $sort_abjad = trim($parameter['abjad'] ?? '');
-$sort_rating = trim($parameter['rating'] ?? '');
-$filter_kategori = trim($parameter['kategori'] ?? '');
-$filter_rating = $sort_rating;
+$filter_status = trim($parameter['status'] ?? '');
+if (!in_array($filter_status, ['buka', 'segera-tutup', 'tutup'], true)) {
+    $filter_status = '';
+}
+$filter_kategori = strtolower(trim($parameter['kategori'] ?? ''));
+if (!in_array($filter_kategori, ['mobil', 'motor'], true)) {
+    $filter_kategori = '';
+}
 $ada_filter = $filter_lokasi !== '' || $sort_abjad !== ''
-    || $filter_rating !== '' || $filter_kategori !== '';
+    || $filter_status !== '' || $filter_kategori !== '';
 $pencarian_aktif = $search_keyword !== '' || $ada_filter;
 $id_peta = $pencarian_aktif ? 'jelajahi' : 'hasil';
 $url_tanpa_filter = 'index.php'
     . ($search_keyword !== '' ? '?keyword=' . urlencode($search_keyword) : '')
+    . '#hasil';
+
+$parameter_tanpa_status = http_build_query(array_filter([
+    'keyword' => $search_keyword,
+    'abjad' => $sort_abjad,
+    'lokasi' => $filter_lokasi,
+    'kategori' => $filter_kategori,
+], static fn(string $nilai): bool => $nilai !== ''));
+$url_tanpa_status = 'index.php'
+    . ($parameter_tanpa_status !== '' ? '?' . $parameter_tanpa_status : '')
     . '#hasil';
 
 // 2. Ambil daftar lokasi unik yang ADA di file TTL saja
@@ -325,16 +341,6 @@ if ($filter_lokasi !== '') {
 if ($filter_kategori !== '') {
     $filter_clauses[] = 'LCASE(STR(?kategori)) = LCASE(' . json_encode($filter_kategori, $encoding_literal) . ')';
 }
-$rating_expr = 'xsd:float(replace(str(?rating), ",", "."))';
-if ($filter_rating === 'terendah') {
-    $filter_clauses[] = $rating_expr . ' < 4.3';
-} elseif ($filter_rating === 'menengah') {
-    $filter_clauses[] = $rating_expr . ' >= 4.3';
-    $filter_clauses[] = $rating_expr . ' <= 4.7';
-} elseif ($filter_rating === 'tertinggi') {
-    $filter_clauses[] = $rating_expr . ' >= 4.8';
-}
-
 $filter_query = $filter_clauses ? 'FILTER ((' . implode(') && (', $filter_clauses) . '))' : '';
 $query = <<<'SPARQL'
     PREFIX ex: <http://www.example.org/showroom#>
@@ -395,12 +401,8 @@ if ($pencarian_aktif) {
         }
     }
 
-    usort($results, static function (array $a, array $b) use ($sort_rating, $sort_abjad, $bandingkan_rating): int {
+    usort($results, static function (array $a, array $b) use ($sort_abjad, $bandingkan_rating): int {
         $urutan_rating = $bandingkan_rating($a, $b);
-
-        if ($urutan_rating !== 0 && in_array($sort_rating, ['tertinggi', 'terendah'], true)) {
-            return $sort_rating === 'tertinggi' ? $urutan_rating : -$urutan_rating;
-        }
 
         if (in_array($sort_abjad, ['az', 'za'], true)) {
             $nama_a = trim($a['namaShowroom']['value'] ?? '');
@@ -424,6 +426,7 @@ if ($pencarian_aktif) {
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
     <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="css/status-showroom.css?v=1">
 </head>
 
 
@@ -607,24 +610,23 @@ if ($pencarian_aktif) {
                     </div>
 
                     <div class="filter-group">
-                        <label for="rating">Rating</label>
+                        <label for="status">Status operasional</label>
+                        <select name="status" id="status">
+                            <option value="">Semua status</option>
+                            <?php foreach (['buka', 'segera-tutup', 'tutup'] as $status): ?>
+                                <option value="<?= $status ?>" <?= $filter_status === $status ? 'selected' : '' ?>>
+                                    <?= LABEL_STATUS_SHOWROOM[$status] ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
 
-                        <select name="rating" id="rating">
-                            <option value="">Default</option>
-
-                            <option
-                                value="tertinggi"
-                                <?= $sort_rating === 'tertinggi' ? 'selected' : '' ?>
-                            >
-                                Tertinggi ke Terendah
-                            </option>
-
-                            <option
-                                value="terendah"
-                                <?= $sort_rating === 'terendah' ? 'selected' : '' ?>
-                            >
-                                Terendah ke Tertinggi
-                            </option>
+                    <div class="filter-group">
+                        <label for="kategori">Kategori kendaraan</label>
+                        <select name="kategori" id="kategori">
+                            <option value="">Semua kategori</option>
+                            <option value="mobil" <?= $filter_kategori === 'mobil' ? 'selected' : '' ?>>Mobil</option>
+                            <option value="motor" <?= $filter_kategori === 'motor' ? 'selected' : '' ?>>Motor</option>
                         </select>
                     </div>
 
@@ -721,6 +723,7 @@ if ($pencarian_aktif) {
     <?php if ($results): ?>
         <?php
         $daftar_kartu = $results;
+        $status_diminta = $filter_status;
         require __DIR__ . '/daftar-kartu-showroom.php';
         ?>
     <?php endif; ?>
@@ -771,6 +774,7 @@ if ($pencarian_aktif) {
     <?php if ($daftar_showroom): ?>
         <?php
         $daftar_kartu = $daftar_showroom;
+        $status_diminta = '';
         require __DIR__ . '/daftar-kartu-showroom.php';
         ?>
     <?php else: ?>
@@ -982,5 +986,6 @@ if ($pencarian_aktif) {
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
 <script src="js/peta-showroom.js?v=1" defer></script>
+<script src="js/status-showroom.js?v=1" defer></script>
 </body>
 </html>
