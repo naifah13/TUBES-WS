@@ -558,8 +558,8 @@ ex:Showroom43 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5859236000142274 ;
+    geo:long 98.69323545304827 .
 
 ex:Showroom44 rdf:type ex:Showroom ;
     ex:namaShowroom "SHOWROOM BAIC MEDAN" ;
@@ -571,8 +571,8 @@ ex:Showroom44 rdf:type ex:Showroom ;
     ex:rating "4,2" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5983958269467053 ;
+    geo:long 98.71899649537596 .
 
 ex:Showroom45 rdf:type ex:Showroom ;
     ex:namaShowroom "Mega Central Autoniaga Medan Krakatau" ;
@@ -584,8 +584,8 @@ ex:Showroom45 rdf:type ex:Showroom ;
     ex:rating "3,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.632006471265671 ;
+    geo:long 98.68155101072024 .
 
 ex:Showroom46 rdf:type ex:Showroom ;
     ex:namaShowroom "Daya Daihatsu Medan" ;
@@ -597,8 +597,8 @@ ex:Showroom46 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5413883385912035 ;
+    geo:long 98.63165939537598 .
 
 ex:Showroom47 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Capella Medan - Daihatsu" ;
@@ -610,8 +610,8 @@ ex:Showroom47 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5929552513603538 ;
+    geo:long 98.66822063770411 .
 
 ex:Showroom48 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Medan SM Raja" ;
@@ -622,7 +622,9 @@ ex:Showroom48 rdf:type ex:Showroom ;
     ex:website "https://www.astra-daihatsu.id/outlet/AstraDaihatsuMedanSisingamangaraja" ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 3.5717275723463273 ;
+    geo:long 98.68958762236053 .
 
 ex:Showroom49 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Medan Johor" ;
@@ -634,8 +636,8 @@ ex:Showroom49 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5419032799981482 ;
+    geo:long 98.66912573955588 .
 
 ex:Showroom50 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu medan promo" ;
@@ -660,8 +662,8 @@ ex:Showroom51 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5914369439501925 ;
+    geo:long 98.62997448188398 .
 
 ex:Showroom52 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Medan Krakatau" ;
@@ -673,8 +675,8 @@ ex:Showroom52 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6420838612124364 ;
+    geo: 98.68174101072002 .
 
 ex:Showroom53 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Medan Johor" ;
@@ -686,8 +688,8 @@ ex:Showroom53 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.541946113367265 ;
+    geo:long 98.66907209537607 .
 
 ex:Showroom54 rdf:type ex:Showroom ;
     ex:namaShowroom "ASTRA DAIHATSU MEDAN" ;
@@ -699,8 +701,8 @@ ex:Showroom54 rdf:type ex:Showroom ;
     ex:rating "3,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.563426565850987 ;
+    geo:long 98.70537818571823 .
 
 ex:Showroom55 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Motor" ;
@@ -711,9 +713,9 @@ ex:Showroom55 rdf:type ex:Showroom ;
     ex:website "http://daihatsu.co.id/" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 3.5909066209863436 ;
+    geo:long 98.68312392394385 .
 
 ex:Showroom56 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Medan Krakatau" ;
@@ -725,8 +727,8 @@ ex:Showroom56 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6416894321937208 ;
+    geo:long 98.68191729140801 .
 
 ex:Showroom57 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Medan" ;
@@ -764,8 +766,8 @@ ex:Showroom59 rdf:type ex:Showroom ;
     ex:rating "4,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5469317949849453 ;
+    geo:long 98.69136011254358 .
 
 ex:Showroom60 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Medan" ;
@@ -803,8 +805,8 @@ ex:Showroom62 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5564226089898066 ;
+    geo:long 98.69538869537578 .
 
 ex:Showroom63 rdf:type ex:Showroom ;
     ex:namaShowroom "Ricki Daihatsu Medan" ;
@@ -816,8 +818,8 @@ ex:Showroom63 rdf:type ex:Showroom ;
     ex:rating "4,1" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5679867813519532 ;
+    geo:long 98.69139379537609 .
 
 ex:Showroom64 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Marelan" ;
@@ -829,8 +831,8 @@ ex:Showroom64 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6850653693098674 ;
+    geo:long 98.65602088003273 .
 
 ex:Showroom65 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra daihatsu mmtc" ;
@@ -842,8 +844,8 @@ ex:Showroom65 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6045918790681943 ;
+    geo:long 98.70796288003235 .
 
 ex:Showroom66 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Sumut" ;
@@ -855,8 +857,8 @@ ex:Showroom66 rdf:type ex:Showroom ;
     ex:rating "3,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5936837124601655 ;
+    geo:long 98.62946286895989 .
 
 ex:Showroom67 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu" ;
@@ -881,8 +883,8 @@ ex:Showroom68 rdf:type ex:Showroom ;
     ex:rating "4,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.57507384920309 ;
+    geo:long 98.68968822982809 .
 
 ex:Showroom69 rdf:type ex:Showroom ;
     ex:namaShowroom "INDOMOBIL NISSAN DATSUN KIA Gatot Subroto Medan" ;
@@ -907,8 +909,8 @@ ex:Showroom70 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5907794425460624 ;
+    geo:long 98.6484624745105 .
 
 ex:Showroom71 rdf:type ex:Showroom ;
     ex:namaShowroom "Datsun Go Cross Medan" ;
@@ -920,8 +922,8 @@ ex:Showroom71 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5506035612837827 ;
+    geo:long 98.69847531072004 .
 
 ex:Showroom72 rdf:type ex:Showroom ;
     ex:namaShowroom "Ford Medan Gatot Subroto" ;
@@ -933,8 +935,8 @@ ex:Showroom72 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5911874816312217 ;
+    geo:long 98.63453209775271 .
 
 ex:Showroom73 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda IDK MEDAN" ;
@@ -946,8 +948,8 @@ ex:Showroom73 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5855444087515997 ;
+    geo:long 98.65362935647335 .
 
 ex:Showroom74 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda Arista Ringroad" ;
@@ -959,8 +961,8 @@ ex:Showroom74 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5630503826791045 ;
+    geo:long 98.62635133770432 .
 
 ex:Showroom75 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda IDK 2" ;
@@ -972,8 +974,8 @@ ex:Showroom75 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.585318968837989,  ;
+    geo:long 98.65162006468842.
 
 ex:Showroom76 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda IDK 1" ;
@@ -985,8 +987,8 @@ ex:Showroom76 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6024687616437716 ;
+    geo:long 98.66866612606408 .
 
 ex:Showroom77 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda Arista Sm Raja" ;
@@ -998,8 +1000,8 @@ ex:Showroom77 rdf:type ex:Showroom ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5463607037401816 ;
+    geo:long 98.69842763955609 .
 
 ex:Showroom78 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda idk cemara" ;
@@ -1011,8 +1013,8 @@ ex:Showroom78 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.629716686554279 ;
+    geo:long 98.69257012236089 .
 
 ex:Showroom79 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai SM Raja Medan Official" ;
@@ -1024,8 +1026,8 @@ ex:Showroom79 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5698947327189567 ;
+    geo:long 98.69038489537634 .
 
 ex:Showroom80 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer hyundai medan" ;
@@ -1037,8 +1039,8 @@ ex:Showroom80 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6045342908507276 ;
+    geo:long 98.67358199929511 .
 
 ex:Showroom81 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai Medan Official" ;
@@ -1049,7 +1051,10 @@ ex:Showroom81 rdf:type ex:Showroom ;
     ex:website "https://www.hyundai-assistant.com/256625_Hyundai_Yos_Sudarso/Steven" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
+    geo:lat 3.602992393473904 ; 
+    geo:long 98.67392532204586 .
+
 
 ex:Showroom82 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai Gatot Subroto Official" ;
@@ -1074,8 +1079,8 @@ ex:Showroom83 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5699911048708235 ;
+    geo:long 98.69038489537634 .
 
 ex:Showroom84 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai Yos Sudarso Official" ;
@@ -1087,8 +1092,8 @@ ex:Showroom84 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6060209710657647 ;
+    geo:long 98.67343194934453 .
 
 ex:Showroom85 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai Arista Medan" ;
@@ -1113,8 +1118,8 @@ ex:Showroom86 rdf:type ex:Showroom ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.631928063997232 ;
+    geo:long 98.68151412421264 .
 
 ex:Showroom87 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Mazda Medan" ;
@@ -1126,8 +1131,8 @@ ex:Showroom87 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6061963938034833 ;
+    geo:long 98.66910972421222 .
 
 ex:Showroom88 rdf:type ex:Showroom ;
     ex:namaShowroom "Arista-Mercedes-Benz" ;
@@ -1139,8 +1144,8 @@ ex:Showroom88 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6071895934983957 ;
+    geo:long 98.66110918188424 .
 
 ex:Showroom89 rdf:type ex:Showroom ;
     ex:namaShowroom "MG Motor Medan - MIMOSA" ;
@@ -1152,8 +1157,8 @@ ex:Showroom89 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6068794199884713 ;
+    geo:long 98.67216104228399 .
 
 ex:Showroom90 rdf:type ex:Showroom ;
     ex:namaShowroom "Sales MITSUBISHI Medan - Dindra" ;
@@ -1178,8 +1183,8 @@ ex:Showroom91 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.590120098731449 ;
+    geo:long 98.65712599352416 .
 
 ex:Showroom92 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Medan Sumut" ;
@@ -1204,8 +1209,8 @@ ex:Showroom93 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5794991308031334 ;
+    geo:long 98.62594590701649 .
 
 ex:Showroom94 rdf:type ex:Showroom ;
     ex:namaShowroom "MITSUBISHI DIPO MEDAN SM.RAJA" ;
@@ -1217,8 +1222,8 @@ ex:Showroom94 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.537775606231599 ;
+    geo:long 98.70872118003226 .
 
 ex:Showroom95 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Sardana Medan - Putri Hijau" ;
@@ -1230,8 +1235,8 @@ ex:Showroom95 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5943884587560215 ;
+    geo:long 98.67643017818071 .
 
 ex:Showroom96 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Sumut Medan" ;
@@ -1243,8 +1248,8 @@ ex:Showroom96 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5796543703018537 ;
+    geo:long 98.6261422377044 .
 
 ex:Showroom97 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Dipo Krakatau - Medan" ;
@@ -1256,8 +1261,8 @@ ex:Showroom97 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.641134497382185 ;
+    geo:long 98.68149513585293 .
 
 ex:Showroom98 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi DIPO Medan Ringroad" ;
@@ -1269,8 +1274,8 @@ ex:Showroom98 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5795157336045014 ;
+    geo:long 98.62632136468835 .
 
 ex:Showroom99 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom mitsubishi Sm Raja Medan" ;
@@ -1308,8 +1313,8 @@ ex:Showroom101 rdf:type ex:Showroom ;
     ex:rating "3,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.53663619815534 ;
+    geo:long 98.71911196468858 .
 
 ex:Showroom102 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Sardana Medan - Cemara Asri" ;
@@ -1321,8 +1326,8 @@ ex:Showroom102 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6357435557057145 ;
+    geo:long 98.69809590701726 .
 
 ex:Showroom103 rdf:type ex:Showroom ;
     ex:namaShowroom "Daeler Resmi Mitsubishi Medan" ;
@@ -1334,21 +1339,21 @@ ex:Showroom103 rdf:type ex:Showroom ;
     ex:rating "4,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6357018839803166 ;
+    geo:long 98.69818585886851 .
 
 ex:Showroom104 rdf:type ex:Showroom ;
-    ex:namaShowroom "Mitsubishi Fuso Sardana IndahBerlian Motor Tanjung Morawa" ;
+    ex:namaShowroom "Mitsubishi Fuso Sardana Indah Berlian Motor" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Raya Medan No.5 KM 12" ;
+    ex:alamat "Jl. Raya Medan No.5 KM 12, Ujung Serdang, Kec. Tj. Morawa, Kabupaten Deli Serdang, Sumatera Utara 20362" ;
     ex:jamOperasional "09.00-22.00" ;
     ex:noTelepon "0897-4100-008" ;
     ex:website "https://www.sardanagroup.co.id/" ;
     ex:rating "4,9" ;
-    ex:berlokasiDi "Medan" ;
+    ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5310429336187696 ;
+    geo:long 98.74895470777008 .
 
 ex:Showroom105 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Alam Jaya Berlian Motors" ;
@@ -1360,8 +1365,8 @@ ex:Showroom105 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.590348214225047 ;
+    geo:long 98.6509763935246 .
 
 ex:Showroom106 rdf:type ex:Showroom ;
     ex:namaShowroom "PAMERAN MITSUBISHI" ;
@@ -1373,8 +1378,8 @@ ex:Showroom106 rdf:type ex:Showroom ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 4.053415134341802 ;
+    geo:long 98.48741486140342 .
 
 ex:Showroom107 rdf:type ex:Showroom ;
     ex:namaShowroom "Daeler Resmi Mitsubishi Medan" ;
@@ -1400,7 +1405,7 @@ ex:Showroom108 rdf:type ex:Showroom ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
     geo:lat ;
-    geo:long .
+    geo:long 98.71244208003232 .
 
 ex:Showroom109 rdf:type ex:Showroom ;
     ex:namaShowroom "Sumatera Berlian Motor (Sales/Busines Relation)" ;
@@ -1412,8 +1417,8 @@ ex:Showroom109 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.537224114791166 ;
+    geo:long 98.7089087953759 .
 
 ex:Showroom110 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sardana Indah Berlian Motors" ;
@@ -1438,8 +1443,8 @@ ex:Showroom111 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.638154855073977 ;
+    geo:long 98.6809649935248 .
 
 ex:Showroom112 rdf:type ex:Showroom ;
     ex:namaShowroom "Nissan Amir Hamzah" ;
@@ -1451,8 +1456,8 @@ ex:Showroom112 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6076353236757663 ;
+    geo:long 98.66361612421215 .
 
 ex:Showroom113 rdf:type ex:Showroom ;
     ex:namaShowroom "Nissan Medan SM Raja MIMOSA" ;
@@ -1464,8 +1469,8 @@ ex:Showroom113 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5461999706041127 ;
+    geo:long 98.6988558242119 .
 
 ex:Showroom114 rdf:type ex:Showroom ;
     ex:namaShowroom "Indomobil CITROEN Medan Adam Malik" ;
@@ -1490,8 +1495,8 @@ ex:Showroom115 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.541229472061331 ;
+    geo:long 98.64331193585222 .
 
 ex:Showroom116 rdf:type ex:Showroom ;
     ex:namaShowroom "Mobil Suzuki Medan" ;
@@ -1503,8 +1508,8 @@ ex:Showroom116 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5446426866367116 ;
+    geo:long 98.70005550795436 .
 
 ex:Showroom117 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Suzuki Medan Sumut" ;
@@ -1516,8 +1521,8 @@ ex:Showroom117 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.542611277799775 ;
+    geo:long 98.70636879241827 .
 
 ex:Showroom118 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Trans Sumatra Andalan Gatot Subroto" ;
@@ -1529,8 +1534,8 @@ ex:Showroom118 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5910171764554755 ;
+    geo:long 98.64917005489987 .
 
 ex:Showroom119 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Trans Sumatera Andalan Adam Malik" ;
@@ -1555,11 +1560,11 @@ ex:Showroom120 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6035980869755835 ;
+    geo:long 98.66882548003261 .
 
 ex:Showroom121 rdf:type ex:Showroom ;
-    ex:namaShowroom "Suzuki Mobil PT Trans Sumatra Andalan SM Raja" ;
+    ex:namaShowroom "Suzuki Mobil PT. Trans Sumatra Andalan SM Raja" ;
     ex:merek "Dealer Suzuki" ;
     ex:alamat "Jalan Sisingamangaraja, Harjosari II, Medan Amplas" ;
     ex:jamOperasional "08.30-18.00" ;
@@ -1568,8 +1573,8 @@ ex:Showroom121 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.538022580989073 ;
+    geo:long 98.70913445304781 .
 
 ex:Showroom122 rdf:type ex:Showroom ;
     ex:namaShowroom "Promo Mobil Suzuki Medan | Hub : A. Muslim Simatupang (SE)" ;
@@ -1581,8 +1586,8 @@ ex:Showroom122 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6035552564841185 ;
+    geo:long 98.66883620886857 .
 
 ex:Showroom123 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki SM Raja Medan Arista Sukses Abadi" ;
@@ -1594,8 +1599,8 @@ ex:Showroom123 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.569444277275601 ;
+    geo:long 98.69053740886798 .
 
 ex:Showroom124 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Krakatau Medan Arista Sukses Abadi" ;
@@ -1607,8 +1612,8 @@ ex:Showroom124 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.610791016985653 ;
+    geo:long 98.68059120886842 .
 
 ex:Showroom125 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Arista Medan Cab Ngumban Surbakti" ;
@@ -1620,8 +1625,8 @@ ex:Showroom125 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5410260133829037 ;
+    geo:long 98.643376308868 .
 
 ex:Showroom126 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Resmi Suzuki Medan Binjai Langkat PT Trans Sumatera Andalan Medan" ;
@@ -1633,6 +1638,8 @@ ex:Showroom126 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" .
+    geo:lat 3.588866545910635 ;
+    geo:long 98.64893215119659 .
 
 ex:Showroom127 rdf:type ex:Showroom ;
     ex:namaShowroom "AUTO2000 Gatot Subroto" ;
@@ -1644,8 +1651,8 @@ ex:Showroom127 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.591678520601574 ;
+    geo:long 98.63399770701685 .
 
 ex:Showroom128 rdf:type ex:Showroom ;
     ex:namaShowroom "TOYOTA PERINTIS PERKASA GATSU" ;
@@ -1657,24 +1664,24 @@ ex:Showroom128 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5927816358970603 ;
+    geo:long 98.67060895304814 .
 
 ex:Showroom129 rdf:type ex:Showroom ;
-    ex:namaShowroom "TOYOTA Perintis Sales Division" ;
+    ex:namaShowroom "TOYOTA Perintis Perkasa Gagak Hitam" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Ring Road" ;
+    ex:alamat "Jl. Ring Road No.88 B-F" ;
     ex:jamOperasional "09.00-18.00" ;
     ex:noTelepon "(061) 8476088" ;
     ex:website "https://www.perintistoyota.com/" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.580163296205085 ;
+    geo:long 98.62660179929513 .
 
 ex:Showroom130 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Toyota Perintis Flamboyan Sales Divison" ;
+    ex:namaShowroom "PT. Toyota Perintis Flamboyan Sales Divison" ;
     ex:merek "Dealer Toyota" ;
     ex:alamat "Jl. Flamboyan Raya No.66" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -1683,8 +1690,8 @@ ex:Showroom130 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5419424467505993 ;
+    geo:long 98.61048461071972 .
 
 ex:Showroom131 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Auto2000 Medan Amplas" ;
@@ -1696,8 +1703,8 @@ ex:Showroom131 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5346564316603244 ;
+    geo:long 98.72512827666996 .
 
 ex:Showroom132 rdf:type ex:Showroom ;
     ex:namaShowroom "Auto2000 Krakatau Medan" ;
@@ -1709,8 +1716,8 @@ ex:Showroom132 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6266067580993604;
+    geo:long 98.68129336839202 .
 
 ex:Showroom133 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Auto 2000 Sisingamaraja" ;
@@ -1722,8 +1729,8 @@ ex:Showroom133 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.570707708527361 ;
+    geo:long 98.68975548003239 .
 
 ex:Showroom134 rdf:type ex:Showroom ;
     ex:namaShowroom "TOYOTA DELTAMAS BALAI KOTA" ;
@@ -1735,8 +1742,8 @@ ex:Showroom134 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5923301359929054 ;
+    geo:long 98.67653719537621 .
 
 ex:Showroom135 rdf:type ex:Showroom ;
     ex:namaShowroom "Sales Toyota Perintis" ;
@@ -1748,8 +1755,8 @@ ex:Showroom135 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5914501838372197 ;
+    geo:long 98.64985501516763 .
 
 ex:Showroom136 rdf:type ex:Showroom ;
     ex:namaShowroom "Ginting Toyota Sumut-Aceh" ;
@@ -1761,8 +1768,8 @@ ex:Showroom136 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.541841346785799 ;
+    geo:long 98.61041840886847 .
 
 ex:Showroom137 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Trust Medan" ;
@@ -1774,8 +1781,8 @@ ex:Showroom137 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.59608912776204 ;
+    geo:long 98.68771939537619 .
 
 ex:Showroom138 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Medan" ;
@@ -1800,8 +1807,8 @@ ex:Showroom139 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.626215850843323 ;
+    geo:long 98.70785191072018 .
 
 ex:Showroom140 rdf:type ex:Showroom ;
     ex:namaShowroom "TOYOTA DELTAMAS SM.RAJA" ;
@@ -1813,8 +1820,8 @@ ex:Showroom140 rdf:type ex:Showroom ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5458344287939205 ;
+    geo:long 98.69837463585239 .
 
 ex:Showroom141 rdf:type ex:Showroom ;
     ex:namaShowroom "Sales Toyota Perintis Gatot Subroto" ;
@@ -1826,8 +1833,8 @@ ex:Showroom141 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5942770295119564 ;
+    geo:long 98.64912545379364 .
 
 ex:Showroom142 rdf:type ex:Showroom ;
     ex:namaShowroom "Perintis Perkasa Toyota" ;
@@ -1839,8 +1846,8 @@ ex:Showroom142 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.595681273872768 ;
+    geo:long 98.66873152050863 .
 
 ex:Showroom143 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Trust Medan | Showroom Mobil Bekas Rasa Baru by Auto2000 | Penjualan mobil bekas dengan sertifikasi Toyota Astra Motor" ;
@@ -1852,8 +1859,8 @@ ex:Showroom143 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6033842336438537 ;
+    geo:long 98.53554155304825 .
 
 ex:Showroom144 rdf:type ex:Showroom ;
     ex:namaShowroom "TOYOTA PERINTIS ADAM MALIK MEDAN BAG.PENJUALAN" ;
@@ -1865,8 +1872,8 @@ ex:Showroom144 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.595640219853557 ;
+    geo:long 98.66869569934482 .
 
 ex:Showroom145 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota trust deltamulia" ;
@@ -1891,8 +1898,8 @@ ex:Showroom146 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.7208774268992832 ;
+    geo:long 98.67077458003308 .
 
 ex:Showroom147 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Auto2000 Medan Binjai" ;
@@ -1904,8 +1911,8 @@ ex:Showroom147 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.603325448912772 ;
+    geo:long 98.53568716468851 .
 
 ex:Showroom148 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Wuling Medan Pusat" ;
@@ -1930,8 +1937,8 @@ ex:Showroom149 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.550339694335519 ;
+    geo:long 98.69826121071986 .
 
 ex:Showroom150 rdf:type ex:Showroom ;
     ex:namaShowroom "Wuling Adam Malik Medan" ;
@@ -1943,8 +1950,8 @@ ex:Showroom150 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6019240263099856 ;
+    geo:long 98.66930485304815 .
 
 ex:Showroom151 rdf:type ex:Showroom ;
     ex:namaShowroom "Wuling Arista Ringroad Medan" ;
@@ -1956,8 +1963,8 @@ ex:Showroom151 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.574597771606488 ;
+    geo:long 98.62647049537617 .
 
 ex:Showroom152 rdf:type ex:Showroom ;
     ex:namaShowroom "Arista Wuling Cemara" ;
@@ -1969,8 +1976,8 @@ ex:Showroom152 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.62941268664815 ;
+    geo:long 98.6892638530483 .
 
 ex:Showroom153 rdf:type ex:Showroom ;
     ex:namaShowroom "Wuling Medan Aceh" ;
@@ -1982,8 +1989,8 @@ ex:Showroom153 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.550873035396151 ;
+    geo:long 98.6979426800321 .
 
 ex:Showroom154 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Padangsidimpuan" ;
@@ -1995,8 +2002,8 @@ ex:Showroom154 rdf:type ex:Showroom ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.4081424337149098 ;
+    geo:long 99.28127692420473 .
 
 ex:Showroom155 rdf:type ex:Showroom ;
     ex:namaShowroom "DEALER MITSUBISHI DIPO PADANGSIDIMPUAN" ;
@@ -2008,8 +2015,8 @@ ex:Showroom155 rdf:type ex:Showroom ;
     ex:rating "4,2" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.419902009406587 ;
+    geo:long 99.28918749536867 .
 
 ex:Showroom156 rdf:type ex:Showroom ;
     ex:namaShowroom "AUTO 2000 CAPEM PADANG SIDIMPUAN" ;
@@ -2021,8 +2028,8 @@ ex:Showroom156 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.3868187604198787 ;
+    geo:long 99.26502586430642 .
 
 ex:Showroom157 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Pematang Siantar (Resmi)" ;
@@ -2034,8 +2041,8 @@ ex:Showroom157 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.0003556078364246 ;
+    geo:long 99.08281069537377 .
 
 ex:Showroom158 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda Arista Siantar" ;
@@ -2047,11 +2054,11 @@ ex:Showroom158 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9805119694217472 ;
+    geo:long 99.08019949537318 .
 
 ex:Showroom159 rdf:type ex:Showroom ;
-    ex:namaShowroom "Sardana Pematang siantar" ;
+    ex:namaShowroom "Sardana Pematangsiantar" ;
     ex:merek "Dealer Mitsubishi" ;
     ex:alamat "Jl. Gereja, Simpang Empat" ;
     ex:jamOperasional "08.00-20.00" ;
@@ -2060,8 +2067,8 @@ ex:Showroom159 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9530117199148678 ;
+    geo:long 99.0630510382722 .
 
 ex:Showroom160 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi DIPO Siantar" ;
@@ -2073,8 +2080,8 @@ ex:Showroom160 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9945468367903656 ;
+    geo:long 99.0821416511938 .
 
 ex:Showroom161 rdf:type ex:Showroom ;
     ex:namaShowroom "SUZUKI SIANTAR" ;
@@ -2085,9 +2092,9 @@ ex:Showroom161 rdf:type ex:Showroom ;
     ex:website "https://tsasuzuki.com/" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 2.9618252963158263 ;
+    geo:long 99.06201084223993 .
 
 ex:Showroom162 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Trans Sumatera Agung Pematang Siantar" ;
@@ -2099,8 +2106,8 @@ ex:Showroom162 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9630952158580306 ;
+    geo:long 99.0752063665372 .
 
 ex:Showroom163 rdf:type ex:Showroom ;
     ex:namaShowroom "Showrom Toyota Siantar" ;
@@ -2112,8 +2119,8 @@ ex:Showroom163 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9818880804698047 ;
+    geo:long 99.08036664591839 .
 
 ex:Showroom164 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Sutan" ;
@@ -2125,13 +2132,13 @@ ex:Showroom164 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.980713812341464 ;
+    geo:long 99.08029601071733 .
 
 ex:Showroom165 rdf:type ex:Showroom ;
     ex:namaShowroom "TOYOTA PEMATANGSIANTAR" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Ke Medan No.KM 2 8, Sumber Jaya, Kec. Siantar Martoba, Kota Pematang Siantar, Sumatera Utara" ;
+    ex:alamat "Jl. Medan No.KM 2,8, Sumber Jaya, Kec. Siantar Martoba, Kota Pematang Siantar, Sumatera Utara" ;
     ex:jamOperasional "10.00-23.00" ;
     ex:noTelepon "085277775668" ;
     ex:website "http://carimobil.id/toyota/pematangsiantar" ;
@@ -2151,8 +2158,8 @@ ex:Showroom166 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.975431444252962 ;
+    geo:long 99.07853619090872 .
 
 ex:Showroom167 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Sibolga" ;
@@ -2177,8 +2184,8 @@ ex:Showroom168 rdf:type ex:Showroom ;
     ex:rating "4,0" ;
     ex:berlokasiDi "Tebing Tinggi" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.3422299774865043 ;
+    geo:long 99.16501044131478 .
 
 ex:Showroom169 rdf:type ex:Showroom ;
     ex:namaShowroom "AUTO2000 TOYOTA TEBING TINGGI" ;
@@ -2190,21 +2197,21 @@ ex:Showroom169 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Tebing Tinggi" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.359727566946972 ;
+    geo:long 99.16701295119525 .
 
 ex:Showroom170 rdf:type ex:Showroom ;
-    ex:namaShowroom "AION Medan Gatot Subroto" ;
+    ex:namaShowroom "AION Medan" ;
     ex:merek "Dealer Aion" ;
     ex:alamat "Jl. Gatot Subroto No.148, Sei Putih Bar., Kec. Medan Petisah" ;
-    ex:jamOperasional "08.30-22.00" ;
-    ex:noTelepon "0821-6296-6459" ;
+    ex:jamOperasional "08.30-16.30" ;
+    ex:noTelepon "0812-6080-3123" ;
     ex:website "https://aionindonesia.com/" ;
-    ex:rating "4,8" ;
+    ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5910776327092715 ;
+    geo:long 98.64842850356463 .
 
 ex:Showroom171 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Mobil DFSK Medan" ;
@@ -2216,8 +2223,8 @@ ex:Showroom171 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6073578403781923 ;
+    geo:long 98.66844540886827 .
 
 ex:Showroom172 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Isuzu Medan" ;
@@ -2229,8 +2236,8 @@ ex:Showroom172 rdf:type ex:Showroom ;
     ex:rating "4,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5817411622564372 ;
+    geo:long 98.68778167689678 .
 
 ex:Showroom173 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Pemuda" ;
@@ -2306,12 +2313,12 @@ ex:Showroom178 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Tebing Tinggi" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 3.3307535466297673 ;
+    geo:long 99.15993722235939 .
 
 ex:Showroom179 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV Antara (dealer Sepeda Motor Honda)" ;
+    ex:namaShowroom "CV. Antara (dealer Sepeda Motor Honda)" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. MESJID NO. 126 - 128, Brandan Timur" ;
     ex:jamOperasional "08.15-18.00" ;
@@ -2319,12 +2326,12 @@ ex:Showroom179 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 4.023627255779592 ;
+    geo:long 98.28671156654234 .
 
 ex:Showroom180 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV Benteng Honda Motor" ;
+    ex:namaShowroom "CV. Benteng Honda Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur" ;
     ex:jamOperasional "08.30-17.30" ;
@@ -2332,9 +2339,9 @@ ex:Showroom180 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 3.6036831335801427 ;
+    geo:long 98.64565446468866 .
 
 ex:Showroom181 rdf:type ex:Showroom ;
     ex:namaShowroom "Indah Sakti. Cv" ;
@@ -2345,9 +2352,9 @@ ex:Showroom181 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    ex:kategori "motor" ;
+    geo:lat 2.100240334651034 ;
+    geo:long 99.83114027689683 .
 
 ex:Showroom182 rdf:type ex:Showroom ;
     ex:namaShowroom "Cv Teknik" ;
@@ -2358,7 +2365,7 @@ ex:Showroom182 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2371,7 +2378,7 @@ ex:Showroom183 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2384,7 +2391,7 @@ ex:Showroom184 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2397,7 +2404,7 @@ ex:Showroom185 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Padangsidimpuan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2410,7 +2417,7 @@ ex:Showroom186 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2423,7 +2430,7 @@ ex:Showroom187 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2436,7 +2443,7 @@ ex:Showroom188 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2449,7 +2456,7 @@ ex:Showroom189 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2462,7 +2469,7 @@ ex:Showroom190 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2475,7 +2482,7 @@ ex:Showroom191 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Tebing Tinggi" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2488,7 +2495,7 @@ ex:Showroom192 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2501,7 +2508,7 @@ ex:Showroom193 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2514,7 +2521,7 @@ ex:Showroom194 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Gunungsitoli" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2527,7 +2534,7 @@ ex:Showroom195 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2540,7 +2547,7 @@ ex:Showroom196 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2553,7 +2560,7 @@ ex:Showroom197 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2566,7 +2573,7 @@ ex:Showroom198 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2579,7 +2586,7 @@ ex:Showroom199 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2592,7 +2599,7 @@ ex:Showroom200 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2605,7 +2612,7 @@ ex:Showroom201 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2618,7 +2625,7 @@ ex:Showroom202 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2631,7 +2638,7 @@ ex:Showroom203 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2644,7 +2651,7 @@ ex:Showroom204 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2657,7 +2664,7 @@ ex:Showroom205 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Batu Bara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2670,7 +2677,7 @@ ex:Showroom206 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2683,7 +2690,7 @@ ex:Showroom207 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2696,7 +2703,7 @@ ex:Showroom208 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2709,7 +2716,7 @@ ex:Showroom209 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Sibolga" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2722,7 +2729,7 @@ ex:Showroom210 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2735,7 +2742,7 @@ ex:Showroom211 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Dairi" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2748,7 +2755,7 @@ ex:Showroom212 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2761,7 +2768,7 @@ ex:Showroom213 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Tanjung Balai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2774,7 +2781,7 @@ ex:Showroom214 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Tapanuli Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2787,7 +2794,7 @@ ex:Showroom215 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2800,7 +2807,7 @@ ex:Showroom216 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padang Lawas" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2813,7 +2820,7 @@ ex:Showroom217 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Karo" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2826,7 +2833,7 @@ ex:Showroom218 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2839,7 +2846,7 @@ ex:Showroom219 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2852,7 +2859,7 @@ ex:Showroom220 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2865,7 +2872,7 @@ ex:Showroom221 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2878,7 +2885,7 @@ ex:Showroom222 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2891,7 +2898,7 @@ ex:Showroom223 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Toba" ;
-    ex:kategori "mobil" ;
+   ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2904,7 +2911,7 @@ ex:Showroom224 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2917,7 +2924,7 @@ ex:Showroom225 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2930,7 +2937,7 @@ ex:Showroom226 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2943,7 +2950,7 @@ ex:Showroom227 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2956,7 +2963,7 @@ ex:Showroom228 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Nias Selatan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2969,7 +2976,7 @@ ex:Showroom229 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2982,7 +2989,7 @@ ex:Showroom230 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Karo" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -2995,7 +3002,7 @@ ex:Showroom231 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Sibolga" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3008,7 +3015,7 @@ ex:Showroom232 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3021,7 +3028,7 @@ ex:Showroom233 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3034,7 +3041,7 @@ ex:Showroom234 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padangsidimpuan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3047,7 +3054,7 @@ ex:Showroom235 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3060,7 +3067,7 @@ ex:Showroom236 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3073,7 +3080,7 @@ ex:Showroom237 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3086,7 +3093,7 @@ ex:Showroom238 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3099,7 +3106,7 @@ ex:Showroom239 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3112,7 +3119,7 @@ ex:Showroom240 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3125,7 +3132,7 @@ ex:Showroom241 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Sibolga" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3138,7 +3145,7 @@ ex:Showroom242 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3151,7 +3158,7 @@ ex:Showroom243 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padang Lawas" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3164,7 +3171,7 @@ ex:Showroom244 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Mandailing Natal" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3177,7 +3184,7 @@ ex:Showroom245 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3190,7 +3197,7 @@ ex:Showroom246 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3203,7 +3210,7 @@ ex:Showroom247 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3216,7 +3223,7 @@ ex:Showroom248 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3229,7 +3236,7 @@ ex:Showroom249 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3242,7 +3249,7 @@ ex:Showroom250 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3255,7 +3262,7 @@ ex:Showroom251 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3268,7 +3275,7 @@ ex:Showroom252 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3281,7 +3288,7 @@ ex:Showroom253 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3294,7 +3301,7 @@ ex:Showroom254 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Mandailing Natal" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3307,7 +3314,7 @@ ex:Showroom255 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padang Lawas Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3320,7 +3327,7 @@ ex:Showroom256 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3333,7 +3340,7 @@ ex:Showroom257 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3346,7 +3353,7 @@ ex:Showroom258 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3359,7 +3366,7 @@ ex:Showroom259 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Tapanuli Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3372,7 +3379,7 @@ ex:Showroom260 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3385,7 +3392,7 @@ ex:Showroom261 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3398,7 +3405,7 @@ ex:Showroom262 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3411,7 +3418,7 @@ ex:Showroom263 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padangsidimpuan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3424,7 +3431,7 @@ ex:Showroom264 rdf:type ex:Showroom ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3437,7 +3444,7 @@ ex:Showroom265 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3450,7 +3457,7 @@ ex:Showroom266 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3463,7 +3470,7 @@ ex:Showroom267 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3476,7 +3483,7 @@ ex:Showroom268 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3489,7 +3496,7 @@ ex:Showroom269 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3502,7 +3509,7 @@ ex:Showroom270 rdf:type ex:Showroom ;
     ex:website "https://www.kawasaki-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3515,7 +3522,7 @@ ex:Showroom271 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3528,7 +3535,7 @@ ex:Showroom272 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3541,7 +3548,7 @@ ex:Showroom273 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3554,7 +3561,7 @@ ex:Showroom274 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3567,7 +3574,7 @@ ex:Showroom275 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3580,7 +3587,7 @@ ex:Showroom276 rdf:type ex:Showroom ;
     ex:website "https://www.vespa.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3593,7 +3600,7 @@ ex:Showroom277 rdf:type ex:Showroom ;
     ex:website "https://www.vespa.com" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3606,7 +3613,7 @@ ex:Showroom278 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Batu Bara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3619,7 +3626,7 @@ ex:Showroom279 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3632,7 +3639,7 @@ ex:Showroom280 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.3" ;
     ex:berlokasiDi "Simalungun" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3645,7 +3652,7 @@ ex:Showroom281 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.2" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3658,7 +3665,7 @@ ex:Showroom282 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3671,7 +3678,7 @@ ex:Showroom283 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Binjai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3684,7 +3691,7 @@ ex:Showroom284 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Gunungsitoli" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3697,7 +3704,7 @@ ex:Showroom285 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padang Lawas Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3710,7 +3717,7 @@ ex:Showroom286 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.3" ;
     ex:berlokasiDi "Asahan" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3723,7 +3730,7 @@ ex:Showroom287 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Serdang Bedagai" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3736,7 +3743,7 @@ ex:Showroom288 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Tebing Tinggi" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3749,7 +3756,7 @@ ex:Showroom289 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3762,7 +3769,7 @@ ex:Showroom290 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3775,7 +3782,7 @@ ex:Showroom291 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3788,7 +3795,7 @@ ex:Showroom292 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3801,7 +3808,7 @@ ex:Showroom293 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Sibolga" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3814,7 +3821,7 @@ ex:Showroom294 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Langkat" ;
-    ex:kategoriex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3827,7 +3834,7 @@ ex:Showroom295 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3840,7 +3847,7 @@ ex:Showroom296 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Tapanuli Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3853,7 +3860,7 @@ ex:Showroom297 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Toba" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3866,7 +3873,7 @@ ex:Showroom298 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Karo" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
 
@@ -3879,6 +3886,6 @@ ex:Showroom299 rdf:type ex:Showroom ;
     ex:website "https://www.yamaha-motor.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Labuhanbatu Utara" ;
-    ex:kategori "mobil" ;
+    ex:kategori "motor" ;
     geo:lat ;
     geo:long .
