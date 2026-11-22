@@ -356,7 +356,7 @@ ex:Showroom27 rdf:type ex:Showroom ;
 ex:Showroom28 rdf:type ex:Showroom ;
     ex:namaShowroom "BMW Performance Motors" ;
     ex:merek "Dealer BMW" ;
-    ex:alamat "Jl. Mongonsidi No.52" ;
+    ex:alamat "Jl. Mongonsidi No.52, Anggrung" ;
     ex:jamOperasional "10.00-17.00" ;
     ex:noTelepon "(061) 4511299" ;
     ex:website "https://bmw-performancemotors.co.id/" ;
@@ -369,6 +369,7 @@ ex:Showroom28 rdf:type ex:Showroom ;
 ex:Showroom29 rdf:type ex:Showroom ;
     ex:namaShowroom "BMW & MINI Cooper Official Medan Consultant Care" ;
     ex:merek "Dealer BMW" ;
+    ex:merek "Dealer MINI Cooper" ;
     ex:alamat "Jl. Mongonsidi No.52" ;
     ex:jamOperasional "Buka 24 jam" ;
     ex:noTelepon "0823-7080-4183" ;
@@ -378,19 +379,6 @@ ex:Showroom29 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.5714326164094814 ;
     geo:long 98.66480820886824 .
-
-ex:Showroom30 rdf:type ex:Showroom ;
-    ex:namaShowroom "BMW Consultants Care" ;
-    ex:merek "Dealer BMW" ;
-    ex:alamat "Jl. Mongonsidi No.56" ;
-    ex:jamOperasional "Buka 24 jam" ;
-    ex:noTelepon "0822-7763-5407" ;
-    ex:website "https://www.bmwmedan.com/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.571610483523646 ;
-    geo:long 98.66474916313305 .
 
 ex:Showroom31 rdf:type ex:Showroom ;
     ex:namaShowroom "BYD Arista Amir Hamzah" ;
