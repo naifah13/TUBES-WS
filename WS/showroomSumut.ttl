@@ -2294,7 +2294,7 @@ ex:Showroom176 rdf:type ex:Showroom ;
 ex:Showroom177 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Cakra Adi Dharma" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. JEND. A. YANI NO. 51 ABCD, Kartini, Kab. Labuhanbatu" ;
+    ex:alamat "JL. JEND. A. YANI NO. 51 ABCD, Kartini" ;
     ex:jamOperasional "08.30-17.00" ;
     ex:noTelepon "062-424333" ;
     ex:website "https://www.astra-honda.com" ;
@@ -2318,7 +2318,7 @@ ex:Showroom178 rdf:type ex:Showroom ;
     geo:long 99.15993722235939 .
 
 ex:Showroom179 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Antara (dealer Sepeda Motor Honda)" ;
+    ex:namaShowroom "CV Antara (dealer Sepeda Motor Honda)" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. MESJID NO. 126 - 128, Brandan Timur" ;
     ex:jamOperasional "08.15-18.00" ;
@@ -2331,7 +2331,7 @@ ex:Showroom179 rdf:type ex:Showroom ;
     geo:long 98.28671156654234 .
 
 ex:Showroom180 rdf:type ex:Showroom ;
-    ex:namaShowroom "CV. Benteng Honda Motor" ;
+    ex:namaShowroom "CV Benteng Honda Motor" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. KAPTEN MUSLIM NO. 182, Helvetia Timur" ;
     ex:jamOperasional "08.30-17.30" ;
@@ -2357,7 +2357,7 @@ ex:Showroom181 rdf:type ex:Showroom ;
     geo:long 99.83114027689683 .
 
 ex:Showroom182 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv Teknik" ;
+    ex:namaShowroom "CV Teknik Pematangsiantar" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JEND. A. YANI NO. 142 - 144, Merdeka" ;
     ex:jamOperasional "08.00-18.00" ;
@@ -2366,8 +2366,8 @@ ex:Showroom182 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.966419158532605 ;
+    geo:long 99.07584278002952 .
 
 ex:Showroom183 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Aneka Teknik" ;
@@ -2379,8 +2379,8 @@ ex:Showroom183 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.604737909476706 ;
+    geo:long 98.48512403585262 .
 
 ex:Showroom184 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sumber Jaya Motor I Stabat" ;
@@ -2392,8 +2392,8 @@ ex:Showroom184 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.751289848335728 ;
+    geo:long 98.45397981072082 .
 
 ex:Showroom185 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Putra Surya Jaya Raya I" ;
@@ -2405,8 +2405,8 @@ ex:Showroom185 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.406892199253776 ;
+    geo:long 99.28056386030667 .
 
 ex:Showroom186 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Apollo Motor" ;
@@ -2418,8 +2418,8 @@ ex:Showroom186 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9626897609301537 ;
+    geo:long 99.06914615304511 .
 
 ex:Showroom187 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Garuda Jaya Motor" ;
@@ -2431,11 +2431,11 @@ ex:Showroom187 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.57037400858219 ;
+    geo:long 98.65999724140795 .
 
 ex:Showroom188 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT rotella Persada Mandiri I" ;
+    ex:namaShowroom "PT Rotella Persada Mandiri I" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SERDANG NO. 161 G, PERBAUNGAN, Simpang Tiga Pekan" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2444,11 +2444,11 @@ ex:Showroom188 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.575057761297482 ;
+    geo:long 98.95760306181793 .
 
 ex:Showroom189 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Rotella Persada Mandiri" ;
+    ex:namaShowroom "PT Rotella Persada Mandiri II" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. PERINTIS KOMP. NUSA PRIMA BLOK A NO.1,2 DAN 4, Tanjung Morawa B" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -2457,8 +2457,8 @@ ex:Showroom189 rdf:type ex:Showroom ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.530621492097173 ;
+    geo:long 98.79326343933515 .
 
 ex:Showroom190 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Rotella Persada Mandiri III" ;
@@ -2470,8 +2470,8 @@ ex:Showroom190 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5631746771566317 ;
+    geo:long 98.87497425400919 .
 
 ex:Showroom191 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sagita Mulia Laras" ;
@@ -2483,8 +2483,8 @@ ex:Showroom191 rdf:type ex:Showroom ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Tebing Tinggi" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.3265273333611667 ;
+    geo:long 99.15482760701535 .
 
 ex:Showroom192 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Tiger Dua Ribu" ;
@@ -2496,8 +2496,8 @@ ex:Showroom192 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5905945985863075 ;
+    geo:long 98.64769266468856 .
 
 ex:Showroom193 rdf:type ex:Showroom ;
     ex:namaShowroom "Aksara Motor" ;
@@ -2509,11 +2509,11 @@ ex:Showroom193 rdf:type ex:Showroom ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.598743115081498 ;
+    geo:long 98.6993640999119 .
 
 ex:Showroom194 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Kencana Mulia Abadi I" ;
+    ex:namaShowroom "PT Kencana Mulia Abadi" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. DIPONEGORO NO. 120, Purwodadi, Kota Gunungsitoli" ;
     ex:jamOperasional "08.00-17.30" ;
@@ -2522,8 +2522,8 @@ ex:Showroom194 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Gunungsitoli" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.3249771619086599 ;
+    geo:long 97.6286230615767 .
 
 ex:Showroom195 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugerah Karya Abiwara" ;
@@ -2535,8 +2535,8 @@ ex:Showroom195 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9860011583765282 ;
+    geo:long 99.62243281836201 .
 
 ex:Showroom196 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Berlian Bintang Mas" ;
@@ -2548,8 +2548,8 @@ ex:Showroom196 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6003380802736054 ;
+    geo:long 98.75695791071993 .
 
 ex:Showroom197 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Trading Coy - Krakatau" ;
@@ -2561,8 +2561,8 @@ ex:Showroom197 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.613011091708039 ;
+    geo:long 98.68067139352448 .
 
 ex:Showroom198 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sumber Jaya Motor II" ;
@@ -2574,8 +2574,8 @@ ex:Showroom198 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.8922673024480865 ;
+    geo:long 98.42527939537766 .
 
 ex:Showroom199 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Sudi Honda" ;
@@ -2587,8 +2587,8 @@ ex:Showroom199 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.96036097452584 ;
+    geo:long 99.0687511800297 .
 
 ex:Showroom200 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Putra Langkat" ;
@@ -2600,11 +2600,11 @@ ex:Showroom200 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.606522116478495 ;
+    geo:long 98.44542455304847 .
 
 ex:Showroom201 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Cakra Adi Dharma Kota Pinang." ;
+    ex:namaShowroom "PT Cakra Adi Dharma Kota Pinang" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. JEND. SUDIRMAN NO. 14 - 18, Kota Pinang, Kec. Kota Pinang" ;
     ex:jamOperasional "08.00 - 17.00" ;
@@ -2613,8 +2613,8 @@ ex:Showroom201 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.8922408957331767 ;
+    geo:long 100.08725282235403 .
 
 ex:Showroom202 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indah Sakti Motorindo" ;
@@ -2626,8 +2626,8 @@ ex:Showroom202 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.586738068470926 ;
+    geo:long 98.70527016468847 .
 
 ex:Showroom203 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Graha Honda" ;
@@ -2639,8 +2639,8 @@ ex:Showroom203 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.695096187740736 ;
+    geo:long 98.67486198003286 .
 
 ex:Showroom204 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Duta Motor" ;
@@ -2652,8 +2652,8 @@ ex:Showroom204 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.576992055114517 ;
+    geo:long 98.70381671072005 .
 
 ex:Showroom205 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugerah Karya Abiwara III" ;
@@ -2665,8 +2665,8 @@ ex:Showroom205 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Batu Bara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.283952043515843 ;
+    geo:long 99.36907225304665 .
 
 ex:Showroom206 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Honda Kita" ;
@@ -2678,8 +2678,8 @@ ex:Showroom206 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6889455152184225 ;
+    geo:long 98.50819865119675.
 
 ex:Showroom207 rdf:type ex:Showroom ;
     ex:namaShowroom "Benteng Honda Marelan" ;
@@ -2691,8 +2691,8 @@ ex:Showroom207 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.688553635144407 ;
+    geo:long 98.65588362236112 .
 
 ex:Showroom208 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Deli Motor" ;
@@ -2704,8 +2704,8 @@ ex:Showroom208 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.4943939009467715 ;
+    geo:long 98.68213298003211 .
 
 ex:Showroom209 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Garuda Perkasa Motor" ;
@@ -2717,8 +2717,8 @@ ex:Showroom209 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Sibolga" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.7417670996586565 ;
+    geo:long 98.7789946687697 .
 
 ex:Showroom210 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Treding Coy" ;
@@ -2730,8 +2730,8 @@ ex:Showroom210 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.09326607478751 ;
+    geo:long 99.83648007817494 .
 
 ex:Showroom211 rdf:type ex:Showroom ;
     ex:namaShowroom "Eka Rajawali Andalas" ;
@@ -2743,8 +2743,8 @@ ex:Showroom211 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Dairi" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.750721043199816 ;
+    geo:long 98.31113608002862 .
 
 ex:Showroom212 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Medan Baru" ;
@@ -2756,8 +2756,8 @@ ex:Showroom212 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.584048769166421 ;
+    geo:long 98.66671296654027 .
 
 ex:Showroom213 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugerah Karya Abiwara II Tanjung Balai" ;
@@ -2769,8 +2769,8 @@ ex:Showroom213 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Tanjung Balai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9649831733580565 ;
+    geo:long 99.80197479537311 .
 
 ex:Showroom214 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Pandu Mitra Motor" ;
@@ -2782,8 +2782,8 @@ ex:Showroom214 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Tapanuli Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.211554823139818 ;
+    geo:long 98.9717451646829 .
 
 ex:Showroom215 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Panca Prima Abadi" ;
@@ -2795,8 +2795,8 @@ ex:Showroom215 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9974791587207825 ;
+    geo:long 99.62382206104041 .
 
 ex:Showroom216 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Putra Surya Jaya Raya II" ;
@@ -2808,21 +2808,21 @@ ex:Showroom216 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padang Lawas" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.1783854267378624 ;
+    geo:long 99.72963211555629 .
 
 ex:Showroom217 rdf:type ex:Showroom ;
     ex:namaShowroom "Setia Motor" ;
     ex:merek "Dealer Honda" ;
-    ex:alamat "JL. MARIAM GINTING NO. 55, Gung Leto, Kab. Karo" ;
+    ex:alamat "JL. MARIAM GINTING NO. 55, Gung Leto" ;
     ex:jamOperasional "09.00 - 17.00" ;
     ex:noTelepon "0813-6239-6669" ;
     ex:website "https://www.astra-honda.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Karo" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.10644510144318 ;
+    geo:long 98.49613760887122 .
 
 ex:Showroom218 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sumber Jaya Motor" ;
@@ -2834,8 +2834,8 @@ ex:Showroom218 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6254025173625766 ;
+    geo:long 98.70798498003252 .
 
 ex:Showroom219 rdf:type ex:Showroom ;
     ex:namaShowroom "Cv Indah Sakti II Aek Nabara" ;
@@ -2847,8 +2847,8 @@ ex:Showroom219 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.0588333895192523 ;
+    geo:long 99.95147306653382 .
 
 ex:Showroom220 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Indah Sakti Kota Pinang" ;
@@ -2860,8 +2860,8 @@ ex:Showroom220 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.8939701495006194 ;
+    geo:long 100.08404742235392 .
 
 ex:Showroom221 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Cakra Adi Dharma - Aek Nabara" ;
@@ -2873,8 +2873,8 @@ ex:Showroom221 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.0583220087703595 ;
+    geo:long 99.95981750886205 .
 
 ex:Showroom222 rdf:type ex:Showroom ;
     ex:namaShowroom "Wahana Ritel Honda Medan" ;
@@ -2886,8 +2886,8 @@ ex:Showroom222 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.563327506895567 ;
+    geo:long 98.68971618003216 .
 
 ex:Showroom223 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Teknik II" ;
@@ -2899,8 +2899,8 @@ ex:Showroom223 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Toba" ;
    ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.3333853161127047 ;
+    geo:long 99.05912045304291 .
 
 ex:Showroom224 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Supra Jaya Abadi - Ahass 06958" ;
@@ -2912,8 +2912,8 @@ ex:Showroom224 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5380533474230638  ;
+    geo:long 98.68790648188363 .
 
 ex:Showroom225 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sumber Perintis Jaya I" ;
@@ -2925,8 +2925,8 @@ ex:Showroom225 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.4259196188137424 ;
+    geo:long 98.90382318003162 .
 
 ex:Showroom226 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda Daya Motor Binjai (official)" ;
@@ -2938,8 +2938,8 @@ ex:Showroom226 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.624116010436488 ;
+    geo:long 98.50448416468848 .
 
 ex:Showroom227 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Prima Agung Motorindo" ;
@@ -2951,8 +2951,8 @@ ex:Showroom227 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.712609116369457 ;
+    geo:long 98.66102689537699 .
 
 ex:Showroom228 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Kencana Abadi Mulia II" ;
@@ -2964,8 +2964,8 @@ ex:Showroom228 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Nias Selatan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 0.7592771604185853 ;
+    geo:long 97.8043867898305 .
 
 ex:Showroom229 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugrah Multi Jaya Aek Loba - 07610" ;
@@ -2977,8 +2977,8 @@ ex:Showroom229 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.6561720396563424 ;
+    geo:long 99.62970320886441 .
 
 ex:Showroom230 rdf:type ex:Showroom ;
     ex:namaShowroom "Setia Motor Berastagi" ;
@@ -2990,8 +2990,8 @@ ex:Showroom230 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Karo" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.195534415564765 ;
+    geo:long 98.5092385530461 .
 
 ex:Showroom231 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Mitra Honda Motor" ;
@@ -3003,8 +3003,8 @@ ex:Showroom231 rdf:type ex:Showroom ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Sibolga" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.740309810440084 ;
+    geo:long 98.78142392420527 .
 
 ex:Showroom232 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sukses Motor Globalindo" ;
@@ -3016,8 +3016,8 @@ ex:Showroom232 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5541060858075455 ;
+    geo:long 98.61726161235525 .
 
 ex:Showroom233 rdf:type ex:Showroom ;
     ex:namaShowroom "Garuda Mas Motor" ;
@@ -3029,8 +3029,8 @@ ex:Showroom233 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.608668193043873 ;
+    geo:long 98.5013123953764 .
 
 ex:Showroom234 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Trading Coy P.sidimpuan" ;
@@ -3042,8 +3042,8 @@ ex:Showroom234 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.38060186737721 ;
+    geo:long 99.27416683769667 .
 
 ex:Showroom235 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Groliar Mentari Wisesa (Showroom & Bengkel Resmi Sepeda Motor Honda)" ;
@@ -3055,11 +3055,11 @@ ex:Showroom235 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.7584434748720135 ;
+    geo:long 98.45173645304884 .
 
 ex:Showroom236 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Pilar Deli LabuMas" ;
+    ex:namaShowroom "PT Pilar Deli LabuMas I/Beringin" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jl. Besar Beringin No. 39, Sidodadi Ramunia, Kec. Beringin" ;
     ex:jamOperasional "08.30 - 17.00" ;
@@ -3068,8 +3068,8 @@ ex:Showroom236 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.626304153683786 ;
+    geo:long 98.8889587124402 .
 
 ex:Showroom237 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Panca Prima Abadi II Sei Piring" ;
@@ -3081,8 +3081,8 @@ ex:Showroom237 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.7214402654630785 ;
+    geo:long 99.60985689537253 .
 
 ex:Showroom238 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Trading Coy" ;
@@ -3094,8 +3094,8 @@ ex:Showroom238 rdf:type ex:Showroom ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5551236783185236 ;
+    geo:long 98.69496933585243 .
 
 ex:Showroom239 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Cikampak" ;
@@ -3107,8 +3107,8 @@ ex:Showroom239 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu Selatan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.7879575774397058 ;
+    geo:long 100.20052853584599 .
 
 ex:Showroom240 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Honda Buana Jaya Lestari" ;
@@ -3120,8 +3120,8 @@ ex:Showroom240 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5995667265327134 ;
+    geo:long 98.58529131072032 .
 
 ex:Showroom241 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Kencana Mulia Abadi 3 Sibolga" ;
@@ -3133,8 +3133,8 @@ ex:Showroom241 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Sibolga" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.7385223328129638 ;
+    geo:long 98.78556170886144 .
 
 ex:Showroom242 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Cakra Adi Dharma Negeri Lama" ;
@@ -3146,8 +3146,8 @@ ex:Showroom242 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.3169195197181573 ;
+    geo:long 100.09209875119093 .
 
 ex:Showroom243 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Trading Coy Sibuhuan" ;
@@ -3159,7 +3159,7 @@ ex:Showroom243 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padang Lawas" ;
     ex:kategori "motor" ;
-    geo:lat ;
+    geo:lat 1.0508278639653126 ;
     geo:long .
 
 ex:Showroom244 rdf:type ex:Showroom ;
@@ -3172,8 +3172,8 @@ ex:Showroom244 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Mandailing Natal" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 0.8354156084627167 ;
+    geo:long 99.56375696467998 .
 
 ex:Showroom245 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indako Trading Coy" ;
@@ -3185,8 +3185,8 @@ ex:Showroom245 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6115480298209373 ;
+    geo:long 98.49522088003259 .
 
 ex:Showroom246 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Mega Motorindo" ;
@@ -3198,8 +3198,8 @@ ex:Showroom246 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9773222989452086 ;
+    geo:long  99.63014584934194 .
 
 ex:Showroom247 rdf:type ex:Showroom ;
     ex:namaShowroom "Bintang Utama Motor. PT" ;
@@ -3211,8 +3211,8 @@ ex:Showroom247 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5532212606738307 ;
+    geo:long 98.62623458188395  .
 
 ex:Showroom248 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Honda Nusantara Sakti Perbaungan" ;
@@ -3224,8 +3224,8 @@ ex:Showroom248 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5685129053203117 ;
+    geo:long 98.96467706468853 .
 
 ex:Showroom249 rdf:type ex:Showroom ;
     ex:namaShowroom "Nusantara Sakti" ;
@@ -3237,8 +3237,8 @@ ex:Showroom249 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.646531149056772 ;
+    geo:long 98.6607095165844 .
 
 ex:Showroom250 rdf:type ex:Showroom ;
     ex:namaShowroom "Platina Mulia Abadi" ;
@@ -3250,8 +3250,8 @@ ex:Showroom250 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.7174237523541147 ;
+    geo:long 98.63398801569771 .
 
 ex:Showroom251 rdf:type ex:Showroom ;
     ex:namaShowroom "Honda Daya Motor Medan" ;
@@ -3263,11 +3263,11 @@ ex:Showroom251 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6288953988915402 ;
+    geo:long 98.69490969352502 .
 
 ex:Showroom252 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv Satu Hati Perkasa" ;
+    ex:namaShowroom "CV Satu Hati Perkasa" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jl. Tanjung Pura, Pelawi Utara, Kec. Babalan" ;
     ex:jamOperasional "08.30-17.00" ;
@@ -3276,8 +3276,8 @@ ex:Showroom252 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 4.0111440829200875 ;
+    geo:long 98.29309026469092 .
 
 ex:Showroom253 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Satu Hati Perkasa. Bengkel Ahass 13141" ;
@@ -3289,8 +3289,8 @@ ex:Showroom253 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Serdang Bedagai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.4687649076753444 ;
+    geo:long 99.14592565119582 .
 
 ex:Showroom254 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Prima Agung Motorindo II" ;
@@ -3302,8 +3302,8 @@ ex:Showroom254 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Mandailing Natal" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 0.9788031961906223 ;
+    geo:long 99.52782225757429 .
 
 ex:Showroom255 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sukses Motor Globalindo II Gunung Tua" ;
@@ -3315,8 +3315,8 @@ ex:Showroom255 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padang Lawas Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.5024224768893335 ;
+    geo:long 99.62306556653289 .
 
 ex:Showroom256 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Honda Karya Utama" ;
@@ -3328,11 +3328,11 @@ ex:Showroom256 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9622863740395533 ;
+    geo:long 99.63374509537316 .
 
 ex:Showroom257 rdf:type ex:Showroom ;
-    ex:namaShowroom "Mpm Motor Medan" ;
+    ex:namaShowroom "MPM Motor Medan" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL. SISINGAMANGARAJA KM. 10,5 NO. 138, Timbang Deli, Kec. Medan Amplas" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -3341,11 +3341,11 @@ ex:Showroom257 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5353229609939714 ;
+    geo:long 98.73720677345682 .
 
 ex:Showroom258 rdf:type ex:Showroom ;
-    ex:namaShowroom "Cv Honda Karya Utama II Aek Ledong" ;
+    ex:namaShowroom "CV Honda Karya Utama II Aek Ledong" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "JL LINTAS SUMATERA, Ledong Timur, Kec. Aek Ledong" ;
     ex:jamOperasional "08.15-17.30" ;
@@ -3354,8 +3354,8 @@ ex:Showroom258 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.58573095565347 ;
+    geo:long 99.65273971071595 .
 
 ex:Showroom259 rdf:type ex:Showroom ;
     ex:namaShowroom "CV Sam Honda Motor" ;
@@ -3367,8 +3367,8 @@ ex:Showroom259 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Tapanuli Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.0185008637312243 ;
+    geo:long 98.9784110646824 .
 
 ex:Showroom260 rdf:type ex:Showroom ;
     ex:namaShowroom "Wahana Ritel Honda Medan Sunggal" ;
@@ -3380,8 +3380,8 @@ ex:Showroom260 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5856909060607425 ;
+    geo:long 98.61426529537603 .
 
 ex:Showroom261 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sukses Motor Globalindo" ;
@@ -3393,8 +3393,8 @@ ex:Showroom261 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.0064039783373775 ;
+    geo:long 99.0888191429619 .
 
 ex:Showroom262 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indostar Sukses Mandiri" ;
@@ -3406,8 +3406,8 @@ ex:Showroom262 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.615667508577686 ;
+    geo:long 98.66601503955599 .
 
 ex:Showroom263 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Honda PT Anugrah Multi Jaya" ;
@@ -3419,8 +3419,8 @@ ex:Showroom263 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padangsidimpuan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.445850107385667 ;
+    geo:long 99.2647461397683 .
 
 ex:Showroom264 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Trading Coy - Ngumban Surbakti" ;
@@ -3432,8 +3432,8 @@ ex:Showroom264 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5405785054188823 ;
+    geo:long 98.64414748003233 .
 
 ex:Showroom265 rdf:type ex:Showroom ;
     ex:namaShowroom "KAWASAKI PLATINUM" ;
@@ -3445,11 +3445,11 @@ ex:Showroom265 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9810235120108115 ;
+    geo:long 99.62740536653753 .
 
 ex:Showroom266 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT MEGANUSA SEMESTA" ;
+    ex:namaShowroom "Kawasaki Medan - PT. Meganusa Semesta" ;
     ex:merek "Dealer Kawasaki" ;
     ex:alamat "Jl. Jend. Gatot Subroto No. 198A Medan" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -3458,11 +3458,11 @@ ex:Showroom266 rdf:type ex:Showroom ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.590565636367226 ;
+    geo:long  98.65716181072023 .
 
 ex:Showroom267 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT MEGANUSA SEMESTA" ;
+    ex:namaShowroom "Graha Ninja 1 - Kawasaki" ;
     ex:merek "Dealer Kawasaki" ;
     ex:alamat "Jl. Sultan Iskandar Muda No. 37 Medan" ;
     ex:jamOperasional "08.00-17.00" ;
@@ -3471,8 +3471,8 @@ ex:Showroom267 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5778596839904098 ;
+    geo:long 98.66056479602995 .
 
 ex:Showroom268 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. AGUNG MOTOR" ;
@@ -3484,8 +3484,8 @@ ex:Showroom268 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.963469331705044 ;
+    geo:long 99.06390451071708 .
 
 ex:Showroom269 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. KAWASAKI BERJAYA MOTOR" ;
@@ -3497,8 +3497,8 @@ ex:Showroom269 rdf:type ex:Showroom ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6110392459602614 ;
+    geo:long 98.49437775647964 .
 
 ex:Showroom270 rdf:type ex:Showroom ;
     ex:namaShowroom "UD. MATAHARI MOTOR" ;
@@ -3510,8 +3510,8 @@ ex:Showroom270 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.0761880863365394 ;
+    geo:long 99.85497041071373 .
 
 ex:Showroom271 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sunindo Varia Motor Gemilang" ;
@@ -3523,8 +3523,8 @@ ex:Showroom271 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.603508764121999 ;
+    geo:long 98.66878589722802 .
 
 ex:Showroom272 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Indo SunMotor Gemilang" ;
@@ -3540,9 +3540,9 @@ ex:Showroom272 rdf:type ex:Showroom ;
     geo:long .
 
 ex:Showroom273 rdf:type ex:Showroom ;
-    ex:namaShowroom "Suzuki Motor Semarang" ;
+    ex:namaShowroom "Suzuki Motor" ;
     ex:merek "Dealer Suzuki" ;
-    ex:alamat "Jl. Semarang No.68 D, Pasar Baru, Kec. Medan Kota, Kota Medan, Sumatera Utara 20212" ;
+    ex:alamat "Jl. Semarang No.68 D, Pasar Baru, Kec. Medan Kota" ;
     ex:jamOperasional "08.30-17.00" ;
     ex:noTelepon "061-4149119" ;
     ex:website "https://www.suzuki.co.id" ;
@@ -3555,41 +3555,41 @@ ex:Showroom273 rdf:type ex:Showroom ;
 ex:Showroom274 rdf:type ex:Showroom ;
     ex:namaShowroom "Lusi Suzuki Motor Pancur Batu" ;
     ex:merek "Dealer Suzuki" ;
-    ex:alamat "Jl. Tulip, Namo Bintang, Kec. Pancur Batu, Kabupaten Deli Serdang, Sumatera Utara 20353" ;
+    ex:alamat "Jl. Tulip, Namo Bintang, Kec. Pancur Batu" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0812-6294-8055" ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.4978792442868496 ;
+    geo:long 98.61704768003207 .
 
 ex:Showroom275 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Siantar Adeirma" ;
     ex:merek "Dealer Suzuki" ;
-    ex:alamat "Jl. Ade Irma Suryani No. 5 A-D, Simalungun, Martoba, Kec. Siantar Utara, Kota Pematang Siantar, Sumatera Utara 21144" ;
+    ex:alamat "Jl. Ade Irma Suryani No. 5 A-D, Simalungun, Martoba, Kec. Siantar Utara" ;
     ex:jamOperasional "08.00-16.30" ;
     ex:noTelepon "0622-24085" ;
     ex:website "https://www.suzuki.co.id" ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9615038611464217 ;
+    geo:long 99.06194646926826 .
 
 ex:Showroom276 rdf:type ex:Showroom ;
     ex:namaShowroom "VESPARK Indonesia" ;
     ex:merek "Dealer Vespa" ;
-    ex:alamat "Jl. Prof. H. M. Yamin No.16A, Gg. Buntu, Kec. Medan Timur, Kota Medan, Sumatera Utara 20231" ;
+    ex:alamat "Jl. Prof. H. M. Yamin No.16A, Gg. Buntu, Kec. Medan" ;
     ex:jamOperasional "08.00 - 17.00" ;
     ex:noTelepon "061-4565454" ;
     ex:website "https://www.vespa.com" ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.593850335670245 ;
+    geo:long 98.6802864953762 .
 
 ex:Showroom277 rdf:type ex:Showroom ;
     ex:namaShowroom "Motoplex Piaggio Vespa Aprilia Moto Guzzi Medan" ;
@@ -3601,8 +3601,8 @@ ex:Showroom277 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5619455667502278 ;
+    geo:long 98.62580029537584 .
 
 ex:Showroom278 rdf:type ex:Showroom ;
     ex:namaShowroom "CV HORAS ABADI MOTOR" ;
@@ -3614,8 +3614,8 @@ ex:Showroom278 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Batu Bara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.291106308387748 ;
+    geo:long 99.36620693770276 .
 
 ex:Showroom279 rdf:type ex:Showroom ;
     ex:namaShowroom "FAJAR MOTOR" ;
@@ -3627,8 +3627,8 @@ ex:Showroom279 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 4.022999812794342 ;
+    geo:long 98.28534141493928 .
 
 ex:Showroom280 rdf:type ex:Showroom ;
     ex:namaShowroom "EXPO MOTOR" ;
@@ -3653,11 +3653,11 @@ ex:Showroom281 rdf:type ex:Showroom ;
     ex:rating "4.2" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.076400799984563 ;
+    geo:long 99.85494906140387 .
 
 ex:Showroom282 rdf:type ex:Showroom ;
-    ex:namaShowroom "ALFA SCORPII BINJAI" ;
+    ex:namaShowroom "YAMAHA ALFA SCORPII BINJAI" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Tengku Amir Hamzah No.38, Nangka, Kec. Binjai Utara, Kota Binjai, Sumatera Utara 20741" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3666,11 +3666,11 @@ ex:Showroom282 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.620273519188303 ;
+    geo:long 98.5015273088686 .
 
 ex:Showroom283 rdf:type ex:Showroom ;
-    ex:namaShowroom "SJKM BINJAI" ;
+    ex:namaShowroom "YAMAHA SJKM BINJAI" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Sultan Hasanuddin No.57, Kartini, Kec. Binjai Kota, Kota Binjai, Sumatera Utara 20741" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3679,8 +3679,8 @@ ex:Showroom283 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Binjai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.601439157009133 ;
+    geo:long 98.48473946468859 .
 
 ex:Showroom284 rdf:type ex:Showroom ;
     ex:namaShowroom "PT SHALOM ANUGERAH PERKASA" ;
@@ -3692,8 +3692,8 @@ ex:Showroom284 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Gunungsitoli" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.286443373608578 ;
+    geo:long 97.62374646468041 .
 
 ex:Showroom285 rdf:type ex:Showroom ;
     ex:namaShowroom "GRAHA YAMAHA AUTO PRATAMA" ;
@@ -3705,8 +3705,8 @@ ex:Showroom285 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Padang Lawas Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.5289502838639097 ;
+    geo:long 99.62585090391852 .
 
 ex:Showroom286 rdf:type ex:Showroom ;
     ex:namaShowroom "DUNIA SAKTI" ;
@@ -3718,8 +3718,8 @@ ex:Showroom286 rdf:type ex:Showroom ;
     ex:rating "4.3" ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.0114083118955848 ;
+    geo:long 99.6340455107731 .
 
 ex:Showroom287 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII PERBAUNGAN" ;
@@ -3731,8 +3731,8 @@ ex:Showroom287 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Serdang Bedagai" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5685158455048405 ;
+    geo:long 98.9649867260639 .
 
 ex:Showroom288 rdf:type ex:Showroom ;
     ex:namaShowroom "CV DELI MITRA LESTARI" ;
@@ -3744,8 +3744,8 @@ ex:Showroom288 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Tebing Tinggi" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.341083840461985 ;
+    geo:long 99.1649528935232 .
 
 ex:Showroom289 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII RANTAU PRAPAT" ;
@@ -3757,8 +3757,8 @@ ex:Showroom289 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Labuhanbatu" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.0855359628800185 ;
+    geo:long 99.85141952605785 .
 
 ex:Showroom290 rdf:type ex:Showroom ;
     ex:namaShowroom "CV SANGGUP REZEKI MOTOR" ;
@@ -3770,8 +3770,8 @@ ex:Showroom290 rdf:type ex:Showroom ;
     ex:rating "4.5" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.9613612032960237 ;
+    geo:long 99.07131849537313 .
 
 ex:Showroom291 rdf:type ex:Showroom ;
     ex:namaShowroom "ASLI MOTOR SIANTAR" ;
@@ -3783,8 +3783,8 @@ ex:Showroom291 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.962113974083155 ;
+    geo:long 99.08282919352185 .
 
 ex:Showroom292 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII PEMATANG SIANTAR" ;
@@ -3796,8 +3796,8 @@ ex:Showroom292 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.963460659252027 ;
+    geo:long 99.07490749537342 .
 
 ex:Showroom293 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII SIBOLGA" ;
@@ -3809,11 +3809,11 @@ ex:Showroom293 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Sibolga" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.7423361906586623 ;
+    geo:long 98.77955715304122 .
 
 ex:Showroom294 rdf:type ex:Showroom ;
-    ex:namaShowroom "CHAMPION MOTOR" ;
+    ex:namaShowroom "Dealer Resmi Yamaha Champion Motor Stabat" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. H. Z. Arifin No. 29 - Stabat, Kab. Langkat" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3822,8 +3822,8 @@ ex:Showroom294 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Langkat" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.762529696950057 ;
+    geo:long 98.453177921341 .
 
 ex:Showroom295 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII TANJUNG MORAWA" ;
@@ -3835,11 +3835,11 @@ ex:Showroom295 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Deli Serdang" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.526188340075186 ;
+    geo:long 98.79656602670049 .
 
 ex:Showroom296 rdf:type ex:Showroom ;
-    ex:namaShowroom "TATA MOTOR" ;
+    ex:namaShowroom "TATA MOTOR TARUTUNG" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. S.M Raja No. 189, Hutatoruan VI, Kec. Tarutung, Kab. Tapanuli Utara" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3848,8 +3848,8 @@ ex:Showroom296 rdf:type ex:Showroom ;
     ex:rating "5.0" ;
     ex:berlokasiDi "Tapanuli Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.023275415759169 ;
+    geo:long 98.96233109140148 .
 
 ex:Showroom297 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII BALIGE" ;
@@ -3861,8 +3861,8 @@ ex:Showroom297 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Toba" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.3362486960073006 ;
+    geo:long 99.07287743853651 .
 
 ex:Showroom298 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII BERASTAGI" ;
@@ -3874,11 +3874,11 @@ ex:Showroom298 rdf:type ex:Showroom ;
     ex:rating "4.6" ;
     ex:berlokasiDi "Karo" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.177551372754283 ;
+    geo:long 98.51073202632695 .
 
 ex:Showroom299 rdf:type ex:Showroom ;
-    ex:namaShowroom "ALFA SCORPII - KAMPUNG PAJAK" ;
+    ex:namaShowroom "YAMAHA ALFA SCORPII KAMPUNG PAJAK" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Lintas Sumatera, Desa Kp. Pajak/Pulo Jantan, Kab. Labuhanbatu Utara" ;
     ex:jamOperasional "08:00-17:00" ;
@@ -3887,5 +3887,5 @@ ex:Showroom299 rdf:type ex:Showroom ;
     ex:rating "4.8" ;
     ex:berlokasiDi "Labuhanbatu Utara" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 2.29754424234611 ;
+    geo:long 99.74431732420706 .
