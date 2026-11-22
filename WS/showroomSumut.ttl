@@ -405,18 +405,57 @@ ex:Showroom31 rdf:type ex:Showroom ;
     geo:lat 3.607486623728541 ;
     geo:long 98.66068126654052 .
 
+ex:Showroom31 rdf:type ex:Showroom ;
+    ex:namaShowroom "BYD ARISTA CEMARA" ;
+    ex:merek "Dealer BYD" ;
+    ex:alamat "Jl. Cemara No.198, Pulo Brayan Darat II, Kec. Medan Timur" ;
+    ex:jamOperasional "08.00-20.00" ;
+    ex:noTelepon "0851-1916-2050" ;
+    ex:website "https://www.byd.arista-group.co.id/" ; 
+    ex:rating "4,4" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "mobil" ;
+    geo:lat 3.6292913236522377 ;
+    geo:long 98.68867153035838 .
+
+ex:Showroom31 rdf:type ex:Showroom ;
+    ex:namaShowroom "BYD Arista Medan Ring Road" ;
+    ex:merek "Dealer BYD" ;
+    ex:alamat "Seberang RCW, Jl. Ring Road Jl. Gagak Hitam, Tj. Rejo, Kec. Medan Sunggal" ;
+    ex:jamOperasional "08.30-21.00" ;
+    ex:noTelepon "(061) 44021888" ;
+    ex:website "https://www.byd.arista-group.co.id/" ; 
+    ex:rating "4,9" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "mobil" ;
+    geo:lat 3.578057656322084 ;
+    geo:long 98.62678914990059 .
+
 ex:Showroom32 rdf:type ex:Showroom ;
     ex:namaShowroom "BYD ARISTA THAMRIN" ;
     ex:merek "Dealer BYD" ;
     ex:alamat "Jl. M.H Thamrin No.75-E" ;
     ex:jamOperasional "11.00-19.00" ;
     ex:noTelepon "(061) 44020888" ;
-    ex:website "https://www.byd-aristagroup.co.id/" ;
+    ex:website "https://www.byd.arista-group.co.id/" ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
     geo:lat 3.5880359378445323 ;
     geo:long 98.69102601704216 .
+
+ex:Showroom33 rdf:type ex:Showroom ;
+    ex:namaShowroom "DEALER BYD AMPLAS" ;
+    ex:merek "Dealer BYD" ;
+    ex:alamat "Jl. Sakti Lubis No.60, Sitirejo II, Kec. Medan Amplas" ;
+    ex:jamOperasional "08.00-18.00" ;
+    ex:noTelepon "0811-6487-755" ;
+    ex:website "https://www.byd.arista-group.co.id/" ;
+    ex:rating "4,8" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "mobil" ;
+    geo:lat 3.5563585970506546 ;
+    geo:long 98.69548498534719 .
 
 ex:Showroom33 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Chery Medan" ;
@@ -445,17 +484,17 @@ ex:Showroom34 rdf:type ex:Showroom ;
     geo:long 98.69184941780398 .
 
 ex:Showroom35 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Chery Tiggo Cross Medan" ;
+    ex:namaShowroom "3S Chery Authorized Dealer" ;
     ex:merek "Dealer Chery" ;
     ex:alamat "Jl. Sisingamangaraja No.Km 6, RW.5" ;
     ex:jamOperasional "08.00-18.00" ;
-    ex:noTelepon "0813-7468-5675" ;
+    ex:noTelepon "(061) 7853300" ;
     ex:website "https://cherymedan.id/" ;
-    ex:rating "5,0" ;
+    ex:rating "4,1" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat 3.541267621520695 ;
-    geo:long 98.70324652320762 .
+    geo:lat 3.5385368640896946 ;
+    geo:long 98.7032061358523 .
 
 ex:Showroom36 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer Resmi Mobil Chery Medan" ;
@@ -470,57 +509,31 @@ ex:Showroom36 rdf:type ex:Showroom ;
     geo:lat 3.5688404381446 ;
     geo:long 98.6913771377942 .
 
-ex:Showroom37 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Pusat Mobil Chery & Jaecoo Medan" ;
-    ex:merek "Dealer Chery" ;
-    ex:alamat "Jl. Sisingamangaraja No.29" ;
-    ex:jamOperasional "08.00-18.00" ;
-    ex:noTelepon "0822-6749-2894" ;
-    ex:website "https://cherymedan.id" ;
-    ex:rating "4,8" ;
+ex:Showroom39 rdf:type ex:Showroom ;
+    ex:namaShowroom "City Store Jaecoo Medan" ;
+    ex:merek "Dealer Jaecoo" ;
+    ex:alamat "Centre Point Mall, Atrium Plaza, Jl. Jawa No.8 LT GF-03, Gg. Buntu, Kec. Medan Timur" ;
+    ex:jamOperasional "10.00-22.00" ;
+    ex:noTelepon "081266508188" ;
+    ex:website "https://jaecoo.id" ;
+    ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom38 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Chery Medan - Amplas" ;
-    ex:merek "Dealer Chery" ;
-    ex:alamat "Jl. Sisingamangaraja No.KM 6, RW.5" ;
-    ex:jamOperasional "09.00-18.00" ;
-    ex:noTelepon "0811-6482-024" ;
-    ex:website "https://cherymedan.id" ;
-    ex:rating "4,3" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5916219941226606 ;
+    geo:long 98.681032 .
 
 ex:Showroom39 rdf:type ex:Showroom ;
-    ex:namaShowroom "MELLY LU JAECOO & CHERY MEDAN" ;
-    ex:merek "Dealer Chery" ;
-    ex:alamat "CENTRE POINT MALL, lt. G" ;
-    ex:jamOperasional "09.00-22.00" ;
-    ex:noTelepon "0822-6142-7332" ;
-    ex:website "https://cherymedan.id" ;
-    ex:rating "5,0" ;
+    ex:namaShowroom "OMODA JAECOO SUMUT" ;
+    ex:merek "Dealer Jaecoo" ;
+    ex:alamat "Jl. Tengku Amir Hamzah. F90-F92, Helvetia Tim., Kec. Medan Helvetia" ;
+    ex:jamOperasional "08.30-16.30" ;
+    ex:noTelepon "081266508188" ;
+    ex:website "https://jaecoo.id" ;
+    ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom40 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dealer Chery" ;
-    ex:merek "Dealer Chery" ;
-    ex:alamat "Jl. Letda Sujono No.111-A" ;
-    ex:jamOperasional "08.00-21.00" ;
-    ex:noTelepon "0822-9487-3737" ;
-    ex:website "https://cherymedan.id" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6085678267337404 ;
+    geo:long 98.65466934620918 .
 
 ex:Showroom41 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Chevrolet Medan" ;
@@ -534,19 +547,6 @@ ex:Showroom41 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.592936852094465 ;
     geo:long 98.6605446382722 .
-
-ex:Showroom42 rdf:type ex:Showroom ;
-    ex:namaShowroom "Chevrolet Mega Auto" ;
-    ex:merek "Dealer Chevrolet" ;
-    ex:alamat "Jl. Letda Sujono" ;
-    ex:jamOperasional "09.00-20.00" ;
-    ex:noTelepon "0812-4000-4546" ;
-    ex:website "http://www.megaautogroup.com/" ;
-    ex:rating "4,3" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom43 rdf:type ex:Showroom ;
     ex:namaShowroom "Chevrolet Medan Mega Autoworld" ;
@@ -562,7 +562,7 @@ ex:Showroom43 rdf:type ex:Showroom ;
     geo:long 98.69323545304827 .
 
 ex:Showroom44 rdf:type ex:Showroom ;
-    ex:namaShowroom "SHOWROOM BAIC MEDAN" ;
+    ex:namaShowroom "BAIC Chevrolet Letda SujonoMEDAN" ;
     ex:merek "Dealer Chevrolet" ;
     ex:alamat "Jl. Letda Sujono No.111-A" ;
     ex:jamOperasional "08.00-19.00" ;
@@ -626,32 +626,6 @@ ex:Showroom48 rdf:type ex:Showroom ;
     geo:lat 3.5717275723463273 ;
     geo:long 98.68958762236053 .
 
-ex:Showroom49 rdf:type ex:Showroom ;
-    ex:namaShowroom "Astra Daihatsu Medan Johor" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Asrama Haji, Jl. Jenderal Besar A.H. Nasution No.15 C" ;
-    ex:jamOperasional "08.00-17.00" ;
-    ex:noTelepon "0812-8888-9192" ;
-    ex:website "https://www.astra-daihatsu.id/outlet/AstraDaihatsuMedanJohor" ;
-    ex:rating "4,6" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.5419032799981482 ;
-    geo:long 98.66912573955588 .
-
-ex:Showroom50 rdf:type ex:Showroom ;
-    ex:namaShowroom "Daihatsu medan promo" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Jenderal Besar A.H. Nasution no70c" ;
-    ex:jamOperasional "Buka 24 jam" ;
-    ex:noTelepon "0821-6637-2398" ;
-    ex:website "https://medandaihatsu.id/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom51 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Medan Gatsu 2 (Showroom & Bengkel Resmi)" ;
     ex:merek "Dealer Daihatsu" ;
@@ -668,7 +642,7 @@ ex:Showroom51 rdf:type ex:Showroom ;
 ex:Showroom52 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Medan Krakatau" ;
     ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Krakatau Ujung No.238" ;
+    ex:alamat "Jl. Krakatau Ujung No.238, Tj. Mulia" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0821-2963-8008" ;
     ex:website "https://www.astra-daihatsu.id/outlet/astradaihatsumedankrakatau" ;
@@ -681,7 +655,7 @@ ex:Showroom52 rdf:type ex:Showroom ;
 ex:Showroom53 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Medan Johor" ;
     ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Jenderal Besar A.H. Nasution No.15 C" ;
+    ex:alamat "Jl. Jenderal Besar A.H. Nasution No.15 C, Pangkalan Masyhur" ;
     ex:jamOperasional "09.00-19.00" ;
     ex:noTelepon "0822-6713-1831" ;
     ex:website "https://daihatsu-medan-johor.com/" ;
@@ -713,7 +687,7 @@ ex:Showroom55 rdf:type ex:Showroom ;
     ex:website "http://daihatsu.co.id/" ;
     ex:rating "4,5" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "motor" ;
+    ex:kategori "mobil" ;
     geo:lat 3.5909066209863436 ;
     geo:long 98.68312392394385 .
 
@@ -730,74 +704,9 @@ ex:Showroom56 rdf:type ex:Showroom ;
     geo:lat 3.6416894321937208 ;
     geo:long 98.68191729140801 .
 
-ex:Showroom57 rdf:type ex:Showroom ;
-    ex:namaShowroom "Daihatsu Medan" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Depan Kantor Imigrasi, Jl. Gatot Subroto" ;
-    ex:jamOperasional "09.00-17.00" ;
-    ex:noTelepon "0812-6261-7442" ;
-    ex:website "http://www.capelladaihatsu.co.id/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom58 rdf:type ex:Showroom ;
-    ex:namaShowroom "Capella Daihatsu Medan Gatsu II" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "JL. Sei Sikambing B, Kec. Medan Sunggal" ;
-    ex:jamOperasional "08.00-17.00" ;
-    ex:noTelepon "0812-6377-2507" ;
-    ex:website "https://daihatsumedan.id/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom59 rdf:type ex:Showroom ;
-    ex:namaShowroom "DAIHATSU MDN" ;
-    ex:merek "Dealer Daihatsu " ;
-    ex:alamat "Jl. Jenderal Besar A.H. Nasution No.15" ;
-    ex:jamOperasional "Buka 24 jam" ;
-    ex:noTelepon "0813-7058-9195" ;
-    ex:website "https://daihatsumedan.id/" ;
-    ex:rating "4,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.5469317949849453 ;
-    geo:long 98.69136011254358 .
-
-ex:Showroom60 rdf:type ex:Showroom ;
-    ex:namaShowroom "Capella Medan" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl.Gatot Subroto Km 6,2 no.158/180" ;
-    ex:jamOperasional "09.00-17.00" ;
-    ex:noTelepon "0812-6359-0080" ;
-    ex:website "https://daihatsumedan.id/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom61 rdf:type ex:Showroom ;
-    ex:namaShowroom "DAIHATSU PROMO MEDAN" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Krakatau Ujung No.238" ;
-    ex:jamOperasional "⋅ Tutup pukul 19.00" ;
-    ex:noTelepon "0823-6778-9192" ;
-    ex:website "https://linktr.ee/daihatsumedan" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom62 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Isuzu Medan" ;
-    ex:merek "Dealer Daihatsu" ;
+    ex:merek "Dealer Isuzu" ;
     ex:alamat "Jl. Sisingamangaraja No.243, Sudirejo II, Kec. Medan Kota, Kota Medan" ;
     ex:jamOperasional "08.00-20.00" ;
     ex:noTelepon "085310705580" ;
@@ -807,19 +716,6 @@ ex:Showroom62 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.5564226089898066 ;
     geo:long 98.69538869537578 .
-
-ex:Showroom63 rdf:type ex:Showroom ;
-    ex:namaShowroom "Ricki Daihatsu Medan" ;
-    ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Sisingamangaraja No.171" ;
-    ex:jamOperasional "10.00-20.00" ;
-    ex:noTelepon "0812-6262-2409" ;
-    ex:website "https://daihatsumedan.id/" ;
-    ex:rating "4,1" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.5679867813519532 ;
-    geo:long 98.69139379537609 .
 
 ex:Showroom64 rdf:type ex:Showroom ;
     ex:namaShowroom "Astra Daihatsu Marelan" ;
@@ -835,7 +731,7 @@ ex:Showroom64 rdf:type ex:Showroom ;
     geo:long 98.65602088003273 .
 
 ex:Showroom65 rdf:type ex:Showroom ;
-    ex:namaShowroom "Astra daihatsu mmtc" ;
+    ex:namaShowroom "Astra Daihatsu MMTC" ;
     ex:merek "Dealer Daihatsu" ;
     ex:alamat "JP35+P6J, Jl. Williem Iskandar" ;
     ex:jamOperasional "Buka 24 jam" ;
@@ -854,7 +750,7 @@ ex:Showroom66 rdf:type ex:Showroom ;
     ex:jamOperasional "09.00-20.00" ;
     ex:noTelepon "0812-6390-6590" ;
     ex:website "https://daihatsumedan.id/" ;
-    ex:rating "3,9" ;
+    ex:rating "4,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
     geo:lat 3.5936837124601655 ;
@@ -870,8 +766,8 @@ ex:Showroom67 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.538295 ;
+    geo:long 98.706671 .
 
 ex:Showroom68 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Service cemter" ;
@@ -887,17 +783,20 @@ ex:Showroom68 rdf:type ex:Showroom ;
     geo:long 98.68968822982809 .
 
 ex:Showroom69 rdf:type ex:Showroom ;
-    ex:namaShowroom "INDOMOBIL NISSAN DATSUN KIA Gatot Subroto Medan" ;
+    ex:namaShowroom "INDOMOBIL NISSAN DATSUN AION MAXUS KIA Gatot Subroto Medan" ;
+    ex:merek "Dealer Nissan" ;
     ex:merek "Dealer Datsun" ;
-    ex:alamat "Jl. Gatot Subroto No.148" ;
+    ex:merek "Dealer AION" ;
+    ex:merek "Dealer KIA" ;
+    ex:alamat "Jl. Gatot Subroto No.148, Sei Putih Baru, Kec. Medan Petisah" ;
     ex:jamOperasional "08.00-17.00" ;
     ex:noTelepon "0821-6562-8000" ;
     ex:website "https://www.oto.com/mobil-baru/datsun/dealer/medan/nissan-gatot-subroto-192" ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.590551 ;
+    geo:long 98.648427 .
 
 ex:Showroom70 rdf:type ex:Showroom ;
     ex:namaShowroom "DATSUN MURAH MEDAN" ;
@@ -930,7 +829,7 @@ ex:Showroom72 rdf:type ex:Showroom ;
     ex:merek "Dealer Ford" ;
     ex:alamat "Jl. Gatot Subroto No.107, Sei Sikambing B, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20123" ;
     ex:jamOperasional "08.30-16.30" ;
-    ex:noTelepon "0618446777" ;
+    ex:noTelepon "(061) 8446777" ;
     ex:website "http://ford-rma.co.id/" ;
     ex:rating "4,4" ;
     ex:berlokasiDi "Medan" ;
@@ -1016,19 +915,6 @@ ex:Showroom78 rdf:type ex:Showroom ;
     geo:lat 3.629716686554279 ;
     geo:long 98.69257012236089 .
 
-ex:Showroom79 rdf:type ex:Showroom ;
-    ex:namaShowroom "Hyundai SM Raja Medan Official" ;
-    ex:merek "Dealer Hyundai" ;
-    ex:alamat "Jl. Sisingamangaraja No.140B" ;
-    ex:jamOperasional "09.00-17.30" ;
-    ex:noTelepon "(061) 42910000" ;
-    ex:website "https://hyundai-assistant.com/dealer-profile/11893" ;
-    ex:rating "4,4" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.5698947327189567 ;
-    geo:long 98.69038489537634 .
-
 ex:Showroom80 rdf:type ex:Showroom ;
     ex:namaShowroom "Dealer hyundai medan" ;
     ex:merek "Dealer Hyundai" ;
@@ -1054,20 +940,6 @@ ex:Showroom81 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.602992393473904 ; 
     geo:long 98.67392532204586 .
-
-
-ex:Showroom82 rdf:type ex:Showroom ;
-    ex:namaShowroom "Hyundai Gatot Subroto Official" ;
-    ex:merek "Dealer Hyundai" ;
-    ex:alamat "Jl. Gatot Subroto No.263" ;
-    ex:jamOperasional "08.00-18.00" ;
-    ex:noTelepon "(061) 6645745" ;
-    ex:website "https://www.hyundai-assistant.com/dealer-profile/1881" ;
-    ex:rating "4,4" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom83 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai SM Raja Medan Official" ;
@@ -1095,23 +967,10 @@ ex:Showroom84 rdf:type ex:Showroom ;
     geo:lat 3.6060209710657647 ;
     geo:long 98.67343194934453 .
 
-ex:Showroom85 rdf:type ex:Showroom ;
-    ex:namaShowroom "Hyundai Arista Medan" ;
-    ex:merek "Dealer Hyundai" ;
-    ex:alamat "Jl. Sisingamangaraja No.130, Ps. Merah Bar., Kec. Medan Kota, Kota Medan" ;
-    ex:jamOperasional "09.00-20.00" ;
-    ex:noTelepon "0813-6917-3286" ;
-    ex:website "https://www.hyundaiofficialmedan.com/" ;
-    ex:rating "4,2" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom86 rdf:type ex:Showroom ;
     ex:namaShowroom "Hyundai Perwira Utama" ;
     ex:merek "Dealer Hyundai" ;
-    ex:alamat "Jl. Krakatau Ujung, Pulo Brayan Bengkel Baru, Kec. Medan Tim., Kota Medan" ;
+    ex:alamat "Jl. Krakatau Ujung, Pulo Brayan Bengkel Baru, Kec. Medan Tim" ;
     ex:jamOperasional "09.00-18.00" ;
     ex:noTelepon "-" ;
     ex:website "https://www.hyundaiofficialmedan.com/" ;
@@ -1137,7 +996,7 @@ ex:Showroom87 rdf:type ex:Showroom ;
 ex:Showroom88 rdf:type ex:Showroom ;
     ex:namaShowroom "Arista-Mercedes-Benz" ;
     ex:merek "Dealer Mercedes-Benz" ;
-    ex:alamat "Jl. T. Amir Hamzah No.49, Sei Agul, Kec. Medan Bar., Kota Medan, Sumatera Utara 20117" ;
+    ex:alamat "Jl. T. Amir Hamzah No.49, Sei Agul, Kec. Medan Baru" ;
     ex:jamOperasional "08.30-18.00" ;
     ex:noTelepon "0616615555" ;
     ex:website "https://www.mercedes-benz.co.id/" ;
@@ -1160,19 +1019,6 @@ ex:Showroom89 rdf:type ex:Showroom ;
     geo:lat 3.6068794199884713 ;
     geo:long 98.67216104228399 .
 
-ex:Showroom90 rdf:type ex:Showroom ;
-    ex:namaShowroom "Sales MITSUBISHI Medan - Dindra" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl.Organ No:23,Padang Bulan, kelurahan No.2" ;
-    ex:jamOperasional "09.00-21.00" ;
-    ex:noTelepon "0812-6371-1308" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom91 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Sardana Medan - Gatot Subroto" ;
     ex:merek "Dealer Mitsubishi" ;
@@ -1185,19 +1031,6 @@ ex:Showroom91 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.590120098731449 ;
     geo:long 98.65712599352416 .
-
-ex:Showroom92 rdf:type ex:Showroom ;
-    ex:namaShowroom "Mitsubishi Medan Sumut" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Sisingamangaraja No.km 7 no 34" ;
-    ex:jamOperasional "Buka 24 jam" ;
-    ex:noTelepon "0852-6362-6088" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "4,7" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom93 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Medan - Ring Road Gagak Hitam ( Retail, Fleet & GSO Sales Department )" ;
@@ -1215,7 +1048,7 @@ ex:Showroom93 rdf:type ex:Showroom ;
 ex:Showroom94 rdf:type ex:Showroom ;
     ex:namaShowroom "MITSUBISHI DIPO MEDAN SM.RAJA" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Sisingamangaraja No.Km.7 No.34" ;
+    ex:alamat "Sisingamangaraja No.Km.7 No.34, Kec. Medan Amplas" ;
     ex:jamOperasional "08.00-18.00" ;
     ex:noTelepon "(061) 7866868" ;
     ex:website "https://www.dipo.co.id/network/mitsubishi/sumatera-utara/medan/dealer/41/sm-rajahttps://www.dipo.co.id/network/mitsubishi/sumatera-utara/medan/dealer/41/sm-raja" ;
@@ -1276,32 +1109,6 @@ ex:Showroom98 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.5795157336045014 ;
     geo:long 98.62632136468835 .
-
-ex:Showroom99 rdf:type ex:Showroom ;
-    ex:namaShowroom "Showroom mitsubishi Sm Raja Medan" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Sisingamangaraja" ;
-    ex:jamOperasional "08.00-17.00" ;
-    ex:noTelepon "0823-7063-7713" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "4,3" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom100 rdf:type ex:Showroom ;
-    ex:namaShowroom "Dipo Mitsubishi Medan" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Sisingamangaraja No.36" ;
-    ex:jamOperasional "08.00-17.00" ;
-    ex:noTelepon "0813-7549-5649" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "3,9" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom101 rdf:type ex:Showroom ;
     ex:namaShowroom "Mitsubishi Mobil Medan Faisal" ;
@@ -1381,32 +1188,6 @@ ex:Showroom106 rdf:type ex:Showroom ;
     geo:lat 4.053415134341802 ;
     geo:long 98.48741486140342 .
 
-ex:Showroom107 rdf:type ex:Showroom ;
-    ex:namaShowroom "Daeler Resmi Mitsubishi Medan" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat " Jl. Boulevard Timur" ;
-    ex:jamOperasional "08.00-18.00" ;
-    ex:noTelepon "0821-6765-9392" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "4,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom108 rdf:type ex:Showroom ;
-    ex:namaShowroom "Mitsubishi Sardana Medan" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Selamat Ketaren No.100" ;
-    ex:jamOperasional "09.00-22.00" ;
-    ex:noTelepon "0813-7019-6332" ;
-    ex:website "https://www.sardanagroup.co.id/" ;
-    ex:rating "4,5" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long 98.71244208003232 .
-
 ex:Showroom109 rdf:type ex:Showroom ;
     ex:namaShowroom "Sumatera Berlian Motor (Sales/Busines Relation)" ;
     ex:merek "Dealer Mitsubishi" ;
@@ -1423,28 +1204,15 @@ ex:Showroom109 rdf:type ex:Showroom ;
 ex:Showroom110 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Sardana Indah Berlian Motors" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "PT SARDANA INDAH BERLIAN MOTOR, Jl. Raya Medan No.Km 12" ;
+    ex:alamat "Jl. Raya Medan No.Km 12" ;
     ex:jamOperasional "08.00-20.00" ;
     ex:noTelepon "(061) 7947800" ;
     ex:website "https://www.mitsubishi-medan.co.id/" ;
     ex:rating "4,8" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
-ex:Showroom111 rdf:type ex:Showroom ;
-    ex:namaShowroom "Harga Mitsubishi Medan - Gustine" ;
-    ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Krakatau Ujung No.236A" ;
-    ex:jamOperasional "08.00-17.00" ;
-    ex:noTelepon "0813-9650-9188" ;
-    ex:website "https://www.mitsubishi-medan.co.id/" ;
-    ex:rating "4,8" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.638154855073977 ;
-    geo:long 98.6809649935248 .
+    geo:lat 3.5344942184024237 ;
+    geo:long 98.747876987631 .
 
 ex:Showroom112 rdf:type ex:Showroom ;
     ex:namaShowroom "Nissan Amir Hamzah" ;
@@ -1459,31 +1227,19 @@ ex:Showroom112 rdf:type ex:Showroom ;
     geo:lat 3.6076353236757663 ;
     geo:long 98.66361612421215 .
 
-ex:Showroom113 rdf:type ex:Showroom ;
-    ex:namaShowroom "Nissan Medan SM Raja MIMOSA" ;
-    ex:merek "Dealer Nissan" ;
-    ex:alamat "Jl. Sisingamangaraja No.01 Km 5, RW.5" ;
-    ex:jamOperasional "08.30-17.00" ;
-    ex:noTelepon "0813-7746-7773" ;
-    ex:website "http://www.mimosanissan.com/" ;
-    ex:rating "4,5" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.5461999706041127 ;
-    geo:long 98.6988558242119 .
-
 ex:Showroom114 rdf:type ex:Showroom ;
-    ex:namaShowroom "Indomobil CITROEN Medan Adam Malik" ;
-    ex:merek "Dealer Nissan" ;
-    ex:alamat "JL. H. ADAM MALIK KEL No.48" ;
-    ex:jamOperasional "09.00-19.00" ;
-    ex:noTelepon "(061) 4558988" ;
+    ex:namaShowroom "CITROEN & JEEP MEDAN" ;
+    ex:merek "Dealer Citroen" ;
+    ex:merek "Dealer Jeep" ;
+    ex:alamat "Jl. H. Adam Malik No.193 C, Sei Agul, Kec. Medan Baru" ;
+    ex:jamOperasional "09.00-17.00" ;
+    ex:noTelepon "0877-6528-7877" ;
     ex:website "https://www.oto.com/mobil-baru/citroen/dealer/medan/citroen-adam-malik-13451" ;
-    ex:rating "4,5" ;
+    ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6073027313765618 ;
+    geo:long 98.66986021839186 .
 
 ex:Showroom115 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Ring Road Medan Arista Sukses Abadi" ;
@@ -1547,8 +1303,8 @@ ex:Showroom119 rdf:type ex:Showroom ;
     ex:rating "5,0" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.6035980869755835 ;
+    geo:long 98.66888985304837 .
 
 ex:Showroom120 rdf:type ex:Showroom ;
     ex:namaShowroom "Desi Suzuki Medan" ;
@@ -1784,19 +1540,6 @@ ex:Showroom137 rdf:type ex:Showroom ;
     geo:lat 3.59608912776204 ;
     geo:long 98.68771939537619 .
 
-ex:Showroom138 rdf:type ex:Showroom ;
-    ex:namaShowroom "Toyota Medan" ;
-    ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Sei Batang Hari" ;
-    ex:jamOperasional "10.00-18.00" ;
-    ex:noTelepon "0812-6469-5356" ;
-    ex:website "https://www.toyotamedantrust.com/" ;
-    ex:rating "5,0" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom139 rdf:type ex:Showroom ;
     ex:namaShowroom "Auto2000 Medan Pancing" ;
     ex:merek "Dealer Toyota" ;
@@ -1836,6 +1579,19 @@ ex:Showroom141 rdf:type ex:Showroom ;
     geo:lat 3.5942770295119564 ;
     geo:long 98.64912545379364 .
 
+ex:Showroom263 rdf:type ex:Showroom ;
+    ex:namaShowroom "AION MEDAN" ;
+    ex:merek "Dealer AION" ;
+    ex:alamat "Jl. Gatot Subroto No.148, Sei Putih Bar., Kec. Medan Petisah" ;
+    ex:jamOperasional "08.30-16.30" ;
+    ex:noTelepon "0812-6080-3123" ;
+    ex:website "https://www.astra-honda.com" ;
+    ex:rating "4,7" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "mobil" ;
+    geo:lat 3.59117114400963 ;
+    geo:long 98.6483436570165 .
+
 ex:Showroom142 rdf:type ex:Showroom ;
     ex:namaShowroom "Perintis Perkasa Toyota" ;
     ex:merek "Dealer Toyota" ;
@@ -1850,7 +1606,7 @@ ex:Showroom142 rdf:type ex:Showroom ;
     geo:long 98.66873152050863 .
 
 ex:Showroom143 rdf:type ex:Showroom ;
-    ex:namaShowroom "Toyota Trust Medan | Showroom Mobil Bekas Rasa Baru by Auto2000 | Penjualan mobil bekas dengan sertifikasi Toyota Astra Motor" ;
+    ex:namaShowroom "Toyota Trust Medan" ;
     ex:merek "Dealer Toyota" ;
     ex:alamat "Jl. M.H Thamrin No.16A, Sidodadi" ;
     ex:jamOperasional "10.00-18.00" ;
@@ -1874,19 +1630,6 @@ ex:Showroom144 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.595640219853557 ;
     geo:long 98.66869569934482 .
-
-ex:Showroom145 rdf:type ex:Showroom ;
-    ex:namaShowroom "Toyota trust deltamulia" ;
-    ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. M.H Thamrin No.3 b-c, RT.02" ;
-    ex:jamOperasional "08.00-16.00" ;
-    ex:noTelepon "0852-7090-6112" ;
-    ex:website "https://www.toyotamedantrust.com/" ;
-    ex:rating "4,7" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom146 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota AUTO2000 Medan Marelan" ;
@@ -1914,23 +1657,10 @@ ex:Showroom147 rdf:type ex:Showroom ;
     geo:lat 3.603325448912772 ;
     geo:long 98.53568716468851 .
 
-ex:Showroom148 rdf:type ex:Showroom ;
-    ex:namaShowroom "Showroom Wuling Medan Pusat" ;
-    ex:merek "Dealer Wuling" ;
-    ex:alamat "Jl. Sisingamangaraja" ;
-    ex:jamOperasional "Buka 24 jam" ;
-    ex:noTelepon "0821-7592-9191" ;
-    ex:website "https://wulingmedan.id/" ;
-    ex:rating "4,8" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom149 rdf:type ex:Showroom ;
     ex:namaShowroom "Wuling Arista SM Raja" ;
     ex:merek "Dealer Wuling" ;
-    ex:alamat "Jl. Sisingamangaraja" ;
+    ex:alamat "Jl. Sisingamangaraja, Sitirejo II, Kec. Medan Amplas" ;
     ex:jamOperasional "10.00-20.00" ;
     ex:noTelepon "(061) 42777777" ;
     ex:website "https://wuling.arista-group.co.id/" ;
@@ -2006,9 +1736,9 @@ ex:Showroom154 rdf:type ex:Showroom ;
     geo:long 99.28127692420473 .
 
 ex:Showroom155 rdf:type ex:Showroom ;
-    ex:namaShowroom "DEALER MITSUBISHI DIPO PADANGSIDIMPUAN" ;
+    ex:namaShowroom "SALES MITSUBISHI DIPO PADANGSIDIMPUAN" ;
     ex:merek "Dealer Mitsubishi" ;
-    ex:alamat "Jl. Raja Inal Siregar No.6, Batunadua Julu, Kec. Padangsidimpuan Batunadua, Kota Padangsidimpuan, Sumatera Utara 22733" ;
+    ex:alamat "Jl. Raja Inal Siregar No.6, Batunadua Julu, Kec. Padangsidimpuan Batunadua" ;
     ex:jamOperasional "10.00-17.00" ;
     ex:noTelepon "06347366200" ;
     ex:website "https://www.dipo.co.id/network/mitsubishi/sumatera-utara/padangsidimpuan/dealer/46/padangsidimpuan" ;
@@ -2021,7 +1751,7 @@ ex:Showroom155 rdf:type ex:Showroom ;
 ex:Showroom156 rdf:type ex:Showroom ;
     ex:namaShowroom "AUTO 2000 CAPEM PADANG SIDIMPUAN" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Sudirman No.228, Wek I, Kec. Padangsidimpuan Utara, Kota Padangsidimpuan, Sumatera Utara 22711" ;
+    ex:alamat "Jl. Sudirman No.228, Wek I, Kec. Padangsidimpuan Utara" ;
     ex:jamOperasional "10.00-20.00" ;
     ex:noTelepon "06347366200" ;
     ex:website "https://auto2000.co.id/" ;
@@ -2050,7 +1780,7 @@ ex:Showroom158 rdf:type ex:Showroom ;
     ex:alamat "Jalan Medan Km. 2,8, Sumber Jaya, Siantar Martoba, Pematang Siantar City, North Sumatra 21111" ;
     ex:jamOperasional "Buka 24 jam" ;
     ex:noTelepon "06227358000" ;
-    ex:website "https://www.capelladaihatsu.co.id/" ;
+    ex:website "https://www.astra-honda.com" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Pematangsiantar" ;
     ex:kategori "mobil" ;
@@ -2125,7 +1855,7 @@ ex:Showroom163 rdf:type ex:Showroom ;
 ex:Showroom164 rdf:type ex:Showroom ;
     ex:namaShowroom "Toyota Sutan" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jalan Medan Km. 2,8, Sumber Jaya, Siantar Martoba, Pematang Siantar City, North Sumatra 21111" ;
+    ex:alamat "Jalan Medan Km. 2,8, Sumber Jaya, Siantar Martoba" ;
     ex:jamOperasional "Buka 24 jam" ;
     ex:noTelepon "0622432000" ;
     ex:website "http://www.toyotasutan.com/" ;
@@ -2134,19 +1864,6 @@ ex:Showroom164 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 2.980713812341464 ;
     geo:long 99.08029601071733 .
-
-ex:Showroom165 rdf:type ex:Showroom ;
-    ex:namaShowroom "TOYOTA PEMATANGSIANTAR" ;
-    ex:merek "Dealer Toyota" ;
-    ex:alamat "Jl. Medan No.KM 2,8, Sumber Jaya, Kec. Siantar Martoba, Kota Pematang Siantar, Sumatera Utara" ;
-    ex:jamOperasional "10.00-23.00" ;
-    ex:noTelepon "085277775668" ;
-    ex:website "http://carimobil.id/toyota/pematangsiantar" ;
-    ex:rating "3,7" ;
-    ex:berlokasiDi "Pematangsiantar" ;
-    ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
 
 ex:Showroom166 rdf:type ex:Showroom ;
     ex:namaShowroom "WULING ARISTA PEMATANGSIANTAR" ;
@@ -2171,8 +1888,8 @@ ex:Showroom167 rdf:type ex:Showroom ;
     ex:rating "4,3" ;
     ex:berlokasiDi "Sibolga" ;
     ex:kategori "mobil" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 1.7380797435618345 ;
+    geo:long 98.7863318800254 .
 
 ex:Showroom168 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Tebing Tinggi" ;
@@ -2199,6 +1916,19 @@ ex:Showroom169 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.359727566946972 ;
     geo:long 99.16701295119525 .
+
+ex:Showroom272 rdf:type ex:Showroom ;
+    ex:namaShowroom "BYD Harmony SM Raja Medan" ;
+    ex:merek "Dealer BYD" ;
+    ex:alamat "Jl. Sisingamangaraja No. 3 KM 7, Harjosari I, Kec. Medan Amplas" ;
+    ex:jamOperasional "08.30-19.00" ;
+    ex:noTelepon "0821-8448-688" ;
+    ex:website "https://byd-harmonymedan.com/" ;
+    ex:rating "5.0" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "mobil" ;
+    geo:lat 3.542376184186687 ;
+    geo:long 98.70433708244985 .
 
 ex:Showroom170 rdf:type ex:Showroom ;
     ex:namaShowroom "AION Medan" ;
@@ -2527,7 +2257,7 @@ ex:Showroom194 rdf:type ex:Showroom ;
 
 ex:Showroom195 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugerah Karya Abiwara" ;
-    ex:merek "Dealer Honda Wing" ;
+    ex:merek "Dealer Honda" ;
     ex:alamat "JL. SM. RAJA NO. 320 ABCDE, KISARAN, Tebing Kisaran, Kab. Asahan" ;
     ex:jamOperasional "08.00-17.30" ;
     ex:noTelepon "062-343297" ;
@@ -2967,6 +2697,31 @@ ex:Showroom228 rdf:type ex:Showroom ;
     geo:lat 0.7592771604185853 ;
     geo:long 97.8043867898305 .
 
+ex:Showroom33 rdf:type ex:Showroom ;
+    ex:namaShowroom "Sukses Motor Globalindo Pemda" ;
+    ex:merek "Dealer Honda" ;
+    ex:alamat "Jl. Ngumban Surbakti No.1-2, Sempakata, Kec. Medan Selayang" ;
+    ex:jamOperasional "08.30-17.00" ;
+    ex:noTelepon "085261447588" ;
+    ex:website "https://www.astra-honda.com" ;
+    ex:rating "4,6" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "motor" ;
+    geo:lat 3.54097178023606 ;
+    geo:long 98.62263476468794 .
+
+ex:Showroom33 rdf:type ex:Showroom ;
+    ex:namaShowroom "Nusantara Sakti Group. PT" ;
+    ex:merek "Dealer Honda" ;
+    ex:alamat "Galuh, Kec. Perbaungan" ;
+    ex:noTelepon "0811-2712-139" ;
+    ex:website "https://www.astra-honda.com" ;
+    ex:rating "4,8" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "motor" ;
+    geo:lat 3.57398496514345 ;
+    geo:long 98.96024096688666 .
+
 ex:Showroom229 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Anugrah Multi Jaya Aek Loba - 07610" ;
     ex:merek "Dealer Honda" ;
@@ -3159,8 +2914,8 @@ ex:Showroom243 rdf:type ex:Showroom ;
     ex:rating "4.9" ;
     ex:berlokasiDi "Padang Lawas" ;
     ex:kategori "motor" ;
-    geo:lat 1.0508278639653126 ;
-    geo:long .
+    geo:lat 1.050677685521124 ;
+    geo:long 99.75566829351622 .
 
 ex:Showroom244 rdf:type ex:Showroom ;
     ex:namaShowroom "PT Putra Surya Jaya Raya III" ;
@@ -3422,6 +3177,32 @@ ex:Showroom263 rdf:type ex:Showroom ;
     geo:lat 1.445850107385667 ;
     geo:long 99.2647461397683 .
 
+ex:Showroom263 rdf:type ex:Showroom ;
+    ex:namaShowroom "PT. Putra Surya Jaya Raya II Gunungtua" ;
+    ex:merek "Dealer Honda" ;
+    ex:alamat "Ps. Gn. Tua, Kec. Padang Bolak" ;
+    ex:jamOperasional "08.00-17.30" ;
+    ex:noTelepon "0813-7502-4555" ;
+    ex:website "https://www.astra-honda.com" ;
+    ex:rating "5,0" ;
+    ex:berlokasiDi "Padang Lawas Utara" ;
+    ex:kategori "motor" ;
+    geo:lat 1.513753450872455 ;
+    geo:long 99.62646722420459 .
+
+ex:Showroom263 rdf:type ex:Showroom ;
+    ex:namaShowroom "PT. Putra Surya Jaya Raya II Sosa" ;
+    ex:merek "Dealer Honda" ;
+    ex:alamat "Jalan Lintas Riau, Simarancar, Kec. Sosa" ;
+    ex:jamOperasional "08.30-17.00" ;
+    ex:noTelepon "0813-7502-4555" ;
+    ex:website "https://www.astra-honda.com" ;
+    ex:rating "5,0" ;
+    ex:berlokasiDi "Padang Lawas" ;
+    ex:kategori "motor" ;
+    geo:lat 1.038662649762603 ;
+    geo:long 99.94624012881215 .
+
 ex:Showroom264 rdf:type ex:Showroom ;
     ex:namaShowroom "Indako Trading Coy - Ngumban Surbakti" ;
     ex:merek "Dealer Honda" ;
@@ -3526,19 +3307,6 @@ ex:Showroom271 rdf:type ex:Showroom ;
     geo:lat 3.603508764121999 ;
     geo:long 98.66878589722802 .
 
-ex:Showroom272 rdf:type ex:Showroom ;
-    ex:namaShowroom "PT Indo SunMotor Gemilang" ;
-    ex:merek "Dealer Suzuki" ;
-    ex:alamat "Jl. Sisingamangaraja No.3 KM 6, Harjosari I, Kec. Medan Amplas, Kota Medan, Sumatera Utara 20229 (Sebelah loket bus Rapi)" ;
-    ex:jamOperasional "08.30-16.30" ;
-    ex:noTelepon "0811-6540-800" ;
-    ex:website "https://www.suzuki.co.id" ;
-    ex:rating "4.6" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom273 rdf:type ex:Showroom ;
     ex:namaShowroom "Suzuki Motor" ;
     ex:merek "Dealer Suzuki" ;
@@ -3549,8 +3317,8 @@ ex:Showroom273 rdf:type ex:Showroom ;
     ex:rating "4.7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
+    geo:lat 3.5847463910647 ;
+    geo:long 98.68547661299606 .
 
 ex:Showroom274 rdf:type ex:Showroom ;
     ex:namaShowroom "Lusi Suzuki Motor Pancur Batu" ;
@@ -3630,19 +3398,6 @@ ex:Showroom279 rdf:type ex:Showroom ;
     geo:lat 4.022999812794342 ;
     geo:long 98.28534141493928 .
 
-ex:Showroom280 rdf:type ex:Showroom ;
-    ex:namaShowroom "EXPO MOTOR" ;
-    ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Sisingamangaraja No. 529–531, Sei Mangkei, Kecamatan Bosar Maligas, Kabupaten Simalungun, Sumatera Utara 21184." ;
-    ex:jamOperasional "08:00-17:00" ;
-    ex:noTelepon "0813-7579-0099" ;
-    ex:website "https://www.yamaha-motor.co.id" ;
-    ex:rating "4.3" ;
-    ex:berlokasiDi "Simalungun" ;
-    ex:kategori "motor" ;
-    geo:lat ;
-    geo:long .
-
 ex:Showroom281 rdf:type ex:Showroom ;
     ex:namaShowroom "SUN BERLIAN MOTOR" ;
     ex:merek "Dealer Yamaha" ;
@@ -3698,7 +3453,7 @@ ex:Showroom284 rdf:type ex:Showroom ;
 ex:Showroom285 rdf:type ex:Showroom ;
     ex:namaShowroom "GRAHA YAMAHA AUTO PRATAMA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Sisingamaraja Lingkungan I , Kel Pasar Gunung Tua, Kab. Padang Lawas Utara" ;
+    ex:alamat "Jl. Sisingamaraja Lingkungan I , Kel Pasar Gunung Tua" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0812-6555-2112" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3711,7 +3466,7 @@ ex:Showroom285 rdf:type ex:Showroom ;
 ex:Showroom286 rdf:type ex:Showroom ;
     ex:namaShowroom "DUNIA SAKTI" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Imam Bonjol No. 199–202, Kisaran Kota, Kecamatan Kota Kisaran Timur, Kabupaten Asahan, Sumatera Utara 21211" ;
+    ex:alamat "Jl. Imam Bonjol No. 199–202, Kisaran Kota, Kecamatan Kota Kisaran Timur" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0852-7096-6063" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3721,10 +3476,23 @@ ex:Showroom286 rdf:type ex:Showroom ;
     geo:lat 3.0114083118955848 ;
     geo:long 99.6340455107731 .
 
+ex:Showroom33 rdf:type ex:Showroom ;
+    ex:namaShowroom "SORUM GRAHA YAMAHA AUTO PRATAMA" ;
+    ex:merek "Dealer Yamaha" ;
+    ex:alamat "Jl. Trans Sumatera Bukittinggi - Padang Sidempuan, Dalan Lidang, Kec. Panyabungan" ;
+    ex:jamOperasional "08.00-17.00" ;
+    ex:noTelepon "0821-6662-4400" ;
+    ex:website "https://www.yamaha-motor.co.id" ;
+    ex:rating "5,0" ;
+    ex:berlokasiDi "Medan" ;
+    ex:kategori "motor" ;
+    geo:lat 0.8400414048175475 ;
+    geo:long 99.56364159929511 .
+
 ex:Showroom287 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII PERBAUNGAN" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Medan - Tebing Tinggi, Desa Kota Galuh, Kecamatan Perbaungan, Kabupaten Serdang Bedagai, Sumatera Utara 20586" ;
+    ex:alamat "Jl. Medan - Tebing Tinggi, Desa Kota Galuh, Kecamatan Perbaungan" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "061-7990499" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3828,7 +3596,7 @@ ex:Showroom294 rdf:type ex:Showroom ;
 ex:Showroom295 rdf:type ex:Showroom ;
     ex:namaShowroom "PT ALFA SCORPII TANJUNG MORAWA" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Perintis Kemerdekaan No. 181 A, Tanjung Morawa, Kab. Deli Serdang" ;
+    ex:alamat "Jl. Perintis Kemerdekaan No. 181 A, Tanjung Morawa" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "061-7946966" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3841,7 +3609,7 @@ ex:Showroom295 rdf:type ex:Showroom ;
 ex:Showroom296 rdf:type ex:Showroom ;
     ex:namaShowroom "TATA MOTOR TARUTUNG" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. S.M Raja No. 189, Hutatoruan VI, Kec. Tarutung, Kab. Tapanuli Utara" ;
+    ex:alamat "Jl. S.M Raja No. 189, Hutatoruan VI, Kec. Tarutung" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0821-2318-5926" ;
     ex:website "https://www.yamaha-motor.co.id" ;
@@ -3880,7 +3648,7 @@ ex:Showroom298 rdf:type ex:Showroom ;
 ex:Showroom299 rdf:type ex:Showroom ;
     ex:namaShowroom "YAMAHA ALFA SCORPII KAMPUNG PAJAK" ;
     ex:merek "Dealer Yamaha" ;
-    ex:alamat "Jl. Lintas Sumatera, Desa Kp. Pajak/Pulo Jantan, Kab. Labuhanbatu Utara" ;
+    ex:alamat "Jl. Lintas Sumatera, Desa Kp. Pajak/Pulo Jantan" ;
     ex:jamOperasional "08:00-17:00" ;
     ex:noTelepon "0823-7942-9794" ;
     ex:website "https://www.yamaha-motor.co.id" ;
