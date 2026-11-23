@@ -1,6 +1,8 @@
 <?php 
 include 'lib.php'; 
 
+require_once __DIR__ . '/pencarian-semantik.php';
+
 // MENANGKAP SEMUA INPUT DARI FORM PENCARIAN
 $search_keyword = isset($_GET['keyword']) ? trim($_GET['keyword']) : '';
 $search_kategori = isset($_GET['kategori']) ? trim($_GET['kategori']) : '';
@@ -12,7 +14,12 @@ $search_rating = isset($_GET['rating_filter']) ? trim($_GET['rating_filter']) : 
 // MENYUSUN LOGIKA FILTER UNTUK SPARQL
 $filter_query = '';
 
-if (!empty($search_keyword)) {
+// Pencarian semantik: "showroom daihatsu di siantar" -> merek Daihatsu + wilayah Pematangsiantar (dari RDF)
+$tafsiran = tafsirkanPencarianShowroom($search_keyword);
+if ($tafsiran !== null) {
+    $filter_query .= sparqlValuesShowroom($tafsiran['uri']);
+} elseif (!empty($search_keyword)) {
+    // Tidak ada merek/model/wilayah yang dikenali: cari berdasarkan nama showroom seperti biasa
     $filter_query .= 'FILTER(contains(lcase(str(?namaShowroom)), lcase("' . addslashes($search_keyword) . '"))) . ';
 }
 if (!empty($search_kategori)) {
@@ -84,9 +91,9 @@ $is_error = (is_string($data_sparql) && strpos($data_sparql, "Error") !== false)
         <h3>Direktori Entitas</h3>
         <h2>Data Kendaraan & Showroom</h2>
         <?php if(!empty($search_keyword) || !empty($search_merek) || !empty($search_lokasi) || !empty($search_24jam) || !empty($search_rating) || !empty($search_kategori)): ?>
-            <p style="color: var(--primary-blue); font-weight: bold; background: var(--light-blue); display: inline-block; padding: 5px 15px; border-radius: 20px;">
-                Menampilkan hasil berdasarkan filter khusus.
-            </p>
+            <?= isset($tafsiran) && $tafsiran !== null
+    ? 'Menampilkan ' . htmlspecialchars($tafsiran['label']) . ' (' . count($tafsiran['uri']) . ' hasil)'
+    : 'Menampilkan hasil berdasarkan filter khusus.' ?>  
         <?php endif; ?>
     </div>
 

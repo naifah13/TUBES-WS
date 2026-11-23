@@ -1,6 +1,7 @@
 <?php
 include 'lib.php';
 require_once __DIR__ . '/pencarian-showroom.php';
+require_once __DIR__ . '/pencarian-semantik.php';
 require_once __DIR__ . '/jam-showroom.php';
 
 // 1. Tangkap parameter dari URL (GET)
@@ -69,7 +70,13 @@ $ejaan_wilayah_persis = $kata_ringkas !== ''
 $filter_keyword = '';
 $filter_model_dalam_kalimat = '';
 
-if ($search_keyword !== '') {
+// Pencarian semantik: "showroom daihatsu di siantar" -> merek Daihatsu + wilayah Pematangsiantar.
+// Merek, model, dan wilayah dikenali dari RDF (rdfs:label, skos:prefLabel/altLabel, ex:diproduksiOleh).
+$tafsiran = tafsirkanPencarianShowroom($search_keyword, bolehKoreksi: true);
+
+if ($tafsiran !== null) {
+    $filter_keyword = sparqlValuesShowroom($tafsiran['uri']);
+} elseif ($search_keyword !== '') {
     $literal_keyword = json_encode($search_keyword, $encoding_literal);
     $kolom_teks = ['?namaShowroom', '?merek', '?alamat', '?lokasi', '?kategori'];
     $syarat_pencarian = [];
@@ -224,8 +231,9 @@ if ($pencarian_aktif) {
         : executeSparqlQuery(sprintf($query, $filter_query, $filter_keyword));
     $is_error = !is_array($data_sparql['results']['bindings'] ?? null);
     $results = $is_error ? [] : $data_sparql['results']['bindings'];
+    $ada_saran = $results !== [] && isset($tafsiran['saran']);
 
-    if (!$is_error && !$results && $search_keyword !== '' && !$ejaan_wilayah_persis) {
+    if (!$is_error && !$results && $search_keyword !== '' && !$ejaan_wilayah_persis && $tafsiran === null) {
         // Pakai kembali katalog ketika pencarian tidak memakai filter SPARQL.
         $data_calon = $filter_query === ''
             ? $data_katalog
@@ -604,9 +612,17 @@ $daftar_saran = array_values(array_unique($daftar_saran));
                         <?php endif; ?>
                     </strong></p>
                     <?php if ($ada_saran): ?>
-                        <p>Mungkin yang kamu maksud:</p>
+                        <?php if (isset($tafsiran['saran'])): ?>
+                            <p>Mungkin yang kamu maksud “<?= htmlspecialchars($tafsiran['saran']) ?>”.</p>
+                        <?php else: ?>
+                            <p>Mungkin yang kamu maksud:</p>
+                        <?php endif; ?>
                     <?php else: ?>
-                        <p>Coba kata kunci lain<?= $ada_filter ? ' atau longgarkan filter' : '' ?>.</p>
+                        <?php if (isset($tafsiran['pesan'])): ?>
+                            <p><?= htmlspecialchars($tafsiran['pesan']) ?></p>
+                        <?php else: ?>
+                            <p>Coba kata kunci lain<?= $ada_filter ? ' atau longgarkan filter' : '' ?>.</p>
+                        <?php endif; ?>
                         <div class="showroom-results-actions">
                             <a href="#keywordSearch">Ubah pencarian</a>
                             <?php if ($ada_filter): ?>
