@@ -121,7 +121,7 @@ if ($baris) {
     <?php endif; ?>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
-    <link rel="stylesheet" href="css/detail-showroom.css?v=3">
+    <link rel="stylesheet" href="css/detail-showroom.css?v=4">
 </head>
 <body>
 <header class="vroom-header">
@@ -179,42 +179,85 @@ if ($baris) {
 
     <div class="vd-shell vd-content">
         <section class="vd-panel vd-location" aria-labelledby="vd-map-title">
-            <div class="vd-panel-heading">
-                <h2 id="vd-map-title">Lokasi showroom</h2>
+    <div class="vd-panel-heading">
+        <h2 id="vd-map-title">Lokasi showroom</h2>
+    </div>
+
+    <?php if ($koordinat): ?>
+        <div class="vd-map-frame">
+            <div class="vd-map" id="peta-detail-showroom" role="region"
+                aria-label="Peta lokasi <?= $tampil($nama) ?>"
+                data-detail-map
+                data-lat="<?= $tampil((string) $koordinat[0]) ?>"
+                data-long="<?= $tampil((string) $koordinat[1]) ?>"
+                data-nama="<?= $tampil($nama) ?>"
+                data-alamat="<?= $tampil($alamat) ?>"
+                data-kategori="<?= $tampil($kategori) ?>"></div>
+            <p class="vd-map-placeholder" data-detail-map-placeholder aria-hidden="true">Menyiapkan peta…</p>
+            <span class="vd-route-crosshair" data-route-crosshair aria-hidden="true" hidden></span>
+        </div>
+
+        <p class="vd-map-message" role="status" data-detail-map-message hidden></p>
+        <noscript><p class="vd-map-message">Aktifkan JavaScript untuk menghitung rute di Vroom.</p></noscript>
+
+        <section class="vd-route" aria-labelledby="vd-route-title" data-detail-route hidden>
+            <div class="vd-route-heading">
+                <span class="vd-route-icon" aria-hidden="true">↱</span>
+                <div>
+                    <h3 id="vd-route-title">Rute ke showroom</h3>
+                    <p>Perkiraan perjalanan dengan mobil</p>
+                </div>
             </div>
-            <?php if ($koordinat): ?>
-                <div class="vd-map-frame">
-                    <div class="vd-map" id="peta-detail-showroom" role="region" aria-label="Peta lokasi <?= $tampil($nama) ?>"
-                        data-detail-map data-lat="<?= $tampil((string) $koordinat[0]) ?>"
-                        data-long="<?= $tampil((string) $koordinat[1]) ?>" data-nama="<?= $tampil($nama) ?>"
-                        data-alamat="<?= $tampil($alamat) ?>" data-kategori="<?= $tampil($kategori) ?>"></div>
-                    <p class="vd-map-placeholder" data-detail-map-placeholder aria-hidden="true">Menyiapkan peta…</p>
-                </div>
-                <p class="vd-map-message" role="status" data-detail-map-message hidden></p>
-                <noscript><p class="vd-map-message">Aktifkan JavaScript untuk melihat peta atau gunakan tombol Buka rute.</p></noscript>
-                <div class="vd-map-footer">
-                    <p class="vd-coordinate">
-                        <span>Koordinat</span>
-                        <span property="geo" typeof="GeoCoordinates">
-                            <span property="latitude"><?= $tampil((string) $koordinat[0]) ?></span>,
-                            <span property="longitude"><?= $tampil((string) $koordinat[1]) ?></span>
-                        </span>
-                    </p>
-                    <a class="vd-button vd-button-primary" href="<?= $tampil($url_rute) ?>"
-                        target="_blank" rel="noopener noreferrer">Buka rute <span aria-hidden="true">↗</span></a>
-                </div>
-            <?php else: ?>
-                <div class="vd-map-empty">
-                    <strong>Pin lokasi belum tersedia</strong>
-                    <p>Koordinat untuk cabang ini belum tercatat di Vroom.</p>
-                    <?php if ($url_cari_alamat !== ''): ?>
-                        <a href="<?= $tampil($url_cari_alamat) ?>" target="_blank" rel="noopener noreferrer">
-                            Cari alamat di Google Maps <span aria-hidden="true">↗</span>
-                        </a>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
+
+            <div data-route-result hidden>
+                <dl class="vd-route-metrics">
+                    <div><dt>Jarak lewat jalan</dt><dd data-route-distance></dd></div>
+                    <div><dt>Estimasi waktu</dt><dd data-route-duration></dd></div>
+                </dl>
+                <ol class="vd-route-points" aria-label="Titik perjalanan">
+                    <li><span>Mulai</span><strong data-route-origin></strong></li>
+                    <li><span>Tujuan</span><strong><?= $tampil($nama) ?></strong></li>
+                </ol>
+            </div>
+
+            <p class="vd-route-status" id="vd-route-status" role="status" data-route-status></p>
+
+            <div class="vd-route-actions" data-route-actions>
+                <button type="button" class="vd-button vd-button-primary" data-route-locate
+                    aria-controls="peta-detail-showroom">Gunakan lokasi saya</button>
+                <button type="button" class="vd-button vd-route-secondary" data-route-pick
+                    aria-controls="peta-detail-showroom">Pilih titik awal di peta</button>
+            </div>
+
+            <div class="vd-route-actions" data-route-picking hidden>
+                <button type="button" class="vd-button vd-button-primary" data-route-center>Gunakan titik tengah</button>
+                <button type="button" class="vd-button vd-route-secondary" data-route-cancel>Batal</button>
+            </div>
         </section>
+
+        <div class="vd-map-footer">
+            <p class="vd-coordinate">
+                <span>Koordinat</span>
+                <span property="geo" typeof="GeoCoordinates">
+                    <span property="latitude"><?= $tampil((string) $koordinat[0]) ?></span>,
+                    <span property="longitude"><?= $tampil((string) $koordinat[1]) ?></span>
+                </span>
+            </p>
+            <a class="vd-map-external" href="<?= $tampil($url_rute) ?>"
+                target="_blank" rel="noopener noreferrer">Buka di Google Maps <span aria-hidden="true">↗</span></a>
+        </div>
+    <?php else: ?>
+        <div class="vd-map-empty">
+            <strong>Pin lokasi belum tersedia</strong>
+            <p>Koordinat untuk cabang ini belum tercatat di Vroom.</p>
+            <?php if ($url_cari_alamat !== ''): ?>
+                <a href="<?= $tampil($url_cari_alamat) ?>" target="_blank" rel="noopener noreferrer">
+                    Cari alamat di Google Maps <span aria-hidden="true">↗</span>
+                </a>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+</section>
 
         <section class="vd-panel vd-info" aria-labelledby="vd-info-title">
             <div class="vd-panel-heading">
@@ -347,7 +390,7 @@ if ($baris) {
 <?php if (!empty($koordinat)): ?>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
-    <script src="js/detail-showroom.js?v=1" defer></script>
+    <script src="js/detail-showroom.js?v=4" defer></script>
 <?php endif; ?>
 </body>
 </html>
