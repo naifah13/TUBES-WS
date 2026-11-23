@@ -56,44 +56,90 @@ if (isset($data_lokasi_sparql['results']['bindings'])) {
 
 // 3. Cari teks showroom dan telusuri relasi model dan merek di Fuseki.
 $encoding_literal = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE;
+$token_keyword = tokenPencarianShowroom($search_keyword);
+$kata_ringkas = implode('', $token_keyword);
+
+$kunci_wilayah = array_map(
+    static fn(string $lokasi): string => implode('', tokenPencarianShowroom($lokasi)),
+    $daftar_lokasi
+);
+
+$ejaan_wilayah_persis = $kata_ringkas !== ''
+    && in_array($kata_ringkas, $kunci_wilayah, true);
 $filter_keyword = '';
+$filter_model_dalam_kalimat = '';
 
 if ($search_keyword !== '') {
     $literal_keyword = json_encode($search_keyword, $encoding_literal);
+    $kolom_teks = ['?namaShowroom', '?merek', '?alamat', '?lokasi', '?kategori'];
+    $syarat_pencarian = [];
 
-    $syarat_pencarian = [
-        'CONTAINS(LCASE(STR(?namaShowroom)), LCASE(' . $literal_keyword . '))',
-        'CONTAINS(LCASE(STR(?merek)), LCASE(' . $literal_keyword . '))',
-        'CONTAINS(LCASE(STR(?alamat)), LCASE(' . $literal_keyword . '))',
-        'CONTAINS(LCASE(STR(?lokasi)), LCASE(' . $literal_keyword . '))'
-    ];
+    // Cari potongan teks di informasi showroom.
+    foreach ($kolom_teks as $kolom) {
+        $syarat_pencarian[] = "CONTAINS(LCASE(STR($kolom)), LCASE($literal_keyword))";
+    }
 
-    // Label model di RDF disimpan dalam huruf kecil agar Fuseki dapat mencarinya langsung.
-    $literal_model = json_encode(strtolower($search_keyword), $encoding_literal);
-    $syarat_pencarian[] = <<<SPARQL
-        EXISTS {
-            GRAPH <urn:vroom:relasi-kendaraan> {
-                ?model a ex:ModelKendaraan ;
-                       rdfs:label $literal_model ;
-                       ex:diproduksiOleh ?merekModel .
-                ?showroom ex:mewakiliMerek ?merekModel .
-                OPTIONAL { ?model ex:kategoriModel ?kategoriModel . }
+    if ($kata_ringkas !== '' && !$ejaan_wilayah_persis) {
+        // Abaikan pemisah saat mencocokkan variasi ejaan selain nama wilayah lengkap.
+        $pola = json_encode('[^\p{L}\p{N}]+');
+        $ringkas = static fn(string $nilai): string =>
+            "REPLACE(LCASE(STR($nilai)), $pola, \"\")";
+        $kunci = 'LCASE(' . json_encode($kata_ringkas, $encoding_literal) . ')';
+
+        $lokasi_ringkas = $ringkas('?lokasi');
+        $label_model = $ringkas('?labelModel');
+        $cocok_model = "$label_model = $kunci";
+
+        // Potongan minimal tiga karakter bisa mencocokkan nama model.
+        if (preg_match('/^.{3}/u', $kata_ringkas)) {
+            $cocok_model = "CONTAINS($label_model, $kunci)";
+            foreach ($kolom_teks as $kolom) {
+                $syarat_pencarian[] = 'CONTAINS(' . $ringkas($kolom) . ", $kunci)";
             }
-            FILTER(!BOUND(?kategoriModel) || LCASE(STR(?kategori)) = STR(?kategoriModel))
         }
-    SPARQL;
 
-    // Cocokkan nama alternatif dengan nama wilayah yang tersimpan pada showroom.
-    $syarat_pencarian[] = <<<SPARQL
-        (BOUND(?lokasi) && EXISTS {
-            GRAPH <urn:vroom:wilayah> {
-                ?wilayah a ex:Wilayah ;
-                         skos:prefLabel ?lokasi ;
-                         skos:altLabel ?namaWilayahAlternatif .
-                FILTER(LCASE(STR(?namaWilayahAlternatif)) = LCASE($literal_keyword))
+        // Telusuri model → merek → showroom yang mewakili merek tersebut.
+        $relasi_model = <<<'SPARQL'
+            EXISTS {
+                GRAPH <urn:vroom:relasi-kendaraan> {
+                    ?model a ex:ModelKendaraan ;
+                           rdfs:label ?labelModel ;
+                           ex:diproduksiOleh ?merekModel .
+                    ?showroom ex:mewakiliMerek ?merekModel .
+                    OPTIONAL { ?model ex:kategoriModel ?kategoriModel . }
+                    FILTER(%s)
+                }
+                FILTER(!BOUND(?kategoriModel) || LCASE(STR(?kategori)) = LCASE(STR(?kategoriModel)))
             }
-        })
-    SPARQL;
+        SPARQL;
+
+        $syarat_pencarian[] = sprintf($relasi_model, $cocok_model);
+
+        // Cari nama model sebagai kata atau frasa utuh di dalam kalimat.
+        if (count($token_keyword) > 1) {
+            $kalimat = json_encode(' ' . implode(' ', $token_keyword) . ' ', $encoding_literal);
+            $frasa_model = "REPLACE(LCASE(STR(?labelModel)), $pola, \" \")";
+            $frasa_model = "REPLACE($frasa_model, \"^ +| +$\", \"\")";
+            $model_dalam_kalimat = "STRLEN($frasa_model) >= 2"
+                . " && CONTAINS(LCASE($kalimat), CONCAT(\" \", $frasa_model, \" \"))";
+            $filter_model_dalam_kalimat = 'FILTER (' . sprintf($relasi_model, $model_dalam_kalimat) . ')';
+        }
+
+        // Tetap gunakan alias wilayah yang didefinisikan di RDF.
+        $label_utama = $ringkas('?namaWilayahUtama');
+        $label_alias = $ringkas('?namaWilayahAlternatif');
+        $syarat_pencarian[] = <<<SPARQL
+            EXISTS {
+                GRAPH <urn:vroom:wilayah> {
+                    ?wilayah a ex:Wilayah ;
+                             skos:prefLabel ?namaWilayahUtama ;
+                             skos:altLabel ?namaWilayahAlternatif .
+                    FILTER($label_alias = $kunci)
+                }
+                FILTER($lokasi_ringkas = $label_utama)
+            }
+        SPARQL;
+    }
 
     $filter_keyword = 'FILTER (' . implode(' || ', $syarat_pencarian) . ')';
 }
@@ -179,7 +225,7 @@ if ($pencarian_aktif) {
     $is_error = !is_array($data_sparql['results']['bindings'] ?? null);
     $results = $is_error ? [] : $data_sparql['results']['bindings'];
 
-    if (!$is_error && !$results && $search_keyword !== '') {
+    if (!$is_error && !$results && $search_keyword !== '' && !$ejaan_wilayah_persis) {
         // Pakai kembali katalog ketika pencarian tidak memakai filter SPARQL.
         $data_calon = $filter_query === ''
             ? $data_katalog
@@ -221,6 +267,13 @@ if ($pencarian_aktif) {
         }
     }
 
+    // Pertahankan hasil pencarian biasa. Gunakan model yang disebut jika seluruh kalimat tidak cocok.
+    if (!$is_error && !$results && $filter_model_dalam_kalimat !== '') {
+        $data_model_kalimat = executeSparqlQuery(sprintf($query, $filter_query, $filter_model_dalam_kalimat));
+        $is_error = !is_array($data_model_kalimat['results']['bindings'] ?? null);
+        $results = $is_error ? [] : $data_model_kalimat['results']['bindings'];
+    }
+
     $hasil_per_uri = $kelompokkan_showroom($results);
     foreach ($hasil_per_uri as $uri => $row) {
         // Pencarian dapat menemukan satu merek saja. Kartu tetap menampilkan merek lengkap dari katalog.
@@ -242,6 +295,22 @@ if ($pencarian_aktif) {
         return $urutan_rating;
     });
 }
+
+$data_saran = executeSparqlQuery(<<<'SPARQL'
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT DISTINCT ?label WHERE {
+        GRAPH <urn:vroom:relasi-kendaraan> {
+            ?entitas rdfs:label ?label .
+        }
+    }
+SPARQL);
+
+$daftar_saran = $daftar_lokasi;
+foreach ($data_saran['results']['bindings'] ?? [] as $baris_saran) {
+    $daftar_saran[] = ucfirst($baris_saran['label']['value']);
+}
+$daftar_saran = array_values(array_unique($daftar_saran));
 
 ?>
 <!DOCTYPE html>
@@ -365,8 +434,8 @@ if ($pencarian_aktif) {
                         value="<?= htmlspecialchars($search_keyword) ?>"
                     >
 
-                    <div id="searchSuggestions"
-                        class="search-suggestions"></div>
+                    <div id="searchSuggestions" class="search-suggestions"
+     data-saran="<?= htmlspecialchars(json_encode($daftar_saran, $encoding_literal)) ?>"></div>
 
                     </div>
 

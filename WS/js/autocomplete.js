@@ -6,27 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!input || !dropdown) return;
 
     // Daftar sementara, nanti bisa diambil dari database
-    const daftarSaran = [
-        "Honda Motor",
-        "Honda Mobil",
-        "Toyota",
-        "Yamaha",
-        "Suzuki",
-        "Daihatsu",
-        "Hyundai",
-        "Kawasaki",
-        "Nissan",
-        "Mazda",
-        "Vario",
-        "Beat",
-        "Scoopy",
-        "PCX",
-        "NMAX",
-        "Aerox",
-        "Brio",
-        "Avanza",
-        "Innova"
-    ];
+    const daftarSaran = JSON.parse(dropdown.dataset.saran || "[]");
+    const ringkas = (teks) => teks.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
 
     input.addEventListener("input", () => {
         const keyword = input.value.trim().toLowerCase();
