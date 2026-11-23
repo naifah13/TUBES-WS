@@ -254,6 +254,7 @@ if ($pencarian_aktif) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="chatbot/vroom-bot.css?v=2">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
 </head>
 
@@ -493,6 +494,7 @@ if ($pencarian_aktif) {
 
             </form>
 
+            
         </div>
 
         <a href="#<?= $id_peta ?>" class="vroom-scroll" aria-label="Lihat daftar showroom">
@@ -815,5 +817,9 @@ if ($pencarian_aktif) {
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
 <script src="js/peta-showroom.js?v=2" defer></script>
 <script src="js/status-showroom.js?v=1" defer></script>
+<?php
+$vroomBotEmbedded = true;
+require __DIR__ . '/vroom-chatbot.php';
+?>
 </body>
 </html>

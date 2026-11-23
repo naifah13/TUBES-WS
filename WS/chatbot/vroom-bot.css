@@ -1,0 +1,259 @@
+.vroom-bot {
+    --vb-ink: var(--dark-base, #2b2d42);
+    --vb-bright: var(--primary-accent, #ef233c);
+    --vb-red: var(--secondary-accent, #d90429);
+    --vb-muted: #667085;
+    --vb-border: #e7e9ef;
+    --vb-right: max(24px, env(safe-area-inset-right));
+    --vb-bottom: max(22px, env(safe-area-inset-bottom));
+    --vb-launcher: 52px;
+    --vb-gap: 12px;
+    color: var(--vb-ink);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.vroom-bot [hidden] { display: none !important; }
+.vroom-bot button, .vroom-bot textarea { font: inherit; }
+.vroom-bot button { cursor: pointer; }
+.vroom-bot button:disabled { cursor: wait; opacity: .58; }
+.vroom-bot button:focus-visible, .vroom-bot a:focus-visible, .vroom-bot summary:focus-visible {
+    outline: 2px solid var(--vb-bright);
+    outline-offset: 3px;
+}
+.vroom-bot .chat-sr {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+
+.vroom-bot .vb-launcher {
+    position: fixed; right: var(--vb-right); bottom: var(--vb-bottom); z-index: 1510;
+    display: inline-flex; align-items: center; gap: 9px; height: var(--vb-launcher);
+    padding: 0 16px 0 10px; border: 1px solid #ffffff25; border-radius: 999px;
+    background: linear-gradient(110deg, #bc0831, #e72b45);
+    color: #fff; box-shadow: 0 10px 26px #830d293d, 0 3px 6px #22132720;
+    font-size: 14px; font-weight: 700; letter-spacing: -.025em;
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.vroom-bot .vb-launcher:hover { transform: translateY(-2px); box-shadow: 0 14px 32px #830d294c; }
+.vroom-bot .vb-launcher[aria-expanded="true"] { background: var(--vb-ink); box-shadow: 0 7px 20px #28283b35; }
+.vroom-bot .vb-launcher-icon {
+    position: relative; display: grid; place-items: center;
+    width: 30px; height: 30px; border-radius: 50%; background: #ffffff20;
+}
+.vroom-bot .vb-chat-glyph {
+    position: relative; display: block; width: 16px; height: 13px;
+    border: 1.5px solid currentColor; border-radius: 4px;
+}
+.vroom-bot .vb-chat-glyph::before {
+    content: ""; position: absolute; left: 2px; bottom: -4px; width: 4px; height: 4px;
+    border-left: 1.5px solid currentColor; transform: skewY(-35deg);
+}
+.vroom-bot .vb-chat-glyph::after {
+    content: ""; position: absolute; inset: 5px 3px auto;
+    height: 1.5px; background: currentColor; border-radius: 4px;
+}
+.vroom-bot .vb-launcher-x { display: none; font: 400 23px/1 Arial, sans-serif; }
+.vroom-bot .vb-launcher[aria-expanded="true"] .vb-chat-glyph { display: none; }
+.vroom-bot .vb-launcher[aria-expanded="true"] .vb-launcher-x { display: block; }
+
+.vroom-bot .vb-panel {
+    position: fixed; right: var(--vb-right); bottom: calc(var(--vb-bottom) + var(--vb-launcher) + var(--vb-gap));
+    z-index: 1509; display: flex; flex-direction: column;
+    width: min(392px, calc(100vw - var(--vb-right) - 12px));
+    height: min(544px, calc(100vh - var(--vb-bottom) - var(--vb-launcher) - var(--vb-gap) - 12px));
+    height: min(544px, calc(100dvh - var(--vb-bottom) - var(--vb-launcher) - var(--vb-gap) - 12px));
+    min-height: 0; overflow: hidden; border: 1px solid #292b421a; border-radius: 24px;
+    background: #fbfbfd; box-shadow: 0 22px 66px #25263c36, 0 4px 13px #25263c15;
+    transform-origin: bottom right; animation: vroom-bot-enter .22s cubic-bezier(.23,.9,.34,1) both;
+}
+@keyframes vroom-bot-enter {
+    from { opacity: 0; transform: translateY(9px) scale(.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.vroom-bot .vb-header {
+    position: relative; display: flex; align-items: center; gap: 10px; flex: none; min-width: 0;
+    padding: 13px 14px; color: #fff;
+    background: radial-gradient(ellipse at 100% 0, #563646 0, transparent 58%), linear-gradient(135deg, #24263b, #34364c);
+}
+.vroom-bot .vb-header::after {
+    content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, #ed334b, #fa6173 48%, #fa617300);
+}
+.vroom-bot .vb-mark {
+    display: grid; flex: 0 0 auto; place-items: center; width: 38px; height: 38px;
+    border: 1px solid #ffffff35; border-radius: 13px; background: #ffffff11;
+}
+.vroom-bot .vb-mark img { width: 28px; height: 28px; display: block; }
+.vroom-bot .vb-title { min-width: 0; flex: 1; }
+.vroom-bot .vb-title h2 { margin: 0; color: #fff; font-size: 17px; font-weight: 750; letter-spacing: -.045em; line-height: 1.18; }
+.vroom-bot .chat-loc { display: flex; align-items: center; gap: 7px; margin-top: 4px; min-width: 0; color: #d6d8e6; font-size: 10px; line-height: 1.35; }
+.vroom-bot .chat-loc--aktif { color: #dbf9e9; }
+.vroom-bot .chat-loc--ditolak { color: #ffe4dc; }
+.vroom-bot .vb-location-text { max-width: 132px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vroom-bot .vb-location-button {
+    flex: none; padding: 0; border: 0; background: transparent; color: #fff;
+    text-decoration: underline; text-underline-offset: 2px; font-size: 10px; font-weight: 650;
+}
+.vroom-bot .vb-actions { display: flex; align-items: center; gap: 4px; flex: none; }
+.vroom-bot .vb-header-action {
+    display: grid; place-items: center; width: 33px; height: 33px; padding: 0;
+    border: 1px solid #ffffff19; border-radius: 10px; background: #ffffff0d;
+    color: #fff; font: 400 20px/1 Arial, sans-serif;
+}
+.vroom-bot .vb-header-action:hover { background: #ffffff25; }
+
+.vroom-bot .chat-log {
+    display: flex; flex-direction: column; flex: 1 1 0; gap: 11px; min-height: 0;
+    overflow-y: auto; overscroll-behavior: contain; overflow-anchor: none; padding: 14px;
+    scrollbar-width: thin; scrollbar-gutter: stable; scrollbar-color: #cfd2dd transparent;
+}
+.vroom-bot .vb-welcome {
+    display: grid; justify-items: center; align-content: center; gap: 0; min-height: 218px;
+    flex: 1 0 auto; padding: 20px 11px;
+    border: 1px solid #ececf2; border-radius: 17px;
+    background: radial-gradient(ellipse at 12% 8%, #ffedf0 0, transparent 50%),
+        radial-gradient(ellipse at 93% 45%, #e9ebf5 0, transparent 51%), linear-gradient(150deg, #fff, #f8f8fc);
+    text-align: center;
+}
+.vroom-bot .vb-welcome-mark {
+    display: grid; place-items: center; width: 61px; height: 61px; margin-bottom: 14px;
+    border: 1px solid #e8dde4; border-radius: 21px; background: #fff;
+    box-shadow: 0 8px 22px #7a344b14;
+}
+.vroom-bot .vb-welcome-mark img { width: 40px; height: 40px; display: block; }
+.vroom-bot .vb-welcome h3 {
+    margin: 0; color: var(--vb-ink); font-size: clamp(20px, 5vw, 24px);
+    font-weight: 750; line-height: 1.18; letter-spacing: -.055em;
+}
+.vroom-bot .vb-welcome p { margin: 7px auto 15px; max-width: 27ch; font-size: 12px; color: var(--vb-muted); }
+.vroom-bot .vb-quick, .vroom-bot .chat-suggest { display: flex; flex-wrap: wrap; gap: 6px; }
+.vroom-bot .vb-quick { justify-content: center; }
+.vroom-bot .chat-choice, .vroom-bot .chat-location {
+    display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+    padding: 6px 10px; min-height: 30px; border: 1px solid #e3e4ed; border-radius: 999px;
+    color: var(--vb-ink); background: #fff; font-size: 11px; font-weight: 600;
+    text-align: center; line-height: 1.25; box-shadow: 0 1px 2px #2b2d4207;
+}
+.vroom-bot .chat-choice:hover, .vroom-bot .chat-location:hover { border-color: #e3a4af; color: var(--vb-red); background: #fff8fa; }
+.vroom-bot .chat-location { align-self: flex-start; }
+.vroom-bot .chat-more .chat-choice { color: var(--vb-red); border-color: #f1cbd3; background: #fff7f9; }
+
+.vroom-bot .chat-message {
+    align-self: flex-start; max-width: 94%; padding: 9px 11px; color: var(--vb-ink);
+    border: 1px solid #ececf2; border-radius: 6px 13px 13px; background: #f0f1f6;
+    font-size: 12px; overflow-wrap: anywhere; white-space: pre-line; margin: 0;
+}
+.vroom-bot .chat-message--user {
+    align-self: flex-end; color: #fff; border-color: var(--vb-ink); background: var(--vb-ink);
+    border-radius: 13px 6px 13px 13px;
+}
+.vroom-bot .chat-message--error { background: #fff2f3; color: #922039; border-color: #f6d7de; }
+.vroom-bot .chat-turn, .vroom-bot .chat-reply {
+    display: flex; flex-direction: column; flex: 0 0 auto; gap: 11px; min-width: 0;
+}
+
+.vroom-bot .chat-typing {
+    display: inline-flex; align-items: center; align-self: flex-start; gap: 9px;
+    min-height: 36px; padding: 8px 11px; max-width: 100%;
+    border: 1px solid #ececf2; border-radius: 6px 13px 13px;
+    background: #f1f2f7; color: #565f76; font-size: 11px;
+    animation: vroom-reply-in .18s ease-out both;
+}
+.vroom-bot .chat-typing-dots { display: inline-flex; flex: none; gap: 3px; color: #c8103a; }
+.vroom-bot .chat-typing-dots i {
+    width: 5px; height: 5px; border-radius: 50%; background: currentColor;
+    animation: vroom-typing-dot .94s ease-in-out infinite;
+}
+.vroom-bot .chat-typing-dots i:nth-child(2) { animation-delay: .13s; }
+.vroom-bot .chat-typing-dots i:nth-child(3) { animation-delay: .26s; }
+@keyframes vroom-typing-dot {
+    0%, 60%, 100% { opacity: .42; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(-3px); }
+}
+@keyframes vroom-reply-in {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.vroom-bot .chat-reply > .chat-message,
+.vroom-bot .chat-reply > .chat-suggest,
+.vroom-bot .chat-reply > .chat-location {
+    animation: vroom-reply-in .24s cubic-bezier(.21,.75,.32,1) both;
+}
+.vroom-bot .chat-reply .chat-card {
+    animation: vroom-reply-in .28s cubic-bezier(.21,.75,.32,1) both;
+    animation-delay: calc(85ms + var(--vb-card-order, 0) * 35ms);
+}
+.vroom-bot .chat-source { display: block; margin-top: 5px; color: #5f687c; font-size: 10px; line-height: 1.45; }
+.vroom-bot .chat-result { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.vroom-bot .chat-card {
+    padding: 10px 11px; display: grid; gap: 4px; min-width: 0;
+    border: 1px solid var(--vb-border); border-radius: 13px; background: #fff;
+    box-shadow: 0 2px 5px #20223c06; overflow-wrap: anywhere;
+}
+.vroom-bot .chat-card-head { display: flex; gap: 6px 8px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
+.vroom-bot .chat-card-head strong { flex: 1 1 155px; color: var(--vb-ink); font-size: 12px; font-weight: 750; line-height: 1.3; }
+.vroom-bot .chat-badge {
+    flex: none; padding: 2px 6px; border-radius: 6px; color: #505968; background: #edf0f4;
+    font-size: 9.5px; font-weight: 700; white-space: nowrap;
+}
+.vroom-bot .chat-badge--buka, .vroom-bot .chat-badge--24jam { color: #12623e; background: #e1f4e9; }
+.vroom-bot .chat-badge--segera-tutup { color: #804906; background: #fff1dc; }
+.vroom-bot .chat-card p, .vroom-bot .chat-card-contact { margin: 0; font-size: 11px; line-height: 1.45; color: #586277; }
+.vroom-bot .chat-card-state { display: block; color: #6a7285; font-size: 10px; }
+.vroom-bot .chat-card-contact summary { width: fit-content; cursor: pointer; color: #525c70; }
+.vroom-bot .chat-card-contact[open] summary { margin-bottom: 4px; }
+.vroom-bot .chat-card-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 2px; }
+.vroom-bot .chat-card-links a { color: #ba1437; font-size: 11px; font-weight: 700; text-decoration: none; }
+.vroom-bot .chat-card-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.vroom-bot .chat-form {
+    display: flex; flex: none; flex-direction: column; gap: 4px; padding: 10px 12px 12px;
+    border-top: 1px solid #ebecf2; background: #fff; margin: 0;
+}
+.vroom-bot .vb-composer {
+    display: flex; align-items: flex-end; gap: 7px; padding: 5px; min-width: 0;
+    border: 1px solid #e2e4ed; border-radius: 16px; background: #f8f8fb;
+}
+.vroom-bot .vb-composer:focus-within { border-color: #e6a0ac; box-shadow: 0 0 0 2px #f27e911a; }
+.vroom-bot .vb-input {
+    width: 0; min-width: 0; flex: 1; align-self: center; resize: none; margin: 0;
+    padding: 4px 3px 3px 7px; min-height: 38px; max-height: 58px; border: 0; outline: 0;
+    background: transparent; color: var(--vb-ink); font-size: 12px; line-height: 1.36;
+}
+.vroom-bot .vb-input::placeholder { color: #626b80; opacity: 1; }
+.vroom-bot .chat-send {
+    display: grid; place-items: center; flex: none; width: 39px; height: 39px; padding: 0;
+    border: 0; border-radius: 12px; background: linear-gradient(140deg, #c50a33, #e72a43);
+    box-shadow: 0 3px 8px #cf143b2e; color: #fff;
+}
+.vroom-bot .chat-send:hover { background: #ba1136; }
+.vroom-bot .vb-send-icon {
+    position: relative; display: block; width: 14px; height: 2px; border-radius: 2px;
+    background: currentColor; transform: translateX(-1px);
+}
+.vroom-bot .vb-send-icon::after {
+    content: ""; position: absolute; right: 0; top: -4px; width: 8px; height: 8px;
+    border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg);
+}
+@media (max-width: 560px) {
+    .vroom-bot {
+        --vb-right: max(12px, env(safe-area-inset-right));
+        --vb-bottom: max(12px, env(safe-area-inset-bottom));
+        --vb-launcher: 48px; --vb-gap: 8px;
+    }
+    .vroom-bot .vb-panel { border-radius: 20px; }
+    .vroom-bot .vb-header { padding: 10px; gap: 8px; }
+    .vroom-bot .vb-location-text { max-width: 107px; }
+    .vroom-bot .chat-log { padding: 10px; }
+    .vroom-bot .vb-input { font-size: 16px; min-height: 47px; max-height: 65px; }
+    .vroom-bot .vb-welcome { min-height: 190px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .vroom-bot .vb-panel, .vroom-bot .chat-typing, .vroom-bot .chat-typing-dots i,
+    .vroom-bot .chat-reply > .chat-message, .vroom-bot .chat-reply > .chat-suggest,
+    .vroom-bot .chat-reply > .chat-location, .vroom-bot .chat-reply .chat-card { animation: none; }
+    .vroom-bot .vb-launcher { transition: none; }
+}
