@@ -9,9 +9,10 @@ $search_keyword = trim($parameter['keyword'] ?? '');
 $filter_lokasi = trim($parameter['lokasi'] ?? '');
 $sort_abjad = trim($parameter['abjad'] ?? '');
 $filter_status = trim($parameter['status'] ?? '');
-if (!in_array($filter_status, ['buka', 'segera-tutup', 'tutup'], true)) {
+if (!in_array($filter_status, ['buka', 'segera-tutup', 'tutup', '24-jam'], true)) {
     $filter_status = '';
 }
+$filter_24_jam = $filter_status === '24-jam';
 $filter_kategori = strtolower(trim($parameter['kategori'] ?? ''));
 if (!in_array($filter_kategori, ['mobil', 'motor'], true)) {
     $filter_kategori = '';
@@ -53,261 +54,11 @@ if (isset($data_lokasi_sparql['results']['bindings'])) {
     }
 }
 
-// 3. Daftar model kendaraan untuk mengenali mereknya.
-$model_ke_merek = [
-
-    // HONDA - MOBIL DAN MOTOR
-    'Honda Motor' => [
-        'vario', 'beat', 'scoopy', 'pcx',
-        'adv', 'supra', 'revo', 'genio',
-        'stylo', 'sonic', 'cbr150r',
-        'cb150r', 'crf150l', 'forza',
-        'monkey', 'cbr1000rr', 'cbr650r',
-        'cb650r', 'cb500x', 'rebel 500',
-        'rebel 1100', 'africa twin',
-        'gold wing', 'nt1100'
-    ],
-
-    // HONDA MOBIL
-    'Honda Mobil' => [
-        'brio', 'jazz', 'civic', 'city',
-        'accord', 'crv', 'hrv', 'brv',
-        'wrv', 'mobilio', 'freed',
-        'odyssey', 'stepwgn'
-    ],
-
-    // YAMAHA - MOTOR
-    'Yamaha' => [
-        'nmax', 'aerox', 'mio', 'fazzio',
-        'xmax', 'lexi', 'r15', 'r25',
-        'mt15', 'mt25', 'vixion',
-        'jupiter', 'vega', 'fino',
-        'gear', 'freego', 'filano',
-        'xsr155', 'wr155', 'rx king',
-        'byson', 'soul gt', 'tmax'
-    ],
-
-    // TOYOTA - MOBIL
-    'Toyota' => [
-        'avanza', 'innova', 'fortuner',
-        'rush', 'agya', 'calya',
-        'alphard', 'veloz', 'yaris',
-        'raize', 'hilux', 'camry',
-        'corolla', 'altis', 'vios',
-        'hiace', 'land cruiser',
-        'prado', 'gr86', 'sienta',
-        'kijang', 'starlet', 'voxy',
-        'bz4x', 'crown', 'rav4'
-    ],
-
-    // DAIHATSU - MOBIL
-    'Daihatsu' => [
-        'xenia', 'sigra', 'ayla',
-        'terios', 'rocky', 'sirion',
-        'gran max', 'granmax',
-        'luxio', 'taft', 'feroza',
-        'charade', 'zebra',
-        'hijet', 'copen'
-    ],
-
-    // SUZUKI - MOBIL DAN MOTOR
-    'Suzuki' => [
-        'ertiga', 'xl7', 'baleno',
-        'ignis', 'jimny', 'karimun',
-        'swift', 'apv', 'carry',
-        'splash', 'sx4', 'vitara',
-        'escudo', 'katana', 'ciaz',
-        'nex', 'address', 'satria',
-        'smash', 'shogun', 'burgman',
-        'gsx', 'hayabusa', 'v-strom',
-        'avenis'
-    ],
-
-    // MITSUBISHI - MOBIL
-    'Mitsubishi' => [
-        'xpander', 'xpander cross',
-        'pajero', 'pajero sport',
-        'triton', 'l300', 'colt',
-        'outlander', 'eclipse cross',
-        'xforce', 'destinator',
-        'mirage', 'delica',
-        'lancer', 'galant',
-        'grandis', 'strada', 'kuda'
-    ],
-
-    // KAWASAKI - MOTOR
-    'Kawasaki' => [
-        'ninja', 'zx25r', 'zx4r',
-        'zx6r', 'zx10r', 'klx',
-        'w175', 'w250', 'w800',
-        'versys', 'z125', 'z250',
-        'z400', 'z650', 'z900',
-        'z1000', 'vulcan',
-        'eliminator', 'd-tracker',
-        'kaze', 'athlete'
-    ],
-
-    // HYUNDAI - MOBIL
-    'Hyundai' => [
-        'stargazer', 'creta',
-        'palisade', 'santa fe',
-        'tucson', 'kona', 'ioniq',
-        'ioniq 5', 'ioniq 6',
-        'ioniq 9', 'venue',
-        'accent', 'elantra',
-        'sonata', 'h1', 'h100',
-        'i10', 'i20', 'i30',
-        'grand avega'
-    ],
-
-    // WULING - MOBIL
-    'Wuling' => [
-        'air ev', 'binguo', 'binguo ev',
-        'cloud ev', 'alvez',
-        'almaz', 'cortez',
-        'confero', 'formo',
-        'darion'
-    ],
-
-    // CHERY - MOBIL
-    'Chery' => [
-        'omoda', 'omoda 5', 'omoda e5',
-        'tiggo', 'tiggo 5x',
-        'tiggo 7', 'tiggo 8',
-        'tiggo 9', 'j6', 'j6t',
-        'c5'
-    ],
-
-    // BMW - MOBIL
-    'BMW' => [
-        '118i', '218i', '320i',
-        '330i', '520i', '530i',
-        '740i', '750i', 'x1',
-        'x2', 'x3', 'x4',
-        'x5', 'x6', 'x7',
-        'm2', 'm3', 'm4',
-        'm5', 'i4', 'i5',
-        'i7', 'ix'
-    ],
-
-    // MERCEDES-BENZ - MOBIL
-    'Mercedes-Benz' => [
-        'a200', 'a250', 'c180',
-        'c200', 'c250', 'c300',
-        'e200', 'e250', 'e300',
-        's400', 's450', 's500',
-        'gla', 'glb', 'glc',
-        'gle', 'gls', 'g63',
-        'cla', 'cls', 'eqe',
-        'eqs', 'amg gt'
-    ],
-
-    // NISSAN - MOBIL
-    'Nissan' => [
-        'livina', 'grand livina',
-        'serena', 'xtrail', 'x-trail',
-        'terra', 'navara',
-        'magnite', 'juke',
-        'march', 'evalia',
-        'teana', 'elgrand',
-        'skyline', 'gtr', 'gt-r',
-        'fairlady', 'leaf', 'kicks'
-    ],
-
-    // DATSUN - MOBIL
-    'Datsun' => [
-        'datsun go', 'go plus',
-        'go+', 'redi go'
-    ],
-
-    // CHEVROLET - MOBIL
-    'Chevrolet' => [
-        'captiva', 'spin',
-        'trax', 'trailblazer',
-        'colorado', 'spark',
-        'aveo', 'cruze',
-        'orlando', 'optra',
-        'camaro', 'tahoe',
-        'suburban'
-    ],
-
-    // MAZDA - MOBIL
-    'Mazda' => [
-        'mazda2', 'mazda3',
-        'mazda6', 'cx3', 'cx30',
-        'cx5', 'cx8', 'cx9',
-        'cx60', 'cx80', 'cx90',
-        'mx5', 'rx7', 'rx8',
-        'biante', 'bt50'
-    ],
-
-    // FORD - MOBIL
-    'Ford' => [
-        'ranger', 'everest',
-        'ecosport', 'fiesta',
-        'focus', 'escape',
-        'mustang', 'explorer',
-        'bronco', 'raptor',
-        'territory'
-    ],
-
-    // ISUZU - MOBIL DAN TRUK
-    'Isuzu' => [
-        'panther', 'mu-x', 'mux',
-        'dmax', 'd-max',
-        'traga', 'elf',
-        'giga', 'nmr',
-        'nkr', 'npr'
-    ],
-
-    // BYD - MOBIL LISTRIK
-    'BYD' => [
-        'atto 3', 'dolphin',
-        'seal', 'sealion 7',
-        'm6', 'denza d9',
-        'seagull'
-    ],
-
-    // VESPA - MOTOR
-    'Vespa' => [
-        'primavera', 'sprint',
-        'gts', 'gts super',
-        'gts 300', 'lx',
-        's 125', 's 150',
-        '946', 'elettrica',
-        'px', 'excel', 'et4'
-    ],
-
-    // MG - MOBIL
-    'MG' => [
-        'zs', 'hs', 'mg5',
-        'mg4', 'mg4 ev',
-        'zs ev', 'cyberster',
-        'mg one', 'mg3'
-    ],
-
-    // DFSK - MOBIL
-    'DFSK' => [
-        'glory 560', 'glory 580',
-        'glory i-auto',
-        'gelora', 'gelora e',
-        'super cab'
-    ],
-
-    // AION - MOBIL LISTRIK
-    'Aion' => [
-        'aion y', 'aion y plus',
-        'aion v', 'aion es',
-        'aion ut', 'hyptec ht'
-    ]
-
-];
-
+// 3. Cari teks showroom dan telusuri relasi model dan merek di Fuseki.
 $encoding_literal = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_INVALID_UTF8_SUBSTITUTE;
 $filter_keyword = '';
 
 if ($search_keyword !== '') {
-    $keyword_lower = strtolower($search_keyword);
     $literal_keyword = json_encode($search_keyword, $encoding_literal);
 
     $syarat_pencarian = [
@@ -317,19 +68,32 @@ if ($search_keyword !== '') {
         'CONTAINS(LCASE(STR(?lokasi)), LCASE(' . $literal_keyword . '))'
     ];
 
-    foreach ($model_ke_merek as $merek => $daftar_model) {
-        if (!in_array($keyword_lower, $daftar_model, true)) {
-            continue;
+    // Label model di RDF disimpan dalam huruf kecil agar Fuseki dapat mencarinya langsung.
+    $literal_model = json_encode(strtolower($search_keyword), $encoding_literal);
+    $syarat_pencarian[] = <<<SPARQL
+        EXISTS {
+            GRAPH <urn:vroom:relasi-kendaraan> {
+                ?model a ex:ModelKendaraan ;
+                       rdfs:label $literal_model ;
+                       ex:diproduksiOleh ?merekModel .
+                ?showroom ex:mewakiliMerek ?merekModel .
+                OPTIONAL { ?model ex:kategoriModel ?kategoriModel . }
+            }
+            FILTER(!BOUND(?kategoriModel) || LCASE(STR(?kategori)) = STR(?kategoriModel))
         }
+    SPARQL;
 
-        if ($merek === 'Honda Motor' || $merek === 'Honda Mobil') {
-            $kategori_honda = $merek === 'Honda Motor' ? '"motor"' : '"mobil"';
-            $syarat_pencarian[] = '(CONTAINS(LCASE(STR(?merek)), "honda")'
-                . ' && CONTAINS(LCASE(STR(?kategori)), ' . $kategori_honda . '))';
-        } else {
-            $syarat_pencarian[] = 'CONTAINS(LCASE(STR(?merek)), LCASE(' . json_encode($merek) . '))';
-        }
-    }
+    // Cocokkan nama alternatif dengan nama wilayah yang tersimpan pada showroom.
+    $syarat_pencarian[] = <<<SPARQL
+        (BOUND(?lokasi) && EXISTS {
+            GRAPH <urn:vroom:wilayah> {
+                ?wilayah a ex:Wilayah ;
+                         skos:prefLabel ?lokasi ;
+                         skos:altLabel ?namaWilayahAlternatif .
+                FILTER(LCASE(STR(?namaWilayahAlternatif)) = LCASE($literal_keyword))
+            }
+        })
+    SPARQL;
 
     $filter_keyword = 'FILTER (' . implode(' || ', $syarat_pencarian) . ')';
 }
@@ -341,11 +105,17 @@ if ($filter_lokasi !== '') {
 if ($filter_kategori !== '') {
     $filter_clauses[] = 'LCASE(STR(?kategori)) = LCASE(' . json_encode($filter_kategori, $encoding_literal) . ')';
 }
+// Filter ini dikirim sebagai REGEX SPARQL dan dijalankan oleh Fuseki.
+if ($filter_24_jam) {
+    $filter_clauses[] = 'REGEX(STR(?jam), "^(buka +)?24 *jam$", "i")';
+}
 $filter_query = $filter_clauses ? 'FILTER ((' . implode(') && (', $filter_clauses) . '))' : '';
 $query = <<<'SPARQL'
     PREFIX ex: <http://www.example.org/showroom#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     SELECT ?showroom ?namaShowroom ?kategori ?merek ?lokasi ?rating ?jam ?alamat
     WHERE {
@@ -363,9 +133,33 @@ $query = <<<'SPARQL'
     ORDER BY DESC(xsd:float(replace(str(?rating), ",", ".")))
 SPARQL;
 
+// Indeks per URI untuk tampilan. Baris asli Fuseki tetap dipakai saat mencocokkan kata kunci.
+$kelompokkan_showroom = static function (array $baris): array {
+    $showroom_per_uri = [];
+    $merek_per_uri = [];
+
+    foreach ($baris as $row) {
+        $uri = $row['showroom']['value'];
+        $showroom_per_uri[$uri] ??= $row;
+        $merek = trim($row['merek']['value'] ?? '');
+        if ($merek !== '') {
+            $merek_per_uri[$uri][$merek] = true;
+        }
+    }
+
+    foreach ($merek_per_uri as $uri => $merek) {
+        $daftar_merek = array_keys($merek);
+        natcasesort($daftar_merek);
+        $showroom_per_uri[$uri]['merek']['value'] = implode(' / ', $daftar_merek);
+    }
+
+    return $showroom_per_uri;
+};
+
 $data_katalog = executeSparqlQuery(sprintf($query, '', ''));
 $katalog_error = !is_array($data_katalog['results']['bindings'] ?? null);
-$daftar_showroom = $katalog_error ? [] : $data_katalog['results']['bindings'];
+$katalog_per_uri = $kelompokkan_showroom($katalog_error ? [] : $data_katalog['results']['bindings']);
+$daftar_showroom = array_values($katalog_per_uri);
 
 $bandingkan_rating = static function (array $a, array $b): int {
     $rating_a = (float) str_replace(',', '.', $a['rating']['value'] ?? '0');
@@ -392,7 +186,33 @@ if ($pencarian_aktif) {
             : executeSparqlQuery(sprintf($query, $filter_query, ''));
         $is_error = !is_array($data_calon['results']['bindings'] ?? null);
 
-        if (!$is_error) {
+        if (!$is_error && $data_calon['results']['bindings']) {
+            // Ambil kosakata model dari RDF saat pencarian memerlukan saran ejaan.
+            $query_model = <<<'SPARQL'
+                PREFIX ex: <http://www.example.org/showroom#>
+                PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+                SELECT DISTINCT ?namaModel ?namaMerek ?kategoriModel
+                WHERE {
+                    GRAPH <urn:vroom:relasi-kendaraan> {
+                        ?model a ex:ModelKendaraan ;
+                               rdfs:label ?namaModel ;
+                               ex:diproduksiOleh ?merekModel .
+                        ?merekModel rdfs:label ?namaMerek .
+                        OPTIONAL { ?model ex:kategoriModel ?kategoriModel . }
+                    }
+                }
+            SPARQL;
+            $data_model = executeSparqlQuery($query_model);
+            $model_ke_merek = [];
+            foreach ($data_model['results']['bindings'] ?? [] as $row_model) {
+                $merek = $row_model['namaMerek']['value'];
+                if (isset($row_model['kategoriModel'])) {
+                    $merek .= ' ' . $row_model['kategoriModel']['value'];
+                }
+                $model_ke_merek[$merek][] = $row_model['namaModel']['value'];
+            }
+
             [$results, $ada_saran] = cariShowroomMirip(
                 $search_keyword,
                 $data_calon['results']['bindings'],
@@ -400,6 +220,15 @@ if ($pencarian_aktif) {
             );
         }
     }
+
+    $hasil_per_uri = $kelompokkan_showroom($results);
+    foreach ($hasil_per_uri as $uri => $row) {
+        // Pencarian dapat menemukan satu merek saja. Kartu tetap menampilkan merek lengkap dari katalog.
+        if (isset($katalog_per_uri[$uri]['merek'])) {
+            $hasil_per_uri[$uri]['merek'] = $katalog_per_uri[$uri]['merek'];
+        }
+    }
+    $results = array_values($hasil_per_uri);
 
     usort($results, static function (array $a, array $b) use ($sort_abjad, $bandingkan_rating): int {
         $urutan_rating = $bandingkan_rating($a, $b);
@@ -424,8 +253,7 @@ if ($pencarian_aktif) {
     <link rel="icon" type="image/svg+xml" href="images/vroom.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
 </head>
 
@@ -613,6 +441,7 @@ if ($pencarian_aktif) {
                         <label for="status">Status operasional</label>
                         <select name="status" id="status">
                             <option value="">Semua status</option>
+                            <option value="24-jam" <?= $filter_24_jam ? 'selected' : '' ?>>Buka 24 jam</option>
                             <?php foreach (['buka', 'segera-tutup', 'tutup'] as $status): ?>
                                 <option value="<?= $status ?>" <?= $filter_status === $status ? 'selected' : '' ?>>
                                     <?= LABEL_STATUS_SHOWROOM[$status] ?>
@@ -723,7 +552,7 @@ if ($pencarian_aktif) {
     <?php if ($results): ?>
         <?php
         $daftar_kartu = $results;
-        $status_diminta = $filter_status;
+        $status_diminta = $filter_24_jam ? '' : $filter_status;
         require __DIR__ . '/daftar-kartu-showroom.php';
         ?>
     <?php endif; ?>
@@ -735,8 +564,8 @@ if ($pencarian_aktif) {
     <div class="showroom-map-panel">
         <div class="showroom-map-heading">
             <div>
-                <h2 id="map-title">Peta Showroom Sumatera Utara</h2>
-                <p>Klik pin untuk melihat alamat dan detail showroom.</p>
+                <h2 id="map-title">Peta Showroom Kendaraan Sumatera Utara</h2>
+                <p>Klik pin untuk melihat detail. Perbesar peta jika pin berdekatan.</p>
             </div>
 
             <div class="showroom-map-filters" role="group" aria-label="Filter kategori pada peta">
@@ -984,8 +813,7 @@ if ($pencarian_aktif) {
 
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" defer></script>
-<script src="js/peta-showroom.js?v=1" defer></script>
+<script src="js/peta-showroom.js?v=2" defer></script>
 <script src="js/status-showroom.js?v=1" defer></script>
 </body>
 </html>

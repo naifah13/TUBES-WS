@@ -41,12 +41,16 @@
     const icon = L.divIcon({
       className: "vroom-map-marker vroom-map-marker--" + kategori,
       html: '<span aria-hidden="true"></span>',
-      iconSize: [28, 34],
-      iconAnchor: [14, 29],
-      popupAnchor: [0, -30],
+      iconSize: [22, 27],
+      iconAnchor: [11, 24],
+      popupAnchor: [0, -23],
     });
 
-    const marker = L.marker([item.lat, item.long], { icon, title: item.nama });
+    const marker = L.marker([item.lat, item.long], {
+      icon,
+      title: item.nama,
+      riseOnHover: true,
+    });
     marker.on("add", () => marker.getElement()?.setAttribute("aria-label", item.nama));
     return marker.bindPopup(() => buatPopup(item), { maxWidth: 265 });
   }
@@ -90,20 +94,7 @@
       return;
     }
 
-    const grup = typeof L.markerClusterGroup === "function"
-      ? L.markerClusterGroup({
-          maxClusterRadius: 48,
-          showCoverageOnHover: false,
-          iconCreateFunction(cluster) {
-            const count = cluster.getChildCount();
-            return L.divIcon({
-              html: '<span title="' + count + ' showroom">' + count + "</span>",
-              className: "vroom-map-cluster",
-              iconSize: [44, 44],
-            });
-          },
-        })
-      : L.featureGroup();
+    const grup = L.featureGroup();
     grup.addTo(map);
 
     const pin = showrooms.map((item) => ({

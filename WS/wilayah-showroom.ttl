@@ -1,0 +1,87 @@
+@prefix ex: <http://www.example.org/showroom#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Impor ke named graph urn:vroom:wilayah dalam dataset /showroom.
+# Nama utama sama dengan nilai ex:berlokasiDi di showroomSumut.ttl.
+
+ex:Wilayah-Asahan a ex:Wilayah ;
+    skos:prefLabel "Asahan" .
+
+ex:Wilayah-Batu-Bara a ex:Wilayah ;
+    skos:prefLabel "Batu Bara" .
+
+ex:Wilayah-Binjai a ex:Wilayah ;
+    skos:prefLabel "Binjai" .
+
+ex:Wilayah-Dairi a ex:Wilayah ;
+    skos:prefLabel "Dairi" .
+
+ex:Wilayah-Deli-Serdang a ex:Wilayah ;
+    skos:prefLabel "Deli Serdang" .
+
+ex:Wilayah-Gunungsitoli a ex:Wilayah ;
+    skos:prefLabel "Gunungsitoli" .
+
+ex:Wilayah-Karo a ex:Wilayah ;
+    skos:prefLabel "Karo" .
+
+ex:Wilayah-Labuhanbatu a ex:Wilayah ;
+    skos:prefLabel "Labuhanbatu" .
+
+ex:Wilayah-Labuhanbatu-Selatan a ex:Wilayah ;
+    skos:prefLabel "Labuhanbatu Selatan" .
+
+ex:Wilayah-Labuhanbatu-Utara a ex:Wilayah ;
+    skos:prefLabel "Labuhanbatu Utara" .
+
+ex:Wilayah-Langkat a ex:Wilayah ;
+    skos:prefLabel "Langkat" .
+
+ex:Wilayah-Mandailing-Natal a ex:Wilayah ;
+    skos:prefLabel "Mandailing Natal" .
+
+ex:Wilayah-Medan a ex:Wilayah ;
+    skos:prefLabel "Medan" .
+
+ex:Wilayah-Nias-Selatan a ex:Wilayah ;
+    skos:prefLabel "Nias Selatan" .
+
+ex:Wilayah-Padang-Lawas a ex:Wilayah ;
+    skos:prefLabel "Padang Lawas" .
+
+ex:Wilayah-Padang-Lawas-Utara a ex:Wilayah ;
+    skos:prefLabel "Padang Lawas Utara" .
+
+ex:Wilayah-Padangsidimpuan a ex:Wilayah ;
+    skos:prefLabel "Padangsidimpuan" ;
+    skos:altLabel "Padang Sidimpuan" .
+
+ex:Wilayah-Pematangsiantar a ex:Wilayah ;
+    skos:prefLabel "Pematangsiantar" .
+
+ex:Wilayah-Samosir a ex:Wilayah ;
+    skos:prefLabel "Samosir" .
+
+ex:Wilayah-Serdang-Bedagai a ex:Wilayah ;
+    skos:prefLabel "Serdang Bedagai" .
+
+ex:Wilayah-Sibolga a ex:Wilayah ;
+    skos:prefLabel "Sibolga" .
+
+ex:Wilayah-Simalungun a ex:Wilayah ;
+    skos:prefLabel "Simalungun" .
+
+ex:Wilayah-Tanjung-Balai a ex:Wilayah ;
+    skos:prefLabel "Tanjung Balai" .
+
+ex:Wilayah-Tapanuli-Tengah a ex:Wilayah ;
+    skos:prefLabel "Tapanuli Tengah" .
+
+ex:Wilayah-Tapanuli-Utara a ex:Wilayah ;
+    skos:prefLabel "Tapanuli Utara" .
+
+ex:Wilayah-Tebing-Tinggi a ex:Wilayah ;
+    skos:prefLabel "Tebing Tinggi" .
+
+ex:Wilayah-Toba a ex:Wilayah ;
+    skos:prefLabel "Toba" .

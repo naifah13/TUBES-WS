@@ -91,7 +91,7 @@ ex:Showroom7 rdf:type ex:Showroom ;
     ex:berlokasiDi "Asahan" ;
     ex:kategori "mobil" ;
     geo:lat 2.969165256817742 ;
-    geo:long , 99.62930289537331 .
+    geo:long 99.62930289537331 .
 
 ex:Showroom8 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Mobil Suzuki" ;
@@ -187,12 +187,12 @@ ex:Showroom14 rdf:type ex:Showroom ;
 ex:Showroom15 rdf:type ex:Showroom ;
     ex:namaShowroom "Capella Daihatsu Sibolga (Sales Point Resmi)" ;
     ex:merek "Dealer Daihatsu" ;
-    ex:alamat "Jl. Sibolga - Padangsidimpuan No.16, Kalangan, Kec. Pandan, Kabupaten Tapanuli Tengah" ;
+    ex:alamat "Jl. Sibolga - Padangsidimpuan No.16, Kalangan, Kec. Pandan" ;
     ex:jamOperasional "10.30-18.00" ;
     ex:noTelepon "0852-9774-5355" ;
     ex:website "https://www.astra-daihatsu.id/" ;
     ex:rating "4,7" ;
-    ex:berlokasiDi "Tapanuli" ;
+    ex:berlokasiDi "Tapanuli Tengah" ;
     ex:kategori "mobil" ;
     geo:lat 1.670077932454065 ;
     geo:long 98.82951690886094 .
@@ -200,12 +200,12 @@ ex:Showroom15 rdf:type ex:Showroom ;
 ex:Showroom16 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Toyota Tobasa" ;
     ex:merek "Dealer Toyota" ;
-    ex:alamat "Jalan pasar melintang, Aruan, Kec. Laguboti, Toba" ;
+    ex:alamat "Jalan pasar melintang, Aruan, Kec. Laguboti" ;
     ex:jamOperasional "09.00-17.00" ;
     ex:noTelepon "0822-7586-9998" ;
     ex:website "https://www.toyota.astra.co.id/" ;
     ex:rating "4,7" ;
-    ex:berlokasiDi "Tapanuli" ;
+    ex:berlokasiDi "Toba" ;
     ex:kategori "mobil" ;
     geo:lat 2.3515647718863044 ;
     geo:long 99.11532426653497 .
@@ -393,7 +393,7 @@ ex:Showroom31 rdf:type ex:Showroom ;
     geo:lat 3.607486623728541 ;
     geo:long 98.66068126654052 .
 
-ex:Showroom31 rdf:type ex:Showroom ;
+ex:Showroom300 rdf:type ex:Showroom ;
     ex:namaShowroom "BYD ARISTA CEMARA" ;
     ex:merek "Dealer BYD" ;
     ex:alamat "Jl. Cemara No.198, Pulo Brayan Darat II, Kec. Medan Timur" ;
@@ -406,7 +406,7 @@ ex:Showroom31 rdf:type ex:Showroom ;
     geo:lat 3.6292913236522377 ;
     geo:long 98.68867153035838 .
 
-ex:Showroom31 rdf:type ex:Showroom ;
+ex:Showroom301 rdf:type ex:Showroom ;
     ex:namaShowroom "BYD Arista Medan Ring Road" ;
     ex:merek "Dealer BYD" ;
     ex:alamat "Seberang RCW, Jl. Ring Road Jl. Gagak Hitam, Tj. Rejo, Kec. Medan Sunggal" ;
@@ -432,7 +432,7 @@ ex:Showroom32 rdf:type ex:Showroom ;
     geo:lat 3.5880359378445323 ;
     geo:long 98.69102601704216 .
 
-ex:Showroom33 rdf:type ex:Showroom ;
+ex:Showroom302 rdf:type ex:Showroom ;
     ex:namaShowroom "DEALER BYD AMPLAS" ;
     ex:merek "Dealer BYD" ;
     ex:alamat "Jl. Sakti Lubis No.60, Sitirejo II, Kec. Medan Amplas" ;
@@ -510,7 +510,7 @@ ex:Showroom39 rdf:type ex:Showroom ;
     geo:lat 3.5916219941226606 ;
     geo:long 98.681032 .
 
-ex:Showroom39 rdf:type ex:Showroom ;
+ex:Showroom303 rdf:type ex:Showroom ;
     ex:namaShowroom "OMODA JAECOO SUMUT" ;
     ex:merek "Dealer Jaecoo" ;
     ex:alamat "Jl. Tengku Amir Hamzah. F90-F92, Helvetia Tim., Kec. Medan Helvetia" ;
@@ -638,7 +638,7 @@ ex:Showroom52 rdf:type ex:Showroom ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
     geo:lat 3.6420838612124364 ;
-    geo: 98.68174101072002 .
+    geo:long 98.68174101072002 .
 
 ex:Showroom53 rdf:type ex:Showroom ;
     ex:namaShowroom "Daihatsu Medan Johor" ;
@@ -861,7 +861,7 @@ ex:Showroom75 rdf:type ex:Showroom ;
     ex:rating "4,6" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat 3.585318968837989,  ;
+    geo:lat 3.585318968837989 ;
     geo:long 98.65162006468842.
 
 ex:Showroom76 rdf:type ex:Showroom ;
@@ -1381,7 +1381,7 @@ ex:Showroom126 rdf:type ex:Showroom ;
     ex:website "https://www.suzuki.co.id/" ;
     ex:rating "4,9" ;
     ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" .
+    ex:kategori "mobil" ;
     geo:lat 3.588866545910635 ;
     geo:long 98.64893215119659 .
 
@@ -1566,19 +1566,6 @@ ex:Showroom141 rdf:type ex:Showroom ;
     ex:kategori "mobil" ;
     geo:lat 3.5942770295119564 ;
     geo:long 98.64912545379364 .
-
-ex:Showroom263 rdf:type ex:Showroom ;
-    ex:namaShowroom "AION MEDAN" ;
-    ex:merek "Dealer AION" ;
-    ex:alamat "Jl. Gatot Subroto No.148, Sei Putih Bar., Kec. Medan Petisah" ;
-    ex:jamOperasional "08.30-16.30" ;
-    ex:noTelepon "0812-6080-3123" ;
-    ex:website "https://www.astra-honda.com" ;
-    ex:rating "4,7" ;
-    ex:berlokasiDi "Medan" ;
-    ex:kategori "mobil" ;
-    geo:lat 3.59117114400963 ;
-    geo:long 98.6483436570165 .
 
 ex:Showroom142 rdf:type ex:Showroom ;
     ex:namaShowroom "Perintis Perkasa Toyota" ;
@@ -1928,8 +1915,8 @@ ex:Showroom170 rdf:type ex:Showroom ;
     ex:rating "4,7" ;
     ex:berlokasiDi "Medan" ;
     ex:kategori "mobil" ;
-    geo:lat 3.5910776327092715 ;
-    geo:long 98.64842850356463 .
+    geo:lat 3.5903841 ;
+    geo:long 98.6444813 .
 
 ex:Showroom171 rdf:type ex:Showroom ;
     ex:namaShowroom "Showroom Mobil DFSK Medan" ;
@@ -2685,7 +2672,7 @@ ex:Showroom228 rdf:type ex:Showroom ;
     geo:lat 0.7592771604185853 ;
     geo:long 97.8043867898305 .
 
-ex:Showroom33 rdf:type ex:Showroom ;
+ex:Showroom305 rdf:type ex:Showroom ;
     ex:namaShowroom "Sukses Motor Globalindo Pemda" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jl. Ngumban Surbakti No.1-2, Sempakata, Kec. Medan Selayang" ;
@@ -2698,7 +2685,7 @@ ex:Showroom33 rdf:type ex:Showroom ;
     geo:lat 3.54097178023606 ;
     geo:long 98.62263476468794 .
 
-ex:Showroom33 rdf:type ex:Showroom ;
+ex:Showroom306 rdf:type ex:Showroom ;
     ex:namaShowroom "Nusantara Sakti Group. PT" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Galuh, Kec. Perbaungan" ;
@@ -3165,7 +3152,7 @@ ex:Showroom263 rdf:type ex:Showroom ;
     geo:lat 1.445850107385667 ;
     geo:long 99.2647461397683 .
 
-ex:Showroom263 rdf:type ex:Showroom ;
+ex:Showroom307 rdf:type ex:Showroom ;
     ex:namaShowroom "PT. Putra Surya Jaya Raya II Gunungtua" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Ps. Gn. Tua, Kec. Padang Bolak" ;
@@ -3178,7 +3165,7 @@ ex:Showroom263 rdf:type ex:Showroom ;
     geo:lat 1.513753450872455 ;
     geo:long 99.62646722420459 .
 
-ex:Showroom263 rdf:type ex:Showroom ;
+ex:Showroom308 rdf:type ex:Showroom ;
     ex:namaShowroom "PT. Putra Surya Jaya Raya II Sosa" ;
     ex:merek "Dealer Honda" ;
     ex:alamat "Jalan Lintas Riau, Simarancar, Kec. Sosa" ;
@@ -3464,7 +3451,7 @@ ex:Showroom286 rdf:type ex:Showroom ;
     geo:lat 3.0114083118955848 ;
     geo:long 99.6340455107731 .
 
-ex:Showroom33 rdf:type ex:Showroom ;
+ex:Showroom309 rdf:type ex:Showroom ;
     ex:namaShowroom "SORUM GRAHA YAMAHA AUTO PRATAMA" ;
     ex:merek "Dealer Yamaha" ;
     ex:alamat "Jl. Trans Sumatera Bukittinggi - Padang Sidempuan, Dalan Lidang, Kec. Panyabungan" ;
