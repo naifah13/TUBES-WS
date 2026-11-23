@@ -100,7 +100,7 @@ if ($baris) {
     }
     $koordinat = count($pasangan) === 1 ? reset($pasangan) : null;
     $url_rute = $koordinat
-        ? 'https://www.google.com/maps/dir/?api=1&destination=' . rawurlencode(implode(',', $koordinat))
+        ? 'https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=' . rawurlencode(implode(',', $koordinat))
         : '';
     $url_cari_alamat = !$koordinat && $alamat !== ''
         ? 'https://www.google.com/maps/search/?api=1&query='
@@ -205,19 +205,25 @@ if ($baris) {
                 <span class="vd-route-icon" aria-hidden="true">↱</span>
                 <div>
                     <h3 id="vd-route-title">Rute ke showroom</h3>
-                    <p>Perkiraan perjalanan dengan mobil</p>
+                    <p>Mobil · Perkiraan tanpa lalu lintas langsung</p>
                 </div>
             </div>
 
             <div data-route-result hidden>
                 <dl class="vd-route-metrics">
                     <div><dt>Jarak lewat jalan</dt><dd data-route-distance></dd></div>
-                    <div><dt>Estimasi waktu</dt><dd data-route-duration></dd></div>
+                    <div><dt data-route-time-label>Estimasi waktu OSRM</dt><dd data-route-duration></dd></div>
                 </dl>
+                <p class="vd-route-note" data-route-time-note hidden>Kisaran untuk perencanaan, dengan acuan 45–55 km/jam di jalan umum pada rute antarkota.</p>
                 <ol class="vd-route-points" aria-label="Titik perjalanan">
                     <li><span>Mulai</span><strong data-route-origin></strong></li>
                     <li><span>Tujuan</span><strong><?= $tampil($nama) ?></strong></li>
                 </ol>
+            </div>
+
+            <div class="vd-route-actions" data-route-options hidden>
+                <label class="vd-sr" for="vd-route-select">Pilih rute mobil</label>
+                <select class="vd-button vd-route-secondary" id="vd-route-select" style="max-width: 100%; min-width: 0" data-route-select></select>
             </div>
 
             <p class="vd-route-status" id="vd-route-status" role="status" data-route-status></p>
@@ -226,7 +232,10 @@ if ($baris) {
                 <button type="button" class="vd-button vd-button-primary" data-route-locate
                     aria-controls="peta-detail-showroom">Gunakan lokasi saya</button>
                 <button type="button" class="vd-button vd-route-secondary" data-route-pick
-                    aria-controls="peta-detail-showroom">Pilih titik awal di peta</button>
+                    aria-controls="peta-detail-showroom">Tentukan titik berangkat</button>
+                <button type="button" class="vd-button vd-route-secondary" data-route-via
+                    aria-controls="peta-detail-showroom" hidden>Atur titik lewat</button>
+                <button type="button" class="vd-button vd-route-secondary" data-route-via-clear hidden>Hapus titik lewat</button>
             </div>
 
             <div class="vd-route-actions" data-route-picking hidden>
@@ -243,7 +252,7 @@ if ($baris) {
                     <span property="longitude"><?= $tampil((string) $koordinat[1]) ?></span>
                 </span>
             </p>
-            <a class="vd-map-external" href="<?= $tampil($url_rute) ?>"
+            <a class="vd-map-external" data-detail-google-directions href="<?= $tampil($url_rute) ?>"
                 target="_blank" rel="noopener noreferrer">Buka di Google Maps <span aria-hidden="true">↗</span></a>
         </div>
     <?php else: ?>
@@ -390,7 +399,7 @@ if ($baris) {
 <?php if (!empty($koordinat)): ?>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
-    <script src="js/detail-showroom.js?v=4" defer></script>
+    <script src="js/detail-showroom.js?v=8" defer></script>
 <?php endif; ?>
 </body>
 </html>
