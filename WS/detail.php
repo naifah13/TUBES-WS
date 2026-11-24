@@ -2,6 +2,7 @@
 
 require_once __DIR__ . '/lib.php';
 require_once __DIR__ . '/jam-showroom.php';
+require_once __DIR__ . '/kendaraan-showroom.php';
 
 $uri = is_string($_GET['uri'] ?? null) ? trim($_GET['uri']) : '';
 $pesan_error = '';
@@ -84,6 +85,9 @@ if ($baris) {
     $jadwal = jadwalHarianShowroom($jam);
     $status = statusShowroomPadaMenit($jadwal, menitWibShowroom());
 
+    // Model kendaraan yang dijual: showroom -> ex:mewakiliMerek -> merek <- ex:diproduksiOleh <- model.
+    $kendaraan = ambilKendaraanShowroom($uri, $kategori);
+
     // Pakai pin yang sama seperti katalog: satu pasangan koordinat valid per showroom.
     $pasangan = [];
     foreach ($baris as $calon) {
@@ -122,6 +126,7 @@ if ($baris) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
     <link rel="stylesheet" href="css/detail-showroom.css?v=4">
+    <link rel="stylesheet" href="css/kendaraan-showroom.css?v=1">
 </head>
 <body>
 <header class="vroom-header">
@@ -315,6 +320,8 @@ if ($baris) {
             </dl>
         </section>
     </div>
+
+    <?php require __DIR__ . '/card-kendaraan-showroom.php'; ?>
 </main>
 <?php endif; ?>
 
@@ -396,6 +403,7 @@ if ($baris) {
 </footer>
 
 <script src="js/status-showroom.js?v=1" defer></script>
+<script src="js/kendaraan-showroom.js?v=1" defer></script>
 <?php if (!empty($koordinat)): ?>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>

@@ -216,6 +216,21 @@ ex:ModelChevrolet-trailblazer a ex:ModelKendaraan ;
 ex:ModelChevrolet-trax a ex:ModelKendaraan ;
     rdfs:label "trax" ;
     ex:diproduksiOleh ex:MerekChevrolet .
+ex:ModelCitroen-c3 a ex:ModelKendaraan ;
+    rdfs:label "c3" ;
+    ex:diproduksiOleh ex:MerekCitroen .
+ex:ModelCitroen-c3_aircross a ex:ModelKendaraan ;
+    rdfs:label "c3 aircross" ;
+    ex:diproduksiOleh ex:MerekCitroen .
+ex:ModelCitroen-e_c3 a ex:ModelKendaraan ;
+    rdfs:label "e-c3" ;
+    ex:diproduksiOleh ex:MerekCitroen .
+ex:ModelCitroen-c5_aircross a ex:ModelKendaraan ;
+    rdfs:label "c5 aircross" ;
+    ex:diproduksiOleh ex:MerekCitroen .
+ex:ModelCitroen-basalt a ex:ModelKendaraan ;
+    rdfs:label "basalt" ;
+    ex:diproduksiOleh ex:MerekCitroen .
 ex:ModelDFSK-gelora a ex:ModelKendaraan ;
     rdfs:label "gelora" ;
     ex:diproduksiOleh ex:MerekDFSK .
@@ -565,6 +580,57 @@ ex:ModelIsuzu-panther a ex:ModelKendaraan ;
 ex:ModelIsuzu-traga a ex:ModelKendaraan ;
     rdfs:label "traga" ;
     ex:diproduksiOleh ex:MerekIsuzu .
+ex:ModelJaecoo-j5_ev a ex:ModelKendaraan ;
+    rdfs:label "j5 ev" ;
+    ex:diproduksiOleh ex:MerekJaecoo .
+ex:ModelJaecoo-j7 a ex:ModelKendaraan ;
+    rdfs:label "j7" ;
+    ex:diproduksiOleh ex:MerekJaecoo .
+ex:ModelJaecoo-j7_shs a ex:ModelKendaraan ;
+    rdfs:label "j7 shs" ;
+    ex:diproduksiOleh ex:MerekJaecoo .
+ex:ModelJaecoo-j8 a ex:ModelKendaraan ;
+    rdfs:label "j8" ;
+    ex:diproduksiOleh ex:MerekJaecoo .
+ex:ModelJeep-compass a ex:ModelKendaraan ;
+    rdfs:label "compass" ;
+    ex:diproduksiOleh ex:MerekJeep .
+ex:ModelJeep-wrangler a ex:ModelKendaraan ;
+    rdfs:label "wrangler" ;
+    ex:diproduksiOleh ex:MerekJeep .
+ex:ModelJeep-gladiator a ex:ModelKendaraan ;
+    rdfs:label "gladiator" ;
+    ex:diproduksiOleh ex:MerekJeep .
+ex:ModelJeep-grand_cherokee a ex:ModelKendaraan ;
+    rdfs:label "grand cherokee" ;
+    ex:diproduksiOleh ex:MerekJeep .
+ex:ModelKIA-picanto a ex:ModelKendaraan ;
+    rdfs:label "picanto" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-sonet a ex:ModelKendaraan ;
+    rdfs:label "sonet" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-seltos a ex:ModelKendaraan ;
+    rdfs:label "seltos" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-carens a ex:ModelKendaraan ;
+    rdfs:label "carens" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-sportage a ex:ModelKendaraan ;
+    rdfs:label "sportage" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-sorento a ex:ModelKendaraan ;
+    rdfs:label "sorento" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-carnival a ex:ModelKendaraan ;
+    rdfs:label "carnival" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-ev6 a ex:ModelKendaraan ;
+    rdfs:label "ev6" ;
+    ex:diproduksiOleh ex:MerekKIA .
+ex:ModelKIA-ev9 a ex:ModelKendaraan ;
+    rdfs:label "ev9" ;
+    ex:diproduksiOleh ex:MerekKIA .
 ex:ModelKawasaki-athlete a ex:ModelKendaraan ;
     rdfs:label "athlete" ;
     ex:diproduksiOleh ex:MerekKawasaki .
@@ -772,6 +838,27 @@ ex:ModelMercedesBenz-s450 a ex:ModelKendaraan ;
 ex:ModelMercedesBenz-s500 a ex:ModelKendaraan ;
     rdfs:label "s500" ;
     ex:diproduksiOleh ex:MerekMercedesBenz .
+ex:ModelMINICooper-cooper a ex:ModelKendaraan ;
+    rdfs:label "cooper" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-cooper_5_door a ex:ModelKendaraan ;
+    rdfs:label "cooper 5 door" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-cooper_convertible a ex:ModelKendaraan ;
+    rdfs:label "cooper convertible" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-countryman a ex:ModelKendaraan ;
+    rdfs:label "countryman" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-clubman a ex:ModelKendaraan ;
+    rdfs:label "clubman" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-aceman a ex:ModelKendaraan ;
+    rdfs:label "aceman" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
+ex:ModelMINICooper-john_cooper_works a ex:ModelKendaraan ;
+    rdfs:label "john cooper works" ;
+    ex:diproduksiOleh ex:MerekMINICooper .
 ex:ModelMitsubishi-colt a ex:ModelKendaraan ;
     rdfs:label "colt" ;
     ex:diproduksiOleh ex:MerekMitsubishi .
