@@ -93,7 +93,7 @@ $jumlah_kendaraan = count($kendaraan);
                 </div>
             <?php endif; ?>
 
-            <p class="vk-note">Daftar model diambil dari relasi merek showroom pada data RDF Vroom. Ketersediaan unit bisa berbeda, hubungi showroom untuk memastikan.</p>
+            <p class="vk-note">Ketersediaan unit bisa berbeda, hubungi showroom untuk memastikan.</p>
         <?php endif; ?>
     </div>
 </section>
