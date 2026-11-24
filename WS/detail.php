@@ -127,6 +127,7 @@ if ($baris) {
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
     <link rel="stylesheet" href="css/detail-showroom.css?v=4">
     <link rel="stylesheet" href="css/kendaraan-showroom.css?v=1">
+    <link rel="stylesheet" href="css/riwayat-showroom.css?v=2">
 </head>
 <body>
 <header class="vroom-header">
@@ -134,9 +135,20 @@ if ($baris) {
         <img src="images/vroom.svg" alt="">
         <span class="vroom-brand-text"><strong>vroom<span>.</span></strong></span>
     </a>
-    <a href="index.php#daftar-showroom" class="detail-back-link">
-        <span aria-hidden="true">←</span> Daftar showroom
-    </a>
+    <div class="detail-header-aksi">
+        <a href="index.php#daftar-showroom" class="detail-back-link">
+            <span aria-hidden="true">←</span> Daftar showroom
+        </a>
+        <button type="button" class="vroom-nav-riwayat" data-riwayat-buka aria-haspopup="dialog">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M12 7v5l3 2"></path>
+            </svg>
+            <span>Riwayat</span>
+            <span class="rw-badge" data-riwayat-jumlah hidden>0</span>
+        </button>
+    </div>
 </header>
 
 <?php if ($pesan_error !== ''): ?>
@@ -145,7 +157,12 @@ if ($baris) {
         <a class="vd-button vd-button-primary" href="index.php#daftar-showroom">Lihat direktori showroom</a>
     </main>
 <?php else: ?>
-<main vocab="https://schema.org/" typeof="AutoDealer" about="<?= $tampil($uri) ?>">
+<main vocab="https://schema.org/" typeof="AutoDealer" about="<?= $tampil($uri) ?>"
+    data-riwayat-showroom="<?= $tampil(json_encode([
+        'uri' => $uri, 'nama' => $nama, 'merek' => $merek, 'kategori' => $kategori,
+        'lokasi' => $lokasi, 'rating' => $rating, 'jam' => $jam, 'alamat' => $alamat,
+        'telepon' => $telepon, 'logo' => $logo, 'jadwal' => (object) $jadwal,
+    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES)) ?>">
     <section class="vd-hero" aria-labelledby="vd-title">
         <div class="vd-shell vd-hero-grid">
             <div class="vd-heading">
@@ -404,6 +421,7 @@ if ($baris) {
 
 <script src="js/status-showroom.js?v=1" defer></script>
 <script src="js/kendaraan-showroom.js?v=1" defer></script>
+<script src="js/riwayat-showroom.js?v=3" defer></script>
 <?php if (!empty($koordinat)): ?>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>

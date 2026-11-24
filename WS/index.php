@@ -333,6 +333,7 @@ $daftar_saran = array_values(array_unique($daftar_saran));
     <link rel="stylesheet" href="style.css?v=8">
     <link rel="stylesheet" href="chatbot/vroom-bot.css?v=2">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
+    <link rel="stylesheet" href="css/riwayat-showroom.css?v=2">
 </head>
 
 
@@ -395,6 +396,16 @@ $daftar_saran = array_values(array_unique($daftar_saran));
         </svg>
         <span>Tentang</span>
     </a>
+
+    <button type="button" class="vroom-nav-riwayat" data-riwayat-buka aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+            <path d="M3 3v5h5"></path>
+            <path d="M12 7v5l3 2"></path>
+        </svg>
+        <span>Riwayat</span>
+        <span class="rw-badge" data-riwayat-jumlah hidden>0</span>
+    </button>
 </nav>
 
 </header>
@@ -585,6 +596,26 @@ $daftar_saran = array_values(array_unique($daftar_saran));
 
     </div>
 
+</section>
+
+<!-- TERAKHIR KAMU LIHAT (diisi oleh js/riwayat-showroom.js dari localStorage) -->
+<section class="rw-beranda" aria-labelledby="rw-beranda-judul" data-riwayat-terakhir hidden>
+    <div class="rw-beranda-kepala">
+        <div>
+            <p class="rw-beranda-eyebrow">Riwayat</p>
+            <h2 id="rw-beranda-judul">Terakhir kamu lihat</h2>
+            <p>Lanjutkan dari showroom yang sudah dilihat.</p>
+        </div>
+        <button type="button" class="rw-beranda-lihat" data-riwayat-buka>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                <path d="M3 3v5h5"></path>
+                <path d="M12 7v5l3 2"></path>
+            </svg>
+            Lihat semua riwayat
+        </button>
+    </div>
+    <div class="rw-beranda-isi" data-riwayat-terakhir-isi></div>
 </section>
 
 <?php if ($pencarian_aktif): ?>
@@ -902,6 +933,7 @@ $daftar_saran = array_values(array_unique($daftar_saran));
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
 <script src="js/peta-showroom.js?v=2" defer></script>
 <script src="js/status-showroom.js?v=1" defer></script>
+<script src="js/riwayat-showroom.js?v=3" defer></script>
 <?php
 $vroomBotEmbedded = true;
 require __DIR__ . '/vroom-chatbot.php';
