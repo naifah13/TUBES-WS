@@ -333,7 +333,7 @@ $daftar_saran = array_values(array_unique($daftar_saran));
     <link rel="stylesheet" href="style.css?v=8">
     <link rel="stylesheet" href="chatbot/vroom-bot.css?v=2">
     <link rel="stylesheet" href="css/status-showroom.css?v=1">
-    <link rel="stylesheet" href="css/riwayat-showroom.css?v=2">
+    <link rel="stylesheet" href="css/riwayat-showroom.css?v=3">
 </head>
 
 
@@ -606,16 +606,27 @@ $daftar_saran = array_values(array_unique($daftar_saran));
             <h2 id="rw-beranda-judul">Terakhir kamu lihat</h2>
             <p>Lanjutkan dari showroom yang sudah dilihat.</p>
         </div>
-        <button type="button" class="rw-beranda-lihat" data-riwayat-buka>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
-                <path d="M3 3v5h5"></path>
-                <path d="M12 7v5l3 2"></path>
-            </svg>
-            Lihat semua riwayat
-        </button>
+        <div class="rw-beranda-aksi">
+            <button type="button" class="rw-beranda-lihat" data-riwayat-buka>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                    <path d="M3 3v5h5"></path>
+                    <path d="M12 7v5l3 2"></path>
+                </svg>
+                Lihat semua riwayat
+            </button>
+            <div class="rw-beranda-navigasi" data-riwayat-navigasi role="group"
+                aria-label="Navigasi kartu riwayat" hidden>
+                <button type="button" class="rw-beranda-panah rw-beranda-panah-kiri"
+                    data-riwayat-kiri aria-controls="rw-beranda-kartu" aria-label="Geser riwayat ke kiri"
+                    aria-disabled="true"></button>
+                <button type="button" class="rw-beranda-panah rw-beranda-panah-kanan"
+                    data-riwayat-kanan aria-controls="rw-beranda-kartu" aria-label="Geser riwayat ke kanan"
+                    aria-disabled="true"></button>
+            </div>
+        </div>
     </div>
-    <div class="rw-beranda-isi" data-riwayat-terakhir-isi></div>
+    <div class="rw-beranda-isi" id="rw-beranda-kartu" data-riwayat-terakhir-isi></div>
 </section>
 
 <?php if ($pencarian_aktif): ?>
@@ -933,7 +944,7 @@ $daftar_saran = array_values(array_unique($daftar_saran));
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous" defer></script>
 <script src="js/peta-showroom.js?v=2" defer></script>
 <script src="js/status-showroom.js?v=1" defer></script>
-<script src="js/riwayat-showroom.js?v=3" defer></script>
+<script src="js/riwayat-showroom.js?v=4" defer></script>
 <?php
 $vroomBotEmbedded = true;
 require __DIR__ . '/vroom-chatbot.php';

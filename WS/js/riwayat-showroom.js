@@ -10,6 +10,7 @@
   const POLA_URI = /^http:\/\/www\.example\.org\/showroom#Showroom\d+$/;
 
   let elemenSebelum = null;
+  let perbaruiNavigasiBeranda = null;
 
   /* ---------- Penyimpanan ---------- */
 
@@ -284,13 +285,55 @@
     });
   }
 
+  function pasangNavigasiBeranda() {
+    const bagian = document.querySelector("[data-riwayat-terakhir]");
+    if (!bagian) return null;
+    const wadah = bagian.querySelector("[data-riwayat-terakhir-isi]");
+    const navigasi = bagian.querySelector("[data-riwayat-navigasi]");
+    const kiri = bagian.querySelector("[data-riwayat-kiri]");
+    const kanan = bagian.querySelector("[data-riwayat-kanan]");
+    if (!wadah || !navigasi || !kiri || !kanan) return null;
+
+    function perbarui() {
+      const batas = wadah.scrollWidth - wadah.clientWidth;
+      navigasi.hidden = batas <= 1;
+      kiri.setAttribute("aria-disabled", String(wadah.scrollLeft <= 1));
+      kanan.setAttribute("aria-disabled", String(wadah.scrollLeft >= batas - 1));
+    }
+
+    function geser(tombol, arah) {
+      if (tombol.getAttribute("aria-disabled") === "true") return;
+      const pertama = wadah.firstElementChild;
+      const kedua = pertama?.nextElementSibling;
+      if (!kedua) return;
+      const langkah = kedua.getBoundingClientRect().left - pertama.getBoundingClientRect().left;
+      const kurangiGerak = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      wadah.scrollBy({ left: arah * langkah, behavior: kurangiGerak ? "instant" : "smooth" });
+    }
+
+    kiri.addEventListener("click", () => geser(kiri, -1));
+    kanan.addEventListener("click", () => geser(kanan, 1));
+    wadah.addEventListener("scroll", perbarui, { passive: true });
+    if (typeof ResizeObserver === "function") {
+      const pengamatUkuran = new ResizeObserver(perbarui);
+      pengamatUkuran.observe(wadah);
+    } else {
+      window.addEventListener("resize", perbarui);
+    }
+    return perbarui;
+  }
+
   function perbaruiBeranda() {
     const bagian = document.querySelector("[data-riwayat-terakhir]");
     if (!bagian) return;
     const daftar = baca().slice(0, MAKS_BERANDA);
     bagian.hidden = daftar.length === 0;
     const wadah = bagian.querySelector("[data-riwayat-terakhir-isi]");
-    if (wadah) wadah.innerHTML = daftar.map(kartu).join("");
+    if (!wadah) return;
+    const posisi = wadah.scrollLeft;
+    wadah.innerHTML = daftar.map(kartu).join("");
+    wadah.scrollLeft = posisi;
+    perbaruiNavigasiBeranda?.();
   }
 
   function perbaruiSemua() {
@@ -303,6 +346,7 @@
 
   function mulai() {
     catatKunjungan();
+    perbaruiNavigasiBeranda = pasangNavigasiBeranda();
     perbaruiBadge();
     perbaruiBeranda();
 

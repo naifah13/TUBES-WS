@@ -461,6 +461,67 @@ html.rw-terbuka {
   font-size: 13px;
 }
 
+.rw-beranda-aksi,
+.rw-beranda-navigasi {
+  display: flex;
+  align-items: center;
+}
+
+.rw-beranda-aksi {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rw-beranda-navigasi {
+  gap: 8px;
+}
+
+.rw-beranda-navigasi[hidden] {
+  display: none;
+}
+
+.rw-beranda-panah {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #dce3e8;
+  border-radius: 50%;
+  background: #fff;
+  color: #2b2d42;
+  cursor: pointer;
+}
+
+.rw-beranda-panah::before {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  content: "";
+  transform: translateX(-2px) rotate(-45deg);
+}
+
+.rw-beranda-panah-kiri::before {
+  transform: translateX(2px) rotate(135deg);
+}
+
+.rw-beranda-panah[aria-disabled="true"] {
+  background: #f5f7f8;
+  color: #8d99ae;
+  cursor: default;
+}
+
+.rw-beranda-panah[aria-disabled="false"]:hover {
+  border-color: #ef233c;
+  color: #d90429;
+}
+
+.rw-beranda-panah:focus-visible {
+  outline: 2px solid #d90429;
+  outline-offset: 2px;
+}
+
 .rw-beranda-lihat {
   display: inline-flex;
   align-items: center;
